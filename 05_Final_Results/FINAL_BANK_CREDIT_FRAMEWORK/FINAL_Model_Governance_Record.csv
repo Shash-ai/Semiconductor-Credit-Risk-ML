@@ -1,0 +1,9 @@
+item,value
+Framework Status,FROZEN
+Validation Status,PASS_WITH_REVIEW
+Primary Application,Bank credit-risk decision support for Indian semiconductor financing
+Probability of Default,NOT ESTIMATED
+Expected Loss,NOT ESTIMATED
+Automated Loan Approval,NO
+Indicative Grades,A-E research decision-support categories only
+Core Banking Outputs,Indicative grade | credit posture | exposure posture | monitoring priority | early-warning status

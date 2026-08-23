@@ -1,0 +1,109 @@
+Innovate and Design in India
+REPORT
+Ministry of Electronics & Information Technology
+Annual
+2024-2025
+127
+Electronic Soil Nutrients Analyzer (ESNA)
+5.2.3 
+Initiatives 
+under 
+Microelectronics 
+and 
+Nanotechnology areas
+5.2.3.1 Some of the technologies developed/ are being 
+developed indigenously under the R&D projects initiated 
+in Microelectronics area are:
+(i)	
+Chips to Start-up (C2S) Programme: has been 
+initiated by MeitY as capacity building programme 
+at 113 organizations (including 100 academia/ 
+R&D originations and 13 Start-ups/ MSMEs) with 
+an outlay of Rs. 250 Crore for duration of 5 years in 
+the year 2022. C2S Programme aims to generate 
+industry-ready 85,000 number of manpower at 
+113 organizations (including academic institutions, 
+R&D organizations, start-ups, MSMEs) at B.Tech, 
+M.Tech and PhD levels specialized in the area of 
+VLSI and Embedded System Design and leapfrog 
+in ESDM space by way of inculcating the culture of 
+Chip/ System-on-Chip (SoC)/ System Level Design 
+at Bachelors, Masters and Research level and act 
+as a catalyst for growth of Start-ups involved in 
+semiconductor design in the country. 
+	
+The 
+Programme 
+takes 
+a 
+comprehensive 
+approach by offering students complete hands-on 
+experience in chip design, fabrication, and testing. 
+This is achieved through regular training sessions, 
+conducted in collaboration with industry partners, 
+and by providing mentorship and access to chip 
+design, fabrication & testing resources to students, 
+including state-of-the-art EDA (Electronic Design 
+Automation) tools, access to semiconductor 
+foundries for fabricating their chips etc. These 
+opportunities include implementing the R&D 
+(Research & Development) projects under C2S 
+Programme for development of working prototypes 
+of ASICs (Application-Specific Integrated Circuits), 
+Systems/ 
+SoCs 
+(System-on-Chips), 
+and 
+IP 
+(Intellectual Property) Core designs. Total 25,000+ 
+number of engineering students have been trained 
+at 113 organizations under C2S Programme till 
+date
+(ii)	
+Design 
+Linked 
+Incentive 
+(DLI) 
+Scheme: 
+Government of India has approved the ‘Modified 
+Programme for Semiconductors and Display Fab 
+Ecosystem’ with an outlay of ₹76,000 crore in order 
+to catalyse the semiconductor & display ecosystem 
+in the country. The Design Linked Incentive (DLI) 
+Scheme has been approved as part of it with an 
+outlay of Rs. 1000 Crore to offset the disabilities in 
+the domestic semiconductor chip design industry 
+as well as move up in value-chain and strengthen 
+the semiconductor chip design ecosystem in 
+the country. The DLI Scheme offers financial 
+incentives & design infrastructure support to 
+domestic companies, start-ups and MSMEs across 
+various stages of development & deployment of 
+semiconductor chips.
+	
+52 
+design 
+companies 
+(including 
+start-ups 
+and MSMEs) have been approved for design 
+infrastructure support under the DLI Scheme. Out 
+of these, 15 companies have also been approved 
+for financial support for developing semiconductor 
+chip/ SoCs for applications in sectors such as 
+automotive, mobility, computing, communications 
+etc.
+(iii)	
+Microprocessor 
+Development 
+Programme: 
+Family of 32-bit/ 64-bit Microprocessor has been 
+indigenously designed using Open-Source ISA 
+(Instruction Set Architecture) along with reusable 
+IP Cores by C-DAC, IIT Madras & IIT Bombay. 
+	
+Following successful tapeouts were earlier carried 
+out of – (a) 32-bit/ 64-bit SHAKTI Processors at 
+180nm, SCL foundry & 22nm, Intel foundry by IIT 
+Madras, (b) 32-bit AJIT Processor at 180nm, SCL 
+foundry by IIT Bombay (c) 32-bit VEGA Processor 

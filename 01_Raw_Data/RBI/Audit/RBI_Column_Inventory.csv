@@ -1,0 +1,194 @@
+dataset,column,dtype,missing,unique_values
+../01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx | Sheet: Report 1,Unnamed: 0,float64,1988,0
+../01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx | Sheet: Report 1,Unnamed: 1,object,1962,26
+../01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx | Sheet: Report 1,Unnamed: 2,object,11,156
+../01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx | Sheet: Report 1,Unnamed: 3,object,8,1537
+../01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx | Sheet: Report 1,Unnamed: 4,object,10,1426
+../01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx | Sheet: Report 1,Unnamed: 5,object,10,1456
+../01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx | Sheet: Report 1,Unnamed: 6,object,10,872
+../01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx | Sheet: Report 1,Unnamed: 7,object,10,1536
+../01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx | Sheet: Report 1,Unnamed: 8,object,9,1391
+../01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx | Sheet: Report 1,Unnamed: 9,object,10,1400
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 1,Statement 1: Deployment of Gross Bank Credit by Major Sectors,object,3,55
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 1,Unnamed: 1,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 1,Unnamed: 2,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 1,Unnamed: 3,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 1,Unnamed: 4,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 1,Unnamed: 5,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 1,Unnamed: 6,object,11,47
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 1,Unnamed: 7,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 1,Unnamed: 8,object,11,47
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 1,Unnamed: 9,object,12,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,Unnamed: 1,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,Unnamed: 2,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,Unnamed: 3,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,Unnamed: 4,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,Unnamed: 5,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,Unnamed: 6,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,Unnamed: 7,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,Unnamed: 8,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,Unnamed: 9,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 1,Statement 1: Deployment of Gross Bank Credit by Major Sectors,object,3,55
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 1,Unnamed: 1,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 1,Unnamed: 2,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 1,Unnamed: 3,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 1,Unnamed: 4,object,11,47
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 1,Unnamed: 5,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 2,Unnamed: 1,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 2,Unnamed: 2,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 2,Unnamed: 3,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 2,Unnamed: 4,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 2,Unnamed: 5,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 1,Statement 1: Deployment of Gross Bank Credit by Major Sectors,object,3,55
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 1,Unnamed: 1,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 1,Unnamed: 2,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 1,Unnamed: 3,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 1,Unnamed: 4,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 1,Unnamed: 5,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 1,Unnamed: 6,object,11,47
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 1,Unnamed: 7,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 1,Unnamed: 8,object,11,47
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 1,Unnamed: 9,object,12,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,Unnamed: 1,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,Unnamed: 2,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,Unnamed: 3,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,Unnamed: 4,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,Unnamed: 5,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,Unnamed: 6,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,Unnamed: 7,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,Unnamed: 8,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,Unnamed: 9,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 1,Statement 1: Deployment of Gross Bank Credit by Major Sectors,object,3,55
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 1,Unnamed: 1,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 1,Unnamed: 2,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 1,Unnamed: 3,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 1,Unnamed: 4,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 1,Unnamed: 5,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 1,Unnamed: 6,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 1,Unnamed: 7,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 1,Unnamed: 8,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 1,Unnamed: 9,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,Unnamed: 1,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,Unnamed: 2,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,Unnamed: 3,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,Unnamed: 4,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,Unnamed: 5,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,Unnamed: 6,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,Unnamed: 7,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,Unnamed: 8,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,Unnamed: 9,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 1,Statement 1: Deployment of Gross Bank Credit by Major Sectors,object,3,55
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 1,Unnamed: 1,object,12,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 1,Unnamed: 2,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 1,Unnamed: 3,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 1,Unnamed: 4,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 1,Unnamed: 5,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 1,Unnamed: 6,object,11,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 1,Unnamed: 7,object,12,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 1,Unnamed: 8,object,11,47
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 1,Unnamed: 9,object,12,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,Unnamed: 1,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,Unnamed: 2,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,Unnamed: 3,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,Unnamed: 4,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,Unnamed: 5,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,Unnamed: 6,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,Unnamed: 7,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,Unnamed: 8,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,Unnamed: 9,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 1,Statement 1: Deployment of Gross Bank Credit by Major Sectors,object,3,55
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 1,Unnamed: 1,object,12,45
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 1,Unnamed: 2,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 1,Unnamed: 3,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 1,Unnamed: 4,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 1,Unnamed: 5,object,13,44
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 1,Unnamed: 6,object,11,46
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 1,Unnamed: 7,object,12,45
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 1,Unnamed: 8,object,11,47
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 1,Unnamed: 9,object,12,45
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,Unnamed: 1,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,Unnamed: 2,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,Unnamed: 3,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,Unnamed: 4,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,Unnamed: 5,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,Unnamed: 6,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,Unnamed: 7,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,Unnamed: 8,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,Unnamed: 9,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 1,Statement 1: Deployment of Gross Bank Credit by Major Sectors,object,3,55
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 1,Unnamed: 1,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 1,Unnamed: 2,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 1,Unnamed: 3,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 1,Unnamed: 4,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 1,Unnamed: 5,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 1,Unnamed: 6,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 1,Unnamed: 7,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 1,Unnamed: 8,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 1,Unnamed: 9,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,Unnamed: 1,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,Unnamed: 2,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,Unnamed: 3,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,Unnamed: 4,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,Unnamed: 5,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,Unnamed: 6,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,Unnamed: 7,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,Unnamed: 8,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,Unnamed: 9,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),Unnamed: 0,float64,52,0
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),Unnamed: 1,object,6,46
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),Unnamed: 2,object,8,42
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),Unnamed: 3,object,7,45
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),Unnamed: 4,object,8,44
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),Unnamed: 5,object,8,44
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),Unnamed: 6,object,8,44
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),Unnamed: 7,object,8,44
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),Unnamed: 8,object,7,45
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),Unnamed: 9,object,7,45
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),Unnamed: 10,object,7,45
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 1,Statement 1: Deployment of Gross Bank Credit by Major Sectors,object,3,55
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 1,Unnamed: 1,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 1,Unnamed: 2,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 1,Unnamed: 3,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 1,Unnamed: 4,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 1,Unnamed: 5,object,14,44
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 1,Unnamed: 6,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 1,Unnamed: 7,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 1,Unnamed: 8,object,12,46
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 1,Unnamed: 9,object,13,45
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,Unnamed: 1,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,Unnamed: 2,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,Unnamed: 3,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,Unnamed: 4,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,Unnamed: 5,object,4,44
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,Unnamed: 6,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,Unnamed: 7,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,Unnamed: 8,object,2,46
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,Unnamed: 9,object,3,45
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 0,float64,42,0
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 1,object,3,39
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 2,object,6,29
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 3,object,6,29
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 4,object,6,29
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 5,object,6,29
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 6,object,6,29
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 7,object,6,29
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 8,object,6,29
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 9,object,6,29
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 10,object,6,35
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 11,object,6,35
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 12,object,6,35
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 13,object,6,35
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 14,object,6,35
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 15,object,6,35
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 16,object,6,35
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 17,object,6,34
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 18,object,6,35
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,Unnamed: 19,object,6,34

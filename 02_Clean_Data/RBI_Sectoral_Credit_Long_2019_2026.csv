@@ -1,0 +1,345 @@
+sector_id,sr_no,sector,year,credit_crore
+2.1  ,2.1  ,Mining and Quarrying (incl. Coal),2019,41681.48
+2.2  ,2.2  ,Food Processing,2019,147312.94
+2.2.1  ,2.2.1  ,Sugar,2019,29471.99
+2.2.2  ,2.2.2  ,Edible Oils and Vanaspati,2019,19173.0
+2.2.3  ,2.2.3  ,Tea,2019,3603.0
+2.2.4  ,2.2.4  ,Others,2019,95064.95
+2.3  ,2.3  ,Beverage and Tobacco,2019,14638.31
+2.4  ,2.4  ,Textiles,2019,200939.28
+2.4.1  ,2.4.1  ,Cotton Textiles,2019,91359.57
+2.4.2  ,2.4.2  ,Jute Textiles,2019,1910.91
+2.4.3  ,2.4.3  ,Man-Made Textiles,2019,29103.49
+2.4.4  ,2.4.4  ,Other Textiles,2019,78565.31
+2.5  ,2.5  ,Leather and Leather Products,2019,10489.53
+2.6  ,2.6  ,Wood and Wood Products,2019,13077.12
+2.7  ,2.7  ,Paper and Paper Products,2019,32393.27
+2.8  ,2.8  ,"Petroleum, Coal Products and Nuclear Fuels",2019,75395.37
+2.9  ,2.9  ,Chemicals and Chemical Products,2019,171924.62
+2.9.1  ,2.9.1  ,Fertiliser,2019,37630.14
+2.9.2  ,2.9.2  ,Drugs and Pharmaceuticals,2019,50732.58
+2.9.3  ,2.9.3  ,Petro Chemicals,2019,22966.75
+2.9.4  ,2.9.4  ,Others,2019,60595.15
+2.10  ,2.10  ,"Rubber, Plastic and their Products",2019,46018.84
+2.11  ,2.11  ,Glass and Glassware,2019,7965.62
+2.12  ,2.12  ,Cement and Cement Products,2019,56986.43
+2.13  ,2.13  ,Basic Metal and Metal Product,2019,371754.79
+2.13.1  ,2.13.1  ,Iron and Steel,2019,287648.22
+2.13.2  ,2.13.2  ,Other Metal and Metal Product,2019,84106.57
+2.14  ,2.14  ,All Engineering,2019,172838.22
+2.14.1  ,2.14.1  ,Electronics,2019,39888.57
+2.14.2  ,2.14.2  ,Others,2019,132949.65
+2.15  ,2.15  ,"Vehicles, Vehicle Parts and Transport Equipment",2019,83808.29
+2.16  ,2.16  ,Gems and Jewellery,2019,72699.68
+2.17  ,2.17  ,Construction,2019,111937.32
+2.18  ,2.18  ,Infrastructure,2019,1044199.16
+2.18.1  ,2.18.1  ,Power,2019,569857.28
+2.18.2  ,2.18.2  ,Telecommunications,2019,110545.08
+2.18.3  ,2.18.3  ,Roads,2019,176253.72
+2.18.4  ,2.18.4  ,Airports,2019,4423.68
+2.18.5  ,2.18.5  ,Ports,2019,9478.84
+2.18.6  ,2.18.6  ,Railways (other than Indian Railways),2019,9703.87
+2.18.7  ,2.18.7  ,Other Infrastructure,2019,163936.69
+2.19  ,2.19  ,Other Industries,2019,161468.06
+,,Industries (2.1 to 2.19),2019,2837528.33
+2.1  ,2.1  ,Mining and Quarrying (incl. Coal),2020,45406.79
+2.2  ,2.2  ,Food Processing,2020,144268.84
+2.2.1  ,2.2.1  ,Sugar,2020,27563.45
+2.2.2  ,2.2.2  ,Edible Oils and Vanaspati,2020,16521.68
+2.2.3  ,2.2.3  ,Tea,2020,4929.18
+2.2.4  ,2.2.4  ,Others,2020,95254.53
+2.3  ,2.3  ,Beverage and Tobacco,2020,18025.49
+2.4  ,2.4  ,Textiles,2020,193452.92
+2.4.1  ,2.4.1  ,Cotton Textiles,2020,83046.06
+2.4.2  ,2.4.2  ,Jute Textiles,2020,1944.26
+2.4.3  ,2.4.3  ,Man-Made Textiles,2020,30064.6
+2.4.4  ,2.4.4  ,Other Textiles,2020,78398.0
+2.5  ,2.5  ,Leather and Leather Products,2020,10460.56
+2.6  ,2.6  ,Wood and Wood Products,2020,13622.18
+2.7  ,2.7  ,Paper and Paper Products,2020,32592.86
+2.8  ,2.8  ,"Petroleum, Coal Products and Nuclear Fuels",2020,79997.34
+2.9  ,2.9  ,Chemicals and Chemical Products,2020,198941.33
+2.9.1  ,2.9.1  ,Fertiliser,2020,47067.95
+2.9.2  ,2.9.2  ,Drugs and Pharmaceuticals,2020,56342.18
+2.9.3  ,2.9.3  ,Petro Chemicals,2020,26485.96
+2.9.4  ,2.9.4  ,Others,2020,69045.24
+2.10  ,2.10  ,"Rubber, Plastic and their Products",2020,52571.78
+2.11  ,2.11  ,Glass and Glassware,2020,6817.07
+2.12  ,2.12  ,Cement and Cement Products,2020,61054.34
+2.13  ,2.13  ,Basic Metal and Metal Product,2020,335099.21
+2.13.1  ,2.13.1  ,Iron and Steel,2020,251225.15
+2.13.2  ,2.13.2  ,Other Metal and Metal Product,2020,83874.06
+2.14  ,2.14  ,All Engineering,2020,162810.18
+2.14.1  ,2.14.1  ,Electronics,2020,32448.62
+2.14.2  ,2.14.2  ,Others,2020,130361.56
+2.15  ,2.15  ,"Vehicles, Vehicle Parts and Transport Equipment",2020,90007.12
+2.16  ,2.16  ,Gems and Jewellery,2020,66608.72
+2.17  ,2.17  ,Construction,2020,127837.59
+2.18  ,2.18  ,Infrastructure,2020,1083656.43
+2.18.1  ,2.18.1  ,Power,2020,577326.55
+2.18.2  ,2.18.2  ,Telecommunications,2020,147176.4
+2.18.3  ,2.18.3  ,Roads,2020,181530.8
+2.18.4  ,2.18.4  ,Airports,2020,5143.87
+2.18.5  ,2.18.5  ,Ports,2020,12745.18
+2.18.6  ,2.18.6  ,Railways (other than Indian Railways),2020,10884.73
+2.18.7  ,2.18.7  ,Other Infrastructure,2020,148848.9
+2.19  ,2.19  ,Other Industries,2020,223620.5
+,,Industries (2.1 to 2.19),2020,2946851.25
+2.1  ,2.1  ,Mining and Quarrying (incl. Coal),2021,43498.1901
+2.2  ,2.2  ,Food Processing,2021,156556.8267
+2.2.1  ,2.2.1  ,Sugar,2021,26490.40038
+2.2.2  ,2.2.2  ,Edible Oils and Vanaspati,2021,17998.84563
+2.2.3  ,2.2.3  ,Tea,2021,5059.66
+2.2.4  ,2.2.4  ,Others,2021,107007.9207
+2.3  ,2.3  ,Beverage and Tobacco,2021,17804.60937
+2.4  ,2.4  ,Textiles,2021,204971.7757
+2.4.1  ,2.4.1  ,Cotton Textiles,2021,86367.72814
+2.4.2  ,2.4.2  ,Jute Textiles,2021,2590.11184
+2.4.3  ,2.4.3  ,Man-Made Textiles,2021,34487.93404
+2.4.4  ,2.4.4  ,Other Textiles,2021,81526.00171
+2.5  ,2.5  ,Leather and Leather Products,2021,10737.49791
+2.6  ,2.6  ,Wood and Wood Products,2021,15086.18251
+2.7  ,2.7  ,Paper and Paper Products,2021,37855.07604
+2.8  ,2.8  ,"Petroleum, Coal Products and Nuclear Fuels",2021,79173.88612
+2.9  ,2.9  ,Chemicals and Chemical Products,2021,184952.9264
+2.9.1  ,2.9.1  ,Fertiliser,2021,32413.7444
+2.9.2  ,2.9.2  ,Drugs and Pharmaceuticals,2021,54077.22842
+2.9.3  ,2.9.3  ,Petro Chemicals,2021,28011.68184
+2.9.4  ,2.9.4  ,Others,2021,70450.27177
+2.10  ,2.10  ,"Rubber, Plastic and their Products",2021,56026.05774
+2.11  ,2.11  ,Glass and Glassware,2021,6582.735659
+2.12  ,2.12  ,Cement and Cement Products,2021,57610.08978
+2.13  ,2.13  ,Basic Metal and Metal Product,2021,305457.1987
+2.13.1  ,2.13.1  ,Iron and Steel,2021,218852.728
+2.13.2  ,2.13.2  ,Other Metal and Metal Product,2021,86604.47072
+2.14  ,2.14  ,All Engineering,2021,153532.1829
+2.14.1  ,2.14.1  ,Electronics,2021,35486.51382
+2.14.2  ,2.14.2  ,Others,2021,118045.6691
+2.15  ,2.15  ,"Vehicles, Vehicle Parts and Transport Equipment",2021,85892.30051
+2.16  ,2.16  ,Gems and Jewellery,2021,74381.83894
+2.17  ,2.17  ,Construction,2021,119670.3416
+2.18  ,2.18  ,Infrastructure,2021,1111675.253
+2.18.1  ,2.18.1  ,Power,2021,571028.2991
+2.18.2  ,2.18.2  ,Telecommunications,2021,114960.8208
+2.18.3  ,2.18.3  ,Roads,2021,234088.4362
+2.18.4  ,2.18.4  ,Airports,2021,8573.41
+2.18.5  ,2.18.5  ,Ports,2021,10152.8
+2.18.6  ,2.18.6  ,Railways (other than Indian Railways),2021,12471.11
+2.18.7  ,2.18.7  ,Other Infrastructure,2021,160400.3766
+2.19  ,2.19  ,Other Industries,2021,219105.7224
+,,Industries (2.1 to 2.19),2021,2940570.692
+2.1  ,2.1  ,Mining and Quarrying (incl. Coal),2022,50352.797441
+2.2  ,2.2  ,Food Processing,2022,171988.79019
+2.2.1  ,2.2.1  ,Sugar,2022,25792.265018
+2.2.2  ,2.2.2  ,Edible Oils and Vanaspati,2022,17384.054944
+2.2.3  ,2.2.3  ,Tea,2022,5685.199499
+2.2.4  ,2.2.4  ,Others,2022,123127.27073
+2.3  ,2.3  ,Beverage and Tobacco,2022,18475.74327
+2.4  ,2.4  ,Textiles,2022,224314.895866
+2.4.1  ,2.4.1  ,Cotton Textiles,2022,88625.279138
+2.4.2  ,2.4.2  ,Jute Textiles,2022,3288.09319
+2.4.3  ,2.4.3  ,Man-Made Textiles,2022,37406.285376
+2.4.4  ,2.4.4  ,Other Textiles,2022,94995.238162
+2.5  ,2.5  ,Leather and Leather Products,2022,11877.34168
+2.6  ,2.6  ,Wood and Wood Products,2022,17334.741726
+2.7  ,2.7  ,Paper and Paper Products,2022,41825.500609
+2.8  ,2.8  ,"Petroleum, Coal Products and Nuclear Fuels",2022,106442.513209
+2.9  ,2.9  ,Chemicals and Chemical Products,2022,203139.168898
+2.9.1  ,2.9.1  ,Fertiliser,2022,33936.919783
+2.9.2  ,2.9.2  ,Drugs and Pharmaceuticals,2022,63931.07682
+2.9.3  ,2.9.3  ,Petro Chemicals,2022,19708.024706
+2.9.4  ,2.9.4  ,Others,2022,85563.147589
+2.10  ,2.10  ,"Rubber, Plastic and their Products",2022,76854.542552
+2.11  ,2.11  ,Glass and Glassware,2022,7146.366057
+2.12  ,2.12  ,Cement and Cement Products,2022,48604.6475659999
+2.13  ,2.13  ,Basic Metal and Metal Product,2022,286129.20314
+2.13.1  ,2.13.1  ,Iron and Steel,2022,185580.671762
+2.13.2  ,2.13.2  ,Other Metal and Metal Product,2022,100548.531378
+2.14  ,2.14  ,All Engineering,2022,169914.075872
+2.14.1  ,2.14.1  ,Electronics,2022,36745.333901
+2.14.2  ,2.14.2  ,Others,2022,133168.741972
+2.15  ,2.15  ,"Vehicles, Vehicle Parts and Transport Equipment",2022,95976.634681
+2.16  ,2.16  ,Gems and Jewellery,2022,82131.649319
+2.17  ,2.17  ,Construction,2022,119551.206842
+2.18  ,2.18  ,Infrastructure,2022,1212648.014518
+2.18.1  ,2.18.1  ,Power,2022,610649.95019
+2.18.2  ,2.18.2  ,Telecommunications,2022,127368.127591
+2.18.3  ,2.18.3  ,Roads,2022,282165.694462
+2.18.4  ,2.18.4  ,Airports,2022,7365.83
+2.18.5  ,2.18.5  ,Ports,2022,8603.38
+2.18.6  ,2.18.6  ,Railways (other than Indian Railways),2022,10526.36
+2.18.7  ,2.18.7  ,Other Infrastructure,2022,165968.672275
+2.19  ,2.19  ,Other Industries,2022,236392.293877
+,,Industries (2.1 to 2.19),2022,3181100.127314
+2.1  ,2.1  ,Mining and Quarrying (incl. Coal),2023,60221.13672
+2.2  ,2.2  ,Food Processing,2023,181771.533928
+2.2.1  ,2.2.1  ,Sugar,2023,22613.743388
+2.2.2  ,2.2.2  ,Edible Oils and Vanaspati,2023,18982.718062
+2.2.3  ,2.2.3  ,Tea,2023,5244.916407
+2.2.4  ,2.2.4  ,Others,2023,134930.156072
+2.3  ,2.3  ,Beverage and Tobacco,2023,23780.123777
+2.4  ,2.4  ,Textiles,2023,230275.235697
+2.4.1  ,2.4.1  ,Cotton Textiles,2023,90065.816094
+2.4.2  ,2.4.2  ,Jute Textiles,2023,3709.449733
+2.4.3  ,2.4.3  ,Man-Made Textiles,2023,39400.075626
+2.4.4  ,2.4.4  ,Other Textiles,2023,97099.894245
+2.5  ,2.5  ,Leather and Leather Products,2023,11947.5707
+2.6  ,2.6  ,Wood and Wood Products,2023,21205.494054
+2.7  ,2.7  ,Paper and Paper Products,2023,44265.640695
+2.8  ,2.8  ,"Petroleum, Coal Products and Nuclear Fuels",2023,149443.424272
+2.9  ,2.9  ,Chemicals and Chemical Products,2023,224077.828124
+2.9.1  ,2.9.1  ,Fertiliser,2023,34648.190503
+2.9.2  ,2.9.2  ,Drugs and Pharmaceuticals,2023,70687.329663
+2.9.3  ,2.9.3  ,Petro Chemicals,2023,20778.83
+2.9.4  ,2.9.4  ,Others,2023,97963.477958
+2.10  ,2.10  ,"Rubber, Plastic and their Products",2023,84048.982548
+2.11  ,2.11  ,Glass and Glassware,2023,9573.382103
+2.12  ,2.12  ,Cement and Cement Products,2023,58053.651534
+2.13  ,2.13  ,Basic Metal and Metal Product,2023,342729.485322
+2.13.1  ,2.13.1  ,Iron and Steel,2023,228614.11499
+2.13.2  ,2.13.2  ,Other Metal and Metal Product,2023,114115.370332
+2.14  ,2.14  ,All Engineering,2023,177978.895549
+2.14.1  ,2.14.1  ,Electronics,2023,40836.84364
+2.14.2  ,2.14.2  ,Others,2023,137142.051908
+2.15  ,2.15  ,"Vehicles, Vehicle Parts and Transport Equipment",2023,101616.961508
+2.16  ,2.16  ,Gems and Jewellery,2023,78599.810169
+2.17  ,2.17  ,Construction,2023,124955.254703
+2.18  ,2.18  ,Infrastructure,2023,1223104.943332
+2.18.1  ,2.18.1  ,Power,2023,620231.404645
+2.18.2  ,2.18.2  ,Telecommunications,2023,108262.16
+2.18.3  ,2.18.3  ,Roads,2023,300209.550457
+2.18.4  ,2.18.4  ,Airports,2023,9593.04
+2.18.5  ,2.18.5  ,Ports,2023,7982.55
+2.18.6  ,2.18.6  ,Railways (other than Indian Railways),2023,10174.63
+2.18.7  ,2.18.7  ,Other Infrastructure,2023,166651.60823
+2.19  ,2.19  ,Other Industries,2023,218756.513244
+,,Industries (2.1 to 2.19),2023,3366405.867978
+2.1  ,2.1  ,Mining and Quarrying (incl. Coal),2024,54220.1844
+2.2  ,2.2  ,Food Processing,2024,208862.7716
+2.2.1  ,2.2.1  ,Sugar,2024,26383.01125
+2.2.2  ,2.2.2  ,Edible Oils and Vanaspati,2024,19700.21613
+2.2.3  ,2.2.3  ,Tea,2024,5691.947888
+2.2.4  ,2.2.4  ,Others,2024,157087.5963
+2.3  ,2.3  ,Beverage and Tobacco,2024,31137.4711
+2.4  ,2.4  ,Textiles,2024,256047.9836
+2.4.1  ,2.4.1  ,Cotton Textiles,2024,99513.08708
+2.4.2  ,2.4.2  ,Jute Textiles,2024,4279.559436
+2.4.3  ,2.4.3  ,Man-Made Textiles,2024,45074.46841
+2.4.4  ,2.4.4  ,Other Textiles,2024,107180.8687
+2.5  ,2.5  ,Leather and Leather Products,2024,12587.81048
+2.6  ,2.6  ,Wood and Wood Products,2024,23838.81498
+2.7  ,2.7  ,Paper and Paper Products,2024,46426.05713
+2.8  ,2.8  ,"Petroleum, Coal Products and Nuclear Fuels",2024,132356.3024
+2.9  ,2.9  ,Chemicals and Chemical Products,2024,249347.616
+2.9.1  ,2.9.1  ,Fertiliser,2024,37569.36877
+2.9.2  ,2.9.2  ,Drugs and Pharmaceuticals,2024,80832.23558
+2.9.3  ,2.9.3  ,Petro Chemicals,2024,25318.15427
+2.9.4  ,2.9.4  ,Others,2024,105627.8573
+2.10  ,2.10  ,"Rubber, Plastic and their Products",2024,90471.78341
+2.11  ,2.11  ,Glass and Glassware,2024,12090.21779
+2.12  ,2.12  ,Cement and Cement Products,2024,59756.90776
+2.13  ,2.13  ,Basic Metal and Metal Product,2024,384447.2295
+2.13.1  ,2.13.1  ,Iron and Steel,2024,273802.5639
+2.13.2  ,2.13.2  ,Other Metal and Metal Product,2024,110644.6656
+2.14  ,2.14  ,All Engineering,2024,196864.0536
+2.14.1  ,2.14.1  ,Electronics,2024,43395.91409
+2.14.2  ,2.14.2  ,Others,2024,153468.1395
+2.15  ,2.15  ,"Vehicles, Vehicle Parts and Transport Equipment",2024,113547.8696
+2.16  ,2.16  ,Gems and Jewellery,2024,84957.19865
+2.17  ,2.17  ,Construction,2024,142209.8544
+2.18  ,2.18  ,Infrastructure,2024,1326851.767
+2.18.1  ,2.18.1  ,Power,2024,651191.2482
+2.18.2  ,2.18.2  ,Telecommunications,2024,143097.5097
+2.18.3  ,2.18.3  ,Roads,2024,324255.7266
+2.18.4  ,2.18.4  ,Airports,2024,7280.23
+2.18.5  ,2.18.5  ,Ports,2024,6680.97
+2.18.6  ,2.18.6  ,Railways (other than Indian Railways),2024,12961.35106
+2.18.7  ,2.18.7  ,Other Infrastructure,2024,181384.7309
+2.19  ,2.19  ,Other Industries,2024,256370.6387
+,,Industries (2.1 to 2.19),2024,3682392.532
+2.1  ,2.1  ,Mining and Quarrying (incl. Coal),2025,56817.55619
+2.2  ,2.2  ,Food Processing,2025,219524.7981
+2.2.1  ,2.2.1  ,Sugar,2025,28521.70209
+2.2.2  ,2.2.2  ,Edible Oils and Vanaspati,2025,20927.25364
+2.2.3  ,2.2.3  ,Tea,2025,5083.83262
+2.2.4  ,2.2.4  ,Others,2025,164992.0098
+2.3  ,2.3  ,Beverage and Tobacco,2025,35515.45461
+2.4  ,2.4  ,Textiles,2025,277267.0852
+2.4.1  ,2.4.1  ,Cotton Textiles,2025,107494.5958
+2.4.2  ,2.4.2  ,Jute Textiles,2025,4288.234703
+2.4.3  ,2.4.3  ,Man-Made Textiles,2025,49186.25942
+2.4.4  ,2.4.4  ,Other Textiles,2025,116297.9953
+2.5  ,2.5  ,Leather and Leather Products,2025,12979.84309
+2.6  ,2.6  ,Wood and Wood Products,2025,27825.96738
+2.7  ,2.7  ,Paper and Paper Products,2025,52847.59392
+2.8  ,2.8  ,"Petroleum, Coal Products and Nuclear Fuels",2025,154178.5291
+2.9  ,2.9  ,Chemicals and Chemical Products,2025,267814.87
+2.9.1  ,2.9.1  ,Fertiliser,2025,32011.20975
+2.9.2  ,2.9.2  ,Drugs and Pharmaceuticals,2025,88524.29389
+2.9.3  ,2.9.3  ,Petro Chemicals,2025,28797.46146
+2.9.4  ,2.9.4  ,Others,2025,118481.9049
+2.10  ,2.10  ,"Rubber, Plastic and their Products",2025,103464.6135
+2.11  ,2.11  ,Glass and Glassware,2025,13442.79188
+2.12  ,2.12  ,Cement and Cement Products,2025,59752.60731
+2.13  ,2.13  ,Basic Metal and Metal Product,2025,433501.1544
+2.13.1  ,2.13.1  ,Iron and Steel,2025,300156.0398
+2.13.2  ,2.13.2  ,Other Metal and Metal Product,2025,133345.1146
+2.14  ,2.14  ,All Engineering,2025,240135.8943
+2.14.1  ,2.14.1  ,Electronics,2025,52863.09654
+2.14.2  ,2.14.2  ,Others,2025,187272.7977
+2.15  ,2.15  ,"Vehicles, Vehicle Parts and Transport Equipment",2025,119450.2002
+2.16  ,2.16  ,Gems and Jewellery,2025,85813.54569
+2.17  ,2.17  ,Construction,2025,160037.0366
+2.18  ,2.18  ,Infrastructure,2025,1364368.718
+2.18.1  ,2.18.1  ,Power,2025,692159.9417
+2.18.2  ,2.18.2  ,Telecommunications,2025,123849.8018
+2.18.3  ,2.18.3  ,Roads,2025,334146.5112
+2.18.4  ,2.18.4  ,Airports,2025,9155.73
+2.18.5  ,2.18.5  ,Ports,2025,5915.78
+2.18.6  ,2.18.6  ,Railways (other than Indian Railways),2025,13414.97668
+2.18.7  ,2.18.7  ,Other Infrastructure,2025,185725.9769
+2.19  ,2.19  ,Other Industries,2025,300921.2914
+,,Industries (2.1 to 2.19),2025,3985659.551
+2.1  ,2.1  ,Mining and Quarrying (incl. Coal),2026,60930.81628
+2.2  ,2.2  ,Food Processing,2026,250187.0083
+2.2.1  ,2.2.1  ,Sugar,2026,29742.41651
+2.2.2  ,2.2.2  ,Edible Oils and Vanaspati,2026,26225.64579
+2.2.3  ,2.2.3  ,Tea,2026,5126.835226
+2.2.4  ,2.2.4  ,Others,2026,189092.1108
+2.3  ,2.3  ,Beverage and Tobacco,2026,40158.25845
+2.4  ,2.4  ,Textiles,2026,301868.4233
+2.4.1  ,2.4.1  ,Cotton Textiles,2026,110268.4446
+2.4.2  ,2.4.2  ,Jute Textiles,2026,4994.105944
+2.4.3  ,2.4.3  ,Man-Made Textiles,2026,52031.98385
+2.4.4  ,2.4.4  ,Other Textiles,2026,134573.8889
+2.5  ,2.5  ,Leather and Leather Products,2026,14147.20102
+2.6  ,2.6  ,Wood and Wood Products,2026,31055.0612
+2.7  ,2.7  ,Paper and Paper Products,2026,58963.98515
+2.8  ,2.8  ,"Petroleum, Coal Products and Nuclear Fuels",2026,204180.2297
+2.9  ,2.9  ,Chemicals and Chemical Products,2026,307905.5671
+2.9.1  ,2.9.1  ,Fertiliser,2026,30585.68393
+2.9.2  ,2.9.2  ,Drugs and Pharmaceuticals,2026,104391.4091
+2.9.3  ,2.9.3  ,Petro Chemicals,2026,36807.94201
+2.9.4  ,2.9.4  ,Others,2026,136120.5321
+2.10  ,2.10  ,"Rubber, Plastic and their Products",2026,112778.5823
+2.11  ,2.11  ,Glass and Glassware,2026,16286.83311
+2.12  ,2.12  ,Cement and Cement Products,2026,65112.66177
+2.13  ,2.13  ,Basic Metal and Metal Product,2026,518062.2818
+2.13.1  ,2.13.1  ,Iron and Steel,2026,356663.3265
+2.13.2  ,2.13.2  ,Other Metal and Metal Product,2026,161398.9553
+2.14  ,2.14  ,All Engineering,2026,317373.7001
+2.14.1  ,2.14.1  ,Electronics,2026,59905.30703
+2.14.2  ,2.14.2  ,Others,2026,257468.393
+2.15  ,2.15  ,"Vehicles, Vehicle Parts and Transport Equipment",2026,141075.5601
+2.16  ,2.16  ,Gems and Jewellery,2026,121355.0919
+2.17  ,2.17  ,Construction,2026,179323.3057
+2.18  ,2.18  ,Infrastructure,2026,1490126.394
+2.18.1  ,2.18.1  ,Power,2026,842654.828
+2.18.2  ,2.18.2  ,Telecommunications,2026,108701.4327
+2.18.3  ,2.18.3  ,Roads,2026,338134.9082
+2.18.4  ,2.18.4  ,Airports,2026,6684.13
+2.18.5  ,2.18.5  ,Ports,2026,8794.11
+2.18.6  ,2.18.6  ,Railways (other than Indian Railways),2026,6730.318654
+2.18.7  ,2.18.7  ,Other Infrastructure,2026,178426.666
+2.19  ,2.19  ,Other Industries,2026,353413.3863
+,,Industries (2.1 to 2.19),2026,4584304.347

@@ -1,0 +1,2 @@
+freeze_timestamp,technical_pipeline_status,new_model_training_before_paper,final_primary_application,supervised_default_model,probability_of_default,expected_loss,automated_loan_decision,final_model_output,next_stage
+2026-08-23T23:44:10,FROZEN,NO,Bank credit-risk decision support for Indian semiconductor financing,NO,NOT ESTIMATED,NOT ESTIMATED,NO,Relative vulnerability + indicative credit grade + credit posture + exposure posture + monitoring/EWS,"Research paper writing, figures, presentation and final submission"

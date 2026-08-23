@@ -1,0 +1,13 @@
+﻿project_id,company,approval_year,state,investment_crore,financial_year,revenue_crore,ebitda_crore,ebit_crore,pat_crore,total_debt_crore,total_equity_crore,current_assets_crore,current_liabilities_crore,interest_expense_crore,operating_cash_flow_crore,source_document,source_url,source_authority,source_type,audited,verification_status,notes
+SEM-0001,Micron Technology Inc.,2023,Gujarat,22516,,,,,,,,,,,,,,,,,NOT_VERIFIED,
+SEM-0002,Tata Electronics Private Limited,2024,Gujarat,91526,,,,,,,,,,,,,,,,,NOT_VERIFIED,
+SEM-0003,Tata Electronics Private Limited,2024,Assam,27120,,,,,,,,,,,,,,,,,NOT_VERIFIED,
+SEM-0004,CG Power and Industrial Solutions Limited,2024,Gujarat,7584,,,,,,,,,,,,,,,,,NOT_VERIFIED,
+SEM-0005,Kaynes Technology India Limited,2024,Gujarat,3307,,,,,,,,,,,,,,,,,NOT_VERIFIED,
+SEM-0006,Vama Sundari Investments (Delhi) Private Limited / Foxconn,2025,Uttar Pradesh,3706,,,,,,,,,,,,,,,,,NOT_VERIFIED,
+SEM-0007,3D Glass Solutions Inc.,2025,Odisha,1943,,,,,,,,,,,,,,,,,NOT_VERIFIED,
+SEM-0008,SiCSem Private Limited,2025,Odisha,2066,,,,,,,,,,,,,,,,,NOT_VERIFIED,
+SEM-0009,Continental Device India Private Limited,2025,Punjab,117,,,,,,,,,,,,,,,,,NOT_VERIFIED,
+SEM-0010,Advanced System in Package Technologies Private Limited,2025,Andhra Pradesh,480,,,,,,,,,,,,,,,,,NOT_VERIFIED,
+SEM-0011,Crystal Matrix Limited,2026,Gujarat,3068,,,,,,,,,,,,,,,,,NOT_VERIFIED,
+SEM-0012,Suchi Semicon Private Limited,2026,Gujarat,868,,,,,,,,,,,,,,,,,NOT_VERIFIED,

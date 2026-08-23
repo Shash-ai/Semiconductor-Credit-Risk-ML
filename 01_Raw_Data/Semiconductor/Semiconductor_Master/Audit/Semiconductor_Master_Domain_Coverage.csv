@@ -1,0 +1,6 @@
+domain,required_variables,available_variables,missing_variables,coverage_percentage
+Bank Exposure,11,0,11,0.0
+Company Financials,12,0,12,0.0
+Macroeconomic,8,0,8,0.0
+Semiconductor Industry,6,0,6,0.0
+Semiconductor Project,14,14,0,100.0

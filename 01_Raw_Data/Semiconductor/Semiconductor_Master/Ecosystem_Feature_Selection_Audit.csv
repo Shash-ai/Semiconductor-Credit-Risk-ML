@@ -1,0 +1,13 @@
+﻿feature,status,reason
+financial_rank_within_scope,SELECTED,Compact structural clustering feature set
+state_financial_share_within_scope,SELECTED,Compact structural clustering feature set
+company_project_count,SELECTED,Compact structural clustering feature set
+is_manufacturing,SELECTED,Compact structural clustering feature set
+is_fab,SELECTED,Compact structural clustering feature set
+is_osat,SELECTED,Compact structural clustering feature set
+is_ai_related,SELECTED,Compact structural clustering feature set
+is_telecom_related,SELECTED,Compact structural clustering feature set
+is_automotive_related,SELECTED,Compact structural clustering feature set
+is_iot_related,SELECTED,Compact structural clustering feature set
+is_medical_related,SELECTED,Compact structural clustering feature set
+has_technology_partner,SELECTED,Compact structural clustering feature set

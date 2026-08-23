@@ -1,0 +1,37 @@
+﻿ecosystem_id,validated_cluster,PC1,PC2,company,project_scope,project_type,project_type_standardized,state,financial_measure_crore,financial_measure_type
+MFG-0001,4,1.0264708080301217,0.1503819062586876,Micron Technology Inc.,Manufacturing,ATMP,ATMP,Gujarat,22516.0,Manufacturing Project Investment
+MFG-0002,3,4.049989499997996,2.10236389062338,Tata Electronics Private Limited,Manufacturing,Semiconductor Fab,FAB,Gujarat,91526.0,Manufacturing Project Investment
+MFG-0003,1,2.231249401497603,1.5556757098155285,Tata Electronics Private Limited,Manufacturing,OSAT,OSAT,Assam,27120.0,Manufacturing Project Investment
+MFG-0004,1,3.364774228462403,-0.9073901445804071,CG Power and Industrial Solutions Limited,Manufacturing,OSAT,OSAT,Gujarat,7584.0,Manufacturing Project Investment
+MFG-0005,1,3.267577006216881,-1.1752987979692802,Kaynes Technology India Limited,Manufacturing,OSAT,OSAT,Gujarat,3307.0,Manufacturing Project Investment
+MFG-0006,1,2.6922537584679858,-1.052533871662879,Vama Sundari Investments (Delhi) Private Limited / Foxconn,Manufacturing,OSAT,OSAT,Uttar Pradesh,3706.0,Manufacturing Project Investment
+MFG-0007,4,0.11246769942403538,-0.6645063665118969,3D Glass Solutions Inc.,Manufacturing,Advanced Packaging,Advanced Packaging,Odisha,1943.0,Manufacturing Project Investment
+MFG-0008,3,2.527763120200996,-0.6560157058559306,SiCSem Private Limited,Manufacturing,Compound Semiconductor Fab + ATMP,FAB,Odisha,2066.0,Manufacturing Project Investment
+MFG-0009,4,-0.05272926586604915,-1.0667172860526355,Continental Device India Private Limited,Manufacturing,Semiconductor Manufacturing,Semiconductor Manufacturing,Punjab,117.0,Manufacturing Project Investment
+MFG-0010,1,2.384580886289558,-1.8565482318011497,Advanced System in Package Technologies Private Limited,Manufacturing,OSAT,OSAT,Andhra Pradesh,480.0,Manufacturing Project Investment
+MFG-0011,3,1.9156324690307878,-0.11618264163618668,Crystal Matrix Limited,Manufacturing,Compound Semiconductor Fab + ATMP,FAB,Gujarat,3068.0,Manufacturing Project Investment
+MFG-0012,1,1.7900418575633472,-1.3163996798256834,Suchi Semicon Private Limited,Manufacturing,OSAT,OSAT,Gujarat,868.0,Manufacturing Project Investment
+DLI-001,4,-1.3230595551329414,-1.1319397464354335,Fermionic Design Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Karnataka,10.4719,DLI Project Outlay
+DLI-002,0,-0.9439487666580147,1.2075062247361328,Morphing Machines Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Karnataka,20.4883,DLI Project Outlay
+DLI-003,0,-0.65235709992145,2.0112321849027515,Calligo Technologies Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Karnataka,41.9275,DLI Project Outlay
+DLI-004,2,-1.651335418244253,-0.6125121996433036,Sensesemi Technologies Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Karnataka,39.0702,DLI Project Outlay
+DLI-005,4,-1.1529644162032784,-0.6630996030049066,Saankhya Labs Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Karnataka,25.5877,DLI Project Outlay
+DLI-006,5,-0.9315583302832676,0.08299732036866836,Aryabhata Circuits and Research Labs Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Karnataka,40.954899999999995,DLI Project Outlay
+DLI-007,4,-0.4996711938366753,0.0918006707995164,BigEndian Semiconductors Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Karnataka,31.08,DLI Project Outlay
+DLI-008,4,-0.2566781382228714,0.7615723042716982,C2i Semiconductors Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Karnataka,83.75200000000001,DLI Project Outlay
+DLI-009,4,-1.2987602495715613,-1.064962583088216,MMRFIC Technology Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Karnataka,12.5304,DLI Project Outlay
+DLI-010,2,-1.169375540925988,-0.695548277158744,Sophrosyne Technologies Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Karnataka,21.471,DLI Project Outlay
+DLI-011,4,-1.2015630273260396,-0.7970539296993429,Aagyavision Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Karnataka,25.479,DLI Project Outlay
+DLI-012,4,-1.173465555479586,-0.19767760888104532,Aheesa Digital Innovations Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Tamil Nadu,41.4,DLI Project Outlay
+DLI-013,4,-0.5201723331129826,0.5572226649233774,Mindgrove Technologies Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Tamil Nadu,47.86109999999999,DLI Project Outlay
+DLI-014,0,-1.1588443504253652,1.1371109120822487,InCore Semiconductors Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Tamil Nadu,17.43,DLI Project Outlay
+DLI-015,2,-1.1236287382381498,0.3053729257027273,MBit Wireless Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Tamil Nadu,65.36,DLI Project Outlay
+DLI-016,0,-0.3291485535808074,3.883070680880526,Netrasemi Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Kerala,44.3,DLI Project Outlay
+DLI-017,0,-0.2805499424580466,4.017025007574962,Netrasemi Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Kerala,61.25,DLI Project Outlay
+DLI-018,2,-1.71150776922505,-1.0359976865408618,Green PMU Semi Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Telangana,9.86,DLI Project Outlay
+DLI-019,2,-2.1218079359778486,-1.1211263268731024,WiSig Networks Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Telangana,25.5557,DLI Project Outlay
+DLI-020,4,-0.743561780679177,0.22050950288806162,MosChip Technologies Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Telangana,40.0,DLI Project Outlay
+DLI-021,4,-0.8891411480619769,-0.04826683478831477,Multi Nano Sense Technologies Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Maharashtra,29.53,DLI Project Outlay
+DLI-022,5,-1.3649980544639804,-0.19094149838166807,Vervesemi Microelectronics Pvt. Ltd.,Semiconductor Design,Semiconductor Design,DESIGN,Uttar Pradesh,29.64,DLI Project Outlay
+DLI-023,4,-1.1518046680698117,-0.7849326180757839,Incise Infotech Limited,Semiconductor Design,Semiconductor Design,DESIGN,Uttar Pradesh,4.28,DLI Project Outlay
+DLI-024,5,-1.6601689032165499,-0.928190267361493,DV2JS Innovation LLP,Semiconductor Design,Semiconductor Design,DESIGN,Delhi,7.48,DLI Project Outlay

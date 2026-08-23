@@ -1,0 +1,55 @@
+Make in India
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+95
+200 engineers to the workforce. The Phase II office of Microchip is underway to add more than 1200 engineers in 
+Chennai.
+MoU with Singapore: Government of India has recently signed an MoU with Singapore to establish an “India-Singapore 
+Semiconductor Ecosystem Policy Dialogue”. The Policy Dialogue will be used as a platform to:
+• 
+Discuss semiconductor supply chain related issues;
+• 
+Exchange best practices to leverage opportunities for growth in the global semiconductor industry;
+• 
+Explore areas for mutually beneficial semiconductor R&D collaboration; 
+• 
+Encourage collaboration between Singapore-based and India-based companies towards mutually beneficial 
+semiconductor related business opportunities and partnerships;
+• 
+Consider initiatives to enhance semiconductor supply chain resilience, based on areas of mutual strength such as 
+fabs, packaging, design, equipment, specialty chemicals and gases, semiconductor grade materials; and
+• 
+Promote Industrial Parks and workforce development for mutual benefit
+3.3.9.8 R&D Road map
+• 
+Applied Materials Inc. (AMAT) has announced a planned investment of $400 Mn to establish Collaborative 
+Engineering Centre in Bangalore. During the initial 5 years. the center would support $2Bn+ of spending and 
+create ~500 advanced engineering jobs. This initiative will facilitate R&D collaboration amongst R&D team of 
+Applied Materials, Indian academic institutions and R&D team of vendors of Applied Materials. This will also help 
+in development and sourcing of components/sub-assemblies required for the AMAT’s semiconductor equipment.
+• 
+Advanced Micro Devices: Advanced Micro Device (AMD) announced plan to invest approximately $400 Million 
+over the next five years to expand Research, Development and Engineering Operations in India. The planned 
+investment includes a new AMD campus in Bangalore, Karnataka that will serve as the company’s largest design 
+center, as well as the addition of approximately 3,000 new engineering roles by the end of 2028. AMD committed 
+to an investment of $73Mn for Year 2024 and $32Mn for Year 2025 as a part of $400Mn investment. It has hired 
+980 Engineers, including 22% women. 
+• 
+Microchip: Microchip Technology announced a $300 million investment plan to expand its operations in India. To 
+strengthen its presence in India, the company has inaugurated a new research and development (R&D) facility 
+at One Golden Mile Office Tower in Hyderabad. This 168,000-square-foot center, which has a capacity for 1,000 
+employees, joins Microchip’s existing developments in Bengaluru and Chennai. Microchip has added more than 
+200 engineers to the workforce. The Phase II office of Microchip is underway to add more than 1200 engineers in 
+Chennai.
+3.3.10	 Investment Promotion to Attract Investment in ESDM Sector
+3.3.10.1 Promotion of ECMS, PLI, SPECS, EMC 2.0 and Schemes for Development of Semiconductors and 
+Display Manufacturing Ecosystem in India
+To boost investment in India’s Electronics System Design and Manufacturing (ESDM) sector, the Ministry undertook a 
+series of targeted promotion initiatives, including the launch of a new initiate i.e. Electronics Component Manufacturing 
+Scheme. Extensive outreach efforts - such as webinars, seminars, roadshows and stakeholder consultations - were 
+conducted to highlight the benefits of these schemes. High-level engagements were also facilitated, enabling direct 
+interactions between industry representatives and senior MeitY officials to address concerns and provide clarity on 
+investment pathways. These efforts have positioned India as a promising destination for ESDM, significantly enhancing 
+global awareness and industry interest.

@@ -1,0 +1,9 @@
+﻿audit_check,value,expected,status
+total_observations,36,36,PASS
+manufacturing_projects,12,12,PASS
+dli_design_projects,24,24,PASS
+duplicate_ecosystem_ids,0,0,PASS
+missing_company,0,0,PASS
+missing_state,0,0,PASS
+manufacturing_missing_investment,0,0,PASS
+dli_missing_project_outlay,0,0,PASS

@@ -1,0 +1,112 @@
+REPORT
+Ministry of Electronics & Information Technology
+Attached Offices and Societies
+Annual
+2024-2025
+214
+of C-MET laboratories has its own area of specialization 
+with requisite infrastructure and expertise. This approach 
+has proven to be successful in creating core competence 
+at each laboratory.
+a.	
+Pune laboratory: Pune laboratory is mainly 
+focusing on cutting edge R & D research on 
+materials for Additive Manufacturing (CoE), 
+electronic packaging, renewable energy, energy 
+storage (CoE), sensors and nano-materials/
+composites, this also includes inorganic materials, 
+polymers, organics and glasses, National Centre 
+on Quantum Materials Technology (NCQMT). 
+These key areas of research have been thrived out 
+into various inter-disciplinary applications.
+b.	
+Hyderabad laboratory: C-MET, Hyderabad has 
+evolved as a unique facility for high pure materials 
+in the country and is working independently in a 
+focused manner to create excellent national facility 
+for ultra-pure materials, compound semiconductors, 
+MEMS acoustic sensors, NavIC antennas for 
+location mapping, Permanent magnets for electric 
+vehicles, refractory metals, alloys, Restriction 
+of Hazardous Substances (RoHS) and E-waste 
+recycling.
+c.	
+Thrissur laboratory: Major thrust area of C-MET 
+Thrissur includes microwave material (including 
+microwave dielectrics and substrates), energy 
+materials (Carbon aerogel and Graphene based 
+super capacitors), Sensors and Actuators (Thermal 
+sensors, Piezo ceramics and Piezo actuators) and 
+Nanomaterial (nano structured oxides, thin films, 
+thick films and materials for Plasmonic application), 
+India Innovation Centre for Graphene (IICG) and 
+IIoT sensors.
+Various reputed organizations such as DRDO, ISRO and 
+DAE institutions have joined hands with C-MET through 
+Memorandum of Understanding (MoUs) to facilitate 
+collaborative activities. These meaningful associations 
+exemplify C-MET’s dedication towards encouraging 
+innovation, knowledge exchange, and progress in 
+diverse fields through joint efforts.
+9.3.2	 Products developed by C-MET for different 
+applications 
+• 
+3D Printable Composite Filaments and 3D 
+printed Patch Antenna, materials for Additive 
+Manufacturing technology.
+• 
+DLP-based 3D printing technology for low-cost 
+Low Temperature Co-Fired Ceramic (LTCC) based 
+electronics package fabrication
+• 
+Nano silver screen-printable ink for flexible 
+Electronics Applications 
+• 
+Silver screen-printed RFID tags technology for 
+NFC applications 
+• 
+Plasmonic 
+based 
+portable 
+Biosensor 
+with 
+disposable chip developed jointly with C-MET 
+and Rajiv Gandhi Centre for Biotechnology, 
+Thiruvananthapuram
+• 
+Eddy current sensor fabricated using LTCC 
+technology at C-MET, Pune
+• 
+LTCC based Micro coolers with one inlet and one 
+outlet configuration for 200W microprocessors.
+• 
+Polybutadiene-based Cu cladded MW substrates 
+of various dielectric constants
+• 
+CuIn1-xGaxSe2 and perovskite thin films and 
+tandem solar cell fabrication
+• 
+New photocatalyst based on coupled catalytic 
+system for Hydrogen generation and Metal Organic 
+Frameworks (MOFs) for hydrogen storage. 
+• 
+Developed the first indigenous pilot plant to produce 
+space grade Hafnium (Hf) metal is established 
+at C-MET, Hyderabad with the financial support 
+from VSSC, ISRO. The plant has the capacity to 
+produce 320 kg/annum of Hf sponge.
+• 
+Indigenously designed and developed Hydrogen 
+Decrepitation Furnace
+• 
+Developed 
+a 
+cost-effective 
+technology 
+for 
+discarded Li-ion battery recycling and transfer the 
+same to 15 industries. 
+• 
+Indigenous development of processing equipment 
+for Printed Circuit Boards (PCB) recycling at 1000 
+kg per day capacity.

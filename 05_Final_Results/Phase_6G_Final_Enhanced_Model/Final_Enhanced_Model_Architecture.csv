@@ -1,0 +1,7 @@
+layer,method,scope,role
+Structural Ecosystem Segmentation,PCA + K-Means + Hierarchical Validation,36 ecosystem projects,Structural heterogeneity
+Deterministic Stress Testing,RBI-linked macro-prudential model,12 manufacturing projects,Relative vulnerability
+Monte Carlo Tail Stress,"10,000 simulated macro-financial scenarios",12 manufacturing projects,Tail-risk validation
+Borrower Fundamentals,Verified financial-ratio analysis,Partial verified coverage,Independent borrower-strength evidence
+External Credit Evidence,Verified CRA ratings / public credit evidence,Partial verified coverage,Independent company-credit evidence
+Credit Allocation,Constrained allocation + 162 policy scenarios,12 manufacturing projects,Portfolio optimization

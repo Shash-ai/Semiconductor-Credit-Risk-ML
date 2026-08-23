@@ -1,0 +1,60 @@
+Make in India
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+92
+• 
+100 start-ups and MSMEs companies have been approved for design infrastructure support under the DLI Scheme 
+made available by ChipIN Centre at C-DAC Bengaluru. Out of these, 24 applications have also been approved 
+for financial support for developing semiconductor chip/ SoCs for applications in sectors such as automotive, 
+mobility, computing, communications etc namely - DV2JS Innovation LLP, Vervesemi Microelectronics, Fermionic 
+Design, Morphing Machines, Calligo Technologies, Sensesemi Technologies, Saankhya Labs, Aryabhata Circuits 
+and Research Labs, BigEndian Semiconductors, C2i Semiconductors, Aheesa Digital Innovations, Mindgrove 
+Technologies, InCore Semiconductors, Netrasemi, Green PMU Semi, WiSig Networks, MosChip Technologies, 
+MbIt Wireless, Multi Nano Sense Technologies Pvt. Ltd., Sophrosyne Technologies Pvt. Ltd. MMRFIC Technology 
+Pvt. Ltd. and Incise Infotech Limited.
+3.3.9.4 International Collaborations in the field of Semiconductors:
+Becoming a self-sufficient chip manufacturing nation is a complex and multifaceted endeavour that depends on 
+various factors, including technological advancements, research and development (R&D), skilled labour, investment, 
+infrastructure development, policy support, and global market dynamics. Recognising the internationally integrated 
+nature of Semiconductor Industry, Government of India started engaging with other countries to establish a resilient 
+Semiconductor Supply Chain and Innovation Partnership.
+• 
+MoU with USA: Government of India had signed MoU with USA for establishing semiconductor supply chain 
+and innovation partnership under the framework of India-Unites States Commercial Dialogue to enhance bilateral 
+collaboration on opportunities to advance resilient semiconductor supply chains and leverage complementary 
+strengths.
+• 
+MoC with Japan: Government of India has also signed a Memorandum of Cooperation (MoC) with Government 
+of Japan for “Semiconductor Supply Chain Partnership” to strengthen cooperation between Japan and India 
+towards the enhancement of semiconductor supply chain. 
+• 
+MoU with European Union: Government of India has signed an MoU with EU, to deepen cooperation on 
+semiconductor ecosystem, its supply chains and innovation and leverage complementary strengths by exchanging 
+best practices w.th regard to their respective semiconductor strategies and programs.
+• 
+MoU with Singapore: Government of India has signed an MoU with Singapore to establish the “India-Singapore 
+Semiconductor Ecosystem Policy Dialogue,” aimed at enhancing cooperation in semiconductor supply chains, 
+R&D, business partnerships, and workforce development, while promoting joint initiatives to boost resilience and 
+growth in the semiconductor industry.
+• 
+MoU with Netherlands: A Memorandum of Understanding between Ministry of Electronics & Information 
+Technology, Government of the Republic of India and Ministry of Economic Affairs of the Netherlands and 
+the Ministry of Foreign Affairs of the Kingdom of the Netherlands on the India-Netherlands Partnership on 
+Semiconductors and Related Emerging Technologies was signed in May 2025.
+3.3.9.5 Capacity building and talent development for semiconductors:
+• 
+Recognizing the importance of Talent development in Semiconductor domain, Government of India has been 
+making significant efforts to develop talent in the semiconductor domain. AICTE launched following model 
+curriculum for UG, Diploma, Minor Degree in Semiconductor domain as a step towards creation of Talent pool in 
+Semiconductor domain:
+	
+o	
+B. Tech in Electronics Engineering (VLSI Design and Technology) 
+	
+o	
+Diploma in IC manufacturing 
+	
+o	
+Minor Degree in Electronics Engineering (VLSI Design and Technology)

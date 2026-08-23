@@ -1,0 +1,4 @@
+component,scope,method,final_status
+Ecosystem Segmentation,36 projects,PCA + K-Means + Hierarchical Validation,FROZEN
+Manufacturing Stress Testing,12 projects,RBI-linked macro-prudential vulnerability model,FROZEN
+Credit Allocation,12 manufacturing projects,Constrained risk-adjusted allocation + sensitivity analysis,FROZEN

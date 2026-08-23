@@ -1,0 +1,51 @@
+Skill India:
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+200
+etc. These opportunities include implementing the R&D projects under C2S Programme for development of working 
+prototypes of ASICs (Application-Specific Integrated Circuits), Systems/ SoCs (System-on-Chips), and IP (Intellectual 
+Property) Core designs. 
+113 organizations (including 100 academic institutions/ R&D organizations and 13 startups/ MSMEs) spread across 
+the country are supported for implementation of R&D projects resulting into generation of ASICs (Application-Specific 
+Integrated Circuits), Systems/ SoCs (System-on-Chips), and IP (Intellectual Property) Core designs thereby generating 
+trained manpower in these areas. The details of these organizations are at https://c2s.gov.in/proposallist.jsp.
+The ChipIN Centre has been setup at C-DAC Bangalore as one-stop centre for providing the following support to 
+academic institutions/ R&D organizations and start-ups/ MSMEs across the country (Details at https://c2s.gov.in/
+SupportCentre.jsp):
+i.	
+State-of-the-art EDA tools: access provided to 300 academic institutions under C2S Programme (State-wise 
+details at  https://c2s.gov.in/EDA_Tool_Support.jsp ) 
+ii.	
+Multi-project Wafer (MPW) fabrication services at 180nm, SCL Mohali. 122 semiconductor chips indigenously 
+designed by students and sent for fabrication at 180nm, SCL Mohali. Out of 122 designs, 56 designs have already 
+been fabricated. Details at https://c2s.gov.in/MPW_Services.jsp
+iii.	
+Design and prototyping facility offering access of Field-programmable Gate Arrays (FPGA) to 100 
+academic institutions (Details at https://c2s.gov.in/FPGA.jsp) enables institutions to undertake a wide range 
+of projects from basic digital design to advanced applications involving AI/ML, video processing, hardware 
+prototyping, etc
+iv.	
+Regular Trainings, Handholding and Mentorship: Total 250+ training sessions conducted by the ChipIN Centre 
+in areas of VLSI design, Embedded System design & design fabrication in collaboration with semiconductor 
+industry partners (Details at https://c2s.gov.in/Completed_Training.jsp).
+VLSI SMART Lab Facility: VLSI SMART Lab Facility has been setup at NIELIT Calicut (with two labs having 100 
+hardware system) to train about 1 Lakh candidates in 5 Years (20,000 candidates /year) in Hardware design including 
+VLSI Design, Embedded hardware design, Board design, etc. through NSQF aligned Courses and by providing 
+remote access of FPGA boards ported with SHAKTI/ VEGA Processors. Total of 71,000 engineers have been trained 
+nationwide, via training programs conducted using the SMART Lab
+7.4.8	 Indian Nanoelectronics Users Program -Idea to Innovation (INUP-i2i) 
+The Indian Nanoelectronics Users’ Programme – Idea to Innovation (INUP-i2i), initiated in 2008 at the Centres of 
+Excellence in Nanoelectronics (CENs) of IIT Bombay, IISc Bangalore, IIT Delhi, IIT Kharagpur, IIT Madras, and IIT 
+Guwahati, aims to advance the concept of open national nano centers. The programme focuses on providing multi-level 
+training, supporting R&D projects, and mentoring start-ups in the field of nanoelectronics.
+Under INUP-i2i, 59 familiarization workshops, 46 hands-on training sessions, 41 industrial trainings, and 11 hackathons 
+have been conducted, benefitting over 8,589 researchers and students and facilitating the completion of 584 R&D 
+projects nationwide.
+A major milestone under the initiative has been the development and NCVET approval of two standalone National 
+Occupational Standards (NOSs) on Nanotechnology—
+•	
+Foundation Program on Nanoscience & Technology (NSQF Level 6, 60 hours) – NQR ID: 3809
+•	
+Advanced Program on Nanoscience & Technology (NSQF Level 6.5, 90 hours) – NQR ID: 3808

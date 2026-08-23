@@ -1,0 +1,721 @@
+﻿ecosystem_id,company,agency,search_query,http_status,results_returned,accepted_results,search_status
+MFG-0001,Micron Technology Inc.,ICRA,"site:icra.in ""Micron Technology Inc.""",200,10,0,OK
+MFG-0001,Micron Technology Inc.,ICRA,"site:icra.in ""Micron Technology Inc."" rating",200,10,0,OK
+MFG-0001,Micron Technology Inc.,ICRA,"site:icra.in ""Micron Technology Inc."" credit rating",200,10,0,OK
+MFG-0001,Micron Technology Inc.,ICRA,"site:icra.in ""Micron Technology Inc."" bank facilities",200,10,0,OK
+MFG-0001,Micron Technology Inc.,India Ratings,"site:indiaratings.co.in ""Micron Technology Inc.""",200,10,0,OK
+MFG-0001,Micron Technology Inc.,India Ratings,"site:indiaratings.co.in ""Micron Technology Inc."" rating",200,10,0,OK
+MFG-0001,Micron Technology Inc.,India Ratings,"site:indiaratings.co.in ""Micron Technology Inc."" credit rating",200,10,0,OK
+MFG-0001,Micron Technology Inc.,India Ratings,"site:indiaratings.co.in ""Micron Technology Inc."" bank facilities",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CRISIL Ratings,"site:crisilratings.com ""Micron Technology Inc.""",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CRISIL Ratings,"site:crisilratings.com ""Micron Technology Inc."" rating",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CRISIL Ratings,"site:crisilratings.com ""Micron Technology Inc."" credit rating",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CRISIL Ratings,"site:crisilratings.com ""Micron Technology Inc."" bank facilities",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CARE Ratings,"site:careratings.com ""Micron Technology Inc.""",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CARE Ratings,"site:careratings.com ""Micron Technology Inc."" rating",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CARE Ratings,"site:careratings.com ""Micron Technology Inc."" credit rating",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CARE Ratings,"site:careratings.com ""Micron Technology Inc."" bank facilities",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CARE Edge,"site:careedge.in ""Micron Technology Inc.""",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CARE Edge,"site:careedge.in ""Micron Technology Inc."" rating",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CARE Edge,"site:careedge.in ""Micron Technology Inc."" credit rating",200,10,0,OK
+MFG-0001,Micron Technology Inc.,CARE Edge,"site:careedge.in ""Micron Technology Inc."" bank facilities",200,10,0,OK
+MFG-0002,Tata Electronics Private Limited,ICRA,"site:icra.in ""Tata Electronics Private Limited""",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,ICRA,"site:icra.in ""Tata Electronics Private Limited"" rating",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,ICRA,"site:icra.in ""Tata Electronics Private Limited"" credit rating",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,ICRA,"site:icra.in ""Tata Electronics Private Limited"" bank facilities",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,India Ratings,"site:indiaratings.co.in ""Tata Electronics Private Limited""",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,India Ratings,"site:indiaratings.co.in ""Tata Electronics Private Limited"" rating",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,India Ratings,"site:indiaratings.co.in ""Tata Electronics Private Limited"" credit rating",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,India Ratings,"site:indiaratings.co.in ""Tata Electronics Private Limited"" bank facilities",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CRISIL Ratings,"site:crisilratings.com ""Tata Electronics Private Limited""",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CRISIL Ratings,"site:crisilratings.com ""Tata Electronics Private Limited"" rating",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CRISIL Ratings,"site:crisilratings.com ""Tata Electronics Private Limited"" credit rating",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CRISIL Ratings,"site:crisilratings.com ""Tata Electronics Private Limited"" bank facilities",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CARE Ratings,"site:careratings.com ""Tata Electronics Private Limited""",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CARE Ratings,"site:careratings.com ""Tata Electronics Private Limited"" rating",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CARE Ratings,"site:careratings.com ""Tata Electronics Private Limited"" credit rating",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CARE Ratings,"site:careratings.com ""Tata Electronics Private Limited"" bank facilities",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CARE Edge,"site:careedge.in ""Tata Electronics Private Limited""",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CARE Edge,"site:careedge.in ""Tata Electronics Private Limited"" rating",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CARE Edge,"site:careedge.in ""Tata Electronics Private Limited"" credit rating",200,7,0,OK
+MFG-0002,Tata Electronics Private Limited,CARE Edge,"site:careedge.in ""Tata Electronics Private Limited"" bank facilities",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,ICRA,"site:icra.in ""Tata Electronics Private Limited""",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,ICRA,"site:icra.in ""Tata Electronics Private Limited"" rating",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,ICRA,"site:icra.in ""Tata Electronics Private Limited"" credit rating",200,10,0,OK
+MFG-0003,Tata Electronics Private Limited,ICRA,"site:icra.in ""Tata Electronics Private Limited"" bank facilities",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,India Ratings,"site:indiaratings.co.in ""Tata Electronics Private Limited""",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,India Ratings,"site:indiaratings.co.in ""Tata Electronics Private Limited"" rating",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,India Ratings,"site:indiaratings.co.in ""Tata Electronics Private Limited"" credit rating",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,India Ratings,"site:indiaratings.co.in ""Tata Electronics Private Limited"" bank facilities",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CRISIL Ratings,"site:crisilratings.com ""Tata Electronics Private Limited""",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CRISIL Ratings,"site:crisilratings.com ""Tata Electronics Private Limited"" rating",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CRISIL Ratings,"site:crisilratings.com ""Tata Electronics Private Limited"" credit rating",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CRISIL Ratings,"site:crisilratings.com ""Tata Electronics Private Limited"" bank facilities",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CARE Ratings,"site:careratings.com ""Tata Electronics Private Limited""",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CARE Ratings,"site:careratings.com ""Tata Electronics Private Limited"" rating",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CARE Ratings,"site:careratings.com ""Tata Electronics Private Limited"" credit rating",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CARE Ratings,"site:careratings.com ""Tata Electronics Private Limited"" bank facilities",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CARE Edge,"site:careedge.in ""Tata Electronics Private Limited""",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CARE Edge,"site:careedge.in ""Tata Electronics Private Limited"" rating",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CARE Edge,"site:careedge.in ""Tata Electronics Private Limited"" credit rating",200,7,0,OK
+MFG-0003,Tata Electronics Private Limited,CARE Edge,"site:careedge.in ""Tata Electronics Private Limited"" bank facilities",200,7,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,ICRA,"site:icra.in ""CG Power and Industrial Solutions Limited""",200,7,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,ICRA,"site:icra.in ""CG Power and Industrial Solutions Limited"" rating",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,ICRA,"site:icra.in ""CG Power and Industrial Solutions Limited"" credit rating",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,ICRA,"site:icra.in ""CG Power and Industrial Solutions Limited"" bank facilities",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,India Ratings,"site:indiaratings.co.in ""CG Power and Industrial Solutions Limited""",200,7,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,India Ratings,"site:indiaratings.co.in ""CG Power and Industrial Solutions Limited"" rating",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,India Ratings,"site:indiaratings.co.in ""CG Power and Industrial Solutions Limited"" credit rating",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,India Ratings,"site:indiaratings.co.in ""CG Power and Industrial Solutions Limited"" bank facilities",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CRISIL Ratings,"site:crisilratings.com ""CG Power and Industrial Solutions Limited""",200,7,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CRISIL Ratings,"site:crisilratings.com ""CG Power and Industrial Solutions Limited"" rating",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CRISIL Ratings,"site:crisilratings.com ""CG Power and Industrial Solutions Limited"" credit rating",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CRISIL Ratings,"site:crisilratings.com ""CG Power and Industrial Solutions Limited"" bank facilities",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CARE Ratings,"site:careratings.com ""CG Power and Industrial Solutions Limited""",200,7,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CARE Ratings,"site:careratings.com ""CG Power and Industrial Solutions Limited"" rating",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CARE Ratings,"site:careratings.com ""CG Power and Industrial Solutions Limited"" credit rating",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CARE Ratings,"site:careratings.com ""CG Power and Industrial Solutions Limited"" bank facilities",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CARE Edge,"site:careedge.in ""CG Power and Industrial Solutions Limited""",200,7,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CARE Edge,"site:careedge.in ""CG Power and Industrial Solutions Limited"" rating",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CARE Edge,"site:careedge.in ""CG Power and Industrial Solutions Limited"" credit rating",200,10,0,OK
+MFG-0004,CG Power and Industrial Solutions Limited,CARE Edge,"site:careedge.in ""CG Power and Industrial Solutions Limited"" bank facilities",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,ICRA,"site:icra.in ""Kaynes Technology India Limited""",200,9,0,OK
+MFG-0005,Kaynes Technology India Limited,ICRA,"site:icra.in ""Kaynes Technology India Limited"" rating",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,ICRA,"site:icra.in ""Kaynes Technology India Limited"" credit rating",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,ICRA,"site:icra.in ""Kaynes Technology India Limited"" bank facilities",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,India Ratings,"site:indiaratings.co.in ""Kaynes Technology India Limited""",200,9,0,OK
+MFG-0005,Kaynes Technology India Limited,India Ratings,"site:indiaratings.co.in ""Kaynes Technology India Limited"" rating",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,India Ratings,"site:indiaratings.co.in ""Kaynes Technology India Limited"" credit rating",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,India Ratings,"site:indiaratings.co.in ""Kaynes Technology India Limited"" bank facilities",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,CRISIL Ratings,"site:crisilratings.com ""Kaynes Technology India Limited""",200,9,0,OK
+MFG-0005,Kaynes Technology India Limited,CRISIL Ratings,"site:crisilratings.com ""Kaynes Technology India Limited"" rating",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,CRISIL Ratings,"site:crisilratings.com ""Kaynes Technology India Limited"" credit rating",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,CRISIL Ratings,"site:crisilratings.com ""Kaynes Technology India Limited"" bank facilities",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,CARE Ratings,"site:careratings.com ""Kaynes Technology India Limited""",200,9,0,OK
+MFG-0005,Kaynes Technology India Limited,CARE Ratings,"site:careratings.com ""Kaynes Technology India Limited"" rating",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,CARE Ratings,"site:careratings.com ""Kaynes Technology India Limited"" credit rating",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,CARE Ratings,"site:careratings.com ""Kaynes Technology India Limited"" bank facilities",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,CARE Edge,"site:careedge.in ""Kaynes Technology India Limited""",200,9,0,OK
+MFG-0005,Kaynes Technology India Limited,CARE Edge,"site:careedge.in ""Kaynes Technology India Limited"" rating",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,CARE Edge,"site:careedge.in ""Kaynes Technology India Limited"" credit rating",200,10,0,OK
+MFG-0005,Kaynes Technology India Limited,CARE Edge,"site:careedge.in ""Kaynes Technology India Limited"" bank facilities",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,ICRA,"site:icra.in ""Vama Sundari Investments (Delhi) Private Limited""",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,ICRA,"site:icra.in ""Vama Sundari Investments (Delhi) Private Limited"" rating",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,ICRA,"site:icra.in ""Vama Sundari Investments (Delhi) Private Limited"" credit rating",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,ICRA,"site:icra.in ""Vama Sundari Investments (Delhi) Private Limited"" bank facilities",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,India Ratings,"site:indiaratings.co.in ""Vama Sundari Investments (Delhi) Private Limited""",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,India Ratings,"site:indiaratings.co.in ""Vama Sundari Investments (Delhi) Private Limited"" rating",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,India Ratings,"site:indiaratings.co.in ""Vama Sundari Investments (Delhi) Private Limited"" credit rating",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,India Ratings,"site:indiaratings.co.in ""Vama Sundari Investments (Delhi) Private Limited"" bank facilities",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CRISIL Ratings,"site:crisilratings.com ""Vama Sundari Investments (Delhi) Private Limited""",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CRISIL Ratings,"site:crisilratings.com ""Vama Sundari Investments (Delhi) Private Limited"" rating",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CRISIL Ratings,"site:crisilratings.com ""Vama Sundari Investments (Delhi) Private Limited"" credit rating",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CRISIL Ratings,"site:crisilratings.com ""Vama Sundari Investments (Delhi) Private Limited"" bank facilities",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CARE Ratings,"site:careratings.com ""Vama Sundari Investments (Delhi) Private Limited""",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CARE Ratings,"site:careratings.com ""Vama Sundari Investments (Delhi) Private Limited"" rating",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CARE Ratings,"site:careratings.com ""Vama Sundari Investments (Delhi) Private Limited"" credit rating",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CARE Ratings,"site:careratings.com ""Vama Sundari Investments (Delhi) Private Limited"" bank facilities",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CARE Edge,"site:careedge.in ""Vama Sundari Investments (Delhi) Private Limited""",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CARE Edge,"site:careedge.in ""Vama Sundari Investments (Delhi) Private Limited"" rating",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CARE Edge,"site:careedge.in ""Vama Sundari Investments (Delhi) Private Limited"" credit rating",200,10,0,OK
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited,CARE Edge,"site:careedge.in ""Vama Sundari Investments (Delhi) Private Limited"" bank facilities",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,ICRA,"site:icra.in ""3D Glass Solutions Inc.""",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,ICRA,"site:icra.in ""3D Glass Solutions Inc."" rating",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,ICRA,"site:icra.in ""3D Glass Solutions Inc."" credit rating",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,ICRA,"site:icra.in ""3D Glass Solutions Inc."" bank facilities",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,India Ratings,"site:indiaratings.co.in ""3D Glass Solutions Inc.""",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,India Ratings,"site:indiaratings.co.in ""3D Glass Solutions Inc."" rating",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,India Ratings,"site:indiaratings.co.in ""3D Glass Solutions Inc."" credit rating",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,India Ratings,"site:indiaratings.co.in ""3D Glass Solutions Inc."" bank facilities",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CRISIL Ratings,"site:crisilratings.com ""3D Glass Solutions Inc.""",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CRISIL Ratings,"site:crisilratings.com ""3D Glass Solutions Inc."" rating",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CRISIL Ratings,"site:crisilratings.com ""3D Glass Solutions Inc."" credit rating",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CRISIL Ratings,"site:crisilratings.com ""3D Glass Solutions Inc."" bank facilities",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CARE Ratings,"site:careratings.com ""3D Glass Solutions Inc.""",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CARE Ratings,"site:careratings.com ""3D Glass Solutions Inc."" rating",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CARE Ratings,"site:careratings.com ""3D Glass Solutions Inc."" credit rating",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CARE Ratings,"site:careratings.com ""3D Glass Solutions Inc."" bank facilities",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CARE Edge,"site:careedge.in ""3D Glass Solutions Inc.""",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CARE Edge,"site:careedge.in ""3D Glass Solutions Inc."" rating",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CARE Edge,"site:careedge.in ""3D Glass Solutions Inc."" credit rating",200,10,0,OK
+MFG-0007,3D Glass Solutions Inc.,CARE Edge,"site:careedge.in ""3D Glass Solutions Inc."" bank facilities",200,10,0,OK
+MFG-0008,SiCSem Private Limited,ICRA,"site:icra.in ""SiCSem Private Limited""",200,10,0,OK
+MFG-0008,SiCSem Private Limited,ICRA,"site:icra.in ""SiCSem Private Limited"" rating",200,10,0,OK
+MFG-0008,SiCSem Private Limited,ICRA,"site:icra.in ""SiCSem Private Limited"" credit rating",200,1,0,OK
+MFG-0008,SiCSem Private Limited,ICRA,"site:icra.in ""SiCSem Private Limited"" bank facilities",200,10,0,OK
+MFG-0008,SiCSem Private Limited,India Ratings,"site:indiaratings.co.in ""SiCSem Private Limited""",200,10,0,OK
+MFG-0008,SiCSem Private Limited,India Ratings,"site:indiaratings.co.in ""SiCSem Private Limited"" rating",200,9,0,OK
+MFG-0008,SiCSem Private Limited,India Ratings,"site:indiaratings.co.in ""SiCSem Private Limited"" credit rating",200,10,0,OK
+MFG-0008,SiCSem Private Limited,India Ratings,"site:indiaratings.co.in ""SiCSem Private Limited"" bank facilities",200,10,0,OK
+MFG-0008,SiCSem Private Limited,CRISIL Ratings,"site:crisilratings.com ""SiCSem Private Limited""",200,13,0,OK
+MFG-0008,SiCSem Private Limited,CRISIL Ratings,"site:crisilratings.com ""SiCSem Private Limited"" rating",200,10,0,OK
+MFG-0008,SiCSem Private Limited,CRISIL Ratings,"site:crisilratings.com ""SiCSem Private Limited"" credit rating",200,10,0,OK
+MFG-0008,SiCSem Private Limited,CRISIL Ratings,"site:crisilratings.com ""SiCSem Private Limited"" bank facilities",200,10,0,OK
+MFG-0008,SiCSem Private Limited,CARE Ratings,"site:careratings.com ""SiCSem Private Limited""",200,10,0,OK
+MFG-0008,SiCSem Private Limited,CARE Ratings,"site:careratings.com ""SiCSem Private Limited"" rating",200,10,0,OK
+MFG-0008,SiCSem Private Limited,CARE Ratings,"site:careratings.com ""SiCSem Private Limited"" credit rating",200,10,0,OK
+MFG-0008,SiCSem Private Limited,CARE Ratings,"site:careratings.com ""SiCSem Private Limited"" bank facilities",200,10,0,OK
+MFG-0008,SiCSem Private Limited,CARE Edge,"site:careedge.in ""SiCSem Private Limited""",200,10,0,OK
+MFG-0008,SiCSem Private Limited,CARE Edge,"site:careedge.in ""SiCSem Private Limited"" rating",200,10,0,OK
+MFG-0008,SiCSem Private Limited,CARE Edge,"site:careedge.in ""SiCSem Private Limited"" credit rating",200,10,0,OK
+MFG-0008,SiCSem Private Limited,CARE Edge,"site:careedge.in ""SiCSem Private Limited"" bank facilities",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,ICRA,"site:icra.in ""Continental Device India Private Limited""",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,ICRA,"site:icra.in ""Continental Device India Private Limited"" rating",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,ICRA,"site:icra.in ""Continental Device India Private Limited"" credit rating",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,ICRA,"site:icra.in ""Continental Device India Private Limited"" bank facilities",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,India Ratings,"site:indiaratings.co.in ""Continental Device India Private Limited""",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,India Ratings,"site:indiaratings.co.in ""Continental Device India Private Limited"" rating",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,India Ratings,"site:indiaratings.co.in ""Continental Device India Private Limited"" credit rating",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,India Ratings,"site:indiaratings.co.in ""Continental Device India Private Limited"" bank facilities",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CRISIL Ratings,"site:crisilratings.com ""Continental Device India Private Limited""",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CRISIL Ratings,"site:crisilratings.com ""Continental Device India Private Limited"" rating",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CRISIL Ratings,"site:crisilratings.com ""Continental Device India Private Limited"" credit rating",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CRISIL Ratings,"site:crisilratings.com ""Continental Device India Private Limited"" bank facilities",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CARE Ratings,"site:careratings.com ""Continental Device India Private Limited""",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CARE Ratings,"site:careratings.com ""Continental Device India Private Limited"" rating",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CARE Ratings,"site:careratings.com ""Continental Device India Private Limited"" credit rating",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CARE Ratings,"site:careratings.com ""Continental Device India Private Limited"" bank facilities",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CARE Edge,"site:careedge.in ""Continental Device India Private Limited""",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CARE Edge,"site:careedge.in ""Continental Device India Private Limited"" rating",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CARE Edge,"site:careedge.in ""Continental Device India Private Limited"" credit rating",200,10,0,OK
+MFG-0009,Continental Device India Private Limited,CARE Edge,"site:careedge.in ""Continental Device India Private Limited"" bank facilities",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,ICRA,"site:icra.in ""Advanced System in Package Technologies Private Limited""",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,ICRA,"site:icra.in ""Advanced System in Package Technologies Private Limited"" rating",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,ICRA,"site:icra.in ""Advanced System in Package Technologies Private Limited"" credit rating",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,ICRA,"site:icra.in ""Advanced System in Package Technologies Private Limited"" bank facilities",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,India Ratings,"site:indiaratings.co.in ""Advanced System in Package Technologies Private Limited""",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,India Ratings,"site:indiaratings.co.in ""Advanced System in Package Technologies Private Limited"" rating",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,India Ratings,"site:indiaratings.co.in ""Advanced System in Package Technologies Private Limited"" credit rating",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,India Ratings,"site:indiaratings.co.in ""Advanced System in Package Technologies Private Limited"" bank facilities",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CRISIL Ratings,"site:crisilratings.com ""Advanced System in Package Technologies Private Limited""",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CRISIL Ratings,"site:crisilratings.com ""Advanced System in Package Technologies Private Limited"" rating",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CRISIL Ratings,"site:crisilratings.com ""Advanced System in Package Technologies Private Limited"" credit rating",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CRISIL Ratings,"site:crisilratings.com ""Advanced System in Package Technologies Private Limited"" bank facilities",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CARE Ratings,"site:careratings.com ""Advanced System in Package Technologies Private Limited""",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CARE Ratings,"site:careratings.com ""Advanced System in Package Technologies Private Limited"" rating",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CARE Ratings,"site:careratings.com ""Advanced System in Package Technologies Private Limited"" credit rating",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CARE Ratings,"site:careratings.com ""Advanced System in Package Technologies Private Limited"" bank facilities",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CARE Edge,"site:careedge.in ""Advanced System in Package Technologies Private Limited""",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CARE Edge,"site:careedge.in ""Advanced System in Package Technologies Private Limited"" rating",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CARE Edge,"site:careedge.in ""Advanced System in Package Technologies Private Limited"" credit rating",200,10,0,OK
+MFG-0010,Advanced System in Package Technologies Private Limited,CARE Edge,"site:careedge.in ""Advanced System in Package Technologies Private Limited"" bank facilities",200,10,0,OK
+MFG-0011,Crystal Matrix Limited,ICRA,"site:icra.in ""Crystal Matrix Limited""",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,ICRA,"site:icra.in ""Crystal Matrix Limited"" rating",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,ICRA,"site:icra.in ""Crystal Matrix Limited"" credit rating",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,ICRA,"site:icra.in ""Crystal Matrix Limited"" bank facilities",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,India Ratings,"site:indiaratings.co.in ""Crystal Matrix Limited""",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,India Ratings,"site:indiaratings.co.in ""Crystal Matrix Limited"" rating",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,India Ratings,"site:indiaratings.co.in ""Crystal Matrix Limited"" credit rating",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,India Ratings,"site:indiaratings.co.in ""Crystal Matrix Limited"" bank facilities",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CRISIL Ratings,"site:crisilratings.com ""Crystal Matrix Limited""",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CRISIL Ratings,"site:crisilratings.com ""Crystal Matrix Limited"" rating",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CRISIL Ratings,"site:crisilratings.com ""Crystal Matrix Limited"" credit rating",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CRISIL Ratings,"site:crisilratings.com ""Crystal Matrix Limited"" bank facilities",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CARE Ratings,"site:careratings.com ""Crystal Matrix Limited""",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CARE Ratings,"site:careratings.com ""Crystal Matrix Limited"" rating",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CARE Ratings,"site:careratings.com ""Crystal Matrix Limited"" credit rating",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CARE Ratings,"site:careratings.com ""Crystal Matrix Limited"" bank facilities",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CARE Edge,"site:careedge.in ""Crystal Matrix Limited""",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CARE Edge,"site:careedge.in ""Crystal Matrix Limited"" rating",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CARE Edge,"site:careedge.in ""Crystal Matrix Limited"" credit rating",200,7,0,OK
+MFG-0011,Crystal Matrix Limited,CARE Edge,"site:careedge.in ""Crystal Matrix Limited"" bank facilities",200,7,0,OK
+MFG-0012,Suchi Semicon Private Limited,ICRA,"site:icra.in ""Suchi Semicon Private Limited""",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,ICRA,"site:icra.in ""Suchi Semicon Private Limited"" rating",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,ICRA,"site:icra.in ""Suchi Semicon Private Limited"" credit rating",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,ICRA,"site:icra.in ""Suchi Semicon Private Limited"" bank facilities",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,India Ratings,"site:indiaratings.co.in ""Suchi Semicon Private Limited""",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,India Ratings,"site:indiaratings.co.in ""Suchi Semicon Private Limited"" rating",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,India Ratings,"site:indiaratings.co.in ""Suchi Semicon Private Limited"" credit rating",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,India Ratings,"site:indiaratings.co.in ""Suchi Semicon Private Limited"" bank facilities",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CRISIL Ratings,"site:crisilratings.com ""Suchi Semicon Private Limited""",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CRISIL Ratings,"site:crisilratings.com ""Suchi Semicon Private Limited"" rating",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CRISIL Ratings,"site:crisilratings.com ""Suchi Semicon Private Limited"" credit rating",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CRISIL Ratings,"site:crisilratings.com ""Suchi Semicon Private Limited"" bank facilities",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CARE Ratings,"site:careratings.com ""Suchi Semicon Private Limited""",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CARE Ratings,"site:careratings.com ""Suchi Semicon Private Limited"" rating",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CARE Ratings,"site:careratings.com ""Suchi Semicon Private Limited"" credit rating",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CARE Ratings,"site:careratings.com ""Suchi Semicon Private Limited"" bank facilities",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CARE Edge,"site:careedge.in ""Suchi Semicon Private Limited""",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CARE Edge,"site:careedge.in ""Suchi Semicon Private Limited"" rating",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CARE Edge,"site:careedge.in ""Suchi Semicon Private Limited"" credit rating",200,10,0,OK
+MFG-0012,Suchi Semicon Private Limited,CARE Edge,"site:careedge.in ""Suchi Semicon Private Limited"" bank facilities",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,ICRA,"site:icra.in ""Fermionic Design Pvt. Ltd.""",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,ICRA,"site:icra.in ""Fermionic Design Pvt. Ltd."" rating",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,ICRA,"site:icra.in ""Fermionic Design Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,ICRA,"site:icra.in ""Fermionic Design Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Fermionic Design Pvt. Ltd.""",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Fermionic Design Pvt. Ltd."" rating",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Fermionic Design Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Fermionic Design Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Fermionic Design Pvt. Ltd.""",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Fermionic Design Pvt. Ltd."" rating",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Fermionic Design Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Fermionic Design Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Fermionic Design Pvt. Ltd.""",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Fermionic Design Pvt. Ltd."" rating",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Fermionic Design Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Fermionic Design Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CARE Edge,"site:careedge.in ""Fermionic Design Pvt. Ltd.""",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CARE Edge,"site:careedge.in ""Fermionic Design Pvt. Ltd."" rating",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CARE Edge,"site:careedge.in ""Fermionic Design Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-001,Fermionic Design Pvt. Ltd.,CARE Edge,"site:careedge.in ""Fermionic Design Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,ICRA,"site:icra.in ""Morphing Machines Pvt. Ltd.""",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,ICRA,"site:icra.in ""Morphing Machines Pvt. Ltd."" rating",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,ICRA,"site:icra.in ""Morphing Machines Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,ICRA,"site:icra.in ""Morphing Machines Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Morphing Machines Pvt. Ltd.""",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Morphing Machines Pvt. Ltd."" rating",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Morphing Machines Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Morphing Machines Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Morphing Machines Pvt. Ltd.""",200,4,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Morphing Machines Pvt. Ltd."" rating",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Morphing Machines Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Morphing Machines Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Morphing Machines Pvt. Ltd.""",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Morphing Machines Pvt. Ltd."" rating",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Morphing Machines Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Morphing Machines Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CARE Edge,"site:careedge.in ""Morphing Machines Pvt. Ltd.""",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CARE Edge,"site:careedge.in ""Morphing Machines Pvt. Ltd."" rating",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CARE Edge,"site:careedge.in ""Morphing Machines Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-002,Morphing Machines Pvt. Ltd.,CARE Edge,"site:careedge.in ""Morphing Machines Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Calligo Technologies Pvt. Ltd.""",200,7,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Calligo Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Calligo Technologies Pvt. Ltd."" credit rating",200,7,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Calligo Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Calligo Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Calligo Technologies Pvt. Ltd."" rating",200,8,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Calligo Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Calligo Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Calligo Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Calligo Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Calligo Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Calligo Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Calligo Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Calligo Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Calligo Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Calligo Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Calligo Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Calligo Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Calligo Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-003,Calligo Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Calligo Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Sensesemi Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Sensesemi Technologies Pvt. Ltd."" rating",200,6,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Sensesemi Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Sensesemi Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Sensesemi Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Sensesemi Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Sensesemi Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Sensesemi Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Sensesemi Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Sensesemi Technologies Pvt. Ltd."" rating",200,9,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Sensesemi Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Sensesemi Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Sensesemi Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Sensesemi Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Sensesemi Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Sensesemi Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Sensesemi Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Sensesemi Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Sensesemi Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-004,Sensesemi Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Sensesemi Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,ICRA,"site:icra.in ""Saankhya Labs Pvt. Ltd.""",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,ICRA,"site:icra.in ""Saankhya Labs Pvt. Ltd."" rating",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,ICRA,"site:icra.in ""Saankhya Labs Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,ICRA,"site:icra.in ""Saankhya Labs Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Saankhya Labs Pvt. Ltd.""",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Saankhya Labs Pvt. Ltd."" rating",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Saankhya Labs Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Saankhya Labs Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Saankhya Labs Pvt. Ltd.""",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Saankhya Labs Pvt. Ltd."" rating",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Saankhya Labs Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Saankhya Labs Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Saankhya Labs Pvt. Ltd.""",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Saankhya Labs Pvt. Ltd."" rating",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Saankhya Labs Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Saankhya Labs Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CARE Edge,"site:careedge.in ""Saankhya Labs Pvt. Ltd.""",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CARE Edge,"site:careedge.in ""Saankhya Labs Pvt. Ltd."" rating",200,7,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CARE Edge,"site:careedge.in ""Saankhya Labs Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-005,Saankhya Labs Pvt. Ltd.,CARE Edge,"site:careedge.in ""Saankhya Labs Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,ICRA,"site:icra.in ""Aryabhata Circuits and Research Labs Pvt. Ltd.""",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,ICRA,"site:icra.in ""Aryabhata Circuits and Research Labs Pvt. Ltd."" rating",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,ICRA,"site:icra.in ""Aryabhata Circuits and Research Labs Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,ICRA,"site:icra.in ""Aryabhata Circuits and Research Labs Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aryabhata Circuits and Research Labs Pvt. Ltd.""",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aryabhata Circuits and Research Labs Pvt. Ltd."" rating",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aryabhata Circuits and Research Labs Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aryabhata Circuits and Research Labs Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aryabhata Circuits and Research Labs Pvt. Ltd.""",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aryabhata Circuits and Research Labs Pvt. Ltd."" rating",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aryabhata Circuits and Research Labs Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aryabhata Circuits and Research Labs Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aryabhata Circuits and Research Labs Pvt. Ltd.""",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aryabhata Circuits and Research Labs Pvt. Ltd."" rating",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aryabhata Circuits and Research Labs Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aryabhata Circuits and Research Labs Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aryabhata Circuits and Research Labs Pvt. Ltd.""",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aryabhata Circuits and Research Labs Pvt. Ltd."" rating",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aryabhata Circuits and Research Labs Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aryabhata Circuits and Research Labs Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""BigEndian Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""BigEndian Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""BigEndian Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""BigEndian Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""BigEndian Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""BigEndian Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""BigEndian Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""BigEndian Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""BigEndian Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""BigEndian Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""BigEndian Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""BigEndian Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""BigEndian Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""BigEndian Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""BigEndian Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""BigEndian Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""BigEndian Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""BigEndian Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""BigEndian Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""BigEndian Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""C2i Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""C2i Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""C2i Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""C2i Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""C2i Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""C2i Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""C2i Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""C2i Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""C2i Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""C2i Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""C2i Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""C2i Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""C2i Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""C2i Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""C2i Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""C2i Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""C2i Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""C2i Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""C2i Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-008,C2i Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""C2i Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,ICRA,"site:icra.in ""MMRFIC Technology Pvt. Ltd.""",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,ICRA,"site:icra.in ""MMRFIC Technology Pvt. Ltd."" rating",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,ICRA,"site:icra.in ""MMRFIC Technology Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,ICRA,"site:icra.in ""MMRFIC Technology Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MMRFIC Technology Pvt. Ltd.""",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MMRFIC Technology Pvt. Ltd."" rating",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MMRFIC Technology Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MMRFIC Technology Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MMRFIC Technology Pvt. Ltd.""",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MMRFIC Technology Pvt. Ltd."" rating",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MMRFIC Technology Pvt. Ltd."" credit rating",200,7,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MMRFIC Technology Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MMRFIC Technology Pvt. Ltd.""",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MMRFIC Technology Pvt. Ltd."" rating",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MMRFIC Technology Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MMRFIC Technology Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CARE Edge,"site:careedge.in ""MMRFIC Technology Pvt. Ltd.""",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CARE Edge,"site:careedge.in ""MMRFIC Technology Pvt. Ltd."" rating",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CARE Edge,"site:careedge.in ""MMRFIC Technology Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-009,MMRFIC Technology Pvt. Ltd.,CARE Edge,"site:careedge.in ""MMRFIC Technology Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Sophrosyne Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Sophrosyne Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Sophrosyne Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Sophrosyne Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Sophrosyne Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Sophrosyne Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Sophrosyne Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Sophrosyne Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Sophrosyne Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Sophrosyne Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Sophrosyne Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Sophrosyne Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Sophrosyne Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Sophrosyne Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Sophrosyne Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Sophrosyne Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Sophrosyne Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Sophrosyne Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Sophrosyne Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Sophrosyne Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,ICRA,"site:icra.in ""Aagyavision Pvt. Ltd.""",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,ICRA,"site:icra.in ""Aagyavision Pvt. Ltd."" rating",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,ICRA,"site:icra.in ""Aagyavision Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,ICRA,"site:icra.in ""Aagyavision Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aagyavision Pvt. Ltd.""",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aagyavision Pvt. Ltd."" rating",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aagyavision Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aagyavision Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aagyavision Pvt. Ltd.""",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aagyavision Pvt. Ltd."" rating",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aagyavision Pvt. Ltd."" credit rating",200,7,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aagyavision Pvt. Ltd."" bank facilities",200,5,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aagyavision Pvt. Ltd.""",200,7,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aagyavision Pvt. Ltd."" rating",200,7,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aagyavision Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aagyavision Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aagyavision Pvt. Ltd.""",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aagyavision Pvt. Ltd."" rating",200,10,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aagyavision Pvt. Ltd."" credit rating",200,6,0,OK
+DLI-011,Aagyavision Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aagyavision Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,ICRA,"site:icra.in ""Aheesa Digital Innovations Pvt. Ltd.""",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,ICRA,"site:icra.in ""Aheesa Digital Innovations Pvt. Ltd."" rating",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,ICRA,"site:icra.in ""Aheesa Digital Innovations Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,ICRA,"site:icra.in ""Aheesa Digital Innovations Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aheesa Digital Innovations Pvt. Ltd.""",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aheesa Digital Innovations Pvt. Ltd."" rating",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aheesa Digital Innovations Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Aheesa Digital Innovations Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aheesa Digital Innovations Pvt. Ltd.""",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aheesa Digital Innovations Pvt. Ltd."" rating",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aheesa Digital Innovations Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Aheesa Digital Innovations Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aheesa Digital Innovations Pvt. Ltd.""",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aheesa Digital Innovations Pvt. Ltd."" rating",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aheesa Digital Innovations Pvt. Ltd."" credit rating",200,7,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Aheesa Digital Innovations Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aheesa Digital Innovations Pvt. Ltd.""",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aheesa Digital Innovations Pvt. Ltd."" rating",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aheesa Digital Innovations Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,CARE Edge,"site:careedge.in ""Aheesa Digital Innovations Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Mindgrove Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Mindgrove Technologies Pvt. Ltd."" rating",200,6,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Mindgrove Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Mindgrove Technologies Pvt. Ltd."" bank facilities",200,7,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Mindgrove Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Mindgrove Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Mindgrove Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Mindgrove Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Mindgrove Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Mindgrove Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Mindgrove Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Mindgrove Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Mindgrove Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Mindgrove Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Mindgrove Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Mindgrove Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Mindgrove Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Mindgrove Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Mindgrove Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-013,Mindgrove Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Mindgrove Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""InCore Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""InCore Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""InCore Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,ICRA,"site:icra.in ""InCore Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""InCore Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""InCore Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""InCore Semiconductors Pvt. Ltd."" credit rating",200,13,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""InCore Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""InCore Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""InCore Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""InCore Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""InCore Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""InCore Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""InCore Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""InCore Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CARE Ratings,"site:careratings.com ""InCore Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""InCore Semiconductors Pvt. Ltd.""",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""InCore Semiconductors Pvt. Ltd."" rating",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""InCore Semiconductors Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-014,InCore Semiconductors Pvt. Ltd.,CARE Edge,"site:careedge.in ""InCore Semiconductors Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,ICRA,"site:icra.in ""MBit Wireless Pvt. Ltd.""",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,ICRA,"site:icra.in ""MBit Wireless Pvt. Ltd."" rating",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,ICRA,"site:icra.in ""MBit Wireless Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,ICRA,"site:icra.in ""MBit Wireless Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MBit Wireless Pvt. Ltd.""",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MBit Wireless Pvt. Ltd."" rating",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MBit Wireless Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MBit Wireless Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MBit Wireless Pvt. Ltd.""",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MBit Wireless Pvt. Ltd."" rating",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MBit Wireless Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MBit Wireless Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MBit Wireless Pvt. Ltd.""",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MBit Wireless Pvt. Ltd."" rating",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MBit Wireless Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MBit Wireless Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CARE Edge,"site:careedge.in ""MBit Wireless Pvt. Ltd.""",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CARE Edge,"site:careedge.in ""MBit Wireless Pvt. Ltd."" rating",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CARE Edge,"site:careedge.in ""MBit Wireless Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-015,MBit Wireless Pvt. Ltd.,CARE Edge,"site:careedge.in ""MBit Wireless Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,ICRA,"site:icra.in ""Netrasemi Pvt. Ltd.""",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,ICRA,"site:icra.in ""Netrasemi Pvt. Ltd."" rating",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,ICRA,"site:icra.in ""Netrasemi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,ICRA,"site:icra.in ""Netrasemi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Netrasemi Pvt. Ltd.""",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Netrasemi Pvt. Ltd."" rating",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Netrasemi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Netrasemi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Netrasemi Pvt. Ltd.""",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Netrasemi Pvt. Ltd."" rating",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Netrasemi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Netrasemi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Netrasemi Pvt. Ltd.""",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Netrasemi Pvt. Ltd."" rating",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Netrasemi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Netrasemi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Netrasemi Pvt. Ltd.""",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Netrasemi Pvt. Ltd."" rating",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Netrasemi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-016,Netrasemi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Netrasemi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,ICRA,"site:icra.in ""Netrasemi Pvt. Ltd.""",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,ICRA,"site:icra.in ""Netrasemi Pvt. Ltd."" rating",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,ICRA,"site:icra.in ""Netrasemi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,ICRA,"site:icra.in ""Netrasemi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Netrasemi Pvt. Ltd.""",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Netrasemi Pvt. Ltd."" rating",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Netrasemi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Netrasemi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Netrasemi Pvt. Ltd.""",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Netrasemi Pvt. Ltd."" rating",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Netrasemi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Netrasemi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Netrasemi Pvt. Ltd.""",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Netrasemi Pvt. Ltd."" rating",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Netrasemi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Netrasemi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Netrasemi Pvt. Ltd.""",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Netrasemi Pvt. Ltd."" rating",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Netrasemi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-017,Netrasemi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Netrasemi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,ICRA,"site:icra.in ""Green PMU Semi Pvt. Ltd.""",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,ICRA,"site:icra.in ""Green PMU Semi Pvt. Ltd."" rating",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,ICRA,"site:icra.in ""Green PMU Semi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,ICRA,"site:icra.in ""Green PMU Semi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Green PMU Semi Pvt. Ltd.""",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Green PMU Semi Pvt. Ltd."" rating",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Green PMU Semi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Green PMU Semi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Green PMU Semi Pvt. Ltd.""",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Green PMU Semi Pvt. Ltd."" rating",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Green PMU Semi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Green PMU Semi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Green PMU Semi Pvt. Ltd.""",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Green PMU Semi Pvt. Ltd."" rating",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Green PMU Semi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Green PMU Semi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Green PMU Semi Pvt. Ltd.""",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Green PMU Semi Pvt. Ltd."" rating",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Green PMU Semi Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-018,Green PMU Semi Pvt. Ltd.,CARE Edge,"site:careedge.in ""Green PMU Semi Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,ICRA,"site:icra.in ""WiSig Networks Pvt. Ltd.""",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,ICRA,"site:icra.in ""WiSig Networks Pvt. Ltd."" rating",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,ICRA,"site:icra.in ""WiSig Networks Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,ICRA,"site:icra.in ""WiSig Networks Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""WiSig Networks Pvt. Ltd.""",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""WiSig Networks Pvt. Ltd."" rating",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""WiSig Networks Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""WiSig Networks Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""WiSig Networks Pvt. Ltd.""",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""WiSig Networks Pvt. Ltd."" rating",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""WiSig Networks Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""WiSig Networks Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CARE Ratings,"site:careratings.com ""WiSig Networks Pvt. Ltd.""",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CARE Ratings,"site:careratings.com ""WiSig Networks Pvt. Ltd."" rating",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CARE Ratings,"site:careratings.com ""WiSig Networks Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CARE Ratings,"site:careratings.com ""WiSig Networks Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CARE Edge,"site:careedge.in ""WiSig Networks Pvt. Ltd.""",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CARE Edge,"site:careedge.in ""WiSig Networks Pvt. Ltd."" rating",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CARE Edge,"site:careedge.in ""WiSig Networks Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-019,WiSig Networks Pvt. Ltd.,CARE Edge,"site:careedge.in ""WiSig Networks Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,ICRA,"site:icra.in ""MosChip Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,ICRA,"site:icra.in ""MosChip Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,ICRA,"site:icra.in ""MosChip Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,ICRA,"site:icra.in ""MosChip Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MosChip Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MosChip Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MosChip Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""MosChip Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MosChip Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MosChip Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MosChip Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""MosChip Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MosChip Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MosChip Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MosChip Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""MosChip Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""MosChip Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""MosChip Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""MosChip Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-020,MosChip Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""MosChip Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Multi Nano Sense Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Multi Nano Sense Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Multi Nano Sense Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,ICRA,"site:icra.in ""Multi Nano Sense Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Multi Nano Sense Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Multi Nano Sense Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Multi Nano Sense Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Multi Nano Sense Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Multi Nano Sense Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Multi Nano Sense Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Multi Nano Sense Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Multi Nano Sense Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Multi Nano Sense Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Multi Nano Sense Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Multi Nano Sense Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Multi Nano Sense Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Multi Nano Sense Technologies Pvt. Ltd.""",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Multi Nano Sense Technologies Pvt. Ltd."" rating",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Multi Nano Sense Technologies Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,CARE Edge,"site:careedge.in ""Multi Nano Sense Technologies Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,ICRA,"site:icra.in ""Vervesemi Microelectronics Pvt. Ltd.""",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,ICRA,"site:icra.in ""Vervesemi Microelectronics Pvt. Ltd."" rating",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,ICRA,"site:icra.in ""Vervesemi Microelectronics Pvt. Ltd."" credit rating",200,1,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,ICRA,"site:icra.in ""Vervesemi Microelectronics Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Vervesemi Microelectronics Pvt. Ltd.""",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Vervesemi Microelectronics Pvt. Ltd."" rating",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Vervesemi Microelectronics Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,India Ratings,"site:indiaratings.co.in ""Vervesemi Microelectronics Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Vervesemi Microelectronics Pvt. Ltd.""",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Vervesemi Microelectronics Pvt. Ltd."" rating",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Vervesemi Microelectronics Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CRISIL Ratings,"site:crisilratings.com ""Vervesemi Microelectronics Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Vervesemi Microelectronics Pvt. Ltd.""",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Vervesemi Microelectronics Pvt. Ltd."" rating",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Vervesemi Microelectronics Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CARE Ratings,"site:careratings.com ""Vervesemi Microelectronics Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CARE Edge,"site:careedge.in ""Vervesemi Microelectronics Pvt. Ltd.""",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CARE Edge,"site:careedge.in ""Vervesemi Microelectronics Pvt. Ltd."" rating",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CARE Edge,"site:careedge.in ""Vervesemi Microelectronics Pvt. Ltd."" credit rating",200,10,0,OK
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,CARE Edge,"site:careedge.in ""Vervesemi Microelectronics Pvt. Ltd."" bank facilities",200,10,0,OK
+DLI-023,Incise Infotech Limited,ICRA,"site:icra.in ""Incise Infotech Limited""",200,10,0,OK
+DLI-023,Incise Infotech Limited,ICRA,"site:icra.in ""Incise Infotech Limited"" rating",200,10,0,OK
+DLI-023,Incise Infotech Limited,ICRA,"site:icra.in ""Incise Infotech Limited"" credit rating",200,10,0,OK
+DLI-023,Incise Infotech Limited,ICRA,"site:icra.in ""Incise Infotech Limited"" bank facilities",200,10,0,OK
+DLI-023,Incise Infotech Limited,India Ratings,"site:indiaratings.co.in ""Incise Infotech Limited""",200,10,0,OK
+DLI-023,Incise Infotech Limited,India Ratings,"site:indiaratings.co.in ""Incise Infotech Limited"" rating",200,10,0,OK
+DLI-023,Incise Infotech Limited,India Ratings,"site:indiaratings.co.in ""Incise Infotech Limited"" credit rating",200,10,0,OK
+DLI-023,Incise Infotech Limited,India Ratings,"site:indiaratings.co.in ""Incise Infotech Limited"" bank facilities",200,10,0,OK
+DLI-023,Incise Infotech Limited,CRISIL Ratings,"site:crisilratings.com ""Incise Infotech Limited""",200,10,0,OK
+DLI-023,Incise Infotech Limited,CRISIL Ratings,"site:crisilratings.com ""Incise Infotech Limited"" rating",200,10,0,OK
+DLI-023,Incise Infotech Limited,CRISIL Ratings,"site:crisilratings.com ""Incise Infotech Limited"" credit rating",200,10,0,OK
+DLI-023,Incise Infotech Limited,CRISIL Ratings,"site:crisilratings.com ""Incise Infotech Limited"" bank facilities",200,10,0,OK
+DLI-023,Incise Infotech Limited,CARE Ratings,"site:careratings.com ""Incise Infotech Limited""",200,10,0,OK
+DLI-023,Incise Infotech Limited,CARE Ratings,"site:careratings.com ""Incise Infotech Limited"" rating",200,10,0,OK
+DLI-023,Incise Infotech Limited,CARE Ratings,"site:careratings.com ""Incise Infotech Limited"" credit rating",200,10,0,OK
+DLI-023,Incise Infotech Limited,CARE Ratings,"site:careratings.com ""Incise Infotech Limited"" bank facilities",200,10,0,OK
+DLI-023,Incise Infotech Limited,CARE Edge,"site:careedge.in ""Incise Infotech Limited""",200,10,0,OK
+DLI-023,Incise Infotech Limited,CARE Edge,"site:careedge.in ""Incise Infotech Limited"" rating",200,10,0,OK
+DLI-023,Incise Infotech Limited,CARE Edge,"site:careedge.in ""Incise Infotech Limited"" credit rating",200,10,0,OK
+DLI-023,Incise Infotech Limited,CARE Edge,"site:careedge.in ""Incise Infotech Limited"" bank facilities",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,ICRA,"site:icra.in ""DV2JS Innovation LLP""",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,ICRA,"site:icra.in ""DV2JS Innovation LLP"" rating",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,ICRA,"site:icra.in ""DV2JS Innovation LLP"" credit rating",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,ICRA,"site:icra.in ""DV2JS Innovation LLP"" bank facilities",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,India Ratings,"site:indiaratings.co.in ""DV2JS Innovation LLP""",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,India Ratings,"site:indiaratings.co.in ""DV2JS Innovation LLP"" rating",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,India Ratings,"site:indiaratings.co.in ""DV2JS Innovation LLP"" credit rating",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,India Ratings,"site:indiaratings.co.in ""DV2JS Innovation LLP"" bank facilities",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CRISIL Ratings,"site:crisilratings.com ""DV2JS Innovation LLP""",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CRISIL Ratings,"site:crisilratings.com ""DV2JS Innovation LLP"" rating",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CRISIL Ratings,"site:crisilratings.com ""DV2JS Innovation LLP"" credit rating",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CRISIL Ratings,"site:crisilratings.com ""DV2JS Innovation LLP"" bank facilities",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CARE Ratings,"site:careratings.com ""DV2JS Innovation LLP""",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CARE Ratings,"site:careratings.com ""DV2JS Innovation LLP"" rating",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CARE Ratings,"site:careratings.com ""DV2JS Innovation LLP"" credit rating",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CARE Ratings,"site:careratings.com ""DV2JS Innovation LLP"" bank facilities",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CARE Edge,"site:careedge.in ""DV2JS Innovation LLP""",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CARE Edge,"site:careedge.in ""DV2JS Innovation LLP"" rating",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CARE Edge,"site:careedge.in ""DV2JS Innovation LLP"" credit rating",200,10,0,OK
+DLI-024,DV2JS Innovation LLP,CARE Edge,"site:careedge.in ""DV2JS Innovation LLP"" bank facilities",200,10,0,OK

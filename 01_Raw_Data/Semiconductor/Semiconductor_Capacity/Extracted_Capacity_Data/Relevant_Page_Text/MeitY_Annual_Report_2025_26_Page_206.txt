@@ -1,0 +1,48 @@
+Skill India:
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+204
+Since 2007-08, the National Institute of Electronics and Information Technology (NIELIT) is implementing the “Fee 
+Reimbursement to SC/ST” programme. The aforesaid programme is a DBT on-boarded scheme in which free training is 
+being provided to the SC/ST candidates in various formal, non- formal, and IT literacy courses pat NIELIT’s own centres 
+under budgetary support of MeitY. 
+During the FY 2024-25, a total of 3667 Scheduled Caste and 19495 Scheduled Tribe Candidates benefitted under the 
+Fee reimbursement programme.
+During the FY 2025-26 (1st lot) covering the period, April-September 2025, a total of 3001 Scheduled Caste and 11926 
+Scheduled Tribe Candidates benefitted under the Fee reimbursement programme.
+7.8	
+E-Learning Platform
+7.8.1	 Development of EdTech Platform in the Semiconductor Space to Democratize Chip Design and 
+Development Ecosystem for the Masses:
+MeitY has approved the project titled “Development of EdTech Platform in the Semiconductor Space to Democratize 
+Chip Design and Development Ecosystem for the Masses” to be implemented by NIELIT Headquarters over a period 
+of three years. The project aims to develop high-quality audio-visual content for both basic and advanced skills in chip 
+design including physical design, RTL design, design for test, Analog design, and verification entirely using open-
+source technologies, with rich lectures, demonstrations, and labs to simplify complex concepts. It also seeks to build an 
+indigenous open-source platform offering advanced EDA design lows supporting all major chip design verticals such as 
+PDK development, RTL design/integration, synthesis, placement and routing, static timing analysis, logical equivalence 
+checking, power estimation, DFT implementation, ATPG, Analog IP design, digital verification, and Analog/mixed-
+signal design and verification. The platform will enable low-cost IC design, support development of open-source IPs 
+and SoCs at scale, lower entry barriers for students and entrepreneurs, and offer lifetime access for users to practice 
+and strengthen their chip design skills. Additionally, the project will establish vertical-wise vibrant learning communities 
+moderated by expert mentors to foster collaborative learning and innovation.
+By December 2025, two course curricula have been designed and formally approved by the Syllabus Committee of 
+NIELIT: (a) Chip Craft: RTL, IP Integration, and SoC Signoff, and (b) Bootcamp on VLSI Design using Open-Source 
+Tools. Video content is currently under development for both courses, alongside the preparation of corresponding 
+lab exercises to support hands-on learning. Cloud services for the edtech portal have been procured, and a virtual 
+lab leveraging open-source tools is being developed. The virtual lab is already functional on the cloud platform, with 
+ongoing upgrades to the toolset. Additionally, a Learning Management System (LMS) is being developed to facilitate 
+access to both the course content and the virtual lab.
+7.8.2	 OLabs NextG (OLabs Next Generation):
+MeitY has approved the project titled “OLabs NextG: Next Generation Online Labs (OLabs) for schools” which is being 
+implemented by CDAC, Mumbai jointly with Amrita Vishwa Vidyapeetham, Kerala. OLabs portal (http://www.olabs.
+edu.in) is a resource point for access to online labs that cover all experiments as per the CBSE curriculum for Physics, 
+Chemistry, Biology, Science and also activities under Maths, Social Science, Computer Science, EDP, and Languages 
+(English. Hindi, and Sanskrit). 173 labs Physics, Chemistry, Biology, and Maths are available in regional languages 
+Hindi, Marathi, Malayalam, etc. OLabs NextG (OLabs Next Generation) which is aligned with the New Education Policy 
+2020 has been approved and jointly funded by MeitY and the Ministry of Education (MoE).
+By December 2025, a total of 423 virtual labs covering Physics, Chemistry, Biology, Science, Mathematics, Social 
+Science, Computer Science, and Languages (English, Hindi, and Sanskrit) for classes 6 to 12 have been developed 
+and made available on the OLabs website (olabs.edu.in). Out of these, 212 OLabs are also accessible through the 

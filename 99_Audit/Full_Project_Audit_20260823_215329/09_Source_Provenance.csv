@@ -1,0 +1,4 @@
+﻿dataset,provenance_status,rows
+01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Master_Canonical.csv,OFFICIAL_SOURCE,12
+01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Ecosystem_Master.csv,OFFICIAL_SOURCE,36
+01_Raw_Data/Semiconductor/Semiconductor_Master/DLI_Design_Projects/DLI_Design_Projects_Canonical.csv,OFFICIAL_SOURCE,24

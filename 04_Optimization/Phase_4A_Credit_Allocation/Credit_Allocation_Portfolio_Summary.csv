@@ -1,0 +1,2 @@
+credit_budget_crore,number_of_projects,maximum_project_share_assumption,maximum_state_share_assumption,minimum_project_share_assumption,optimized_portfolio_stress_index,investment_proportional_stress_index,relative_stress_reduction,relative_stress_reduction_pct
+10000,12,0.2,0.45,0.02,59.83640216841548,76.91717644761052,17.080774279195033,22.206709954868163

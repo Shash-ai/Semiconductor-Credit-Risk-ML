@@ -1,0 +1,113 @@
+REPORT
+Ministry of Electronics & Information Technology
+Make in India
+Annual
+2024-2025
+76
+incentives as well as design infrastructure 
+support across various stages of develop-
+ment and deployment of semiconductor de-
+sign for Integrated Circuits (ICs), Chipsets, 
+System on Chips (SoCs), Systems & IP 
+Cores and semiconductor linked design.
+ 
+• 
+Under the “Product Design Linked Incen-
+tive” component of the scheme, reimburse-
+ment of up to 50% of the eligible expenditure 
+subject to a ceiling of Rs15 crore per appli-
+cation will be provided as fiscal support to 
+the approved applicants. This shall include 
+expenditure relating to design, development, 
+testing, fabrication, validation, prototype de-
+velopment, product development, filing of 
+Intellectual Property Rights etc. It will also 
+include manpower costs.
+ 
+• 
+Under the “Deployment Linked Incentive” 
+component of the scheme, incentive of 6% 
+to 4% of net sales turnover over 5 years sub-
+ject to a ceiling of ` 30 crore per application 
+will be provided to the approved applicants 
+whose semiconductor design for Integrated 
+Circuits (ICs), Chipsets, System on Chips 
+(SoCs), Systems & IP Cores and semicon-
+ductor linked design are deployed in elec-
+tronic products.
+ 
+• 
+C-DAC is the Nodal Agency to implement 
+the scheme and establish the semiconduc-
+tor design infrastructure such as EDA Tool 
+Grid, repository of IP Cores, hardware and 
+software licenses, patents and trademarks 
+etc.
+8.5	
+India Semiconductor Mission (ISM)
+ 
+• 
+India Semiconductor Mission (ISM) imple-
+ments the schemes for Semiconductor and 
+Display Fabs, Compound Semiconductor 
+Fabs, Silicon Photonics Fabs, MEMS Sen-
+sors Fabs, Discrete Semiconductor Fabs 
+and Semiconductor Packaging Units (ATMP 
+/ OSAT). It drives the long-term strategies for 
+the development of semiconductor and dis-
+play ecosystem in the country.
+ 
+• 
+The India Semiconductor Mission acts as 
+the nodal agency for efficient and smooth 
+implementation of the schemes for setting 
+up of Semiconductor, Display Fabs and 
+Compound 
+Semiconductors/ATMP/OSAT 
+facilities in India.
+8.6	
+Semi-Conductor Laboratory (SCL) 
+	
+The Union Cabinet has also approved that 
+Ministry of Electronics and Information Technology 
+will take requisite steps for modernization and 
+commercialization of Semi-conductor Laboratory 
+(SCL), Mohali. Semi-conductor Laboratory (SCL), 
+Mohali has been brought under the administrative 
+control of Ministry of Electronics and Information 
+Technology from Department of Space.
+	
+SCL is an Integrated Device Manufacturer 
+which undertakes activities pertaining to design, 
+development, fabrication, assembly & packaging, 
+testing and quality assurance of Silicon CMOS and 
+MEMS Devices for various applications. Presently, 
+SCL has two wafer fabrication lines, i.e., 200 mm 
+wafer line operating in 180nm CMOS technology 
+and 150 mm wafer line for MEMS technology. SCL 
+predominantly caters to low volume requirements 
+for various applications.
+	
+Boston Consulting Group (BCG) has been 
+engaged for providing consultancy services for 
+Modernization of Semi-Conductor Laboratory, 
+Mohali. 
+8.7	
+Projects approved under the Programme:
+	
+The Government has approved following projects:
+	
+i.	
+Micron Technology Inc.’s proposal for set-
+ting up an ATMP facility in India with an in-
+vestment of ` 22,516 crore was approved 
+in June 2023. Micron’s facility in India will 
+enable assembly and test manufacturing 
+for both DRAM and NAND products and ad-
+dress demand from domestic and interna-
+tional markets with a production capacity of 
+around 40 million per week.
+	
+ii.	
+Tata Electronics Private Limited (TEPL)’s 
+proposal for setting up a Semiconductor Fab 

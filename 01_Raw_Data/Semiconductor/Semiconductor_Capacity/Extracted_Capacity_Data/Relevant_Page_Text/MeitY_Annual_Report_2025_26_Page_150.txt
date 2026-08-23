@@ -1,0 +1,49 @@
+Innovate and Design in India
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+148
+the session was framing the collaborative vision in the Neuromorphic Computing sector. Discussions focused on 
+processor design, circuit and material innovation, and system integration. Participants included industry leaders 
+Aheesa™ Digital Innovations and CYRAN AI Solutions, and top academic institutions such as IISc Bangalore, 
+IITs (Madras, Patna, BHU, Gandhinagar, Bombay, Delhi, Hyderabad, Jodhpur, Roorkee, Kanpur), JNCASR, 
+IISER Thiruvananthapuram, and Digital University Kerala.
+5.4	
+Centre of Excellence
+5.4.1	 Nanotechnology Centres 
+Nanotechnology Initiatives Division at MeitY has established several Centre of Excellence in Nanotechnology to take 
+the basic R&D outcomes to the prototype and then to manufacture Nano devices, subsystems, systems for the social 
+benefits.
+Centre of innovation & a Manufacturing Eco-System for Sensors (CIMES) in Industrial IoT 
+The Centre of innovation & Manufacturing Eco-System for Sensors (CIMES) in Industrial IoT is being established 
+at CSIR-CGCRI, Kolkata to enable a start-up and innovation ecosystem in the country as a solution provider in the 
+optical fibre-based sensors and instrumentation for industrial IoT. The main objective of the centre is to create a 
+knowledge and resource centre for Indian industries and place India in the global market of optical fibre-based sensors 
+and instrumentation in the domain of geotechnical and structural health monitoring and industrial process control 
+instrumentation
+Magnetic Sensor Innovation for Diverse Sectors 
+A dedicated facility for the upgradation and commercialization of magneto-resistive sensors leveraging GMR and TMR 
+technologies, is being established at CSIR-NAL for 6-inch wafer scale. The initiative aims to develop cost-effective, 
+industry-grade sensor solutions for the automotive sector, with a focus on technology transfer to industrial partners. Key 
+efforts are directed toward customizing magnetic sensor products such as ABS speed sensors, current sensors, and 
+angle sensors, tailored to specific industry requirements
+Gas sensor testing and calibration facility
+A national state-of-the-art gas sensor testing and calibration facility is being set up at CSIR-NPL for gases such as 
+H2, O2, CO, CO2, NOx, SOx, H2S, N2H4, NH3, Volatile Organic compounds, etc. The sensor facility test will evaluate the 
+device’s performance (5 sensors in each chamber). The gas concentration will be covered in the range from ppb to 
+ppm levels as required for the specific gas. The analysis will provide accurate & precise information on the sensitivity, 
+selectivity, stability, response time, acceleration test, error, temperature profile, etc., of test gas sensing devices. This 
+initiative is expected to contribute significantly to environmental safety and industrial automation by providing reliable 
+gas sensing solutions tailored to diverse sectors.
+5.4.2	 Centre of Excellence on E-Waste Management
+• 
+Circular Economy in Electronic Sector
+	
+The Electronics System Design and Manufacturing (ESDM) sector is the heartbeat of India’s digital economy—
+powering innovation, connectivity, and productivity across every domain. Electronic and Electrical Equipments 
+(EEE) manufacturing is dependent on high material consumption with various rare earth elements. Rate of 
+extraction of these abiotic resources for EEE manufacturing is significantly higher than the rate of their formation 
+in nature. Due to growing demand of electronics sector, India became the third largest consumer of raw materials 
+produced globally, and with the current economic trend, estimated to consume nearly 15 billion tonnes of raw 
+material by 2030. 

@@ -1,0 +1,9 @@
+dataset,column,matched_keywords
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,industry
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,industry
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,industry
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,industry
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,industry
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,industry
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,industry
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,Statement 2: Industry-wise Deployment of Gross Bank Credit,industry

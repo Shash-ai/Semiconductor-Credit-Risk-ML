@@ -1,0 +1,5 @@
+﻿file,status,reason
+01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_ML_Ready.csv,DO_NOT_USE_FOR_FINAL_MODEL,Old supervised ML-ready attempt. Do not use as the final model dataset.
+01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Project_RBI_Banking_Risk_Integrated.csv,DO_NOT_USE_FOR_FINAL_MODEL,Old 10-project RBI integrated dataset. Superseded by the 12-project manufacturing integration.
+01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Project_Banking_Risk_Features_Step3B.csv,DO_NOT_USE_FOR_FINAL_MODEL,Earlier 10-project feature-engineering output. Retain only for audit/history.
+01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Project_Features.csv,DO_NOT_USE_FOR_FINAL_MODEL,Earlier feature-engineering dataset created before the manufacturing expansion.

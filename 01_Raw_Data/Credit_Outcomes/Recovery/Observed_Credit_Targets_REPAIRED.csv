@@ -1,0 +1,37 @@
+﻿ecosystem_id,company,project_scope,approval_date,observed_company_credit_distress_target,target_evidence_source,target_event_date,target_rating_agency,target_rating,historical_preproject_default_flag,target_level,synthetic_target
+MFG-0001,Micron Technology Inc.,Manufacturing,2023-06-01,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+MFG-0002,Tata Electronics Private Limited,Manufacturing,2024-02-01,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+MFG-0003,Tata Electronics Private Limited,Manufacturing,2024-02-01,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+MFG-0004,CG Power and Industrial Solutions Limited,Manufacturing,2024-02-01,0.0,VERIFIED_POST_PROJECT_NONDEFAULT_RATING,2026-03-18,India Ratings,IND AA+/Stable,0,COMPANY_LEVEL,NO
+MFG-0005,Kaynes Technology India Limited,Manufacturing,2024-09-01,0.0,VERIFIED_POST_PROJECT_NONDEFAULT_RATING,2026-03-12,CRISIL Ratings,CRISIL A/Stable,1,COMPANY_LEVEL,NO
+MFG-0006,Vama Sundari Investments (Delhi) Private Limited / Foxconn,Manufacturing,2025-05-01,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+MFG-0007,3D Glass Solutions Inc.,Manufacturing,2025-08-01,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+MFG-0008,SiCSem Private Limited,Manufacturing,2025-08-01,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+MFG-0009,Continental Device India Private Limited,Manufacturing,2025-08-01,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+MFG-0010,Advanced System in Package Technologies Private Limited,Manufacturing,2025-08-01,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+MFG-0011,Crystal Matrix Limited,Manufacturing,2026-05-05,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+MFG-0012,Suchi Semicon Private Limited,Manufacturing,2026-05-05,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-001,Fermionic Design Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-002,Morphing Machines Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-003,Calligo Technologies Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-004,Sensesemi Technologies Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-005,Saankhya Labs Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-006,Aryabhata Circuits and Research Labs Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-007,BigEndian Semiconductors Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-008,C2i Semiconductors Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-009,MMRFIC Technology Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-010,Sophrosyne Technologies Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-011,Aagyavision Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-012,Aheesa Digital Innovations Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-013,Mindgrove Technologies Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-014,InCore Semiconductors Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-015,MBit Wireless Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-016,Netrasemi Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-017,Netrasemi Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-018,Green PMU Semi Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-019,WiSig Networks Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-020,MosChip Technologies Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-021,Multi Nano Sense Technologies Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-022,Vervesemi Microelectronics Pvt. Ltd.,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-023,Incise Infotech Limited,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO
+DLI-024,DV2JS Innovation LLP,Semiconductor Design,,,INSUFFICIENT_VERIFIED_PUBLIC_EVIDENCE,,,,0,COMPANY_LEVEL,NO

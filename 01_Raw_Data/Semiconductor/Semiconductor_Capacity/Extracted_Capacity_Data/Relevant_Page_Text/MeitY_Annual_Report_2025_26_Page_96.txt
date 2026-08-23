@@ -1,0 +1,46 @@
+Make in India
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+94
+ 
+The key announcements that were made during the event are:
+•	
+Reopening of the EDA tool access window under the Design Linked Incentive (DLI) scheme. 
+• 
+Selection of 30 semi-finalists under the Digital India RISC-V Grand Challenge. 
+•	
+GlobalFoundries’ support for DLI-approved companies through the India Foundry Connect program. 
+•	
+Collaboration between ChipIN Center and Odisha’s O-Chip program to boost fabless design in the state. 
+•	
+Moschip Technologies unveiled the roadmap for the indigenous VIDYUT chip for smart energy meters. 
+•	
+NetraSemi and PRAMA India announced a partnership to integrate indigenous chips into CCTV surveillance 
+devices.
+•	
+C-DAC signed MOUs with international partners to advance cryogenic chip design and hybrid quantum computing 
+capabilities.
+3.3.9.7 	Employment
+The semiconductor manufacturing facilities will generate direct employment of more than 25 thousand advanced 
+technology jobs and about 60 thousand indirect jobs.
+3.3.9.8 	R&D Road map
+• 
+Applied Materials Inc. (AMAT) has announced a planned investment of $400 Mn to establish Collaborative 
+Engineering Centre in Bangalore. During the initial 5 years. the center would support $2Bn+ of spending and 
+create ~500 advanced engineering jobs. This initiative will facilitate R&D collaboration amongst R&D team of 
+Applied Materials, Indian academic institutions and R&D team of vendors of Applied Materials. This will also help 
+in development and sourcing of components/sub-assemblies required for the AMAT’s semiconductor equipment.
+• 
+Advanced Micro Devices: Advanced Micro Device (AMD) announced plan to invest approximately $400 Million 
+over the next five years to expand Research, Development and Engineering Operations in India. The planned 
+investment includes a new AMD campus in Bangalore, Karnataka that will serve as the company’s largest design 
+center, as well as the addition of approximately 3,000 new engineering roles by the end of 2028. AMD committed 
+to an investment of $73Mn for Year 2024 and $32Mn for Year 2025 as a part of $400Mn investment. It has hired 
+980 Engineers, including 22% women. 
+• 
+Microchip: Microchip Technology announced a $300 million investment plan to expand its operations in India. To 
+strengthen its presence in India, the company has inaugurated a new research and development (R&D) facility 
+at One Golden Mile Office Tower in Hyderabad. This 168,000-square-foot center, which has a capacity for 1,000 
+employees, joins Microchip’s existing developments in Bengaluru and Chennai. Microchip has added more than 

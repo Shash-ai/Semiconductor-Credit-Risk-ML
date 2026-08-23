@@ -1,0 +1,14 @@
+﻿dataset,issue,count,severity
+01_Raw_Data/Interest_Rates/Weighted Average Lending Rate.xlsx :: SHEET=Sector Wise,EXACT_DUPLICATE_ROWS,2,WARNING
+01_Raw_Data/Interest_Rates/Weighted Average Lending Rate.xlsx :: SHEET=Credit Range Wise,EXACT_DUPLICATE_ROWS,2,WARNING
+01_Raw_Data/Interest_Rates/Weighted Average Lending Rate.xlsx :: SHEET=Type of Account Wise,EXACT_DUPLICATE_ROWS,2,WARNING
+"01_Raw_Data/Interest_Rates/Major Monetary Policy Rates and Reserve Requirements - Bank Rate, LAF (Repo, Reverse Repo, SDF and MSF) Rates, CRR & SLR.xlsx :: SHEET=Report 1",EXACT_DUPLICATE_ROWS,2,WARNING
+01_Raw_Data/Interest_Rates/Other STRBI Table No 18. Bank Group-Wise and Occupation-Wise Weighted Average Lending Rate and Deposit Rate.xlsx :: SHEET=Report 1,EXACT_DUPLICATE_ROWS,2,WARNING
+01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Permutation_Importance.csv,EXACT_DUPLICATE_ROWS,10,WARNING
+01_Raw_Data/Semiconductor/Semiconductor_Master/RBI_NPA_Features_For_Semiconductor_Model.csv,EXACT_DUPLICATE_ROWS,285,WARNING
+01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Feature_Importance.csv,EXACT_DUPLICATE_ROWS,6,WARNING
+01_Raw_Data/Semiconductor/Semiconductor_Master/DLI_Design_Projects/DLI_Official_Source_Evidence.csv,EXACT_DUPLICATE_ROWS,30,WARNING
+01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx :: SHEET=Report 1,EXACT_DUPLICATE_ROWS,288,WARNING
+01_Raw_Data/RBI/RBI_Master/RBI_NPA_Data.csv,EXACT_DUPLICATE_ROWS,285,WARNING
+01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx :: SHEET=New Format (2019 Onwards),EXACT_DUPLICATE_ROWS,2,WARNING
+01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx :: SHEET=Data from 1997-2007,EXACT_DUPLICATE_ROWS,2,WARNING

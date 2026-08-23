@@ -1,0 +1,16 @@
+model_1,model_2,spearman_rho,p_value
+size_only_rank,geography_only_rank,0.5609681940050744,0.0577560811402792
+size_only_rank,macro_only_rank,-0.3636654999982257,0.24522434419127528
+size_only_rank,banking_only_rank,-0.7554001394157739,0.004495424458002868
+size_only_rank,structural_only_rank,0.7832167832167832,0.00258621483336259
+size_only_rank,full_hybrid_rank,0.37762237762237766,0.22620604493502663
+geography_only_rank,macro_only_rank,0.17725174701023913,0.5815585604221387
+geography_only_rank,banking_only_rank,-0.8178618704987328,0.0011525381659385433
+geography_only_rank,structural_only_rank,0.9125082622482542,3.4808160919055495e-05
+geography_only_rank,full_hybrid_rank,0.6432435291258185,0.024036053456412396
+macro_only_rank,banking_only_rank,0.2681332221799479,0.39944059618097416
+macro_only_rank,structural_only_rank,-0.10587729746783789,0.7432979717930797
+macro_only_rank,full_hybrid_rank,0.6582805886043833,0.019946456553262278
+banking_only_rank,structural_only_rank,-0.8813001626517362,0.00015156148847532817
+banking_only_rank,full_hybrid_rank,-0.3221559418096683,0.3071510693899938
+structural_only_rank,full_hybrid_rank,0.5594405594405596,0.05858947538856761

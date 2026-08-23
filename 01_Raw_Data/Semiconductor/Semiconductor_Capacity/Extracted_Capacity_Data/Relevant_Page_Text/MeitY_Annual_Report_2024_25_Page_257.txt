@@ -1,0 +1,93 @@
+Attached Offices and Societies
+REPORT
+Ministry of Electronics & Information Technology
+Annual
+2024-2025
+255
+• 
+M/s Sarv Webs Pvt. Ltd. (Product Name: Sarv 
+Wave) 
+• 
+M/s People Link Unified Communications Pvt Ltd’ 
+(Product name: Insta VC) 
+NIC has created a secure infrastructure for “Vconsol” 
+product at National Data Centre New Delhi with a 
+capacity of around 1000 concurrence users and started 
+rolling out the services for the Government of India uses 
+in the brand name of “BharatVC”. More than 3 Lakh VC 
+meetings have been held on Bharat VC as on July 31, 
+2024. 
+9.9.10 Centre of Entrepreneurship on Industry 4.0 at 
+Rashtriya ISPAT Nigam Ltd. - Visakhapatnam Steel 
+Plant (RINL-VSP)
+The demand for Industry 4.0 products and solutions is 
+going to rise exponentially in the backdrop of growing 
+Industrial 
+Automation. 
+Strengthening 
+domestic 
+capabilities of Industry 4.0 products & solutions will take 
+the domestic industry up the value chain significantly by 
+way of an increase in products, patents & IPR. In order to 
+boost start-ups in these fields, a Centre of Excellence in 
+the field of Industry 4.0 at RINL Visakhapatnam has been 
+established. It will nurture around 175 innovative startups 
+over a period of five years. 
+The CoE facility includes an area of 6,000 Sq.ft. with the 
+state-of-the-art incubation facility housed on the campus 
+of RINL-VSP. This CoE has domain-specific physical 
+laboratories like IIoT, AI/ML & AR/VR and Industrial 
+Automation, Robotics, Drone & 3D printing setup with 
+the required equipment and software in the domain 
+to support the startups. So far, 10 startups have been 
+onboarded, resulting in the development of 3 prototypes, 
+2 products by these start-ups.
+9.9.11 iTamil Nadu Technology (iTNT) Hub in Chennai 
+The iTNT Hub in Chennai has been established with a 
+total outlay of `54.61 crores with MeitY’s contribution 
+of `27 crores over a period of five years. The primary 
+objective of Tamil Nadu Technology Hub is to nurture the 
+deep/emerging tech innovation ecosystem in Tamil Nadu 
+that can guide, develop, implement and support startups, 
+especially in the scaling-up phase in Deep Tech. The iTNT 
+Hub shall support 200 start-ups in the hub & spoke model 
+and provide acceleration and infrastructural service. In 
+addition, 200 numbers of start-ups will be accelerated in 
+deep tech/emerging tech. So far, 24 startups have been 
+incubated and 6 products launched by these startups.
+9.10	 Digital India Corporation (DIC)
+9.10.1 Introduction
+Digital India Corporation (DIC) is a not-for-profit company 
+set up & promoted by the Ministry of Electronics and 
+Information Technology (MeitY), Govt. of India. The 
+Company leads & guides in realising the vision, objectives 
+and goals of the Digital India program. It provides strategic 
+support to Ministries / Departments of Centre / States 
+to carry forward the mission of Digital India by way of 
+capacity building for e-Governance projects, promoting 
+best practices, encouraging Public-Private Partnerships 
+(PPP), nurturing innovations and technologies in various 
+domains.
+The company encompasses 7 Independent Business 
+Divisions (IBDs) viz. KIDIC Core or Technology 
+Development & Deployment Division (TDDD), NeGD 
+(National e-Governance Division), MyGov, MeitY Startup 
+Hub (MSH), India Semiconductor Mission (ISM), Digital 
+India Bhashini Division (DIBD) and INDIAai.
+9.10.2 DIC Core or Technology Development & 
+Deployment Division 
+9.10.2.1 Poshan Tracker
+‘Poshan Tracker’ is a mobile-based application for 
+dynamic identification of stunting, wasting, and under-
+weight prevalence among children and last-mile tracking 
+of nutrition service delivery by Anganwadi Workers at 
+Anganwadi centres. The application has further been 
+made available to State Officials with the integration 
+of the Supportive Supervision Application and also to 
+beneficiaries through the new Beneficiary interface.
+The work undertaken in the area of Process Re-
+engineering for Digital Transformation:
+A.	
+Face Capture and Authentication in SNP 
+distribution: The Poshan Tracker is equipped with 
+the new face capture and authentication feature 

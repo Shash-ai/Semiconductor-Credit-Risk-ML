@@ -1,0 +1,7 @@
+semiconductor_category,rbi_sector,mapping_confidence,mapping_basis,manual_review_required,notes,auto_suggestions
+ATMP,Electronics,MEDIUM,functional,YES,Mapped to RBI Electronics sector as the closest functional banking-credit proxy for semiconductor-related industrial activity.,
+Advanced Packaging,Electronics,MEDIUM,functional,YES,Mapped to RBI Electronics sector as the closest functional banking-credit proxy for semiconductor-related industrial activity.,
+Compound Semiconductor Fab + ATMP,Electronics,MEDIUM,functional,YES,Mapped to RBI Electronics sector as the closest functional banking-credit proxy for semiconductor-related industrial activity.,
+OSAT,Electronics,MEDIUM,functional,YES,Mapped to RBI Electronics sector as the closest functional banking-credit proxy for semiconductor-related industrial activity.,
+Semiconductor Fab,Electronics,MEDIUM,functional,YES,Mapped to RBI Electronics sector as the closest functional banking-credit proxy for semiconductor-related industrial activity.,
+Semiconductor Manufacturing,Electronics,MEDIUM,functional,YES,Mapped to RBI Electronics sector as the closest functional banking-credit proxy for semiconductor-related industrial activity.,

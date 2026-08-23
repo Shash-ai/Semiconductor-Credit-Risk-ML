@@ -1,0 +1,13 @@
+﻿project_id,company,financial_year,numbers_currency,numbers_unit,revenue,ebitda,ebit,pat,total_debt,total_equity,current_assets,current_liabilities,interest_expense,operating_cash_flow,verification_status,financial_evidence_verified,is_exact_company_financials,is_parent_financials
+SEM-0001,Micron Technology Inc.,FY2025,USD,million,37378.0,,9770.0,8539.0,14577.0,54165.0,28841.0,11454.0,,17525.0,VERIFIED_PARENT,1,0,1
+SEM-0002,Tata Electronics Private Limited,,,,,,,,,,,,,,NOT_VERIFIED,0,0,0
+SEM-0003,Tata Electronics Private Limited,,,,,,,,,,,,,,NOT_VERIFIED,0,0,0
+SEM-0004,CG Power and Industrial Solutions Limited,FY2024-25,INR,crore,9329.0,1435.0,,974.0,,,,,5.4,,VERIFIED_PARTIAL,1,1,0
+SEM-0005,Kaynes Technology India Limited,FY2024-25,INR,crore,2721.752,410.7,,293.433,,,,,,,VERIFIED_PARTIAL,1,1,0
+SEM-0006,Vama Sundari Investments (Delhi) Private Limited / Foxconn,,,,,,,,,,,,,,NOT_VERIFIED,0,0,0
+SEM-0007,3D Glass Solutions Inc.,,,,,,,,,,,,,,NOT_VERIFIED,0,0,0
+SEM-0008,SiCSem Private Limited,,,,,,,,,,,,,,NOT_VERIFIED,0,0,0
+SEM-0009,Continental Device India Private Limited,,,,,,,,,,,,,,NOT_VERIFIED,0,0,0
+SEM-0010,Advanced System in Package Technologies Private Limited,,,,,,,,,,,,,,NOT_VERIFIED,0,0,0
+SEM-0011,Crystal Matrix Limited,,,,,,,,,,,,,,NOT_VERIFIED,0,0,0
+SEM-0012,Suchi Semicon Private Limited,,,,,,,,,,,,,,NOT_VERIFIED,0,0,0

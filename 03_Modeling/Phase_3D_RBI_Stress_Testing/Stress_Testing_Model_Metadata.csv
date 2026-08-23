@@ -1,0 +1,2 @@
+observations,project_scope,method,default_probability_model,supervised_ml,rbi_credit_channel,rbi_npa_channel,scenario_count,baseline_score_range,interpretation
+12,Manufacturing,Deterministic macro-prudential stress testing,NO,NO,YES,YES,4,0-100 relative vulnerability,Higher score indicates greater relative vulnerability under the specified stress framework.

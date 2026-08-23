@@ -1,0 +1,51 @@
+Attached Offices and Societies
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+220
+•	
+Developed the first indigenous Train Communication Network (TCN) based Multifunction Vehicle Bus (MVB) 
+controller for locomotives, establishing an open-architecture technology for the Vehicle Control Unit (VCU) in 
+Indian three-phase locomotives WAG9, WAP7 and WAP5. 
+•	
+Implemented Microgrid Innovation for Energy Efficiency- Kerala Development and Innovation Strategic Council 
+(KDISC) 5 storied building, the first commercial building operating on Solar PV powered 48V DC distribution.  
+•	
+Developed First indigenous Power system real time simulator and deployed at IISc.
+•	
+Developed first indigenous Technology for Planar inductor and Transformer.
+•	
+Model EV Charging Station setup at C-DAC Trivandrum campus- equipped with comprehensive solution for EV 
+public Charging technologies developed under NaMPET, including 7kW & 22kW AC fast charger, 15kW &50kW 
+DC fast Chargers with SiC, Metering and user interfaces. 
+•	
+Developed Integrated drive for BLDC mor for EV applications - Compact low power drive for BLDC motor 
+integration EVIDs.
+•	
+Developed First Indigenous Electrical system emulator - Indigenous design of battery emulation @15kW. 
+These technologies are available for technology transfer at different TRL levels. 
+Major impact of NaMPET created technology base in the country:  In a major initiative for technology development in 
+Locomotive propulsion, Indian Railways has signed MoU with C-DAC in March2025 for 5Megawatt 3 Phase propulsion 
+system with active participation of 3 Industries. This is the largest ever Power Electronics system development initiated 
+by C-DAC in capacity wise. 
+9.1.2.2	 Chips to Startup (C2S)
+Details may be seen at Chapter 7.
+9.1.2.3	 Design Linked Incentive (DLI)
+The Design Linked Incentive (DLI) Scheme aims to provide financial incentives as well as design infrastructure support 
+across various stages of development and deployment of semiconductor design for Integrated Circuits (ICs), Chipsets, 
+System on Chips (SoCs), Systems & IP Cores and semiconductor linked design  with an aim to achieving significant 
+indigenization in semiconductor and electronic products and IPs deployed in the country, thereby facilitating import 
+substitution and value addition in electronics sector in the next 5 years. 
+As on September 18, 2025, total of 115 applications were received for financial support and 23 are approved for financial 
+support. A total of 81 applications were received for EDA tool support and 74 are approved for EDA tool support.
+Details may be seen at Chapter 5.
+9.1.2.4	 IndiaAI Datalab at C-DAC Mohali – Soft Launch
+As a part of India-AI Mission, Hon’ble Minister of Electronics & IT, 
+Shri. Ashwini Vaishnaw, launched 30 IndiaAI Datalabs nationwide, 
+including the one at C-DAC Mohali which is established in 
+collaboration with Intel Corporation India during the curtain raiser 
+event of the AI Impact Summit 2026.
+At C-DAC Mohali, the focus is on driving pioneering AI research 
+and delivering scalable, real-world solutions across domains such 
+as Cybersecurity, Applied Ethics, Healthcare, and Industry 4.0. In 

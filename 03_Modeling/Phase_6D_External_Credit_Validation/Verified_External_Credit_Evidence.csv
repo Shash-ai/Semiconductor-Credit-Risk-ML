@@ -1,0 +1,5 @@
+﻿company,rating_agency,rating_date,rating,outlook,rating_type,temporal_status,evidence_class,adverse_event,source_status,notes
+Kaynes Technology India Limited,ICRA,2026-01-30,[ICRA]A-,Positive,Long-term fund-based,POST_PROJECT,INVESTMENT_GRADE_NON_DEFAULT,0,VERIFIED_OFFICIAL_CRA,Rating reaffirmed; rated amount enhanced. Outlook Positive.
+Kaynes Technology India Limited,CRISIL Ratings,2026-03-12,Crisil A,Stable,Long-term / Corporate Credit Rating,POST_PROJECT,INVESTMENT_GRADE_NON_DEFAULT,0,VERIFIED_OFFICIAL_CRA,Ratings removed from Watch Developing and reaffirmed at Crisil A/Stable.
+Kaynes Technology India Limited,ICRA,2019-12-03,[ICRA]D,,Historical rating,PRE_PROJECT,HISTORICAL_DISTRESS_PRE_PROJECT,1,VERIFIED_OFFICIAL_CRA,Historical D rating predates semiconductor-project approval; must NOT be treated as a semiconductor-project default.
+CG Power and Industrial Solutions Limited,India Ratings and Research,2026-03-18,IND AA+,Stable,Issuer Rating,POST_PROJECT,STRONG_INVESTMENT_GRADE_NON_DEFAULT,0,VERIFIED_OFFICIAL_CRA,Issuer rating affirmed at IND AA+/Stable; commercial paper IND A1+.

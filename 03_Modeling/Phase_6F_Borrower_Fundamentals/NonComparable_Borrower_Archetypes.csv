@@ -1,0 +1,10 @@
+﻿project_id,company,borrower_archetype,verification_status,financial_evidence_type,review_notes
+SEM-0001,Micron Technology Inc.,PARENT_SUPPORTED_PROJECT,VERIFIED_PARENT,PARENT_LEVEL,Micron Technology Inc. FY2025 audited GLOBAL PARENT financials. These provide sponsor/parent financial-strength context only and must not be interpreted as Gujarat ATMP project financial statements.
+SEM-0002,Tata Electronics Private Limited,INSUFFICIENT_PUBLIC_DATA,NOT_VERIFIED,,
+SEM-0003,Tata Electronics Private Limited,INSUFFICIENT_PUBLIC_DATA,NOT_VERIFIED,,
+SEM-0006,Vama Sundari Investments (Delhi) Private Limited / Foxconn,INSUFFICIENT_PUBLIC_DATA,NOT_VERIFIED,,
+SEM-0007,3D Glass Solutions Inc.,INSUFFICIENT_PUBLIC_DATA,NOT_VERIFIED,,
+SEM-0008,SiCSem Private Limited,PRE_COMMERCIAL_SPV,VERIFIED_EXACT_SUBSIDIARY_PARTIAL,COMPANY_OR_ENTITY_LEVEL,"Exact SiCSem subsidiary figures from FY2024-25 AOC-1 disclosure. SiCSem had not commenced commercial operations as of March 31, 2025. Total liabilities are not treated as financial debt."
+SEM-0010,Advanced System in Package Technologies Private Limited,INSUFFICIENT_PUBLIC_DATA,NOT_VERIFIED,,
+SEM-0011,Crystal Matrix Limited,INSUFFICIENT_PUBLIC_DATA,NOT_VERIFIED,,
+SEM-0012,Suchi Semicon Private Limited,INSUFFICIENT_PUBLIC_DATA,NOT_VERIFIED,,

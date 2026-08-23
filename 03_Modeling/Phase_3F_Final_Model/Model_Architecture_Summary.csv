@@ -1,0 +1,3 @@
+model,scope,method,purpose,target,supervised,output
+Model A,36 semiconductor ecosystem projects,PCA + K-Means + Hierarchical Validation,Structural project segmentation,None,NO,Validated ecosystem clusters
+Model B,12 manufacturing projects,Macro-prudential stress testing,Relative vulnerability assessment,None,NO,Robust vulnerability ranking

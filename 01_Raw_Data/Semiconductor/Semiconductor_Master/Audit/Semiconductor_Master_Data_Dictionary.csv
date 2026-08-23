@@ -1,0 +1,52 @@
+domain,variable,available
+Semiconductor Project,project_id,True
+Semiconductor Project,company,True
+Semiconductor Project,project_type,True
+Semiconductor Project,project_group,True
+Semiconductor Project,state,True
+Semiconductor Project,approval_date,True
+Semiconductor Project,approval_year,True
+Semiconductor Project,investment_crore,True
+Semiconductor Project,investment_category,True
+Semiconductor Project,capacity_value,True
+Semiconductor Project,capacity_unit,True
+Semiconductor Project,capacity_category,True
+Semiconductor Project,technology,True
+Semiconductor Project,technology_partner,True
+Company Financials,revenue,False
+Company Financials,ebitda,False
+Company Financials,net_profit,False
+Company Financials,total_debt,False
+Company Financials,net_worth,False
+Company Financials,cash_flow,False
+Company Financials,capex,False
+Company Financials,debt_equity,False
+Company Financials,interest_coverage,False
+Company Financials,current_ratio,False
+Company Financials,roa,False
+Company Financials,roe,False
+Bank Exposure,bank,False
+Bank Exposure,borrower,False
+Bank Exposure,credit_exposure,False
+Bank Exposure,sanctioned_amount,False
+Bank Exposure,outstanding_amount,False
+Bank Exposure,loan_tenor,False
+Bank Exposure,interest_rate,False
+Bank Exposure,sector_exposure,False
+Bank Exposure,project_finance_exposure,False
+Bank Exposure,default_status,False
+Bank Exposure,npa_status,False
+Macroeconomic,gdp_growth,False
+Macroeconomic,cpi_inflation,False
+Macroeconomic,repo_rate,False
+Macroeconomic,government_bond_yield,False
+Macroeconomic,industrial_production,False
+Macroeconomic,inr_usd,False
+Macroeconomic,bank_credit_growth,False
+Macroeconomic,sectoral_credit_growth,False
+Semiconductor Industry,semiconductor_demand,False
+Semiconductor Industry,electronics_production,False
+Semiconductor Industry,semiconductor_imports,False
+Semiconductor Industry,semiconductor_exports,False
+Semiconductor Industry,global_semiconductor_sales,False
+Semiconductor Industry,industry_growth,False

@@ -1,0 +1,2 @@
+risk_weight,scale_weight,max_project_share,max_state_share,min_project_share,portfolio_stress_index,stress_reduction_pct,policy_scenarios_tested,ranking_robustness,mean_spearman_rank_correlation,budget_interpretation,stress_reduction_interpretation
+0.8,0.2,0.15,0.35,0.01,58.68398049133178,23.70497306111808,162,HIGH,0.8918,Scalable policy parameter; not an estimated optimal aggregate lending amount,Relative reduction in model portfolio stress index versus investment-proportional allocation

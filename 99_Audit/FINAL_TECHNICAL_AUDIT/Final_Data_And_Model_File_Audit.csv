@@ -1,0 +1,17 @@
+dataset,exists,rows,columns,key,unique_keys,duplicate_keys,sha256
+Manufacturing Master,True,12,20,project_id,12.0,0.0,000c07b2ff81a9985557d04478ae80e14cb4408bdf25f727ad171f0a060f45bf
+DLI Canonical,True,24,24,dli_project_id,24.0,0.0,4e91bb96a253bad73ff1394086d8f99fcb268dba270156b3b4243333bb6ec9f4
+Ecosystem Master,True,36,27,ecosystem_id,36.0,0.0,1a33153a45b01f16446c883cf82603a877cbc58c31b81fcf7aface38446be0eb
+Phase 6G Evidence Matrix,True,12,42,project_id,12.0,0.0,225d292a58465a8f32d2547df9617dccaa1a04f5a6318396deff48ceda6cd8dd
+Final Bank Full,True,12,63,project_id,12.0,0.0,9b835917c812aa3eab2f8efadbe102db8c5f4bd4b7f7dbdf7206b748016fd1a3
+Final Bank Summary,True,12,21,project_id,12.0,0.0,8fc5df814ee85231032d514c60e1759f0d2dfcdce7b54782f386f1e8da3de772
+Credit Committee Register,True,12,23,project_id,12.0,0.0,2eaaed9b41ba034587c86eec2f2f971034ffe2a208652625d8c402721e0e54ad
+Portfolio Summary,True,1,13,,,,eb5652cd027e9ebe9f16f0582d5eba661e1a78a5a929d8d6e99b811faa5b1bfe
+Phase 7B Validation,True,1,10,,,,ad6a662effd7b799ab0040b4de441759d91de6d31361592e36d6ab44660f2877
+Cluster Validation,True,5,21,,,,fa0149ede81a0f7b7661a3147c64a21b987644ee98e66c47ab3f429c3c83624b
+Cross-Method Validation,True,5,10,,,,0b5ab63dfe088bad0f3eb13711bada5c2a38251a3658eff85b58e7e27f108322
+Monte Carlo System Summary,True,1,8,,,,a66f5979f71ec2c8f57373c52527cbd8e54699226ab6495c49a65a8d69d5c028
+Monte Carlo Project Summary,True,12,24,project_id,12.0,0.0,1760b9e08db170f37d5dbf880129748dd4d7fb538a9e717a778b3a081fa21e46
+Benchmark Validation,True,15,4,,,,20502a49d4b6cc0048495cf4ca0e522ebd856d87a89e629d2f4714210c71905d
+Ablation Validation,True,4,7,,,,f6a4a952bc7d8c6c02c6fe54b1e1ea8bbfe8627de83c219375503a39f30dc45d
+Allocation Sensitivity,True,162,19,,,,be0e438e0cb57a7b1aa188a40d293e19093617f048530e78ca7b04f09de7cb2a

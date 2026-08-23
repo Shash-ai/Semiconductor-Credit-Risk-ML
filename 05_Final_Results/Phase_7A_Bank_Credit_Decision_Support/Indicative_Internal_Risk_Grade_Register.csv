@@ -1,0 +1,13 @@
+﻿project_id,company,indicative_model_risk_grade,project_stress_vulnerability_score,borrower_credit_strength_class,portfolio_concentration_class,credit_information_quality,early_warning_status
+SEM-0002,Tata Electronics Private Limited,E,100.0,NOT_OBSERVABLE,HIGH,MODERATE,RED
+SEM-0011,Crystal Matrix Limited,D,71.09527372373961,NOT_OBSERVABLE,MODERATE,MODERATE,AMBER
+SEM-0012,Suchi Semicon Private Limited,D,67.01296884230614,NOT_OBSERVABLE,MODERATE,MODERATE,AMBER
+SEM-0004,CG Power and Industrial Solutions Limited,B,45.15315566404277,STRONG,MODERATE,HIGH,GREEN
+SEM-0005,Kaynes Technology India Limited,B,40.31842288483617,STRONG,MODERATE,HIGH,GREEN
+SEM-0003,Tata Electronics Private Limited,B,30.05713019435408,NOT_OBSERVABLE,MODERATE,MODERATE,GREEN
+SEM-0009,Continental Device India Private Limited,B,0.0,VERY_WEAK,LOW,HIGH,GREEN
+SEM-0006,Vama Sundari Investments (Delhi) Private Limited / Foxconn,A,17.763110820652695,NOT_OBSERVABLE,LOW,MODERATE,GREEN
+SEM-0001,Micron Technology Inc.,A,16.311959160811913,NOT_OBSERVABLE,LOW,MODERATE,GREEN
+SEM-0008,SiCSem Private Limited,A,10.852115241143197,NOT_OBSERVABLE,LOW,MODERATE,GREEN
+SEM-0007,3D Glass Solutions Inc.,A,7.625738257482885,NOT_OBSERVABLE,LOW,MODERATE,GREEN
+SEM-0010,Advanced System in Package Technologies Private Limited,A,3.3693381673007576,NOT_OBSERVABLE,LOW,MODERATE,GREEN

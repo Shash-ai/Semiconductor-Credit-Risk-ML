@@ -1,0 +1,3 @@
+﻿dataset,intended_use,observations,total_non_id_columns,standardized_features,row_count_ok,unique_id_ok,non_numeric_features,missing_cells,infinite_values,zero_variance_features,target_like_fields,raw_z_duplicate_pairs,duplicate_z_feature_vectors,status,important_instruction
+Manufacturing_Stress_Testing_Final,STRESS_TESTING,12,14,6,True,True,,0,0,,,6,0,READY_FOR_STRESS_SCENARIO_ANALYSIS,Do NOT feed raw and z_ versions together. Use the generated Z_ONLY safe view for distance-based modelling.
+Ecosystem_Clustering_Final,UNSUPERVISED_CLUSTERING,36,24,12,True,True,,0,0,,,12,0,READY_FOR_EXPLORATORY_UNSUPERVISED_USE,Do NOT feed raw and z_ versions together. Use the generated Z_ONLY safe view for distance-based modelling.

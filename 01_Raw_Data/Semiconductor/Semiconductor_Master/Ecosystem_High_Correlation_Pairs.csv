@@ -1,0 +1,16 @@
+﻿feature_1,feature_2,correlation,abs_correlation
+is_manufacturing,is_design,-1.0,1.0
+is_manufacturing,is_design_project,-1.0,1.0
+is_manufacturing,capacity_available,1.0,1.0
+is_manufacturing,approval_year_available,1.0,1.0
+is_design,is_design_project,1.0,1.0
+is_design,capacity_available,-1.0,1.0
+is_design,approval_year_available,-1.0,1.0
+is_design_project,capacity_available,-1.0,1.0
+is_design_project,approval_year_available,-1.0,1.0
+company_project_count,multi_project_company_flag,1.0,1.0
+capacity_available,approval_year_available,1.0,1.0
+state_project_count,scope_state_project_count,0.995193,0.995193
+analytical_exposure_index,analytical_exposure_percentile,0.923469,0.923469
+scope_state_project_share,state_financial_share_within_scope,0.923071,0.923071
+financial_size_relative_to_scope_max,financial_zscore_within_scope,0.905582,0.905582

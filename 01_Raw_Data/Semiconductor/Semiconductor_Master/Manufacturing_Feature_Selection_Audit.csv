@@ -1,0 +1,7 @@
+﻿feature,status,reason
+financial_size_relative_to_scope_max,SELECTED,Compact stress-testing feature set
+state_financial_share_within_scope,SELECTED,Compact stress-testing feature set
+rbi_electronics_credit_growth_pct,SELECTED,Compact stress-testing feature set
+rbi_electronics_credit_growth_volatility,SELECTED,Compact stress-testing feature set
+gross_npa_growth_pct,SELECTED,Compact stress-testing feature set
+npa_addition_pressure,SELECTED,Compact stress-testing feature set

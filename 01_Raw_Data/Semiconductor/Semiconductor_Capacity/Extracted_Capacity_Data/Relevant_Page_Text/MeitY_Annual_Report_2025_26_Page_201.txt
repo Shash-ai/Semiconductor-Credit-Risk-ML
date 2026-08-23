@@ -1,0 +1,48 @@
+Skill India:
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+199
+utilizing advanced tools. Key objectives include promoting awareness of cyber laws, enhancing data security, enabling 
+efficient technology use in governance, building incident response capacity, fostering collaboration among stakeholders, 
+and bridging the digital divide in remote areas. The program also emphasizes public awareness, integrates a Learning 
+Management System (LMS), and develops a Virtual Training Environment (VTE) for hands-on cyber security training.
+By December 2025, the Resource Centre’s have trained 
+8,714 Government Officials. The Awareness training 
+(6 hrs) has been completed, and the Basic training (20 
+hours) is currently ongoing. Additionally, cybersecurity 
+labs have been established in each Northeast (NE) state 
+capital (8 locations) and in 9 selected district locations 
+across NE states, making a total of 17 fully set-up labs. 
+The development of a Virtual Training Environment (VTE) 
+has been completed, and the Learning Management 
+System (LMS) is fully developed and live.
+7.4.6	 Finishing School Program on 3D Printing & Additive Manufacturing Technology for Engineering Students 
+of West Bengal and Bihar:
+The Ministry of Electronics and Information Technology (MeitY) has approved the project titled “Finishing School 
+Program on 3D Printing & Additive Manufacturing Technology for Engineering Students of West Bengal and Bihar” for 
+a duration of 60 months, from 05.08.2024. The programme is being implemented to establish state-of-the-art Centres 
+of Excellence (CoEs) equipped with modern 3D printing and additive manufacturing facilities in selected engineering 
+colleges across West Bengal and Bihar. The primary objective of the project is to equip engineering students and 
+youth with industry-relevant theoretical knowledge and hands-on skills in emerging manufacturing technologies. The 
+programme focuses on bridging the industry–academia gap through practical modules, workshops, and boot-camp 
+programmes aligned with current and future industrial requirements. 
+By December 2025, 7 state-of-the-art Centres of Excellence (CoEs) have been established across West Bengal and 
+Bihar as regional hubs for training and innovation in 3D Printing and Additive Manufacturing Technology. These centres 
+are equipped with advanced 3D printing systems covering multiple technologies such as FDM, LDM, PolyJet, SLA, and 
+DMLS, along with post-processing facilities including Ultrasonic Cleaners, Water Jet systems, Agitation Tanks, and 
+Sintering Stations. Structured Light 3D Scanners have also been deployed to support reverse engineering applications. 
+1,360 students have successfully completed the training programme, while an additional 530 students are currently 
+undergoing training. 
+7.4.7	 Chips to Startup (C2S) Programme
+Chips to Start-up (C2S) Programme is an umbrella programme initiated by Ministry of Electronics and Information 
+Technology (MeitY) with an outlay of Rs. 250 Crore for 5 years in the year 2022 with an aim to generate 85,000 number 
+of industry-ready manpower at B.Tech, M.Tech, and PhD levels specialized in semiconductor chip design, VLSI (Very 
+Large-Scale Integration) and embedded system design areas and create vibrant fabless chip design ecosystem in the 
+country. Against the target of generation of 85,000 manpower by the year 2027, total 67,000 manpower at B.Tech, 
+M.Tech & PhD levels have been enrolled till date and are being trained under the Programme.
+The Programme takes a comprehensive approach by offering students complete hands-on experience in chip design, 
+fabrication, and testing. This is achieved through regular training sessions, conducted in collaboration with industry 
+partners, and by providing mentorship and access to chip design, fabrication & testing resources to students, including 
+state-of-the-art EDA (Electronic Design Automation) tools, access to semiconductor foundries for fabricating their chips 

@@ -1,0 +1,8 @@
+validated_cluster,project_scope,projects,median_financial_measure,mean_financial_measure,min_financial_measure,max_financial_measure
+0,Semiconductor Design,5,41.9275,37.07916,17.43,61.25
+1,Manufacturing,6,3506.5,7177.5,480.0,27120.0
+2,Semiconductor Design,5,25.5557,32.26338,9.86,65.36
+3,Manufacturing,3,3068.0,32220.0,2066.0,91526.0
+4,Manufacturing,3,1943.0,8192.0,117.0,22516.0
+4,Semiconductor Design,11,29.53,31.997463636363637,4.28,83.75200000000001
+5,Semiconductor Design,3,29.64,26.024966666666668,7.48,40.954899999999995

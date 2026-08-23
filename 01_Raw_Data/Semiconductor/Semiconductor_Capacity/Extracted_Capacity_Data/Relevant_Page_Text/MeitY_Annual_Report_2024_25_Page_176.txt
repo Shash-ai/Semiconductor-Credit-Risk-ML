@@ -1,0 +1,121 @@
+REPORT
+Ministry of Electronics & Information Technology
+Skill India
+Annual
+2024-2025
+174
+respective domains. The Ministry has also supported the 
+development of new job roles/NOSs with ESSCI, TSSC, 
+and IT/ITeS Sector Skill Council in the area of Electronics 
+and IT. 
+7.4	
+Capacity Building in Niche Areas
+I.	
+Programme in Chips to Startup (C2S) 
+The C2S Programme aims to train 85,000 number of 
+Specialized Manpower at 113 participating Institutions 
+(including Academia, R&D Organization, Startups, 
+MSMEs) over a period of 5 years in the area of VLSI 
+and Embedded System Design and leapfrog in ESDM 
+space by way of inculcating the culture of System-on-
+Chip (SoC)/ System Level Design at Bachelors, Masters 
+and Research level and act as a catalyst for growth of 
+Start-ups involved in fabless design. 
+The programme would not only generate 85,000 number 
+of Specialized Manpower at B.Tech, M.Tech & PhD level 
+in Chip design area; but also results in the development 
+of 20 Systems/ 175 Chips/ 30 reusable IP Cores and 
+incubating 25 startups in this area. Details of the 
+Programme are available at http://c2s.gov.in/
+• 
+Under 
+the 
+programme, 
+113 
+Organizations 
+across the country (Including Academia/ R&D 
+Organization/ Startup/ MSME) are being supported 
+by way of providing centralized access of EDA tools, 
+Fabrication and financial support for implementing 
+R&D projects for IP/ Chip/ SoC development.
+• 
+ChipIN Centre, setup at C-DAC Bangalore as one 
+stop centre for chip designers, is providing following 
+design and fabrication services to PIs under C2S 
+Programme:
+A.	
+Design infrastructure support: 
+	
+1)	
+EDA tools commissioned and onboarded 
+about 240 institutions (against a target of 
+100 institutions). Details at https://c2s.gov.
+in/EDA_Tool_Support.jsp
+	
+2)	
+Commissioning of FPGA Boards: Details at 
+https://c2s.gov.in/DetailsFPGA.jsp
+	
+	
+i)	
+FPGA Boards from XILINX(AMD) has 
+been provided to 100 PIs to provide 
+hands-on training on FPGA prototyping 
+to the students. 
+	
+	
+ii)	
+Some of the Advanced FPGA boards 
+are centrally hosted at ChipIN Centre 
+and are made accessible to institutions 
+participating in C2S Programme. These 
+boards are designed for advanced 
+applications, such as AI acceleration, 
+data 
+analytics, 
+high-performance 
+computing, 
+advanced 
+hardware 
+prototyping, etc. 
+B.	
+Design flow trainings
+i.	
+ChipIN Centre has collaborated with semiconductor 
+industry and providing regular training on ASIC 
+design flow and EDA Tools. So far, 141 training 
+sessions conducted by the ChipIN Centre in 
+collaboration with SCL Mohali, IMEC, MUSE 
+Semiconductors and Semiconductor Industry such 
+as Synopsys, Cadence, Siemens EDA, Ansys, 
+Keysight Technologies, AMD (Xilinx) and IBM. 
+The details are available at https://c2s.gov.in/
+training2024.jsp
+	
+ChipIN Centre, as VCA (Value-chain Aggregator) 
+of SCL Mohali, is providing MPW fabrication 
+support to 113 PIs for fabrication of their designs at 
+180nm, SCL Mohali.
+ii.	
+SMART Lab Facility: 
+	
+VLSI SMART Lab Facility has been setup at NIELIT 
+Calicut (with two labs having 100 hardware system) 
+to train about 1 Lakh candidates in 5 Years (20,000 
+candidates /year) in Hardware design including 
+VLSI Design, Embedded hardware design, Board 
+design, etc. through NSQF aligned Courses and by 
+providing remote access of FPGA boards ported 
+with SHAKTI/ VEGA Processors. Total of 38,622 
+candidates have been trained till October 2024 
+for different courses offered through SMART Lab. 
+Details of SMART Lab courses are available at 
+https://c2s.gov.in/NIELIT_Calicut.jsp  
+iii.	
+M.Tech and M.DesProgramme in Electronics 
+Product Design
+	
+To train manpower in the area of Electronics 
+Product Design for designing innovative products, 
+rapid prototyping & development and hands-on 
+experience with cutting edge technology and 

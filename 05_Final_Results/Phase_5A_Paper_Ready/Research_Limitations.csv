@@ -1,0 +1,6 @@
+﻿limitation,implication,response
+No observed project-level default/NPA target,Supervised probability-of-default modelling was not methodologically justified.,"Used unsupervised segmentation, deterministic stress testing, and sensitivity analysis instead."
+Small manufacturing sample,Only 12 official manufacturing observations are available.,Avoided high-dimensional supervised ML and used transparent relative vulnerability analysis.
+RBI banking variables are sector-level,They do not represent actual project-specific bank exposure.,Used them strictly as macro-prudential stress channels.
+Credit allocation is hypothetical,The model does not reproduce actual bank lending decisions.,All budgets and concentration limits are explicitly treated as policy scenarios.
+Cluster separation is moderate,Clusters should not be interpreted as perfectly distinct classes.,Validated with hierarchical agreement and bootstrap stability.

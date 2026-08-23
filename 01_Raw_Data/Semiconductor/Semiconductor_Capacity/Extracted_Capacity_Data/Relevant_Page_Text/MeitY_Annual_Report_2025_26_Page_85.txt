@@ -1,0 +1,47 @@
+Make in India
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+83
+Industrial electronics is an empirical barometer of overall growth in the contribution of the manufacturing sector 
+in the economy. The spurt in investments due to the “Make in India” programme is bringing significant interest in 
+engineering, electrical, automotive and electronics segments which are the driving force behind the growth of industrial 
+electronics  sector. In future, M2M (machine-to-machine and machine-to-man) communication modules driven by 
+Industry 4.0 activities will determine the growth of the Industrial electronic segment.
+3.2.6	 Automotive Electronics 
+Automotive electronics are electrically operated systems integrated and mounted in several vehicle applications such 
+as body electronics, safety systems, and infotainment. The automotive market demand is experiencing trends related 
+to advanced mobility solutions, powertrain & vehicle system electrification, and advanced safety systems. Due to the 
+increased implementation of these systems in vehicles, the penetration of automotive electronics has also increased, 
+further creating the demand for automotive electronics products across the globe. The digitization of automotive systems 
+by including connected technologies, in-vehicle communication, and ADAS & automated systems have created several 
+opportunities for market growth. The growing integration & adoption of automotive electronics in modern vehicles to 
+deliver enhanced safety & comfort to consumers is one of the major factors driving the automotive electronics industry 
+growth. Several features offered by OEMs including Automated Emergency Braking (AEB) system, airbag system, 
+and lane departure warning, etc. have significantly decreased road accidents worldwide. Automotive electronics along 
+with the presence of broad computing technologies and connected features are enhancing automobile capabilities. 
+Alcohol ignition interlock, accident data recorder system, and emergency call system are some of the features gaining 
+attraction, which will further propel the growth. According to Allied Market Research, the global Auto electronics market 
+is estimated to reach USD 382.16 billion by 2026, growing at a CAGR of 7.3 percent from 2019 to 2026.
+Automotive Mission Plan 2016-26 targets India to be among the top three in the world for engineering, manufacturing and 
+export of vehicles and auto components. The growing presence of global automobile Original Equipment Manufacturers 
+(OEMs) in the Indian manufacturing landscape has significantly increased the localization of their components in the 
+country. India has become the preferred designing and manufacturing base for most global auto OEMs for local sourcing 
+and exports. 
+3.2.7	 Electronic Components 
+The global market for electronic components is expected to grow. Following this global trend, the Indian electronic 
+components market is also poised to grow significantly. Mobile Phones, Consumer Electronics and Industrial Electronics 
+account for the major demand (82%) for electronic components in India. 
+GoI launched the Scheme for Promotion of Manufacturing of Electronic Components and Semiconductors (SPECS) 
+(notified vide Gazette Notification No.CG-DL-E-01042020-218992 dated April 01, 2020). This scheme provides financial 
+incentive of 25% on capital expenditure for the identified list of electronic goods that comprise downstream value chain 
+of electronic products, i.e., electronic components, ATMP units, specialized sub-assemblies and capital goods for 
+manufacture of aforesaid goods, e-waste recycling facility and R&D units for the manufacturing of semiconductors. 
+Apart from SPECS, the other initiatives of the Government that boost the production of electronic components include 
+rationalization of tariff structure, Phased Manufacturing Programme (PMP), and notification of electronics products 
+under the Public Procurement (Preference to Make in India), Order 2017. Under the umbrella of “Make in India” program, 
+BCD has been imposed on Printed Circuit Board (PCB) Assembly of Mobile handsets with the intention to strengthen 
+the domestic EMS and components segment in India. Production Linked Incentive Scheme (PLI) for Large Scale 
+Electronics Manufacturing is also supporting manufacturing of specified electronic components. The Indian government 
+has imposed an anti-dumping duty (ADD) on bare printed circuit boards (PCBs) with fewer than six layers.

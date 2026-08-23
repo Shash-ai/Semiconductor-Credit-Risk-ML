@@ -1,0 +1,28 @@
+﻿section,check,status,details,severity
+MANUFACTURING,Official project count,PASS,"Observed=12, Expected=12",CRITICAL
+MANUFACTURING,Required columns,PASS,All required columns present,CRITICAL
+MANUFACTURING,Unique project IDs,PASS,Duplicate IDs=0; Missing IDs=0,CRITICAL
+MANUFACTURING,Duplicate rows,PASS,Duplicate rows=0,CRITICAL
+MANUFACTURING,Semantic project duplicates,PASS,Semantic duplicates=0,CRITICAL
+MANUFACTURING,Investment values,PASS,Missing/non-positive investment values=0,CRITICAL
+MANUFACTURING,Official-source provenance,PASS,Official-source rows=12/12; source missing=0,CRITICAL
+DLI,Official DLI project count,PASS,"Observed=24, Expected=24",CRITICAL
+DLI,Required fields,PASS,All required fields present,CRITICAL
+DLI,Unique DLI IDs,PASS,Duplicate IDs=0,CRITICAL
+DLI,Official serial numbers 1-24,PASS,Serials complete,CRITICAL
+DLI,Company-project duplicates,PASS,Duplicate company-project observations=0,CRITICAL
+DLI,Project outlay,PASS,Missing/non-positive outlays=0,CRITICAL
+DLI,Official-source provenance,PASS,Rows recognized as official-source=24/24,NORMAL
+ECOSYSTEM,Total ecosystem observations,PASS,"Observed=36, Expected=36",CRITICAL
+ECOSYSTEM,Unique ecosystem IDs,PASS,Duplicate ecosystem IDs=0,CRITICAL
+ECOSYSTEM,Scope distribution,PASS,Manufacturing=12; Design=24,CRITICAL
+ECOSYSTEM,Financial concept separation,PASS,Manufacturing semantic violations=0; DLI semantic violations=0,CRITICAL
+CROSS_FILE,Manufacturing canonical IDs ↔ ecosystem,PASS,Missing in ecosystem=[]; Extra=[],CRITICAL
+CROSS_FILE,Manufacturing field consistency,PASS,Inconsistent manufacturing rows=0,CRITICAL
+CROSS_FILE,DLI canonical IDs ↔ ecosystem,PASS,Missing in ecosystem=[]; Extra=[],CRITICAL
+CROSS_FILE,DLI field consistency,PASS,Inconsistent DLI rows=0,CRITICAL
+RBI,RBI manufacturing row count,PASS,"Observed=12, Expected=12",CRITICAL
+RBI,Unique project IDs after RBI merge,PASS,Duplicate IDs=0,CRITICAL
+RBI,RBI project coverage,PASS,Missing=[]; Extra=[],CRITICAL
+RBI,Electronics credit coverage,PASS,Coverage=12/12,NORMAL
+RBI,Exact-year NPA coverage,INFO,NPA-covered projects=10/12. Missing exact-year observations are allowed and should not be forward-filled without evidence.,NORMAL

@@ -1,0 +1,7 @@
+semiconductor_category,rbi_sector,mapping_confidence,mapping_basis,manual_review_required
+ATMP,Electronics,MEDIUM,functional,YES
+Advanced Packaging,Electronics,MEDIUM,functional,YES
+Compound Semiconductor Fab + ATMP,Electronics,MEDIUM,functional,YES
+OSAT,Electronics,MEDIUM,functional,YES
+Semiconductor Fab,Electronics,MEDIUM,functional,YES
+Semiconductor Manufacturing,Electronics,MEDIUM,functional,YES

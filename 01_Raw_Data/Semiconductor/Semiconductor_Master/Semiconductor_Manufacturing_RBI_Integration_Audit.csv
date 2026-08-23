@@ -1,0 +1,14 @@
+﻿feature,non_null,missing,coverage_pct,unique_values,zero_variance
+rbi_electronics_credit_crore,12,0,100.0,4,NO
+rbi_electronics_credit_growth_pct,12,0,100.0,4,NO
+rbi_electronics_credit_growth_volatility,12,0,100.0,4,NO
+total_gross_npa_closing_crore,10,2,83.33,3,NO
+total_net_npa_closing_crore,10,2,83.33,3,NO
+gross_npa_growth_pct,10,2,83.33,3,NO
+net_to_gross_npa_ratio,10,2,83.33,3,NO
+npa_addition_pressure,10,2,83.33,3,NO
+investment_to_electronics_credit_ratio,12,0,100.0,12,NO
+investment_to_electronics_credit_pct,12,0,100.0,12,NO
+investment_credit_growth_interaction,12,0,100.0,12,NO
+investment_npa_growth_interaction,10,2,83.33,10,NO
+investment_npa_pressure_interaction,10,2,83.33,10,NO

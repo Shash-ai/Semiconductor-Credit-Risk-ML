@@ -1,0 +1,2 @@
+ecosystem_projects,selected_clusters,silhouette_score,hierarchical_ari,bootstrap_ari,interpretation
+36,6,0.3351039238924425,0.7909407665505227,0.580952948416151,Moderately separated structural segmentation with strong cross-method agreement and moderate stability

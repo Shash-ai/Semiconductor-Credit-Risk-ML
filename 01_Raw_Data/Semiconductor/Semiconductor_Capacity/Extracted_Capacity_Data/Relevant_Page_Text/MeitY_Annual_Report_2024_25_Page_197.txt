@@ -1,0 +1,83 @@
+Attached Offices and Societies
+REPORT
+Ministry of Electronics & Information Technology
+Annual
+2024-2025
+195
+9.1.2.5	 Chips to Startup (C2S)
+C-DAC is Programme Coordination Institution for overall 
+implementation of Chips to Startup (C2S) Programme. 
+100 Institutes, 13 Startups /MSMEs have been selected 
+for financial support based on Call-For-Proposals. Vari-
+ous FPGA boards identified and recommended by the 
+CEPC were procured and distributed to all participating 
+institutes under C2S Programme. 200+ organizations are 
+supported for the EDA tools including institutes supported 
+for funds. Currently Synopsys, Cadence, Siemens-EDA, 
+Ansys and Keysight EDA Tool Licenses under C2S Pro-
+gramme are successfully installed and hosted at ChipIN 
+Centre, C-DAC Bengaluru for all participating institutions 
+under C2S Programme. A total of over 120 EDA tool 
+technical training sessions have been organized for all 
+participating institutions so far. 
+9.1.2.6	 Design Linked Incentive (DLI)
+The Design Linked Incentive (DLI) Scheme shall offer 
+financial incentives as well as design infrastructure 
+support across various stages of development and 
+deployment of semiconductor design for Integrated 
+Circuits (ICs), Chipsets, System on Chips (SoCs), 
+Systems & IP Cores and semiconductor linked design 
+over a period of 5 years. As on January 01, 2025, total 
+of 190 applications are received, 89 are under scrutiny 
+(Financial & Technical) and, 17 are approved under 
+PDLI funding, and 50 are approved under for EDA 
+tool support. There are 98 indigenous start-ups and 
+73 MSME applicants. Total cost of approved financial 
+incentive under DLI is Rs. 203.22 Cr. and Rs. 22.16 Cr 
+had already been disbursed to Startup and MSME based 
+on the achieved project milestones.
+9.1.3	 Quantum Computing
+9.1.3.1 Metro Area Quantum Access Network 
+(MAQAN)
+MAQAN is India’s first Quantum Key Distribution (QKD) 
+network and R&D testbed, marking a significant step 
+towards quantum-safe communication. The project led 
+to the indigenous development of a QKD chassis with 
+control electronics for CoW and DPS protocols, alongside 
+a hardware and software-based key distillation engine. A 
+softcore Post Quantum Cryptography (PQC) mechanism 
+was implemented as a fail-safe, and SDN-enabled 
+QKD network management was achieved through the 
+DARPAN-Q application. Additionally, a QKD network 
+simulator and chassis emulator with integrated Optical 
+Time Domain Reflectometer (OTDR) monitoring were 
+also developed. This initiative resulted in an indigenous 
+quantum-safe security solution for critical communication 
+infrastructure and enhanced domestic capability in 
+quantum technology. The network is currently operational 
+in a 5-node topology. The project was a collaborative 
+effort of IITM, SETS India, ERNET and C-DAC. The 
+project has translated into the next phase project titled 
+“Quantum Internet with Local Access” under the National 
+Quantum Mission focussing on long distance fiber based 
+QKD over 2000 km across India. 
+MAQAN Network
+9.1.3.2	 QSim - Quantum Computer Simulator Toolkit
+The Quantum Computing Toolkit Project significantly 
+advanced India’s quantum computing research as one of 
+the country’s pioneering initiatives. Developed through a 
+collaborative effort involving IISc Bengaluru, IIT-Roorkee, 
+and C-DAC, the project led to the launch of QSim by Shri 
+Rajeev Chandrasekhar, then Hon’ble Minister of State 
+for Electronics & IT. It provided a robust, indigenous 
+toolkit for simulating and experimenting with quantum 
+circuits, including noisy circuits, and delivered hands-
+on training to students, researchers, and scientists. This 
+effort has cultivated an expansive user network, boasting 
+over 6,800+ registered users on QSim (qctoolkit.in) from 
+leading academic institutes and organizations like IITs, 
+DRDO, IISER, TCS, Infosys, and IBM. Various training 
+and workshops are conducted using QSim platform. 
+Additionally, QSim is optimized for accelerator platforms 
+like GPUs, enhancing performance and enabling faster 
+simulations. 

@@ -1,0 +1,2 @@
+projects,unique_project_ids,duplicate_project_ids,projects_with_borrower_fundamentals,projects_with_external_credit_evidence,projects_with_high_information_quality,red_ews_projects,amber_ews_projects,green_ews_projects,probability_of_default_model,automated_credit_approval
+12,12,0,3,2,3,1,2,9,NO,NO

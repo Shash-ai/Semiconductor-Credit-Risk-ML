@@ -1,0 +1,2 @@
+manufacturing_projects,projects_with_verified_post_project_credit_evidence,coverage_pct,projects_without_verified_external_evidence,external_validation_status,interpretation
+12,2,16.666666666666664,10,PARTIAL_EXTERNAL_VALIDATION,External CRA evidence is used only as independent company-level validation and not as a supervised target.

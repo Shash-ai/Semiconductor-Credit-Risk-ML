@@ -1,0 +1,6 @@
+comparison,spearman_rho,spearman_p_value,kendall_tau,kendall_p_value,mean_absolute_rank_difference,maximum_rank_difference,top_k,overlap_count,overlap_share
+Deterministic vs MC Tail Risk,0.9982502173821435,1.2879651002870038e-13,0.9923953268977465,7.905322790445053e-06,0.08333333333333333,1.0,,,
+Deterministic vs MC Mean Rank,0.9457107322567676,3.389325940020846e-06,0.9007896044148775,5.006442060264596e-05,0.5833333333333334,4.0,,,
+Deterministic vs MC Top3 Frequency,0.8983415518941831,7.193292885027275e-05,0.8320502943378437,0.000510031632504722,1.6666666666666667,6.0,,,
+Deterministic vs MC Tail Risk — Top 3,,,,,,,3.0,3.0,1.0
+Deterministic vs MC Tail Risk — Top 5,,,,,,,5.0,5.0,1.0

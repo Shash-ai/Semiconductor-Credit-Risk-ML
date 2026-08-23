@@ -1,0 +1,51 @@
+Attached Offices and Societies
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+311
+9.10	 Digital India Corporation (DIC)
+9.10.1 Introduction
+Digital India Corporation (DIC) is a not-for-profit company set up & promoted by the Ministry of Electronics and Information 
+Technology (MeitY), Govt. of India. The Company leads & guides in realising the vision, objectives and goals of the 
+Digital India program. It provides strategic support to Ministries / Departments of Centre / States to carry forward the 
+mission of Digital India by way of capacity building for e-Governance projects, promoting best practices, encouraging 
+Public-Private Partnerships (PPP), nurturing innovations and technologies in various domains.
+The company encompasses 7 Independent Business Divisions (IBDs) viz. KIDIC Core or Technology Development 
+& Deployment Division (TDDD), NeGD (National e-Governance Division), MyGov, MeitY Startup Hub (MSH), India 
+Semiconductor Mission (ISM), Digital India Bhashini Division (DIBD) and INDIAai.
+9.10.2 DIC Core or Technology Development & Deployment Division 
+9.10.2.1 Poshan Tracker
+‘Poshan Tracker’ is a mobile-based application for dynamic identification of stunting, wasting, and under-weight 
+prevalence among children and last-mile tracking of nutrition service delivery by Anganwadi Workers at Anganwadi 
+centres. The application has further been made available to State Officials with the integration of the Supportive 
+Supervision Application and also to beneficiaries through the new Beneficiary interface.
+The work undertaken in the area of Process Re-engineering for Digital Transformation:
+A.	
+Face Capture and Authentication in SNP distribution: The Poshan Tracker is equipped with the new face 
+capture and authentication feature to ensure that nutritional services are provided to genuine beneficiaries. The 
+implementation of the feature in the Poshan Tracker is a significant step towards ensuring transparency and 
+accountability in the distribution of services, ultimately leading to better nutrition outcomes for the target groups.
+B.	
+Beneficiary e-KYC allows Anganwadi Workers (AWW) to complete the e-KYC (electronic Know Your Customer) 
+process for beneficiaries. This feature aims to streamline the verification process and ensure that benefits are 
+delivered efficiently and accurately. It makes it simple for AWWs to verify beneficiaries’ identities using electronic 
+methods, ensuring accurate and up-to-date records, faster access to benefits, and a secure and reliable process. 
+C.	
+Keycloak Module has been implemented to make logging into the Poshan Tracker easier and safer. Keycloak 
+is used to provide a login facility for the application. Roles are managed on Keycloak and based on role user 
+can switch their application behaviour. One can use multiple applications to login via Keycloak with the same 
+user credentials. It makes the app more secure, preventing unauthorized access and keeping user data safe. 
+Additionally, Keycloak has also been implemented in the Supportive Supervision application for State Officials.
+D.	
+A beneficiary interface has been provided in the Poshan Tracker application to enable the beneficiaries (users) 
+to register themselves directly on the app.
+•	
+Self-Registration Made Simple: This minimizes the dependency on Anganwadi Workers for manual registration.
+• 
+Approval by Anganwadi Workers: Once a beneficiary registers, the request is sent to the Anganwadi worker, to 
+verify and approve the registration. 
+• 
+Access to Personal Information and Services: Beneficiaries can view their service history, which includes 
+information about the child’s health and development, like height and weight tracking and details about the 
+nutritional support they received, based on their eligibility or category

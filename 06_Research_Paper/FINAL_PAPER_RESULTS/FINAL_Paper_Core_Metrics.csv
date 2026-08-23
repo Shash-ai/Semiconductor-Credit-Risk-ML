@@ -1,0 +1,17 @@
+metric,value,source
+Manufacturing observations,12,Manufacturing canonical
+DLI/design observations,24,DLI canonical
+Total ecosystem observations,36,Ecosystem master
+Final bank projects,12,Final banking framework
+Unique bank project IDs,12,Final banking framework
+Duplicate bank project IDs,0,Final banking framework
+Selected structural clusters,6.0,Cluster validation output
+Silhouette score,0.3351039238924425,Cluster validation output
+Hierarchical ARI,0.7909407665505227,Cluster validation output
+Bootstrap stability ARI,0.580952948416151,Cluster validation output
+Deterministic vs Monte Carlo Spearman,0.9982502173821436,Cross-method validation
+Monte Carlo simulations,10000.0,Monte Carlo output
+Bank internal consistency Spearman,0.7776177905750613,Phase 7B validation
+Banking validation status,PASS_WITH_REVIEW,Phase 7B validation
+Probability of Default estimated,NO,Model governance
+Automated loan approval,NO,Model governance

@@ -1,0 +1,2 @@
+policy_scenarios_tested,recommended_risk_weight,recommended_scale_weight,max_project_share,max_state_share,minimum_project_share,portfolio_stress_index,stress_reduction_pct,mean_spearman_rank_correlation,ranking_robustness
+162,0.8,0.2,0.15,0.35,0.01,58.68398049133178,23.70497306111808,0.8918,HIGH

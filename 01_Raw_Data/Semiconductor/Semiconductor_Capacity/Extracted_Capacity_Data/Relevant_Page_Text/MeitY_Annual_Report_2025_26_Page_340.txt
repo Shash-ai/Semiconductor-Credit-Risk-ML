@@ -1,0 +1,47 @@
+Other Matters
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+338
+citizen-engagement   
+10.5 	Information & Documentation Centre (Library)
+This Ministry has a spacious well-planned Library viz Information and Documentation Centre (I&DC), with an inventory 
+of books, journals, magazines, annual reports and newspapers. It uses RFID based Library Management System 
+to manage acquisition, cataloguing and circulation, of books/journals/magazines. I&DC also provides various other 
+services like Inter-Library loan facility to the officials of the Ministry through DELNET (Developing Library Network) and 
+arranges books/journals/magazines/articles from libraries of various other organizations. Services are also provided to 
+the retired officials of the Ministry and trainees who undertake projects in the Ministry.
+The Information & Documentation Centre possesses approximately 20,889/- books on various subject including 
+Electronics, Computer, IT, Computer Languages, Fiction, Artificial Intelligence & Cyber Security. I&DC has books on 
+Hindi and English literature also. I&DC procures on an average 17 books and approximately 34 Journals (Print) per 
+annum and Skillsoft E-books services (Book 24x7) is also made available to the authorized users.
+The Ministry is spearheading an Intra-Ministerial initiative viz the Library Consortium, Ministry of Electronics & Information 
+Technology (MCIT). Consortium of the Ministry (MCIT Consortium) comprises the users from the National Informatics 
+Centre (NIC), C-DAC, NIELIT, SAMEER, C-MET, STQC Directorate, STPI, ERNET India, C-DOT. The Ministry provides 
+on-line access to various e-resources i.e. IEEE Journals/Transactions/Proceedings, IEE Journals/Proceedings, ACM 
+Digital Library and ISO Standards to its users through MCIT Library Consortium. I&DC also provides journals/magazines/
+articles of 30 international publishers through ONOS platform.
+I&DC provides Gartner Research and Advisory Services which is useful e-resource consists of reliable global trends & 
+best practices and latest reports on digital technologies.
+I&DC also provides “Bloomberg Terminal Services”. The Bloomberg Terminal service is a global, 24-hour a day, 
+financial information network providing real-time and historical pricing, indicative and fundamental data, and customized 
+analytics. Other features include on-demand print and multimedia news and research, extensive electronic-trading 
+capabilities, and a superior communications platform.
+10.6	 Parliament Section
+In the Year 2025 the Budget Session, Monsoon Session and Winter Session of the Parliament  has been  held. During 
+these Sessions 238 number of Parliament Questions in Lok Sabha (14 Starred & 224 Unstarred) and 157 number of 
+Parliament Questions in Rajya Sabha (17 Starred & 140 Unstarred) were admitted and handled by the Parliament 
+Section. These were mainly related to Development of IT Hub, Financial Cyber Crime, Cert-In, Development of Additive 
+Manufacturing (3D Printing) in India, National Knowledge Network(NKN), Global Outage, Incentive for Semiconductor 
+and display ecosystem, Digital India Bill, Uniform Fiscal Support, Robotic Process Automation Lab, Grievance Redressal 
+By Social Media Intermediaries, Visveswaraya Ph.D. Scheme, Development of Metaverse, Big Tech companies, 
+Digital Public Infrastructure and AI, PMGDISHA, Electronic Manufacturing Companies, Research and Development, 
+Online Gamers, Cyber Security Incidents, Progress of Digital India Programme, Future Skills Prime Programme, Digital 
+copyright infringement by online chatbots, Leakage of personal data on Dark Web, Manufacturing of Mobile Phone, 
+Implementation of Digital Personal Data Protection Act, 2023, TIDE 2.0 scheme, Electricity supply to data centres, Tariff 
+rationalisation for smart phone manufacturing, Action against Data Breaches, Semiconductor Industry, Technological 
+expertise for blockchain effectiveness for MSMEs, Digital Personal Data Protection Act (DPDPA), Legislation/Rules for 
+Online Gaming and Online Gambling, Adoption and Development of Artificial   Intelligence under PPP Model, Amendment 
+in IT Act to regulate AI, Support to Tech-Startup, Semiconductor chip fabrication, Digital Literacy and Skill Development, 
+Greenfield Semiconductor Fab, Personal Data Mining and PhishingIt, Deepfake, Digital Public Infrastructure, Scheme 

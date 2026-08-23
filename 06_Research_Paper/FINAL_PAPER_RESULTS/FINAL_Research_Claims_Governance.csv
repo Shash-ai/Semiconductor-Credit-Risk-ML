@@ -1,0 +1,11 @@
+status,claim
+ALLOWED,The framework assesses relative credit and macro-financial vulnerability of Indian semiconductor exposures.
+ALLOWED,The framework stress-tests semiconductor bank exposures under adverse conditions.
+ALLOWED,The framework provides indicative bank credit decision-support grades.
+ALLOWED,"The framework incorporates project, macro, borrower and portfolio dimensions."
+ALLOWED,"The banking layer supports credit review, exposure management and monitoring."
+PROHIBITED,The model predicts the probability that a semiconductor borrower will default.
+PROHIBITED,The model predicts actual future NPAs.
+PROHIBITED,Indicative A-E grades are official bank or CRA credit ratings.
+PROHIBITED,The framework autonomously approves or rejects bank loans.
+PROHIBITED,A reduction in the constructed portfolio stress index equals an equivalent reduction in actual credit losses.

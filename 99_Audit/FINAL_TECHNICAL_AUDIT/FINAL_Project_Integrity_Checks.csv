@@ -1,0 +1,7 @@
+check,pass
+Final bank dataset exists,True
+Final bank project IDs unique,True
+Final bank project count = 12,True
+Manufacturing canonical count = 12,True
+DLI canonical count = 24,True
+Ecosystem master count = 36,True

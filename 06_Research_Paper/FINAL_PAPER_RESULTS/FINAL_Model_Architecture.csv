@@ -1,0 +1,8 @@
+layer,method,banking_role
+Structural Ecosystem Segmentation,PCA + validated clustering,Identify structurally similar semiconductor exposures
+Macro-Financial Stress Testing,RBI-linked deterministic scenarios,Measure relative project vulnerability under adverse conditions
+Tail-Risk Validation,Monte Carlo stress simulation,Assess uncertainty and severe-tail exposure
+Borrower Fundamentals,Verified financial-ratio evidence,Assess borrower-level financial strength where information is available
+External Credit Evidence,Verified CRA/public credit evidence,Independent company-credit validation
+Portfolio Allocation,Constrained credit allocation and sensitivity analysis,Control project/geographic concentration
+Bank Credit Decision Support,Indicative A-E grades + credit posture + EWS,Translate analytical evidence into credit-committee decision support

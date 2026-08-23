@@ -1,0 +1,35 @@
+feature,importance
+company_project_count,0.3722282314886351
+years_since_approval,0.2048469370943858
+has_technology_partner,0.07959414826415655
+state_project_count,0.06450023595462277
+capacity_log,0.06336066047331719
+capacity_value,0.05468436256475345
+state_Gujarat,0.04349079569397192
+state_Gujarat,0.023950663128708784
+project_group_Packaging_Testing,0.02048384304715633
+is_osat,0.01915061015446856
+project_group_Fabrication,0.01367435431075379
+is_fab,0.011675799753177637
+project_group_Packaging_Testing,0.010265970303357408
+project_group_Fabrication,0.007570232382923859
+state_Odisha,0.006371672644206606
+state_Odisha,0.004109108817606272
+is_sic,4.237392379806736e-05
+state_Andhra Pradesh,0.0
+project_group_Manufacturing,0.0
+project_group_Advanced_Packaging,0.0
+state_Uttar Pradesh,0.0
+state_Punjab,0.0
+project_complexity,0.0
+state_Assam,0.0
+is_advanced_packaging,0.0
+state_Andhra Pradesh,0.0
+project_group_Manufacturing,0.0
+is_atmp,0.0
+project_group_Advanced_Packaging,0.0
+state_Uttar Pradesh,0.0
+state_Punjab,0.0
+capacity_available,0.0
+state_Assam,0.0
+data_quality_score,0.0

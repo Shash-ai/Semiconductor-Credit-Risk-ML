@@ -1,0 +1,97 @@
+REPORT
+Ministry of Electronics & Information Technology
+Make in India
+Annual
+2024-2025
+82
+in Semiconductor design and Manufacturing domain. 
+Curriculums at Diploma, UG and PG level have been 
+adopted by more than 625 colleges and institutes with 
+approved intake of 16,307 students. These courses at 
+Diploma and UG level will drastically reduce the time 
+gap to make students industry ready. Semiconductor 
+design and technology specific curriculums in Diploma 
+and Engineering, have been designed according to 
+Semiconductor industry needs. 
+ISM has signed an MoU with Purdue University, to 
+enable collaboration for development of skilled workforce 
+(through curation of specific courses/ academic 
+programs), specialized R&D programs, collaboration for 
+funding/ grants support.
+Lam 
+Research, 
+USA, 
+Semiconductor 
+Equipment 
+Manufacture has announced to train 60,000 workforce 
+in the next 10 years through its Semiverse Solution 
+virtual platform in collaboration with Indian academic 
+institutions, aiming to expedite India’s semiconductor 
+education and workforce development goals.
+3.4.7	 R&D Road map
+Applied Materials Inc. (AMAT) has announced a planned 
+investment of $400 Mn to establish Collaborative 
+Engineering Centre in Bangalore. During the initial 5 
+years. the center would support $2Bn+ of spending and 
+create ~500 advanced engineering jobs. This initiative 
+will facilitate R&D collaboration amongst R&D team of 
+Applied Materials, Indian academic institutions and 
+R&D team of vendors of Applied Materials. This will 
+also help in development and sourcing of components/
+sub-assemblies required for the AMAT’s semiconductor 
+equipment.
+3.5	
+ Measures to facilitate Ease of Doing Business:
+Central Board of Indirect Taxes & Customs (CBIC), 
+Department of Revenue, Ministry of Finance has 
+decided to exempt the Electronics and Semiconductor 
+Manufacturing Sector from application of Section 65A of 
+the Customs Act.
+3.6	
+Other programs
+Compulsory Safety Standards for Electronics
+The “Electronics and Information Technology Goods 
+(Requirements for Compulsory Registration) Order, 
+2012” was notified on 3rd  October, 2012 under the 
+Compulsory Registration Scheme notified by Bureau of 
+Indian Standards (BIS) under the ambit of the BIS Act, 
+1986, to ensure the    safety of Indian consumers and 
+curb the inflow of substandard electronic products. The 
+Order has been migrated to BIS Act 2016 as “Electronics 
+and Information Technology Goods (Requirement of 
+Compulsory Registration) Order, 2021”. The Order 
+necessitates   creation   of   an institutional   mechanism  
+for    developing    and    mandating    standards    and 
+certification for electronic products to strengthen 
+Conformity Assessment infrastructure nationwide. As 
+per the provisions of the Order,  before manufacturing, 
+import, sale, stock etc of the products notified under 
+the schedule of the Order, the products need to be 
+registered with BIS based on testing of the notified 
+product at BIS recognized laboratories as per the Indian 
+Standards. The registration is granted to a manufacturer 
+for manufacturing a product at a particular location. 
+The Compulsory Registration Scheme has resulted in 
+high compliance of notified electronic goods to Indian 
+safety standards and more than 45,000 registrations have 
+been granted by BIS to manufacturing units covering 
+approximately 4,00,000 products models/series.
+Public Procurement (Preference to Make in India) 
+Order 2017
+Government has issued Public Procurement (Preference 
+to Make in India) [PPP-MII] Order 2017 vide the 
+Department for Promotion of Industry and Internal 
+Trade (DPIIT) Order No. P-45021/2/2017-B.E.-II dated 
+15.06.2017 with subsequent revisions dated 28.05.2018, 
+29.05.2019, 04.06.2020, 16.09.2020 and 19.07.2024 to 
+encourage ‘Make in India’ and to promote manufacturing 
+and production of goods, services and works in India with 
+a view to enhancing income and employment. 
+In furtherance of the aforesaid revised Order, MeitY has 
+notified mechanism for calculating local content for 14 
+Electronic Products dated 07.09.2020 and 06.03.2024 
+viz., (i) Desktop PCs, (ii) Thin Clients, (iii) Computer 
+Monitors, (iv) Laptop PCs, (v) Tablet PCs, (vi) Dot 
+Matrix Printers, (vii) Contact and Contactless Smart 
+Cards, (viii) LED Products, (ix) Biometric Access Control 
+/ Authentication Devices, (x) Biometric Finger Print 

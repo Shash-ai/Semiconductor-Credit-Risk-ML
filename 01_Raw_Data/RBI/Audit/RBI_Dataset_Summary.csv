@@ -1,0 +1,20 @@
+dataset,rows,columns,missing_cells,duplicate_rows
+../01_Raw_Data/RBI/Banking_Stress/_6.Movement of Non Performing Assets (NPAs) of Scheduled Commercial Banks.xlsx | Sheet: Report 1,1988,10,4028,288
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 1,58,10,113,0
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS29052026.xlsx | Sheet: Statement 2,48,10,31,0
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 1,58,6,64,0
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30042026.xlsx | Sheet: Statement 2,48,6,18,0
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 1,58,10,113,0
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC30032026.xlsx | Sheet: Statement 2,48,10,31,0
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 1,58,10,122,0
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCS30062026.xlsx | Sheet: Statement 2,48,10,31,0
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 1,58,10,113,0
+../01_Raw_Data/RBI/Sectoral_Credit/SIBCSJ26E31072026E.xlsx | Sheet: Statement 2,48,10,31,0
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 1,58,10,113,0
+../01_Raw_Data/RBI/Sectoral_Credit/TEST_RBI_Statements_I_II.xlsx | Sheet: Statement 2,48,10,31,0
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 1,58,10,122,0
+../01_Raw_Data/RBI/Sectoral_Credit/SIBC27022026.xlsx | Sheet: Statement 2,48,10,31,0
+../01_Raw_Data/RBI/Sectoral_Credit/Industry_Wise_Deployment_Gross_Bank_Credit_2019_2026.xlsx | Sheet: New Format (2019 Onwards),52,11,126,2
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 1,58,10,122,0
+../01_Raw_Data/RBI/Sectoral_Credit/PR2019SIBC300126.xlsx | Sheet: Statement 2,48,10,31,0
+../01_Raw_Data/RBI/Sectoral_Credit/RBI_Industry_Wise_Gross_Bank_Credit_1997_2007.xlsx.xlsx | Sheet: Data from 1997-2007,42,20,153,2

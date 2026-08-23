@@ -1,0 +1,6 @@
+file,rows,columns,missing_cells,missing_percentage,duplicate_rows
+Semiconductor_Master_Canonical.csv,10,20,4,2.0,0
+Semiconductor_Project_Features.csv,10,37,4,1.0810810810810811,0
+Semiconductor_ML_Ready.csv,10,37,0,0.0,0
+Semiconductor_Baseline_Model_Performance.csv,4,4,0,0.0,0
+Semiconductor_Baseline_Model_Predictions.csv,10,6,0,0.0,0

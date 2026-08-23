@@ -1,0 +1,23 @@
+Innovate and Design in India
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+144
+Clockwise from Top Left. CBCT final system design, Extra Oral Scanner Prototype, 
+CBCT Reconstructed Image, Implant Planning system , CBCT Workbench
+5.3.3	 Initiatives under Microelectronics and Nanotechnology areas
+5.3.3.1	 Some of the technologies developed/are being developed indigenously under the R&D projects initiated 
+in Microelectronics area are:
+5.3.3.1.1 Chips to Start-up (C2S) Programme 
+Refer Chapter 7.
+5.3.3.1.2 Design Linked Incentive (DLI) Scheme
+Government of India has approved the ‘Modified Programme for Semiconductors and Display Fab Ecosystem’ with an 
+outlay of `76,000 crore in order to catalyse the semiconductor & display ecosystem in the country. The Design Linked 
+Incentive (DLI) Scheme has been approved as part of it with an outlay of Rs. 1000 Crore to offset the disabilities in 
+the domestic semiconductor chip design industry as well as move up in value-chain and strengthen the semiconductor 
+chip design ecosystem in the country. The DLI Scheme offers financial incentives & design infrastructure support to 
+domestic companies, start-ups and MSMEs across various stages of development & deployment of semiconductor 
+chips. Under DLI Scheme
+• 
+94 companies have been approved for access to state-of-the-art Electronic Design Automation (EDA) tools.

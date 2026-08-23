@@ -1,0 +1,5 @@
+removed_feature_family,remaining_feature_count,spearman_vs_full,p_value,mean_absolute_rank_change,maximum_rank_change,importance_signal
+size,5,0.8269015865060569,0.0009080911508697636,1.75,5,0.17309841349394306
+geography,5,0.5594405594405596,0.05858947538856761,2.5,6,0.4405594405594404
+macro_credit,4,1.0,0.0,0.0,0,0.0
+banking_npa,4,0.8531468531468532,0.0004181179404149969,1.0,6,0.14685314685314677

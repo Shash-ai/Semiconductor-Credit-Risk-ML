@@ -1,0 +1,53 @@
+Make in India
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+90
+Fab and Semiconductor Assembly, Testing, Marking and Packaging (ATMP) / Outsourced Semiconductor 
+Assembly and Test (OSAT) facilities in India. 
+iv.	
+Product Design Linked Incentive (DLI) of up to 50% of the eligible expenditure subject to a ceiling of `15 Crore 
+per application and also “Deployment Linked Incentive” of 6% to 4% of net sales turnover over 5 years subject to 
+a ceiling of `30 Crore per application for incentivizing chip design
+Government has also approved the modernization of Semi-Conductor Laboratory, Mohali under the Programme.
+3.3.9.1	 India Semiconductor Mission (ISM):
+India Semiconductor Mission (ISM) as an Independent Business Division under the Digital India Corporation, has been 
+nurturing India’s strategies for developing Semiconductors and display ecosystem focussed on the objectives namely-
+• 
+Promoting development of indigenous products/ technologies via suitable mechanisms/ infrastructure facilities  
+• 
+Enabling cutting-edge research and development and curating pool of skilled manpower.
+• 
+Encouraging technology transfer by networking/ partnerships with national and international entities.
+• 
+Assisting in obtaining monetary support through requisite fund mechanisms/ grants schemes, etc. 
+• 
+Facilitating adoption of secure microelectronics and developing a trusted semiconductor supply chain.
+3.3.9.2 Modernization of Semi-Conductor Laboratory (SCL), Mohali
+The Union Cabinet has also approved that Ministry of Electronics and Information Technology will take requisite steps 
+for modernization and commercialization of Semi-conductor Laboratory (SCL), Mohali. Semi-conductor Laboratory 
+(SCL), Mohali has been brought under the administrative control of Ministry of Electronics and Information Technology 
+from Department of Space 
+SCL is an Integrated Device Manufacturer which undertakes activities pertaining to design, development, fabrication, 
+assembly & packaging, testing and quality assurance of Silicon CMOS and MEMS Devices for various applications. 
+Presently, SCL has two wafer fabrication lines, i.e., 200 mm wafer line operating in 180nm CMOS technology and 150 
+mm wafer line for MEMS technology. SCL predominantly caters to low volume requirements for various applications.
+Boston Consulting Group (BCG) has been engaged to provide consultancy services for the Modernization of Semi-
+Conductor Laboratory, Mohali. 
+The primary focus of the modernization of SCL is the 8-inch 180nm CMOS fab-line with the following outlined objectives:
+(i)	
+Augment the capacity of the line to at least 1500 WSPM, build redundancy and improve operational performance
+(ii)	
+Enhance technological capability to support broader needs of government, academia and industry
+(iii)	 Ensure operational continuity and improved customer commitment.
+As part of its modernization, SCL published RFP and invited proposals to upgrade its chip manufacturing facilities. 
+Through this RFP, SCL intends to engage experienced Contractor(s) for augmentation and enhancement of the existing 
+8-inch fab-line. The technical evaluation and financial evaluations of the bids received have been completed, and the 
+results have been published on the SCL website.
+3.3.9.3 Approvals issued under the programme:
+• 
+Micron Technology Inc.’s proposal for setting up an ATMP facility in Gujarat with an investment of ` 22,516 crore 
+was approved in June 2023. Micron’s facility in India will enable assembly and test manufacturing for both DRAM 
+and NAND products and address demand from domestic and international markets. The production capacity is 
+around 14 million units per week. 

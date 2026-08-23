@@ -1,0 +1,40 @@
+REPORT
+Ministry of Electronics & Information Technology
+﻿
+Annual
+2024-2025
+10
+ To promote indigenous manufacturing, the government has introduced programmes like the Semicon India Programme 
+(SIP), Production Linked Incentive (PLI) scheme for Large Scale Electronics Manufacturing, PLI Scheme 2.0 for IT 
+Hardware, Scheme for Promotion of Manufacturing of Electronic Components and Semiconductors (SPECS), and 
+Modified Electronics Manufacturing Clusters (EMC 2.0) Scheme. These initiatives aim to transform India into a hub for 
+electronics production and semiconductor manufacturing. The electronics sector has witnessed remarkable growth, 
+with domestic production increasing from INR 5.54 lakh crore (~USD 76 billion) in FY 2020-21 to INR 9.52 lakh crore 
+(~USD 115 billion) in FY 2023-24, reflecting a Compound Annual Growth Rate (CAGR) of 19.78%. Projections indicate 
+that India’s electronics production will reach USD 300 billion by 2026. Semicon India Programme (SIP) aims to provide 
+financial support to companies investing in semiconductors, display manufacturing and design ecosystem. Under SIP, 
+five projects of private sector players has been approved for setting up facilities to develop indigenous semiconductor 
+technologies. 
+India has established itself as a global IT services hub and has emerged as the World’s 3rd largest start-up ecosystem 
+with more than 1,50,000 startups operating in the country and 115 unicorns with a total valuation of more than $ 350 
+Bn. The Indian IT/ ITeS industry has a leading position globally and has been progressively contributing to the growth 
+of exports and the creation of employment opportunities. India’s IT-BPM industry is expected to grew by ~3.7 % to 
+reach at USD 254 Billion, including exports of 199.5 USD Billion in FY2023-24 (E). India has positioned itself as a 
+major hub for Global Capability Centres (GCCs), providing offshore facilities to multinational corporations (MNCs) for 
+managing business operations. These centres are among the fast-growing segments of India’s digital economy. To 
+further accelerate its expansion, MeitY is developing a new policy framework that will provide fresh incentives for these 
+centres. Several Centres of Excellence (CoEs) have been set up to promote startups, incubation, and innovation in 
+these areas. Furthermore, initiatives like the Future Skills Programme are also enabling Indian IT professionals to attain 
+world-class skills in these technologies.
+India has emerged as a key player in artificial intelligence and emerging technologies. On 7th March 2024, the 
+Government of India has approved the IndiaAI Mission, a comprehensive national-level programme to democratize and 
+catalyze the AI innovation ecosystem in the country and ensure the global competitiveness of India’s AI startups and 
+researchers. The Government of India hosted the ‘Global IndiaAI Summit’ on July 3-4, 2024, in New Delhi. The summit 
+focused on advancing AI development in areas like Compute Capacity, Foundational Models, Datasets, Application 
+Development, Future Skills, Startup Financing, and Safe AI, which are the seven key pillars of IndiaAi Mission.
+Self-reliance on advanced technologies is a key pillar for the sustainability and consistent growth of the digital economy. 
+In this regard, MeitY has initiated the National Supercomputing Mission (NSM) to develop indigenous computing systems, 
+encompassing HPC components such as processors, server boards, interconnects, clusters, and cooling systems. 
+Under Phase 3, nine PARAM Rudra systems have been deployed at various locations. Operational installations include 
+3.0 PF systems at IUAC Delhi, IIT Madras, and IIT Mumbai; a 1 PF system at GMRT-TIFR Pune; and 838 TF systems 
+at SN Bose NCBS Kolkata, IIT Patna, and IIT Jammu. Furthermore, C-DAC has partnered with MosChip and Socionext 

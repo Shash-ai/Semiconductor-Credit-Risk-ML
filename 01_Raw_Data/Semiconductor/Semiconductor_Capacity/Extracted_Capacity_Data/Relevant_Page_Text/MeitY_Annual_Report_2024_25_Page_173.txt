@@ -1,0 +1,94 @@
+CHAPTER
+REPORT
+Ministry of Electronics & Information Technology
+Annual
+2024-2025
+171
+Activities of the HRD Division, MeitY are targeted to 
+support the availability of trained human resources for the 
+manufacturing and service sectors of the electronics and 
+IT industry. Initiatives include identifying gaps emerging 
+from the formal sector and planning programmes in 
+non-formal and formal sectors to meet these gaps. This 
+includes skill development in the domain of electronics 
+and IT and related areas. The skill development activities 
+of the Ministry are primarily being taken up by its two 
+autonomous societies viz. National Institute of Electronics 
+and Information Technology (NIELIT), and Centre for 
+Development of Advanced Computing (C-DAC). In 
+addition, the various organizations and attached offices 
+under the Department viz. ERNET India, Digital India 
+Corporation, CSC E-Governance Services India Limited, 
+STQC, NIC, etc. are also engaged in training various 
+stakeholders in small numbers. The following schemes/ 
+projects are under implementation for capacity building 
+and skill development in the domain of E&ICT:
+7.1	
+Post Graduate and Doctorate Level
+7.1.1	 Visvesvaraya PhD Scheme for Electronics & IT
+MeitY, with the approval of the Cabinet Committee on 
+Economic Affairs (CCEA) had initiated ‘Visvesvaraya 
+PhD Scheme’ with the objective to enhance the number 
+of PhDs in Electronics System Design & Manufacturing 
+(ESDM) and IT/IT Enabled Services (IT/ITES) sectors 
+in the country in 2014.  Phase-I of Visvesvaraya PhD 
+Scheme with a budget of `466 Crores, initially approved 
+for 9 years from 2014, is extended till Mar 2025.
+Status of Phase-I of the Scheme: 
+• 
+754 Full-time and 158 Part-time PhD candidates 
+completed their PhD
+• 
+62 Full-time and 08 Part-time PhD candidates 
+submitted Thesis
+• 
+72 Full-time and 107 Part-time PhD candidates 
+currently pursuing PhD
+• 
+158 Young Faculty Research Fellowships awarded
+• 
+85 Patents filed
+• 
+5750 Research Papers published
+• 
+Workshops held for assessment of quality of 
+research
+Research has been undertaken under the scheme in 
+emerging research areas viz. Image Processing, DSP, 
+Pattern Recognition, 3D Printing, 5G Communications, 
+AI, Big Data, Blockchain, Distributed Computing, 
+Cyber Security, Green and Sustainable ICT, Quantum 
+Computing/ Communication, Semiconductor Design 
+etc. Some of the granted Patents of Visvesvaraya PhD 
+Scholars: 
+• 
+Method of Reducing DoS Attacks Using Voice 
+Response in IoT Systems
+• 
+System for providing energy management in smart 
+grid environment
+• 
+System For Detecting Type of Sleep Disorders and 
+Method of Operating Thereof
+• 
+Electrochemical Measurement of Creatinine in 
+Serum
+• 
+A Device for Assessment of Seed Pre-Treatments
+• 
+Spoof Recognition in an Ear Biometric System
+• 
+Image Compression for Transmission
+• 
+A Novel Microfluidic Approach for Bio-Mems 
+Applications
+• 
+A 
+completely 
+miniaturized 
+on-chip 
+electron 
+paramagnetic resonance sensor
+Capacity Building
+Skill India
+7

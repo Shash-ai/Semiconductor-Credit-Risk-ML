@@ -1,0 +1,11 @@
+ranking_1,ranking_2,spearman_rho,p_value
+baseline_policy_rank,banking_heavy_rank,0.8951048951048951,8.36658642909172e-05
+baseline_policy_rank,exposure_heavy_rank,0.9930069930069931,1.3016730560634403e-10
+baseline_policy_rank,credit_cycle_heavy_rank,1.0,0.0
+baseline_policy_rank,equal_weight_rank,1.0,0.0
+banking_heavy_rank,exposure_heavy_rank,0.8531468531468532,0.0004181179404149969
+banking_heavy_rank,credit_cycle_heavy_rank,0.8951048951048951,8.36658642909172e-05
+banking_heavy_rank,equal_weight_rank,0.8951048951048951,8.36658642909172e-05
+exposure_heavy_rank,credit_cycle_heavy_rank,0.9930069930069931,1.3016730560634403e-10
+exposure_heavy_rank,equal_weight_rank,0.9930069930069931,1.3016730560634403e-10
+credit_cycle_heavy_rank,equal_weight_rank,1.0,0.0

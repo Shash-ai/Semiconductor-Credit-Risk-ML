@@ -1,0 +1,52 @@
+Attached Offices and Societies
+REPORT
+Ministry of Electronics & Information Technology, Government of India
+Annual
+2025-2026
+240
+B. Hyderabad laboratory 
+C-MET, Hyderabad, has evolved as a national hub for research and technology development in advanced materials, 
+especially those critical to strategic and electronic applications. Recognizing the importance of self-reliance in critical raw 
+materials (CRMs), rare earth elements (REEs), ultra-high purity (UHP) metals, and wide bandgap (WGB) semiconductors, 
+C-MET Hyderabad has invested significantly in building comprehensive laboratory infrastructure, specialized R&D units, 
+pilot-scale facilities, and state-of-the-art instrumentation. This combination of capabilities enables C-MET to undertake 
+end-to-end development starting from processing of raw materials to fabrication and evaluation of functional devices, 
+while supporting scale-up and transfer of technologies to user agencies and industry. C-MET Hyderabad laboratory 
+embraces unique R&D facilities, one of its kinds in the country for purification of metals to 99.99999 % (7N grade). A 
+state-of-the-art SiC single crystal growth facility has been established, achieving a significant milestone by successfully 
+growing 2-inch diameter semi insulating 6H SiC boules. The facility is further equipped for the growth of large-diameter 
+SiC single crystal boules up to 6 inches to cater to the demands of power electronics and strategic device applications.
+One of the key differentiators of C-MET Hyderabad is its robust pilot-scale and production infrastructure that enables 
+seamless translation of lab-scale research into industrial processes. Among the most strategic of these is the Hafnium 
+(Hf) production plant, which has been established with an annual production capacity of 320kg. This facility, recognized 
+as the sole establishment of its kind within India, is designed to extract high-purity hafnium metal from intermediate 
+zirconium-hafnium feedstock through the application of solvent extraction and metallothermic reduction methodologies. 
+The purified Hf metal is used in aerospace alloys for space applications and supplied directly to ISRO and other 
+strategic sectors. The entire process is backed by in-house Q Acertification using various characterization techniques, 
+making C-MET the sole supplier of aerospace-grade Hf.
+C. Thrissur laboratory	
+The focus of C-MET Thrissur is in the development of materials and devices encompassing Sensors and Actuators, 2D 
+materials, Microwave materials, Energy materials and storage devices, piezo electric materials and Plasmonic materials 
+for electronic applications. In addition, the two national programs being implemented are i) Centre of Excellence on IoT 
+based sensors, and ii) India Innovation Centre for Graphene (IICG). CMET Thrissur has gained expertise to develop 
+customised IIoT sensors and deployed them for field trials. It has championed the art of making multi stacked capacitors 
+and actuators are catering to the requirement of strategic sectors. Thrissur laboratory also meeting requirement of 
+health sector in the form point of care devices based on plasmonic sensors, thermal sensor based early warning cancer 
+devices and indigenously developed ultrasound probe.
+Various reputed organizations such as DRDO, ISRO and DAE institutions and other private industries/start-ups have 
+joined hands with C-MET through Memorandum of Understanding (MoUs) to facilitate collaborative activities. These 
+meaningful associations exemplify C-MET’s dedication towards encouraging innovation, knowledge exchange, and 
+progress in diverse fields through joint efforts.
+9.3.2   Products developed by C-MET for different applications 
+•	
+3D printed pouch cell and coin cell
+•	
+3D design and printed package of POC 4 (Optical coupler for opto-electronic packaging) and POC 5 (Ring 
+resonator)
+•	
+Carbide derived carbon (CDC)
+•	
+Polybutadiene based Substrate Integrated Waveguides (SIW) for microwave and millimetre wave circuit 
+applications
+•	
+Tri-band composite NavIC Antenna

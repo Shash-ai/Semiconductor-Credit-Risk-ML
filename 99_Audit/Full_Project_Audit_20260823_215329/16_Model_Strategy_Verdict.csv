@@ -1,0 +1,4 @@
+﻿model_strategy,status,observations,reason
+Supervised credit-risk prediction,NOT_METHODologically_READY,12,No genuine observed project-level default/NPA/repayment target has been identified. Do not manufacture one from the predictor variables.
+36-project ecosystem clustering,READY_FOR_EXPLORATORY_UNSUPERVISED_USE,36,Suitable for exploratory PCA/K-Means/hierarchical segmentation if only the standardized safe feature view is used.
+12-project manufacturing stress testing,READY_FOR_STRESS_SCENARIO_ANALYSIS,12,"Suitable for deterministic/scenario sensitivity analysis, not a high-dimensional supervised predictive model."

@@ -1,0 +1,2 @@
+simulations,mean_portfolio_vulnerability,median_portfolio_vulnerability,p90_portfolio_vulnerability,p95_portfolio_vulnerability,p99_portfolio_vulnerability,maximum_portfolio_vulnerability,systemic_weight
+10000,58.65635744430054,58.56134665662446,60.70236173104021,61.30054252528637,62.527537538795386,65.74840001344778,0.35
