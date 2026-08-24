@@ -1,7 +1,9 @@
-# Cloud-safe repository root
+from pathlib import Path
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-from pathlib import Path
+# Cloud-safe repository root
+
 import pandas as pd
 import numpy as np
 import streamlit as st
