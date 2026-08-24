@@ -1,0 +1,12 @@
+project_id,company,financial_year,statement_scope,revenue_crore,ebitda_crore,ebitda_margin_pct,pat_crore,pat_margin_pct,total_debt_crore,net_debt_crore,net_worth_crore,debt_equity_ratio,debt_to_ebitda,net_debt_to_ebitda,current_ratio,interest_coverage_effective,operating_cashflow_to_debt,borrower_financial_coverage_pct,borrower_score_coverage_pct,borrower_financial_strength_score,borrower_financial_strength_class,borrower_financial_risk_score,borrower_financial_risk_class,financial_deterioration_flag_count,borrower_monitoring_signal
+SEM-0007,3D Glass Solutions Inc.,,,,,,,,,,,,,,,,,0.0,0.0,,NOT_OBSERVABLE,,NOT_OBSERVABLE,0,DATA_REQUIRED
+SEM-0010,Advanced System in Package Technologies Private Limited,,,,,,,,,,,,,,,,,0.0,0.0,,NOT_OBSERVABLE,,NOT_OBSERVABLE,0,DATA_REQUIRED
+SEM-0004,CG Power and Industrial Solutions Limited,FY2024-25,,9329.0,1435.0,15.382141708650446,974.0,10.440561689355771,,,,,,,,265.7407407407407,,44.44444444444444,33.33333333333333,96.66666666666666,STRONG,3.333333333333343,LOW,0,GREEN_STANDARD
+SEM-0009,Continental Device India Private Limited,FY2023-24,,264.65,9.35,3.5329680710372195,1.44,0.5441148686945022,68.47,,,,7.322994652406417,,,,,44.44444444444444,33.33333333333333,26.666666666666664,VERY_WEAK,73.33333333333334,HIGH,0,RED_REVIEW
+SEM-0011,Crystal Matrix Limited,,,,,,,,,,,,,,,,,0.0,0.0,,NOT_OBSERVABLE,,NOT_OBSERVABLE,0,DATA_REQUIRED
+SEM-0005,Kaynes Technology India Limited,FY2024-25,,2721.752,410.7,15.089545263492044,293.433,10.781033687125058,,,,,,,,,,33.33333333333333,16.666666666666664,90.0,INSUFFICIENT_EVIDENCE,10.0,INSUFFICIENT_EVIDENCE,0,DATA_REQUIRED
+SEM-0001,Micron Technology Inc.,FY2025,,,,,,,,,,,,,,,,0.0,0.0,,NOT_OBSERVABLE,,NOT_OBSERVABLE,0,DATA_REQUIRED
+SEM-0008,SiCSem Private Limited,FY2024-25,,0.0,,,-0.0128,,,,,,,,,,,22.22222222222222,0.0,,NOT_OBSERVABLE,,NOT_OBSERVABLE,0,DATA_REQUIRED
+SEM-0012,Suchi Semicon Private Limited,,,,,,,,,,,,,,,,,0.0,0.0,,NOT_OBSERVABLE,,NOT_OBSERVABLE,0,DATA_REQUIRED
+SEM-0003,Tata Electronics Private Limited,,,,,,,,,,,,,,,,,0.0,0.0,,NOT_OBSERVABLE,,NOT_OBSERVABLE,0,DATA_REQUIRED
+SEM-0006,Vama Sundari Investments (Delhi) Private Limited / Foxconn,,,,,,,,,,,,,,,,,0.0,0.0,,NOT_OBSERVABLE,,NOT_OBSERVABLE,0,DATA_REQUIRED

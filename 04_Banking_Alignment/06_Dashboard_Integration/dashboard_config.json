@@ -1,0 +1,26 @@
+{
+  "product_name": "Semiconductor Credit Intelligence",
+  "product_positioning": "Research credit decision-support and controlled pilot framework",
+  "default_page": "Portfolio Overview",
+  "pages": [
+    "Portfolio Overview",
+    "Credit Committee",
+    "Project Dossier",
+    "Borrower Financials",
+    "Project Finance",
+    "Execution Risk",
+    "Stress Testing",
+    "Monte Carlo Tail Risk",
+    "Security & Recovery",
+    "Early Warning System",
+    "Evidence & Data Gaps",
+    "Governance"
+  ],
+  "human_review_required": true,
+  "automated_credit_decisions": false,
+  "pd_lgd_ead_ecl": false,
+  "production_ready": false,
+  "show_missing_data_prominently": true,
+  "show_source_provenance": true,
+  "show_monitoring_maturity": true
+}

@@ -1,0 +1,8 @@
+dimension,score_5,interpretation
+Research Validity,5.0,Internal methodological integrity and guardrails
+Data & Evidence,3.74,"Traceability, evidence coverage and artifact completeness"
+Banking Functionality,4.17,Coverage of core research decision-support banking layers
+Governance & Auditability,5.0,"Audit manifests, reusable engines, human control and gap governance"
+Pilot Data Maturity,1.0,"Actual project-finance, collateral and repeated monitoring evidence available for bank-style underwriting"
+Security / Production Controls,0.0,Enterprise security and production operational controls
+Independent Model Validation,0.0,Independent challenge / validation separate from model development

@@ -1,0 +1,8 @@
+area,current_status,required_for_next_stage,priority
+Project Finance,No verified project-level DSCR observations,"Obtain actual sanctioned debt, repayment schedule, interest obligations and CADS from lender/borrower data",HIGH
+Collateral / Security,No verified collateral/security observations,"Obtain security package, valuations, charge ranking, guarantees and enforceability evidence",HIGH
+Longitudinal Monitoring,No projects with two or more verified monitoring observations,Collect repeated monthly/quarterly observations before claiming deterioration trends,HIGH
+Independent Model Validation,Independent validator report not available,"Independent reviewer must challenge data, methodology, weights, thresholds, assumptions and model limitations",HIGH
+Security / Production,Enterprise security controls not evidenced,"Implement IAM/RBAC, audit logging, secure secrets, backups, environment segregation, vulnerability management and incident response",HIGH
+Bank Pilot,No verified real-bank pilot outcome dataset assumed,"Run controlled pilot with a bank/NBFC/credit team and record analyst feedback, overrides, decision usefulness and observed outcomes",HIGH
+Outcome Backtesting,Observed default/repayment outcome history unavailable,"Collect actual performance outcomes before calibration, backtesting or developing PD/LGD/EAD/ECL models",HIGH
