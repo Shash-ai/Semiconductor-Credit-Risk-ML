@@ -81,3 +81,32 @@ service_account*.json
 # OneDrive/system artifacts
 # ============================================================
 *.icloud
+
+# ========================================================
+# Security / Secret Files
+# ========================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+secrets.toml
+.streamlit/secrets.toml
+credentials.json
+service-account*.json
+private_data/
+confidential_data/
+bank_private_data/
+*.secret
+
+# Runtime security logs
+logs/*.jsonl
+logs/*.log
+
+
+config/authorized_users.csv
+

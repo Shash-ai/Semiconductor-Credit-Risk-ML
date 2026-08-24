@@ -1,0 +1,2 @@
+phase,timestamp_utc,hosting,expected_hosting_cost,entrypoint,production_bank_data_approved,deployment_class,phase_status
+10F-Free,2026-08-24T16:30:46.347075+00:00,Streamlit Community Cloud,0,app/community_main.py,NO,ZERO_COST_RESEARCH_PILOT,FAIL_REQUIRES_REVIEW

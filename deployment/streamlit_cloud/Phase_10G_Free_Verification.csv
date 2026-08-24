@@ -1,0 +1,7 @@
+check,result
+Community Cloud entrypoint exists,True
+Required Python dependencies available,True
+Streamlit process started,True
+Streamlit health endpoint,True
+Application HTTP page reachable,True
+No serious runtime exceptions detected,True

@@ -1,0 +1,9 @@
+check,result
+Cloud entrypoint created,True
+Cloud-safe dashboard created,True
+No Mac-specific path remains,True
+requirements.txt exists,True
+Streamlit configuration exists,True
+Secrets excluded from Git,True
+Dashboard data exists,True
+Cloud Python files compile,True
