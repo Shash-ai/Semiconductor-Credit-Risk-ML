@@ -14,6 +14,6 @@ APP_DIR = Path(__file__).resolve().parent
 if str(APP_DIR) not in sys.path:
     sys.path.insert(0, str(APP_DIR))
 
-from banking_dashboard_v3 import render_app
+from banking_dashboard_v3_1 import render_app
 
 render_app()
