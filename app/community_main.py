@@ -7,6 +7,7 @@ import runpy
 import sys
 
 import streamlit as st
+from app.ui_system import initialize_ui
 
 
 PROJECT_ROOT = Path(
@@ -32,6 +33,14 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+
+
+# =============================================================================
+# GLOBAL UI SYSTEM
+# =============================================================================
+
+initialize_ui()
 
 
 # =============================================================================
