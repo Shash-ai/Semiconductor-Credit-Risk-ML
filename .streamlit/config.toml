@@ -7,3 +7,27 @@ gatherUsageStats = false
 
 [client]
 showErrorDetails = "none"
+
+[theme]
+base = "light"
+primaryColor = "#2563EB"
+backgroundColor = "#F7F8FA"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#111827"
+font = "sans-serif"
+baseRadius = "0.5rem"
+buttonRadius = "0.5rem"
+borderColor = "#E5E7EB"
+dataframeBorderColor = "#E5E7EB"
+dataframeHeaderBackgroundColor = "#F9FAFB"
+showWidgetBorder = true
+showSidebarBorder = true
+chartCategoricalColors = ["#2563EB", "#0F766E", "#D97706", "#DC2626", "#7C3AED", "#475569"]
+chartSequentialColors = ["#EFF6FF", "#DBEAFE", "#BFDBFE", "#93C5FD", "#60A5FA", "#3B82F6", "#2563EB", "#1D4ED8"]
+
+[theme.sidebar]
+backgroundColor = "#0B1F33"
+secondaryBackgroundColor = "#102A43"
+textColor = "#F8FAFC"
+primaryColor = "#60A5FA"
+borderColor = "#1E3A52"
