@@ -1,0 +1,11 @@
+﻿criterion_id,category,criterion,weight,reviewer_name,reviewer_role,reviewer_organization,score_1_to_5,comments,recommendation
+PR01,Data Quality,Quality and reliability of semiconductor project data,0.12,,,,,,
+PR02,Methodology,Appropriateness of ML methodology for available data,0.12,,,,,,
+PR03,Model Validation,Adequacy of robustness and validation procedures,0.12,,,,,,
+PR04,Banking Relevance,Relevance to bank credit assessment and allocation,0.16,,,,,,
+PR05,Stress Testing,Quality of macro-financial stress-testing framework,0.1,,,,,,
+PR06,Portfolio Risk,Usefulness of concentration and credit-allocation analysis,0.1,,,,,,
+PR07,Explainability,Clarity and interpretability of model outputs,0.08,,,,,,
+PR08,Usability,Practical usability for analysts or credit committees,0.08,,,,,,
+PR09,Limitations,Transparency and handling of model limitations,0.06,,,,,,
+PR10,Deployment Readiness,Readiness for further pilot testing with banks,0.06,,,,,,

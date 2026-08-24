@@ -1,0 +1,2 @@
+reviewer_id,reviewer_name,reviewer_role,reviewer_organization,criteria_scored,mean_score,weighted_score,total_weight,weighted_score_normalized_5,weighted_score_pct
+R001,Reviewer Name,Faculty / Credit Risk Expert / ML Expert,Organization Name,10,4.1,4.16,1.0,4.16,83.2

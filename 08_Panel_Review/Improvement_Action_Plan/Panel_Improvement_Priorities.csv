@@ -1,0 +1,11 @@
+criterion_id,category,criterion,reviewers,mean_score,median_score,std_score,recommended_action,improvement_priority,gap_to_5
+PR10,Deployment Readiness,Readiness for further pilot testing with banks,1,3.0,3.0,,"Improve deployment readiness: create model card, user guide, audit trail, data refresh process, security assumptions and bank pilot plan.",HIGH,2.0
+PR01,Data Quality,Quality and reliability of semiconductor project data,1,4.0,4.0,,"Strengthen source documentation, provenance and data-quality audit.",MEDIUM,1.0
+PR02,Methodology,Appropriateness of ML methodology for available data,1,4.0,4.0,,Document why unsupervised ML was selected instead of supervised default modelling.,MEDIUM,1.0
+PR03,Model Validation,Adequacy of robustness and validation procedures,1,4.0,4.0,,"Add validation evidence from clustering stability, Monte Carlo and sensitivity testing.",MEDIUM,1.0
+PR05,Stress Testing,Quality of macro-financial stress-testing framework,1,4.0,4.0,,Document stress assumptions and scenario rationale more clearly.,MEDIUM,1.0
+PR06,Portfolio Risk,Usefulness of concentration and credit-allocation analysis,1,4.0,4.0,,Explain project/state concentration limits and allocation constraints.,MEDIUM,1.0
+PR07,Explainability,Clarity and interpretability of model outputs,1,4.0,4.0,,"Improve dashboard explanations, risk drivers and model interpretability.",MEDIUM,1.0
+PR08,Usability,Practical usability for analysts or credit committees,1,4.0,4.0,,Improve dashboard usability and create a credit-committee workflow.,MEDIUM,1.0
+PR04,Banking Relevance,Relevance to bank credit assessment and allocation,1,5.0,5.0,,Map each model output directly to bank underwriting and portfolio decisions.,MAINTAIN,0.0
+PR09,Limitations,Transparency and handling of model limitations,1,5.0,5.0,,"Maintain clear limitations, assumptions and prohibited claims.",MAINTAIN,0.0

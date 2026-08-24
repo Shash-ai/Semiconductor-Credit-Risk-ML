@@ -1,0 +1,1 @@
+﻿run_id,run_timestamp,user_or_reviewer,project_id,company,model_version,data_version,input_source,indicative_grade,stress_score,tail_risk_score,borrower_strength,concentration_class,credit_posture,exposure_posture,monitoring_priority,early_warning_status,manual_override,override_reason,reviewer_comments,final_human_decision

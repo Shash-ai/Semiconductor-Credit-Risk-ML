@@ -1,0 +1,11 @@
+area,requirement,status
+Model Documentation,"Model card describing purpose, methodology, inputs, outputs and limitations",TO_DO
+Data Governance,"Source registry, provenance, refresh frequency and data-quality checks",PARTIAL
+Explainability,Clear project risk drivers and mitigants for credit analysts,PARTIAL
+Auditability,"Log model inputs, assumptions, outputs and run timestamps",TO_DO
+User Workflow,Credit analyst → review → stress test → exposure decision → monitoring,PARTIAL
+Human Oversight,Final lending decisions remain with authorized credit officers,DEFINED
+Security,"Document authentication, access control and confidential-data handling",TO_DO
+Bank Pilot,Define limited-scope pilot using non-production or anonymized data,TO_DO
+Panel Validation,Obtain at least 3 independent expert reviewers,IN_PROGRESS
+Production Validation,Backtesting against real loan/default performance,NOT_AVAILABLE
