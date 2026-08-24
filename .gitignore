@@ -110,3 +110,21 @@ logs/*.log
 
 config/authorized_users.csv
 
+
+# ============================================================
+# Local deployment / temporary working artifacts
+# ============================================================
+deployment_phase12j/
+app/community_main_pre_phase12j_backup.py
+Untitled.ipynb
+
+# Local dashboard / production backups
+99_Audit/Production_Dashboard_Backups/
+99_Audit/UI_Backups/
+
+# Local generated deployment validation artifacts
+deployment/docker_validation/
+deployment/gcp/
+
+# Notebook scratch files
+*.ipynb~
