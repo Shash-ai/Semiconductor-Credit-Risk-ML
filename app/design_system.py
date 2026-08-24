@@ -1,20 +1,12 @@
 """
-Banking Product Design System
-=============================
-
-Visual presentation only.
-
-Does not change:
-- model calculations
-- risk scores
-- rankings
-- grades
-- stress scenarios
-- Monte Carlo results
-- allocation results
+Semiconductor Credit Intelligence
+Professional HTML / CSS Design System
 """
 
 from __future__ import annotations
+
+import html
+import textwrap
 
 import streamlit as st
 import plotly.graph_objects as go
@@ -22,451 +14,610 @@ import plotly.io as pio
 
 
 # =============================================================================
-# PALETTE
+# DESIGN TOKENS
 # =============================================================================
 
-NAVY = "#12263A"
-NAVY_2 = "#1B3A55"
-BLUE = "#2E6F9E"
-BLUE_LIGHT = "#6EA6C8"
+NAVY = "#102A43"
+NAVY_2 = "#163A59"
 
-BACKGROUND = "#F5F7FA"
+BLUE = "#2F76A8"
+BLUE_LIGHT = "#76ACCF"
+
+BACKGROUND = "#F4F7FA"
 SURFACE = "#FFFFFF"
-SURFACE_2 = "#F9FAFB"
 
-TEXT = "#172033"
-TEXT_2 = "#344054"
+TEXT = "#152233"
+TEXT_SOFT = "#344054"
 MUTED = "#667085"
 
-BORDER = "#E3E8EF"
-GRID = "#E8EDF3"
+BORDER = "#E2E8F0"
+GRID = "#E9EEF4"
 
-GREEN = "#1F7A5A"
-GREEN_BG = "#EAF6F1"
+GREEN = "#19725B"
+GREEN_BG = "#E8F5F0"
 
-AMBER = "#9A6515"
-AMBER_BG = "#FFF6E5"
+AMBER = "#9B6718"
+AMBER_BG = "#FFF4DE"
 
-RED = "#A33D46"
-RED_BG = "#FCEDEF"
-
-PURPLE = "#765A88"
+RED = "#A63E46"
+RED_BG = "#FCEBED"
 
 
 # =============================================================================
-# TYPOGRAPHY
+# HTML RENDERER
 # =============================================================================
 
-FONT_STACK = (
-    "-apple-system, BlinkMacSystemFont, "
-    "'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
-)
+def render_html(markup: str):
+    """
+    Render actual HTML rather than passing indented HTML
+    through Markdown.
 
-NUMBER_FONT = (
-    "'SFMono-Regular', Consolas, "
-    "'Liberation Mono', monospace"
-)
+    Uses st.html where available.
+    """
+
+    markup = textwrap.dedent(
+        str(markup)
+    ).strip()
+
+    if hasattr(st, "html"):
+
+        st.html(markup)
+
+    else:
+
+        st.markdown(
+            markup,
+            unsafe_allow_html=True
+        )
 
 
 # =============================================================================
 # GLOBAL CSS
 # =============================================================================
 
-CSS = f"""
+CSS = """
 <style>
 
-/* -------------------------------------------------------------------------- */
-/* APP                                                                        */
-/* -------------------------------------------------------------------------- */
+@import url(
+'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap'
+);
 
-.stApp {{
+
+/* ==============================================================
+   ROOT
+   ============================================================== */
+
+:root {
+
+    --bank-navy: #102A43;
+    --bank-navy-2: #163A59;
+
+    --bank-blue: #2F76A8;
+
+    --bank-bg: #F4F7FA;
+
+    --bank-surface: #FFFFFF;
+
+    --bank-text: #152233;
+
+    --bank-soft: #344054;
+
+    --bank-muted: #667085;
+
+    --bank-border: #E2E8F0;
+
+    --bank-green: #19725B;
+    --bank-amber: #9B6718;
+    --bank-red: #A63E46;
+
+}
+
+
+/* ==============================================================
+   APP
+   ============================================================== */
+
+.stApp {
+
     background:
         linear-gradient(
             180deg,
-            #F7F9FC 0%,
-            {BACKGROUND} 100%
+            #F8FAFC 0%,
+            #F3F6F9 100%
         );
-}}
+
+}
 
 
-.block-container {{
-    max-width: 1500px;
-    padding-top: 1.5rem;
+.block-container {
+
+    max-width: 1480px;
+
+    padding-top: 1.65rem;
     padding-bottom: 4rem;
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-}}
+
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+
+}
 
 
-/* -------------------------------------------------------------------------- */
-/* TYPOGRAPHY                                                                 */
-/* -------------------------------------------------------------------------- */
+/* ==============================================================
+   TYPOGRAPHY
+   ============================================================== */
 
 html,
 body,
-[class*="css"],
 p,
-div,
 span,
+div,
 button,
 input,
 textarea,
-select {{
-    font-family: {FONT_STACK};
-}}
+select,
+label {
+
+    font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+}
 
 
-h1 {{
-    color: {TEXT} !important;
+h1,
+h2,
+h3,
+h4 {
+
+    font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color:
+        var(--bank-text);
+
+}
+
+
+h1 {
 
     font-size:
-        clamp(1.8rem, 2.8vw, 2.45rem)
-        !important;
+        clamp(
+            1.8rem,
+            3vw,
+            2.55rem
+        ) !important;
 
     font-weight:
-        760 !important;
+        800 !important;
 
     letter-spacing:
         -0.045em !important;
 
-    line-height:
-        1.12 !important;
-}}
+}
 
 
-h2 {{
-    color: {TEXT} !important;
+h2 {
 
     font-size:
         1.45rem !important;
 
     font-weight:
-        720 !important;
+        700 !important;
 
     letter-spacing:
         -0.025em !important;
-}}
+
+}
 
 
-h3 {{
-    color: {TEXT_2} !important;
+h3 {
 
     font-size:
-        1.08rem !important;
+        1.07rem !important;
 
     font-weight:
-        680 !important;
+        700 !important;
 
-    letter-spacing:
-        -0.01em !important;
-}}
+}
 
 
-p {{
-    color: {MUTED};
-    line-height: 1.6;
-}}
+/* ==============================================================
+   SIDEBAR
+   ============================================================== */
 
-
-/* Numbers */
-
-.metric-number {{
-    font-family:
-        {NUMBER_FONT};
-
-    font-variant-numeric:
-        tabular-nums;
-
-    letter-spacing:
-        -0.04em;
-}}
-
-
-/* -------------------------------------------------------------------------- */
-/* SIDEBAR                                                                    */
-/* -------------------------------------------------------------------------- */
-
-section[data-testid="stSidebar"] {{
+section[data-testid="stSidebar"] {
 
     background:
+
         linear-gradient(
             180deg,
-            #0F1D2A 0%,
-            #152A3B 52%,
-            #17344A 100%
+            #0D2132 0%,
+            #102A43 45%,
+            #173C59 100%
         );
 
     border-right:
         1px solid
-        rgba(255,255,255,0.06);
-}}
+        rgba(
+            255,
+            255,
+            255,
+            0.06
+        );
+
+}
 
 
-section[data-testid="stSidebar"] * {{
-    color: #F2F6F9;
-}}
+section[data-testid="stSidebar"] * {
+
+    color:
+        #F4F7FA;
+
+}
 
 
 section[data-testid="stSidebar"]
-div[role="radiogroup"] label {{
+div[role="radiogroup"] label {
 
     border-radius:
         9px;
 
-    padding:
-        0.25rem 0.35rem;
-
     transition:
-        background 0.15s ease;
-}}
+        background
+        150ms ease;
+
+}
 
 
 section[data-testid="stSidebar"]
-div[role="radiogroup"] label:hover {{
+div[role="radiogroup"] label:hover {
 
     background:
-        rgba(255,255,255,0.07);
-}}
+        rgba(
+            255,
+            255,
+            255,
+            0.065
+        );
+
+}
 
 
-/* -------------------------------------------------------------------------- */
-/* KPI CARDS                                                                  */
-/* -------------------------------------------------------------------------- */
+/* ==============================================================
+   HERO
+   ============================================================== */
 
-.bank-kpi {{
+.bank-hero {
+
+    margin:
+        0 0
+        1.65rem 0;
+
+}
+
+
+.bank-eyebrow {
+
+    color:
+        var(--bank-blue);
+
+    font-size:
+        0.70rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.12em;
+
+    text-transform:
+        uppercase;
+
+    margin-bottom:
+        0.50rem;
+
+}
+
+
+.bank-title {
+
+    color:
+        var(--bank-text);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size:
+        clamp(
+            2rem,
+            3.5vw,
+            2.8rem
+        );
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        -0.055em;
+
+    line-height:
+        1.05;
+
+}
+
+
+.bank-subtitle {
+
+    color:
+        var(--bank-muted);
+
+    max-width:
+        820px;
+
+    font-size:
+        0.94rem;
+
+    line-height:
+        1.65;
+
+    margin-top:
+        0.75rem;
+
+}
+
+
+/* ==============================================================
+   KPI CARDS
+   ============================================================== */
+
+.bank-kpi {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
 
     background:
         linear-gradient(
             180deg,
             #FFFFFF 0%,
-            #FCFDFE 100%
+            #FBFCFE 100%
         );
 
     border:
-        1px solid {BORDER};
+        1px solid
+        var(--bank-border);
 
     border-radius:
         16px;
 
-    padding:
-        1.15rem 1.2rem;
-
     min-height:
-        122px;
+        124px;
+
+    padding:
+        1.12rem 1.15rem;
 
     box-shadow:
-        0 2px 5px
-            rgba(17, 34, 51, 0.025),
 
-        0 10px 28px
-            rgba(17, 34, 51, 0.045);
+        0 2px 4px
+        rgba(
+            16,
+            42,
+            67,
+            0.02
+        ),
+
+        0 10px 30px
+        rgba(
+            16,
+            42,
+            67,
+            0.045
+        );
 
     transition:
-        transform 0.18s ease,
-        box-shadow 0.18s ease,
-        border-color 0.18s ease;
-}}
+
+        transform
+        180ms ease,
+
+        box-shadow
+        180ms ease,
+
+        border-color
+        180ms ease;
+
+}
 
 
-.bank-kpi:hover {{
+.bank-kpi::before {
+
+    content: "";
+
+    position:
+        absolute;
+
+    left:
+        0;
+
+    top:
+        0;
+
+    bottom:
+        0;
+
+    width:
+        3px;
+
+    background:
+        var(--bank-blue);
+
+    opacity:
+        0.85;
+
+}
+
+
+.bank-kpi:hover {
 
     transform:
         translateY(-2px);
 
     border-color:
-        #D3DCE5;
+        #CFD9E3;
 
     box-shadow:
-        0 5px 10px
-            rgba(17, 34, 51, 0.035),
 
-        0 14px 34px
-            rgba(17, 34, 51, 0.065);
-}}
+        0 4px 9px
+        rgba(
+            16,
+            42,
+            67,
+            0.035
+        ),
+
+        0 15px 34px
+        rgba(
+            16,
+            42,
+            67,
+            0.07
+        );
+
+}
 
 
-.bank-kpi-label {{
+.bank-kpi-label {
 
     color:
-        {MUTED};
+        var(--bank-muted);
 
     font-size:
-        0.76rem;
+        0.70rem;
 
     font-weight:
-        670;
+        800;
 
     letter-spacing:
-        0.04em;
+        0.075em;
 
     text-transform:
         uppercase;
-}}
+
+}
 
 
-.bank-kpi-value {{
+.bank-kpi-value {
 
     color:
-        {TEXT};
+        var(--bank-text);
 
     font-family:
-        {NUMBER_FONT};
+        "IBM Plex Mono",
+        "SFMono-Regular",
+        monospace;
 
     font-size:
-        1.72rem;
+        clamp(
+            1.45rem,
+            2vw,
+            1.85rem
+        );
 
     font-weight:
-        760;
+        600;
+
+    font-variant-numeric:
+        tabular-nums;
 
     letter-spacing:
         -0.045em;
 
     margin-top:
-        0.42rem;
-}}
+        0.44rem;
+
+}
 
 
-.bank-kpi-note {{
+.bank-kpi-note {
 
     color:
-        {MUTED};
+        var(--bank-muted);
 
     font-size:
-        0.75rem;
+        0.71rem;
+
+    line-height:
+        1.38;
 
     margin-top:
-        0.42rem;
-}}
+        0.40rem;
+
+}
 
 
-/* -------------------------------------------------------------------------- */
-/* CONTENT CARDS                                                              */
-/* -------------------------------------------------------------------------- */
+/* ==============================================================
+   SECTION TITLE
+   ============================================================== */
 
-.bank-card {{
+.bank-section {
 
-    background:
-        rgba(255,255,255,0.98);
+    margin-top:
+        1.55rem;
 
-    border:
-        1px solid {BORDER};
+    margin-bottom:
+        0.8rem;
 
-    border-radius:
-        16px;
-
-    padding:
-        1.1rem 1.15rem;
-
-    box-shadow:
-        0 5px 22px
-        rgba(20,35,50,0.035);
-}}
+}
 
 
-.bank-card-title {{
+.bank-section-title {
 
     color:
-        {TEXT};
+        var(--bank-text);
 
     font-size:
-        0.96rem;
+        1.10rem;
 
     font-weight:
         700;
 
     letter-spacing:
-        -0.01em;
-}}
+        -0.018em;
+
+}
 
 
-.bank-card-subtitle {{
+.bank-section-subtitle {
 
     color:
-        {MUTED};
+        var(--bank-muted);
 
     font-size:
         0.78rem;
 
-    margin-top:
-        0.2rem;
-}}
-
-
-/* -------------------------------------------------------------------------- */
-/* PAGE HERO                                                                  */
-/* -------------------------------------------------------------------------- */
-
-.bank-hero {{
-    margin-bottom:
-        1.5rem;
-}}
-
-
-.bank-eyebrow {{
-
-    color:
-        {BLUE};
-
-    font-size:
-        0.72rem;
-
-    font-weight:
-        760;
-
-    letter-spacing:
-        0.095em;
-
-    text-transform:
-        uppercase;
-
-    margin-bottom:
-        0.45rem;
-}}
-
-
-.bank-title {{
-
-    color:
-        {TEXT};
-
-    font-size:
-        clamp(2rem, 3.3vw, 2.7rem);
-
-    font-weight:
-        780;
-
-    letter-spacing:
-        -0.052em;
-
     line-height:
-        1.06;
-}}
-
-
-.bank-subtitle {{
-
-    color:
-        {MUTED};
-
-    font-size:
-        0.93rem;
-
-    max-width:
-        780px;
-
-    line-height:
-        1.58;
+        1.5;
 
     margin-top:
-        0.65rem;
-}}
+        0.20rem;
+
+}
 
 
-/* -------------------------------------------------------------------------- */
-/* BADGES                                                                     */
-/* -------------------------------------------------------------------------- */
+/* ==============================================================
+   BADGES
+   ============================================================== */
 
-.risk-badge {{
+.bank-badge {
 
     display:
         inline-flex;
@@ -474,145 +625,74 @@ div[role="radiogroup"] label:hover {{
     align-items:
         center;
 
-    gap:
-        0.35rem;
+    padding:
+        0.27rem 0.62rem;
 
     border-radius:
-        100px;
-
-    padding:
-        0.25rem 0.6rem;
+        999px;
 
     font-size:
-        0.72rem;
+        0.70rem;
 
     font-weight:
-        720;
-}}
+        750;
+
+}
 
 
-.badge-green {{
+.bank-badge-green {
+
     background:
-        {GREEN_BG};
+        #E8F5F0;
+
     color:
-        {GREEN};
-}}
+        #19725B;
+
+}
 
 
-.badge-amber {{
+.bank-badge-amber {
+
     background:
-        {AMBER_BG};
+        #FFF4DE;
+
     color:
-        {AMBER};
-}}
+        #966515;
+
+}
 
 
-.badge-red {{
+.bank-badge-red {
+
     background:
-        {RED_BG};
+        #FCEBED;
+
     color:
-        {RED};
-}}
+        #A63E46;
+
+}
 
 
-.badge-neutral {{
+.bank-badge-neutral {
+
     background:
         #EEF2F6;
+
     color:
-        {TEXT_2};
-}}
+        #475467;
+
+}
 
 
-/* -------------------------------------------------------------------------- */
-/* STREAMLIT METRICS                                                          */
-/* -------------------------------------------------------------------------- */
+/* ==============================================================
+   DATAFRAME
+   ============================================================== */
 
-div[data-testid="stMetric"] {{
-
-    background:
-        #FFFFFF;
+div[data-testid="stDataFrame"] {
 
     border:
-        1px solid {BORDER};
-
-    border-radius:
-        15px;
-
-    padding:
-        1rem 1.1rem;
-
-    box-shadow:
-        0 5px 20px
-        rgba(18,38,58,0.035);
-}}
-
-
-div[data-testid="stMetricLabel"] {{
-    color:
-        {MUTED} !important;
-
-    font-weight:
-        650 !important;
-}}
-
-
-div[data-testid="stMetricValue"] {{
-
-    color:
-        {TEXT} !important;
-
-    font-family:
-        {NUMBER_FONT};
-
-    font-weight:
-        760 !important;
-
-    font-variant-numeric:
-        tabular-nums;
-}}
-
-
-/* -------------------------------------------------------------------------- */
-/* TABS                                                                       */
-/* -------------------------------------------------------------------------- */
-
-button[data-baseweb="tab"] {{
-
-    border-radius:
-        10px;
-
-    padding:
-        0.55rem 0.9rem;
-
-    font-weight:
-        650;
-
-    color:
-        {MUTED};
-
-    transition:
-        all 0.15s ease;
-}}
-
-
-button[data-baseweb="tab"][aria-selected="true"] {{
-
-    color:
-        {NAVY};
-
-    background:
-        #EAF1F6;
-}}
-
-
-/* -------------------------------------------------------------------------- */
-/* DATAFRAMES                                                                 */
-/* -------------------------------------------------------------------------- */
-
-div[data-testid="stDataFrame"] {{
-
-    border:
-        1px solid {BORDER};
+        1px solid
+        var(--bank-border);
 
     border-radius:
         14px;
@@ -621,420 +701,214 @@ div[data-testid="stDataFrame"] {{
         hidden;
 
     background:
-        #FFFFFF;
+        white;
 
     box-shadow:
+
         0 5px 22px
-        rgba(18,38,58,0.03);
-}}
+        rgba(
+            16,
+            42,
+            67,
+            0.035
+        );
+
+}
 
 
-/* -------------------------------------------------------------------------- */
-/* SELECTBOX / INPUT                                                          */
-/* -------------------------------------------------------------------------- */
+/* ==============================================================
+   METRICS
+   ============================================================== */
+
+div[data-testid="stMetric"] {
+
+    background:
+        #FFFFFF;
+
+    border:
+        1px solid
+        var(--bank-border);
+
+    border-radius:
+        14px;
+
+    padding:
+        1rem;
+
+}
+
+
+div[data-testid="stMetricValue"] {
+
+    font-family:
+        "IBM Plex Mono",
+        monospace;
+
+    font-variant-numeric:
+        tabular-nums;
+
+}
+
+
+/* ==============================================================
+   TABS
+   ============================================================== */
+
+button[data-baseweb="tab"] {
+
+    border-radius:
+        9px;
+
+    font-weight:
+        600;
+
+}
+
+
+button[data-baseweb="tab"]
+[aria-selected="true"] {
+
+    background:
+        #EAF1F6;
+
+}
+
+
+/* ==============================================================
+   INPUTS
+   ============================================================== */
 
 div[data-baseweb="select"] > div,
-div[data-baseweb="input"] {{
+div[data-baseweb="input"] {
 
     border-radius:
         10px !important;
 
-    border-color:
-        #DCE3EA !important;
-}}
+}
 
 
-/* -------------------------------------------------------------------------- */
-/* BUTTON                                                                     */
-/* -------------------------------------------------------------------------- */
+/* ==============================================================
+   ALERTS
+   ============================================================== */
 
-.stButton > button {{
+div[data-testid="stAlert"] {
 
     border-radius:
-        10px;
+        12px;
 
-    font-weight:
-        670;
-
-    border:
-        1px solid
-        #DCE4EB;
-
-    transition:
-        transform 0.15s ease,
-        border 0.15s ease;
-}}
+}
 
 
-.stButton > button:hover {{
+/* ==============================================================
+   SCROLLBAR
+   ============================================================== */
 
-    transform:
-        translateY(-1px);
+::-webkit-scrollbar {
 
-    border-color:
-        #BBC8D4;
-}}
+    width:
+        8px;
 
+    height:
+        8px;
 
-/* -------------------------------------------------------------------------- */
-/* ALERTS                                                                     */
-/* -------------------------------------------------------------------------- */
-
-div[data-testid="stAlert"] {{
-
-    border-radius:
-        13px;
-
-    border:
-        1px solid
-        rgba(0,0,0,0.045);
-}}
+}
 
 
-/* -------------------------------------------------------------------------- */
-/* EXPANDERS                                                                  */
-/* -------------------------------------------------------------------------- */
-
-details {{
-
-    background:
-        #FFFFFF !important;
-
-    border:
-        1px solid
-        {BORDER} !important;
-
-    border-radius:
-        13px !important;
-}}
-
-
-/* -------------------------------------------------------------------------- */
-/* SCROLLBAR                                                                  */
-/* -------------------------------------------------------------------------- */
-
-::-webkit-scrollbar {{
-    width: 8px;
-    height: 8px;
-}}
-
-
-::-webkit-scrollbar-track {{
-    background:
-        transparent;
-}}
-
-
-::-webkit-scrollbar-thumb {{
+::-webkit-scrollbar-thumb {
 
     background:
         #C4CDD6;
 
     border-radius:
-        20px;
-}}
+        99px;
+
+}
 
 
-::-webkit-scrollbar-thumb:hover {{
-    background:
-        #A6B2BE;
-}}
-
-
-/* -------------------------------------------------------------------------- */
-/* ANIMATION                                                                  */
-/* -------------------------------------------------------------------------- */
-
-.main .block-container {{
-
-    animation:
-        bankFade
-        0.24s ease-out;
-}}
-
-
-@keyframes bankFade {{
-
-    from {{
-        opacity: 0;
-        transform:
-            translateY(3px);
-    }}
-
-    to {{
-        opacity: 1;
-        transform:
-            translateY(0);
-    }}
-}}
-
-
-/* -------------------------------------------------------------------------- */
-/* RESPONSIVE                                                                 */
-/* -------------------------------------------------------------------------- */
+/* ==============================================================
+   RESPONSIVE
+   ============================================================== */
 
 @media (
     max-width: 900px
-) {{
+) {
 
-    .block-container {{
+    .block-container {
 
         padding-left:
             1rem;
 
         padding-right:
             1rem;
-    }}
+
+    }
 
 
-    .bank-title {{
+    .bank-title {
+
         font-size:
             1.8rem;
-    }}
+
+    }
 
 
-    .bank-kpi-value {{
-        font-size:
-            1.45rem;
-    }}
+    .bank-kpi {
 
-}}
+        min-height:
+            112px;
+
+    }
+
+}
+
+
+/* ==============================================================
+   TRANSITIONS
+   ============================================================== */
+
+.main .block-container {
+
+    animation:
+        bankFade
+        220ms ease-out;
+
+}
+
+
+@keyframes bankFade {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(
+                3px
+            );
+
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(
+                0
+            );
+
+    }
+
+}
 
 </style>
 """
 
 
 # =============================================================================
-# PLOTLY THEME
-# =============================================================================
-
-def register_plotly_theme():
-
-    theme = go.layout.Template()
-
-    theme.layout = go.Layout(
-
-        font=dict(
-            family=FONT_STACK,
-            size=12,
-            color=TEXT
-        ),
-
-        paper_bgcolor=
-            "rgba(0,0,0,0)",
-
-        plot_bgcolor=
-            "rgba(0,0,0,0)",
-
-        margin=dict(
-            l=32,
-            r=24,
-            t=54,
-            b=40
-        ),
-
-        title=dict(
-            font=dict(
-                family=FONT_STACK,
-                size=16,
-                color=TEXT
-            ),
-
-            x=0.01,
-
-            xanchor=
-                "left"
-        ),
-
-        legend=dict(
-
-            orientation=
-                "h",
-
-            yanchor=
-                "bottom",
-
-            y=
-                1.02,
-
-            xanchor=
-                "right",
-
-            x=
-                1,
-
-            font=dict(
-                size=10,
-                color=MUTED
-            )
-        ),
-
-        hoverlabel=dict(
-
-            bgcolor=
-                "#FFFFFF",
-
-            bordercolor=
-                BORDER,
-
-            font=dict(
-                family=FONT_STACK,
-                size=12,
-                color=TEXT
-            )
-        ),
-
-        xaxis=dict(
-
-            showgrid=
-                False,
-
-            zeroline=
-                False,
-
-            linecolor=
-                BORDER,
-
-            tickfont=dict(
-                color=MUTED
-            ),
-
-            automargin=
-                True
-        ),
-
-        yaxis=dict(
-
-            gridcolor=
-                GRID,
-
-            gridwidth=
-                1,
-
-            zeroline=
-                False,
-
-            tickfont=dict(
-                color=MUTED
-            ),
-
-            automargin=
-                True
-        ),
-
-        colorway=[
-
-            NAVY,
-
-            BLUE,
-
-            BLUE_LIGHT,
-
-            GREEN,
-
-            "#85764B",
-
-            PURPLE,
-
-            RED,
-
-            "#6B7C8E"
-        ]
-    )
-
-    pio.templates[
-        "bank_product"
-    ] = theme
-
-    pio.templates.default = (
-        "bank_product"
-    )
-
-
-# =============================================================================
-# CHART POLISH
-# =============================================================================
-
-def polish_chart(
-    fig,
-    height=None
-):
-
-    if fig is None:
-        return fig
-
-    try:
-
-        fig.update_layout(
-
-            template=
-                "bank_product",
-
-            autosize=
-                True,
-
-            hovermode=
-                "closest",
-
-            transition=dict(
-                duration=220,
-                easing="cubic-in-out"
-            ),
-
-            uirevision=
-                "bank-product"
-        )
-
-
-        if height:
-
-            fig.update_layout(
-                height=height
-            )
-
-
-        fig.update_traces(
-            selector=dict(
-                type="bar"
-            ),
-
-            marker_line_width=0,
-
-            opacity=0.93
-        )
-
-
-        fig.update_traces(
-            selector=dict(
-                type="scatter"
-            ),
-
-            marker=dict(
-                size=7
-            )
-        )
-
-
-        fig.update_traces(
-            selector=dict(
-                type="pie"
-            ),
-
-            textposition=
-                "inside"
-        )
-
-
-    except Exception:
-
-        pass
-
-
-    return fig
-
-
-# =============================================================================
-# CHART CONFIG
+# PLOTLY
 # =============================================================================
 
 CHART_CONFIG = {
@@ -1058,21 +932,296 @@ CHART_CONFIG = {
         "select2d",
 
         "toggleSpikelines"
+
     ]
+
 }
 
 
+def register_plotly_theme():
+
+    theme = go.layout.Template()
+
+    theme.layout = go.Layout(
+
+        font=dict(
+
+            family=
+                "Inter, Segoe UI, Arial, sans-serif",
+
+            size=
+                12,
+
+            color=
+                TEXT
+
+        ),
+
+        paper_bgcolor=
+            "rgba(0,0,0,0)",
+
+        plot_bgcolor=
+            "rgba(0,0,0,0)",
+
+        margin=dict(
+
+            l=35,
+
+            r=22,
+
+            t=55,
+
+            b=42
+
+        ),
+
+        title=dict(
+
+            font=dict(
+
+                family=
+                    "Inter, sans-serif",
+
+                size=
+                    16,
+
+                color=
+                    TEXT
+
+            ),
+
+            x=
+                0.01,
+
+            xanchor=
+                "left"
+
+        ),
+
+        legend=dict(
+
+            orientation=
+                "h",
+
+            yanchor=
+                "bottom",
+
+            y=
+                1.02,
+
+            xanchor=
+                "right",
+
+            x=
+                1,
+
+            font=dict(
+
+                family=
+                    "Inter, sans-serif",
+
+                size=
+                    10,
+
+                color=
+                    MUTED
+
+            )
+
+        ),
+
+        hoverlabel=dict(
+
+            bgcolor=
+                "#FFFFFF",
+
+            bordercolor=
+                BORDER,
+
+            font=dict(
+
+                family=
+                    "Inter, sans-serif",
+
+                color=
+                    TEXT
+
+            )
+
+        ),
+
+        xaxis=dict(
+
+            showgrid=
+                False,
+
+            zeroline=
+                False,
+
+            linecolor=
+                BORDER,
+
+            tickfont=dict(
+
+                family=
+                    "Inter, sans-serif",
+
+                color=
+                    MUTED
+
+            ),
+
+            automargin=
+                True
+
+        ),
+
+        yaxis=dict(
+
+            gridcolor=
+                GRID,
+
+            zeroline=
+                False,
+
+            tickfont=dict(
+
+                family=
+                    "Inter, sans-serif",
+
+                color=
+                    MUTED
+
+            ),
+
+            automargin=
+                True
+
+        ),
+
+        colorway=[
+
+            NAVY,
+
+            BLUE,
+
+            BLUE_LIGHT,
+
+            GREEN,
+
+            "#86754A",
+
+            "#755D86",
+
+            RED,
+
+            "#6B7C8F"
+
+        ]
+
+    )
+
+    pio.templates[
+        "bank_v2"
+    ] = theme
+
+    pio.templates.default = (
+        "bank_v2"
+    )
+
+
+def polish_chart(
+    fig,
+    height=None
+):
+
+    if fig is None:
+
+        return fig
+
+
+    try:
+
+        fig.update_layout(
+
+            template=
+                "bank_v2",
+
+            autosize=
+                True,
+
+            hovermode=
+                "closest",
+
+            transition=dict(
+
+                duration=
+                    200,
+
+                easing=
+                    "cubic-in-out"
+
+            ),
+
+            uirevision=
+                "semiconductor-credit-ui"
+
+        )
+
+
+        if height is not None:
+
+            fig.update_layout(
+                height=height
+            )
+
+
+        fig.update_traces(
+
+            selector=dict(
+                type="bar"
+            ),
+
+            marker_line_width=
+                0,
+
+            opacity=
+                0.93
+
+        )
+
+
+        fig.update_traces(
+
+            selector=dict(
+                type="scatter"
+            ),
+
+            marker=dict(
+                size=7
+            )
+
+        )
+
+
+    except Exception:
+
+        pass
+
+
+    return fig
+
+
 # =============================================================================
-# UI INITIALIZER
+# INITIALIZER
 # =============================================================================
 
 def initialize_design():
 
     register_plotly_theme()
 
-    st.markdown(
-        CSS,
-        unsafe_allow_html=True
+    render_html(
+        CSS
     )
 
 
@@ -1086,8 +1235,20 @@ def hero(
     eyebrow="SEMICONDUCTOR CREDIT INTELLIGENCE"
 ):
 
-    st.markdown(
+    title = html.escape(
+        str(title)
+    )
 
+    subtitle = html.escape(
+        str(subtitle)
+    )
+
+    eyebrow = html.escape(
+        str(eyebrow)
+    )
+
+
+    render_html(
         f"""
         <div class="bank-hero">
 
@@ -1104,14 +1265,12 @@ def hero(
             </div>
 
         </div>
-        """,
-
-        unsafe_allow_html=True
+        """
     )
 
 
 # =============================================================================
-# SECTION HEADER
+# SECTION
 # =============================================================================
 
 def section(
@@ -1119,19 +1278,42 @@ def section(
     subtitle=None
 ):
 
-    st.markdown(
-        f"### {title}"
+    title = html.escape(
+        str(title)
     )
+
+
+    subtitle_html = ""
+
 
     if subtitle:
 
-        st.caption(
-            subtitle
+        subtitle_html = (
+            '<div class="bank-section-subtitle">'
+            + html.escape(
+                str(subtitle)
+            )
+            + "</div>"
         )
 
 
+    render_html(
+        f"""
+        <div class="bank-section">
+
+            <div class="bank-section-title">
+                {title}
+            </div>
+
+            {subtitle_html}
+
+        </div>
+        """
+    )
+
+
 # =============================================================================
-# KPI CARD
+# KPI
 # =============================================================================
 
 def kpi(
@@ -1140,8 +1322,20 @@ def kpi(
     note=""
 ):
 
-    st.markdown(
+    label = html.escape(
+        str(label)
+    )
 
+    value = html.escape(
+        str(value)
+    )
+
+    note = html.escape(
+        str(note)
+    )
+
+
+    render_html(
         f"""
         <div class="bank-kpi">
 
@@ -1158,9 +1352,7 @@ def kpi(
             </div>
 
         </div>
-        """,
-
-        unsafe_allow_html=True
+        """
     )
 
 
@@ -1172,56 +1364,62 @@ def badge(
     value
 ):
 
-    value = (
+    safe_value = html.escape(
         "Not available"
         if value is None
         else str(value)
     )
 
+
     normalized = (
-        value.strip().upper()
+        safe_value
+        .strip()
+        .upper()
     )
 
 
-    if (
-        normalized == "GREEN"
-        or normalized == "A"
-    ):
+    if normalized in {
+        "GREEN",
+        "A"
+    }:
 
-        css = "badge-green"
-
-
-    elif (
-        normalized == "AMBER"
-        or normalized in {
-            "B",
-            "C"
-        }
-    ):
-
-        css = "badge-amber"
+        css_class = (
+            "bank-badge-green"
+        )
 
 
-    elif (
-        normalized == "RED"
-        or normalized in {
-            "D",
-            "E"
-        }
-    ):
+    elif normalized in {
+        "AMBER",
+        "B",
+        "C"
+    }:
 
-        css = "badge-red"
+        css_class = (
+            "bank-badge-amber"
+        )
+
+
+    elif normalized in {
+        "RED",
+        "D",
+        "E"
+    }:
+
+        css_class = (
+            "bank-badge-red"
+        )
 
 
     else:
 
-        css = "badge-neutral"
+        css_class = (
+            "bank-badge-neutral"
+        )
 
 
-    return f"""
-    <span class="
-        risk-badge {css}
-    ">
-        {value}
-    </span>
-    """
+    return (
+        f'<span class="bank-badge '
+        f'{css_class}">'
+        f'{safe_value}'
+        f'</span>'
+    )
