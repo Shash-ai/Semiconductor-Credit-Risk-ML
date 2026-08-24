@@ -1,3 +1,6 @@
+# Cloud-safe repository root
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
 from pathlib import Path
 import pandas as pd
 import numpy as np
@@ -70,7 +73,6 @@ def merge_optional(base, other, columns):
 st.sidebar.title('🏦 Credit Risk')
 st.sidebar.caption('Indian Semiconductor Financing')
 root_string = st.sidebar.text_input('Project folder', str(DEFAULT_ROOT))
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if not PROJECT_ROOT.exists():
     st.error(f'Project folder not found:\n\n{PROJECT_ROOT}')
     st.stop()
