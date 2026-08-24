@@ -470,18 +470,15 @@ def numeric_series(
 # =============================================================================
 
 def show_chart(
-    fig,
-    height=390
+    fig, height = 390
 ):
 
     polish_chart(
-        fig,
-        height=height
+        fig, height = height
     )
 
     st.plotly_chart(
-        fig,
-        use_container_width=True,
+        fig, use_container_width = True,
         config=CHART_CONFIG
     )
 
@@ -567,8 +564,7 @@ def sidebar():
 
 def load_core():
 
-    bank,
-    path = load_first(
+    bank, path = load_first(
         BANK_MODEL_CANDIDATES
     )
 
@@ -666,10 +662,7 @@ def render_overview(
         )
 
 
-    c1,
-    c2,
-    c3,
-    c4 = st.columns(4)
+    c1, c2, c3, c4 = st.columns(4)
 
 
     with c1:
@@ -730,8 +723,7 @@ def render_overview(
     # ROW 1
     # -------------------------------------------------------------------------
 
-    left,
-    right = st.columns(
+    left, right = st.columns(
         [1.2, 0.8]
     )
 
@@ -796,8 +788,7 @@ def render_overview(
 
 
             show_chart(
-                fig,
-                height=360
+                fig, height = 360
             )
 
         else:
@@ -857,8 +848,7 @@ def render_overview(
 
 
             show_chart(
-                fig,
-                height=360
+                fig, height = 360
             )
 
         else:
@@ -927,8 +917,7 @@ def render_overview(
                     ]
                 )
                 .sort_values(
-                    ranking_col,
-                    ascending=False
+                    ranking_col, ascending = False
                 )
                 .head(12)
             )
@@ -967,8 +956,7 @@ def render_overview(
 
 
             show_chart(
-                fig,
-                height=470
+                fig, height = 470
             )
 
 
@@ -1050,8 +1038,7 @@ def render_overview(
 
 
         show_chart(
-            fig,
-            height=390
+            fig, height = 390
         )
 
 
@@ -1221,8 +1208,7 @@ def render_credit_committee(
 
 
         show_chart(
-            fig,
-            height=420
+            fig, height = 420
         )
 
 
@@ -1295,10 +1281,7 @@ def render_project_analysis(
     row = matching.iloc[0]
 
 
-    c1,
-    c2,
-    c3,
-    c4 = st.columns(4)
+    c1, c2, c3, c4 = st.columns(4)
 
 
     with c1:
@@ -1389,8 +1372,7 @@ def render_project_analysis(
     st.write("")
 
 
-    left,
-    right = st.columns(2)
+    left, right = st.columns(2)
 
 
     with left:
@@ -1523,8 +1505,7 @@ def render_stress():
     )
 
 
-    stress,
-    path = load_first(
+    stress, path = load_first(
         STRESS_CANDIDATES
     )
 
@@ -1617,8 +1598,7 @@ def render_stress():
 
 
         show_chart(
-            fig,
-            height=390
+            fig, height = 390
         )
 
 
@@ -1700,8 +1680,7 @@ def render_stress():
 
 
             show_chart(
-                fig,
-                height=390
+                fig, height = 390
             )
 
 
@@ -1739,8 +1718,7 @@ def render_monte_carlo():
     )
 
 
-    mc,
-    path = load_first(
+    mc, path = load_first(
         MONTE_CARLO_CANDIDATES
     )
 
@@ -1855,8 +1833,7 @@ def render_monte_carlo():
 
 
         show_chart(
-            fig,
-            height=450
+            fig, height = 450
         )
 
 
@@ -1884,8 +1861,7 @@ def render_monte_carlo():
 
 
         ranking = ranking.sort_values(
-            p95_col,
-            ascending=False
+            p95_col, ascending = False
         )
 
 
@@ -1911,16 +1887,14 @@ def render_monte_carlo():
 
 
         show_chart(
-            fig,
-            height=470
+            fig, height = 470
         )
 
 
     else:
 
         st.dataframe(
-            mc,
-            use_container_width=True,
+            mc, use_container_width = True,
             hide_index=True
         )
 
@@ -1954,8 +1928,7 @@ def render_allocation(
     )
 
 
-    alloc,
-    path = load_first(
+    alloc, path = load_first(
         ALLOCATION_CANDIDATES
     )
 
@@ -2028,8 +2001,7 @@ def render_allocation(
                 ]
             )
             .sort_values(
-                amount,
-                ascending=False
+                amount, ascending = False
             )
         )
 
@@ -2066,8 +2038,7 @@ def render_allocation(
 
 
         show_chart(
-            fig,
-            height=480
+            fig, height = 480
         )
 
 
@@ -2132,8 +2103,7 @@ def render_allocation(
 
 
         show_chart(
-            fig,
-            height=480
+            fig, height = 480
         )
 
 
@@ -2166,9 +2136,7 @@ def render_validation(
     )
 
 
-    c1,
-    c2,
-    c3 = st.columns(3)
+    c1, c2, c3 = st.columns(3)
 
 
     with c1:
@@ -2270,9 +2238,7 @@ def render_app():
     page = sidebar()
 
 
-    bank,
-    bank_path,
-    cols = load_core()
+    bank, bank_path, cols = load_core()
 
 
     if page == "Overview":
