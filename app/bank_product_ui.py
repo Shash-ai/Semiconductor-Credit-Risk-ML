@@ -1,2303 +1,745 @@
-"""
-Semiconductor Credit Intelligence
-=================================
-
-Front-end information architecture for the research /
-bank-pilot decision-support system.
-
-All data is loaded from existing project outputs.
-
-No model score is recalculated here.
-"""
-
 from __future__ import annotations
 
 from pathlib import Path
-import re
+import math
 
 import numpy as np
 import pandas as pd
-import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
+import streamlit as st
 
-from app.design_system import (
-    CHART_CONFIG,
-    badge,
-    hero,
-    initialize_design,
-    kpi,
-    polish_chart,
-    section
+from app.ui_theme import (
+    AMBER,
+    BLUE,
+    EWS_COLORS,
+    GRADE_COLORS,
+    GREEN,
+    MUTED,
+    NAVY,
+    RED,
+    SLATE,
+    apply_ui,
+    page_header,
+    section_header,
+    show_plotly,
 )
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-# =============================================================================
-# PROJECT ROOT
-# =============================================================================
-
-PROJECT_ROOT = (
-    Path(__file__)
-    .resolve()
-    .parents[1]
-)
-
-
-# =============================================================================
-# FILE CANDIDATES
-# =============================================================================
-
-BANK_MODEL_CANDIDATES = [
-
-    PROJECT_ROOT
-    / "05_Final_Results"
-    / "FINAL_BANK_CREDIT_FRAMEWORK"
-    / "FINAL_Bank_Credit_Decision_Support_Full.csv",
-
-    PROJECT_ROOT
-    / "05_Final_Results"
-    / "Phase_7A_Bank_Credit_Decision_Support"
-    / "Bank_Credit_Decision_Support_Full.csv",
-
+BANK_FILES = [
+    PROJECT_ROOT / "05_Final_Results" / "FINAL_BANK_CREDIT_FRAMEWORK" / "FINAL_Bank_Credit_Decision_Support_Full.csv",
+    PROJECT_ROOT / "05_Final_Results" / "Phase_7A_Bank_Credit_Decision_Support" / "Bank_Credit_Decision_Support_Full.csv",
 ]
+STRESS_FILE = PROJECT_ROOT / "03_Modeling" / "Phase_3E_Robust_Stress_Test" / "Robust_Stress_Test_Full.csv"
+MC_FILE = PROJECT_ROOT / "03_Modeling" / "Phase_6B_Monte_Carlo_Stress" / "Monte_Carlo_Project_Risk_Summary.csv"
+ALLOC_FILE = PROJECT_ROOT / "05_Final_Results" / "Final_Project_Allocation_Robustness.csv"
+
+C = {
+    "project_id": ["project_id"],
+    "company": ["company"],
+    "project_type": ["project_type", "project_type_standardized"],
+    "state": ["state"],
+    "investment": ["investment_crore"],
+    "grade": ["indicative_model_risk_grade", "indicative_internal_risk_grade", "indicative_grade", "risk_grade"],
+    "baseline_grade": ["baseline_indicative_grade"],
+    "severe_grade": ["severe_stress_indicative_grade"],
+    "migration": ["stress_grade_migration"],
+    "ews": ["early_warning_status", "ews_status"],
+    "stress": ["project_stress_vulnerability_score", "severe_score"],
+    "stress_class": ["project_stress_vulnerability_class"],
+    "macro_pct": ["macro_vulnerability_percentile"],
+    "borrower_strength": ["borrower_credit_strength_score"],
+    "borrower_class": ["borrower_credit_strength_class"],
+    "concentration": ["portfolio_concentration_signal_score"],
+    "concentration_class": ["portfolio_concentration_class"],
+    "evidence": ["credit_evidence_coverage_pct"],
+    "evidence_quality": ["credit_information_quality"],
+    "credit_posture": ["credit_posture"],
+    "exposure_posture": ["exposure_posture"],
+    "monitoring": ["monitoring_priority"],
+    "drivers": ["primary_risk_drivers"],
+    "mitigants": ["primary_risk_mitigants"],
+    "explanation": ["bank_decision_support_explanation"],
+    "enhanced_rank": ["enhanced_vulnerability_rank"],
+    "robust_rank": ["robust_vulnerability_rank"],
+    "p95": ["p95_score"],
+    "prob_top3": ["probability_top_3"],
+    "allocation_share": ["mean_allocation_share"],
+    "allocation_rank": ["robust_allocation_rank"],
+}
 
 
-COMMITTEE_CANDIDATES = [
-
-    PROJECT_ROOT
-    / "05_Final_Results"
-    / "Phase_7D_Bank_Credit_Committee_Report"
-    / "Final_Bank_Credit_Committee_Register.csv"
-]
-
-
-STRESS_CANDIDATES = [
-
-    PROJECT_ROOT
-    / "03_Modeling"
-    / "Phase_3E_Robust_Stress_Test"
-    / "Robust_Stress_Test_Full.csv",
-
-    PROJECT_ROOT
-    / "03_Modeling"
-    / "Phase_3E_Robust_Stress_Test"
-    / "Final_Robust_Vulnerability_Ranking.csv"
-]
-
-
-MONTE_CARLO_CANDIDATES = [
-
-    PROJECT_ROOT
-    / "03_Modeling"
-    / "Phase_6B_Monte_Carlo_Stress"
-    / "Monte_Carlo_Project_Risk_Summary.csv"
-]
-
-
-ALLOCATION_CANDIDATES = [
-
-    PROJECT_ROOT
-    / "05_Final_Results"
-    / "Final_Project_Allocation_Robustness.csv",
-
-    PROJECT_ROOT
-    / "05_Final_Results"
-    / "FINAL_PROJECT_FREEZE"
-    / "Final_Project_Allocation_Robustness.csv"
-]
-
-
-# =============================================================================
-# DATA UTILITIES
-# =============================================================================
-
-def first_existing(
-    candidates
-):
-
-    for path in candidates:
-
-        if path.exists():
-            return path
-
-    return None
-
-
-@st.cache_data(
-    show_spinner=False
-)
-def load_csv(
-    path_string
-):
-
-    df = pd.read_csv(
-        path_string
-    )
-
-    df.columns = (
-        df.columns
-        .astype(str)
-        .str.strip()
-    )
-
+@st.cache_data(show_spinner=False)
+def read_csv(path: str) -> pd.DataFrame:
+    df = pd.read_csv(path, encoding="utf-8-sig")
+    df.columns = df.columns.astype(str).str.strip()
     return df
 
 
-def load_first(
-    candidates
-):
-
-    path = first_existing(
-        candidates
-    )
-
-    if path is None:
-
-        return None, None
-
-    return (
-        load_csv(
-            str(path)
-        ),
-        path
-    )
+def first_existing(paths: list[Path]) -> Path | None:
+    return next((p for p in paths if p.exists()), None)
 
 
-# =============================================================================
-# COLUMN DISCOVERY
-# =============================================================================
-
-def normalize_name(
-    value
-):
-
-    return re.sub(
-        r"[^a-z0-9]",
-        "",
-        str(value).lower()
-    )
-
-
-def find_col(
-    df,
-    candidates
-):
-
-    if df is None:
-        return None
-
-    lookup = {
-
-        normalize_name(col):
-            col
-
-        for col
-        in df.columns
-    }
-
-
-    for candidate in candidates:
-
-        key = normalize_name(
-            candidate
-        )
-
-        if key in lookup:
-
-            return lookup[key]
-
-
+def col(df: pd.DataFrame, key: str) -> str | None:
+    for name in C.get(key, [key]):
+        if name in df.columns:
+            return name
     return None
 
 
-# =============================================================================
-# STANDARD COLUMN DETECTION
-# =============================================================================
-
-def detect_columns(
-    df
-):
-
-    return {
-
-        "id":
-            find_col(
-                df,
-                [
-                    "project_id",
-                    "source_project_id",
-                    "ecosystem_id"
-                ]
-            ),
-
-        "company":
-            find_col(
-                df,
-                [
-                    "company",
-                    "company_name"
-                ]
-            ),
-
-        "project":
-            find_col(
-                df,
-                [
-                    "project_name",
-                    "project"
-                ]
-            ),
-
-        "state":
-            find_col(
-                df,
-                [
-                    "state",
-                    "project_state"
-                ]
-            ),
-
-        "grade":
-            find_col(
-                df,
-                [
-                    "indicative_grade",
-                    "indicative_internal_risk_grade",
-                    "research_grade",
-                    "risk_grade"
-                ]
-            ),
-
-        "ews":
-            find_col(
-                df,
-                [
-                    "early_warning_status",
-                    "ews_status",
-                    "early_warning"
-                ]
-            ),
-
-        "stress":
-            find_col(
-                df,
-                [
-                    "project_stress_vulnerability_score",
-                    "project_stress_score",
-                    "stress_vulnerability_score",
-                    "severe_score",
-                    "enhanced_score"
-                ]
-            ),
-
-        "rank":
-            find_col(
-                df,
-                [
-                    "enhanced_rank",
-                    "vulnerability_rank",
-                    "final_rank",
-                    "rank"
-                ]
-            ),
-
-        "p95":
-            find_col(
-                df,
-                [
-                    "p95_score",
-                    "p95_tail_risk_score",
-                    "monte_carlo_p95",
-                    "mc_p95",
-                    "tail_risk_score"
-                ]
-            ),
-
-        "amount":
-            find_col(
-                df,
-                [
-                    "financial_measure_crore",
-                    "investment_crore",
-                    "project_outlay_crore",
-                    "allocated_credit_crore",
-                    "allocation_crore"
-                ]
-            ),
-
-        "credit_posture":
-            find_col(
-                df,
-                [
-                    "credit_posture",
-                    "credit_review_posture"
-                ]
-            ),
-
-        "exposure_posture":
-            find_col(
-                df,
-                [
-                    "exposure_posture"
-                ]
-            ),
-
-        "monitoring":
-            find_col(
-                df,
-                [
-                    "monitoring_priority",
-                    "monitoring_status"
-                ]
-            ),
-
-        "drivers":
-            find_col(
-                df,
-                [
-                    "primary_risk_drivers",
-                    "risk_drivers"
-                ]
-            ),
-
-        "mitigants":
-            find_col(
-                df,
-                [
-                    "primary_risk_mitigants",
-                    "risk_mitigants",
-                    "mitigants"
-                ]
-            ),
-
-        "borrower_strength":
-            find_col(
-                df,
-                [
-                    "borrower_credit_strength",
-                    "borrower_strength"
-                ]
-            ),
-
-        "concentration":
-            find_col(
-                df,
-                [
-                    "portfolio_concentration_signal",
-                    "concentration_score",
-                    "portfolio_concentration"
-                ]
-            )
-    }
+def num(df: pd.DataFrame, key: str) -> pd.Series:
+    c = col(df, key)
+    if c is None:
+        return pd.Series(index=df.index, dtype=float)
+    return pd.to_numeric(df[c], errors="coerce")
 
 
-# =============================================================================
-# FORMATTING
-# =============================================================================
-
-def clean_text(
-    value
-):
-
-    if pd.isna(value):
-        return "Not available"
-
-    return str(value)
+def text(df: pd.DataFrame, key: str, default: str = "Not available") -> pd.Series:
+    c = col(df, key)
+    if c is None:
+        return pd.Series(default, index=df.index, dtype="object")
+    return df[c].fillna(default).astype(str)
 
 
-def compact_number(
-    value
-):
-
+def fmt_cr(value) -> str:
     try:
-
-        value = float(value)
-
+        x = float(value)
     except Exception:
+        return "—"
+    if not np.isfinite(x):
+        return "—"
+    if abs(x) >= 100000:
+        return f"₹{x/100000:.2f}L Cr"
+    if abs(x) >= 1000:
+        return f"₹{x/1000:.1f}K Cr"
+    return f"₹{x:,.0f} Cr"
 
+
+def fmt_score(value) -> str:
+    try:
+        x = float(value)
+        return f"{x:.1f}"
+    except Exception:
         return "—"
 
 
-    if abs(value) >= 100000:
-
-        return (
-            f"{value/100000:.1f}L"
-        )
-
-
-    if abs(value) >= 1000:
-
-        return (
-            f"{value/1000:.1f}K"
-        )
+def load_bank() -> tuple[pd.DataFrame, Path]:
+    path = first_existing(BANK_FILES)
+    if path is None:
+        st.error("The bank decision-support output is missing from the deployed repository.")
+        st.stop()
+    return read_csv(str(path)), path
 
 
-    if float(value).is_integer():
-
-        return (
-            f"{int(value):,}"
-        )
+def load_optional(path: Path) -> pd.DataFrame | None:
+    return read_csv(str(path)) if path.exists() else None
 
 
-    return (
-        f"{value:,.1f}"
-    )
+def clean_display_name(value: str, max_len: int = 42) -> str:
+    s = str(value)
+    return s if len(s) <= max_len else s[: max_len - 1] + "…"
 
 
-def numeric_series(
-    df,
-    column
-):
-
-    if (
-        df is None
-        or column is None
-    ):
-
-        return pd.Series(
-            dtype=float
-        )
-
-
-    return pd.to_numeric(
-        df[column],
-        errors="coerce"
-    )
-
-
-# =============================================================================
-# PLOTLY
-# =============================================================================
-
-def show_chart(
-    fig, height = 390
-):
-
-    polish_chart(
-        fig, height = height
-    )
-
-    st.plotly_chart(
-        fig, use_container_width = True,
-        config=CHART_CONFIG
-    )
-
-
-# =============================================================================
-# SIDEBAR
-# =============================================================================
-
-def sidebar():
+def apply_filters(df: pd.DataFrame) -> pd.DataFrame:
+    out = df.copy()
+    state_c = col(out, "state")
+    type_c = col(out, "project_type")
+    grade_c = col(out, "grade")
+    ews_c = col(out, "ews")
+    company_c = col(out, "company")
 
     with st.sidebar:
+        st.markdown("#### Portfolio filters")
+        if state_c:
+            values = sorted(out[state_c].dropna().astype(str).unique().tolist())
+            chosen = st.multiselect("State", values, default=values, key="flt_state")
+            if chosen:
+                out = out[out[state_c].astype(str).isin(chosen)]
+        if type_c:
+            values = sorted(out[type_c].dropna().astype(str).unique().tolist())
+            chosen = st.multiselect("Project type", values, default=values, key="flt_type")
+            if chosen:
+                out = out[out[type_c].astype(str).isin(chosen)]
+        if grade_c:
+            order = ["A", "B", "C", "D", "E"]
+            present = out[grade_c].dropna().astype(str).unique().tolist()
+            values = [g for g in order if g in present] + [g for g in sorted(present) if g not in order]
+            chosen = st.multiselect("Indicative grade", values, default=values, key="flt_grade")
+            if chosen:
+                out = out[out[grade_c].astype(str).isin(chosen)]
+        if ews_c:
+            order = ["GREEN", "AMBER", "RED"]
+            present = out[ews_c].dropna().astype(str).str.upper().unique().tolist()
+            values = [e for e in order if e in present] + [e for e in sorted(present) if e not in order]
+            chosen = st.multiselect("Early warning", values, default=values, key="flt_ews")
+            if chosen:
+                out = out[out[ews_c].astype(str).str.upper().isin(chosen)]
+        if company_c:
+            q = st.text_input("Search company", placeholder="Type a company name…", key="flt_search")
+            if q.strip():
+                out = out[out[company_c].astype(str).str.contains(q.strip(), case=False, na=False)]
 
+        st.caption(f"{len(out)} of {len(df)} projects shown")
+    return out
+
+
+def nav() -> str:
+    with st.sidebar:
         st.markdown(
             """
-            <div style="
-                font-size:0.68rem;
-                letter-spacing:0.12em;
-                font-weight:760;
-                opacity:0.72;
-                margin-top:0.3rem;
-            ">
-                CREDIT ANALYTICS
+            <div style="font-size:.68rem;font-weight:750;letter-spacing:.11em;color:#93C5FD;margin-bottom:.35rem">
+            SEMICONDUCTOR CREDIT
             </div>
-
-            <div style="
-                font-size:1.12rem;
-                font-weight:730;
-                margin-top:0.35rem;
-                margin-bottom:1rem;
-            ">
-                Semiconductor
-                Intelligence
+            <div style="font-size:1.08rem;font-weight:700;color:#F8FAFC;margin-bottom:1rem">
+            Intelligence Platform
             </div>
             """,
-            unsafe_allow_html=True
+            unsafe_allow_html=True,
         )
-
-
         page = st.radio(
-
             "Navigation",
-
             [
-
                 "Overview",
-
                 "Credit Committee",
-
                 "Project Analysis",
-
                 "Stress Testing",
-
                 "Monte Carlo",
-
                 "Portfolio Allocation",
-
-                "Model Validation"
+                "Model Governance",
             ],
-
-            label_visibility=
-                "collapsed"
+            label_visibility="collapsed",
         )
-
-
         st.divider()
-
-
-        st.caption(
-            "Research / bank-pilot prototype"
-        )
-
-        st.caption(
-            "Human credit judgement required"
-        )
-
-
+        st.caption("Research / controlled-pilot decision support")
+        st.caption("No automated lending decisions")
     return page
 
 
-# =============================================================================
-# LOAD CORE MODEL
-# =============================================================================
-
-def load_core():
-
-    bank, path = load_first(
-        BANK_MODEL_CANDIDATES
+def overview(df: pd.DataFrame) -> None:
+    page_header(
+        "Portfolio risk overview",
+        "A concise view of project vulnerability, early-warning signals, concentration, and evidence quality. Filters in the sidebar update every visual.",
     )
 
-    if bank is None:
+    inv = num(df, "investment")
+    stress = num(df, "stress")
+    ews = text(df, "ews").str.upper()
+    evidence = num(df, "evidence")
 
-        st.error(
-            "Bank decision-support output "
-            "could not be located."
-        )
-
-        st.stop()
-
-
-    return (
-        bank,
-        path,
-        detect_columns(
-            bank
-        )
-    )
-
-
-# =============================================================================
-# OVERVIEW
-# =============================================================================
-
-def render_overview(
-    bank,
-    cols
-):
-
-    hero(
-
-        "Portfolio Risk Overview",
-
-        (
-            "Executive view of semiconductor "
-            "project vulnerability, monitoring "
-            "signals and concentration indicators."
-        )
-    )
-
-
-    projects = len(
-        bank
-    )
-
-
-    red_count = 0
-
-    if cols["ews"]:
-
-        red_count = int(
-            bank[
-                cols["ews"]
-            ]
-            .astype(str)
-            .str.upper()
-            .eq("RED")
-            .sum()
-        )
-
-
-    priority_count = 0
-
-    if cols["monitoring"]:
-
-        priority_count = int(
-            bank[
-                cols["monitoring"]
-            ]
-            .astype(str)
-            .str.upper()
-            .str.contains(
-                "HIGH|PRIORITY|SENIOR",
-                regex=True
-            )
-            .sum()
-        )
-
-    elif cols["ews"]:
-
-        priority_count = red_count
-
-
-    amount_total = None
-
-    if cols["amount"]:
-
-        amount_total = (
-            numeric_series(
-                bank,
-                cols["amount"]
-            ).sum()
-        )
-
-
-    c1, c2, c3, c4 = st.columns(4)
-
-
-    with c1:
-
-        kpi(
-            "Projects analyzed",
-            f"{projects}",
-            "Current bank decision-support universe"
-        )
-
-
-    with c2:
-
-        kpi(
-
-            "Analyzed financial scale",
-
-            (
-                "₹"
-                + compact_number(
-                    amount_total
-                )
-                + " Cr"
-                if amount_total
-                else "—"
-            ),
-
-            "Project/investment scale, not bank EAD"
-        )
-
-
-    with c3:
-
-        kpi(
-            "Red EWS",
-            str(
-                red_count
-            ),
-            "Priority monitoring signals"
-        )
-
-
-    with c4:
-
-        kpi(
-            "Priority reviews",
-            str(
-                priority_count
-            ),
-            "Cases requiring closer analyst attention"
-        )
-
+    k1, k2, k3, k4 = st.columns(4)
+    k1.metric("Projects in view", f"{len(df):,}", help="Projects remaining after the active sidebar filters.")
+    k2.metric("Project financial scale", fmt_cr(inv.sum()), help="Investment/project scale in the source data. This is not bank EAD.")
+    k3.metric("Red early-warning", f"{int((ews == 'RED').sum()):,}", help="Research monitoring signal, not a default classification.")
+    k4.metric("Average stress score", fmt_score(stress.mean()), help="Constructed relative vulnerability score; not probability of default.")
 
     st.write("")
-
-
-    # -------------------------------------------------------------------------
-    # ROW 1
-    # -------------------------------------------------------------------------
-
-    left, right = st.columns(
-        [1.2, 0.8]
-    )
-
+    left, right = st.columns([1.05, 1.35])
 
     with left:
-
-        section(
-            "Risk-grade distribution",
-            (
-                "Indicative research grades — "
-                "not official bank ratings."
-            )
-        )
-
-
-        if cols["grade"]:
-
-            grade_counts = (
-
-                bank[
-                    cols["grade"]
-                ]
-                .fillna(
-                    "Not available"
+        with st.container(border=True):
+            section_header("Indicative grade distribution", "Research grades only — not official bank or CRA ratings.")
+            grade_c = col(df, "grade")
+            if grade_c:
+                counts = (
+                    df[grade_c].fillna("N/A").astype(str)
+                    .value_counts()
+                    .reindex(["A", "B", "C", "D", "E", "N/A"], fill_value=0)
+                    .reset_index()
                 )
-                .astype(str)
-                .value_counts()
-                .rename_axis(
-                    "Grade"
+                counts.columns = ["Grade", "Projects"]
+                counts = counts[counts["Projects"] > 0]
+                fig = px.bar(
+                    counts,
+                    x="Grade",
+                    y="Projects",
+                    text="Projects",
+                    color="Grade",
+                    color_discrete_map=GRADE_COLORS | {"N/A": SLATE},
                 )
-                .reset_index(
-                    name="Projects"
-                )
-            )
-
-
-            fig = px.bar(
-
-                grade_counts,
-
-                x=
-                    "Grade",
-
-                y=
-                    "Projects",
-
-                text=
-                    "Projects"
-            )
-
-
-            fig.update_traces(
-
-                textposition=
-                    "outside",
-
-                hovertemplate=
-                    "Grade %{x}<br>"
-                    "%{y} projects"
-                    "<extra></extra>"
-            )
-
-
-            show_chart(
-                fig, height = 360
-            )
-
-        else:
-
-            st.info(
-                "Grade field is unavailable."
-            )
-
+                fig.update_traces(textposition="outside", hovertemplate="Grade %{x}<br>%{y} projects<extra></extra>")
+                fig.update_layout(showlegend=False)
+                show_plotly(fig, key="overview_grade", height=330, selectable=True)
+            else:
+                st.info("Indicative grade is unavailable in the loaded file.")
 
     with right:
-
-        section(
-            "Early-warning profile",
-            "Current monitoring distribution."
-        )
-
-
-        if cols["ews"]:
-
-            ews_counts = (
-
-                bank[
-                    cols["ews"]
-                ]
-                .fillna(
-                    "Not available"
+        with st.container(border=True):
+            section_header("Stress–concentration map", "Hover, pan, zoom, and select points. Bubble size reflects project investment scale.")
+            plot = pd.DataFrame({
+                "Concentration": num(df, "concentration"),
+                "Stress vulnerability": num(df, "stress"),
+                "Company": text(df, "company"),
+                "Grade": text(df, "grade"),
+                "State": text(df, "state"),
+                "EWS": text(df, "ews").str.upper(),
+                "Investment": num(df, "investment").clip(lower=0),
+            }).dropna(subset=["Concentration", "Stress vulnerability"])
+            if not plot.empty:
+                max_inv = plot["Investment"].max()
+                plot["Bubble size"] = 18 if not max_inv or not np.isfinite(max_inv) else 14 + 34 * np.sqrt(plot["Investment"] / max_inv)
+                fig = px.scatter(
+                    plot,
+                    x="Concentration",
+                    y="Stress vulnerability",
+                    color="EWS",
+                    size="Bubble size",
+                    size_max=48,
+                    hover_name="Company",
+                    hover_data={"State": True, "Grade": True, "Investment": ":,.0f", "Bubble size": False},
+                    color_discrete_map=EWS_COLORS,
                 )
-                .astype(str)
-                .value_counts()
-                .rename_axis(
-                    "Status"
-                )
-                .reset_index(
-                    name="Projects"
-                )
-            )
+                fig.update_traces(marker=dict(line=dict(width=1, color="#FFFFFF"), opacity=0.88))
+                fig.update_layout(xaxis_title="Portfolio concentration signal", yaxis_title="Project stress vulnerability")
+                show_plotly(fig, key="overview_risk_map", height=330, selectable=True)
+            else:
+                st.info("Stress/concentration fields are unavailable.")
 
-
-            fig = px.pie(
-
-                ews_counts,
-
-                names=
-                    "Status",
-
-                values=
-                    "Projects",
-
-                hole=
-                    0.63
-            )
-
-
-            fig.update_layout(
-                showlegend=True
-            )
-
-
-            show_chart(
-                fig, height = 360
-            )
-
-        else:
-
-            st.info(
-                "EWS field is unavailable."
-            )
-
-
-    # -------------------------------------------------------------------------
-    # RISK RANKING
-    # -------------------------------------------------------------------------
-
-    section(
-        "Priority project view",
-        (
-            "Relative analytical vulnerability. "
-            "Scores are not probabilities of default."
-        )
-    )
-
-
-    ranking_col = (
-        cols["stress"]
-        or cols["rank"]
-    )
-
-
-    if ranking_col:
-
-        company_col = (
-            cols["company"]
-            or cols["project"]
-            or cols["id"]
-        )
-
-
-        if company_col:
-
-            ranking = bank[
-                [
-                    company_col,
-                    ranking_col
-                ]
-            ].copy()
-
-
-            ranking[
-                ranking_col
-            ] = pd.to_numeric(
-
-                ranking[
-                    ranking_col
-                ],
-
-                errors="coerce"
-            )
-
-
-            ranking = (
-
-                ranking
-                .dropna(
-                    subset=[
-                        ranking_col
-                    ]
-                )
-                .sort_values(
-                    ranking_col, ascending = False
-                )
-                .head(12)
-            )
-
-
+    with st.container(border=True):
+        section_header("Project vulnerability ranking", "Sorted by the current project stress vulnerability score.")
+        company_c = col(df, "company")
+        if company_c and col(df, "stress"):
+            rank = pd.DataFrame({
+                "Company": df[company_c].astype(str).map(clean_display_name),
+                "Stress": num(df, "stress"),
+                "EWS": text(df, "ews").str.upper(),
+                "Grade": text(df, "grade"),
+                "State": text(df, "state"),
+            }).dropna(subset=["Stress"]).sort_values("Stress", ascending=True)
             fig = px.bar(
-
-                ranking,
-
-                x=
-                    ranking_col,
-
-                y=
-                    company_col,
-
-                orientation=
-                    "h"
+                rank,
+                x="Stress",
+                y="Company",
+                orientation="h",
+                color="EWS",
+                hover_data={"Grade": True, "State": True},
+                color_discrete_map=EWS_COLORS,
             )
-
-
-            fig.update_layout(
-
-                yaxis=dict(
-                    autorange="reversed"
-                )
-            )
-
-
-            fig.update_traces(
-
-                hovertemplate=
-                    "%{y}<br>"
-                    "%{x:.2f}"
-                    "<extra></extra>"
-            )
-
-
-            show_chart(
-                fig, height = 470
-            )
-
-
-    # -------------------------------------------------------------------------
-    # STATE SCALE
-    # -------------------------------------------------------------------------
-
-    if (
-        cols["state"]
-        and cols["amount"]
-    ):
-
-        section(
-            "Geographic concentration",
-            (
-                "Financial project scale by state; "
-                "not actual bank exposure."
-            )
-        )
-
-
-        temp = bank[
-            [
-                cols["state"],
-                cols["amount"]
-            ]
-        ].copy()
-
-
-        temp[
-            cols["amount"]
-        ] = pd.to_numeric(
-
-            temp[
-                cols["amount"]
-            ],
-
-            errors="coerce"
-        )
-
-
-        state_scale = (
-
-            temp
-            .groupby(
-                cols["state"],
-                dropna=False
-            )[
-                cols["amount"]
-            ]
-            .sum()
-            .sort_values(
-                ascending=False
-            )
-            .reset_index()
-        )
-
-
-        fig = px.bar(
-
-            state_scale,
-
-            x=
-                cols["amount"],
-
-            y=
-                cols["state"],
-
-            orientation=
-                "h"
-        )
-
-
-        fig.update_layout(
-            yaxis=dict(
-                autorange="reversed"
-            )
-        )
-
-
-        show_chart(
-            fig, height = 390
-        )
-
-
-# =============================================================================
-# CREDIT COMMITTEE
-# =============================================================================
-
-def render_credit_committee(
-    bank,
-    cols
-):
-
-    hero(
-
-        "Credit Committee",
-
-        (
-            "Prioritized view of exposures requiring "
-            "enhanced review, mitigants or monitoring."
-        )
-    )
-
-
-    review = bank.copy()
-
-
-    # Priority sort
-    if cols["ews"]:
-
-        order = {
-            "RED": 0,
-            "AMBER": 1,
-            "GREEN": 2
-        }
-
-
-        review[
-            "_ews_priority"
-        ] = (
-
-            review[
-                cols["ews"]
-            ]
-            .astype(str)
-            .str.upper()
-            .map(
-                order
-            )
-            .fillna(
-                3
-            )
-        )
-
-
-        review = review.sort_values(
-            "_ews_priority"
-        )
-
-
-    display_candidates = [
-
-        cols["id"],
-
-        cols["company"],
-
-        cols["project"],
-
-        cols["state"],
-
-        cols["grade"],
-
-        cols["ews"],
-
-        cols["credit_posture"],
-
-        cols["exposure_posture"],
-
-        cols["monitoring"],
-
-        cols["stress"]
-    ]
-
-
-    display_cols = [
-
-        col
-        for col in display_candidates
-        if col is not None
-    ]
-
-
-    # Deduplicate
-    display_cols = list(
-        dict.fromkeys(
-            display_cols
-        )
-    )
-
-
-    section(
-        "Committee review register",
-        "Sorted toward higher monitoring priority where available."
-    )
-
-
-    st.dataframe(
-
-        review[
-            display_cols
-        ],
-
-        use_container_width=True,
-
-        hide_index=True,
-
-        height=480
-    )
-
-
-    # Posture
-    if cols["credit_posture"]:
-
-        section(
-            "Credit-review posture"
-        )
-
-
-        posture_counts = (
-
-            bank[
-                cols["credit_posture"]
-            ]
-            .fillna(
-                "Not available"
-            )
-            .astype(str)
-            .value_counts()
-            .rename_axis(
-                "Posture"
-            )
-            .reset_index(
-                name="Projects"
-            )
-        )
-
-
-        fig = px.bar(
-
-            posture_counts,
-
-            x=
-                "Projects",
-
-            y=
-                "Posture",
-
-            orientation=
-                "h"
-        )
-
-
-        fig.update_layout(
-            yaxis=dict(
-                autorange="reversed"
-            )
-        )
-
-
-        show_chart(
-            fig, height = 420
-        )
-
-
-# =============================================================================
-# PROJECT ANALYSIS
-# =============================================================================
-
-def render_project_analysis(
-    bank,
-    cols
-):
-
-    hero(
-
-        "Project Analysis",
-
-        (
-            "Drill down into one project using "
-            "borrower, stress, concentration and "
-            "monitoring evidence."
-        )
-    )
-
-
-    label_col = (
-        cols["company"]
-        or cols["project"]
-        or cols["id"]
-    )
-
-
-    if label_col is None:
-
-        st.error(
-            "No suitable project identifier found."
-        )
-
-        return
-
-
-    labels = (
-        bank[
-            label_col
-        ]
-        .fillna(
-            "Unknown"
-        )
-        .astype(str)
-    )
-
-
-    selected = st.selectbox(
-
-        "Select project / company",
-
-        labels.tolist()
-    )
-
-
-    matching = bank[
-        labels == selected
-    ]
-
-
-    if matching.empty:
-
-        return
-
-
-    row = matching.iloc[0]
-
-
-    c1, c2, c3, c4 = st.columns(4)
-
-
-    with c1:
-
-        kpi(
-            "Indicative grade",
-            (
-                clean_text(
-                    row[
-                        cols["grade"]
-                    ]
-                )
-                if cols["grade"]
-                else "—"
-            ),
-            "Research decision-support grade"
-        )
-
-
-    with c2:
-
-        kpi(
-            "Early warning",
-            (
-                clean_text(
-                    row[
-                        cols["ews"]
-                    ]
-                )
-                if cols["ews"]
-                else "—"
-            ),
-            "Monitoring signal"
-        )
-
-
-    with c3:
-
-        value = (
-            pd.to_numeric(
-                pd.Series(
-                    [
-                        row[
-                            cols["stress"]
-                        ]
-                    ]
-                ),
-                errors="coerce"
-            ).iloc[0]
-            if cols["stress"]
-            else np.nan
-        )
-
-
-        kpi(
-            "Stress vulnerability",
-            (
-                f"{value:.2f}"
-                if pd.notna(
-                    value
-                )
-                else "—"
-            ),
-            "Relative analytical score"
-        )
-
-
-    with c4:
-
-        value = (
-            row[
-                cols["borrower_strength"]
-            ]
-            if cols["borrower_strength"]
-            else "Not available"
-        )
-
-
-        kpi(
-            "Borrower strength",
-            clean_text(
-                value
-            ),
-            "Based only on verified available evidence"
-        )
-
-
-    st.write("")
-
-
-    left, right = st.columns(2)
-
-
-    with left:
-
-        section(
-            "Credit posture"
-        )
-
-        st.info(
-
-            clean_text(
-                row[
-                    cols["credit_posture"]
-                ]
-            )
-
-            if cols["credit_posture"]
-
-            else "Not available"
-        )
-
-
-        section(
-            "Primary risk drivers"
-        )
-
-        st.write(
-
-            clean_text(
-                row[
-                    cols["drivers"]
-                ]
-            )
-
-            if cols["drivers"]
-
-            else (
-                "Detailed risk-driver field "
-                "is not available in this output."
-            )
-        )
-
-
-    with right:
-
-        section(
-            "Exposure posture"
-        )
-
-        st.info(
-
-            clean_text(
-                row[
-                    cols["exposure_posture"]
-                ]
-            )
-
-            if cols["exposure_posture"]
-
-            else "Not available"
-        )
-
-
-        section(
-            "Risk mitigants"
-        )
-
-        st.write(
-
-            clean_text(
-                row[
-                    cols["mitigants"]
-                ]
-            )
-
-            if cols["mitigants"]
-
-            else (
-                "Detailed mitigant field "
-                "is not available in this output."
-            )
-        )
-
-
-    with st.expander(
-        "View complete analytical record"
-    ):
-
-        record = (
-
-            row
-            .to_frame(
-                name="Value"
-            )
-            .reset_index()
-            .rename(
-                columns={
-                    "index":
-                        "Field"
-                }
-            )
-        )
-
-
-        st.dataframe(
-
-            record,
-
-            use_container_width=True,
-
-            hide_index=True
-        )
-
-
-# =============================================================================
-# STRESS TESTING
-# =============================================================================
-
-def render_stress():
-
-    hero(
-
-        "Stress Testing",
-
-        (
-            "Scenario analysis of relative project "
-            "vulnerability under adverse banking and "
-            "macro-financial conditions."
-        )
-    )
-
-
-    stress, path = load_first(
-        STRESS_CANDIDATES
-    )
-
-
-    if stress is None:
-
-        st.info(
-            "Stress-test output could not be located."
-        )
-
-        return
-
-
-    scenario_col = find_col(
-        stress,
-        [
-            "scenario",
-            "stress_scenario"
-        ]
-    )
-
-
-    score_col = find_col(
-        stress,
-        [
-            "stress_score",
-            "stressed_score",
-            "vulnerability_score",
-            "score"
-        ]
-    )
-
-
-    if (
-        scenario_col
-        and score_col
-    ):
-
-        temp = stress[
-            [
-                scenario_col,
-                score_col
-            ]
-        ].copy()
-
-
-        temp[
-            score_col
-        ] = pd.to_numeric(
-            temp[
-                score_col
-            ],
-            errors="coerce"
-        )
-
-
-        summary = (
-
-            temp
-            .groupby(
-                scenario_col
-            )[
-                score_col
-            ]
-            .mean()
-            .reset_index(
-                name="Mean score"
-            )
-        )
-
-
-        section(
-            "Scenario progression",
-            "Mean constructed vulnerability score by scenario."
-        )
-
-
-        fig = px.line(
-
-            summary,
-
-            x=
-                scenario_col,
-
-            y=
-                "Mean score",
-
-            markers=True
-        )
-
-
-        show_chart(
-            fig, height = 390
-        )
-
-
-    else:
-
-        # Attempt wide scenario structure
-
-        scenario_fields = []
-
-
-        for candidate in [
-            "baseline",
-            "mild",
-            "moderate",
-            "severe"
-        ]:
-
-            col = find_col(
-                stress,
-                [
-                    candidate,
-                    candidate
-                    + "_score"
-                ]
-            )
-
-            if col:
-
-                scenario_fields.append(
-                    (
-                        candidate.title(),
-                        col
+            fig.update_layout(xaxis_title="Stress vulnerability score", yaxis_title="", showlegend=True)
+            show_plotly(fig, key="overview_ranking", height=max(380, 34 * len(rank) + 80), selectable=True)
+
+    left2, right2 = st.columns([1, 1])
+    with left2:
+        with st.container(border=True):
+            section_header("State concentration", "Aggregate project financial scale by state.")
+            state_c = col(df, "state")
+            if state_c and col(df, "investment"):
+                tmp = pd.DataFrame({"State": df[state_c].astype(str), "Investment": inv}).dropna()
+                state_sum = tmp.groupby("State", as_index=False)["Investment"].sum().sort_values("Investment")
+                fig = px.bar(state_sum, x="Investment", y="State", orientation="h", text_auto=".3s")
+                fig.update_traces(marker_color=BLUE, hovertemplate="%{y}<br>₹%{x:,.0f} Cr<extra></extra>")
+                fig.update_layout(xaxis_title="Project financial scale (₹ Cr)", yaxis_title="")
+                show_plotly(fig, key="overview_state", height=340)
+    with right2:
+        with st.container(border=True):
+            section_header("Evidence quality", "Coverage of verified evidence layers used in the decision-support framework.")
+            if evidence.notna().any():
+                ev = evidence.dropna()
+                fig = go.Figure(
+                    go.Histogram(
+                        x=ev,
+                        nbinsx=8,
+                        marker_color=NAVY,
+                        hovertemplate="Coverage %{x:.0f}%<br>%{y} projects<extra></extra>",
                     )
                 )
+                fig.update_layout(xaxis_title="Evidence coverage (%)", yaxis_title="Projects")
+                show_plotly(fig, key="overview_evidence", height=340)
+            else:
+                st.info("Evidence coverage is unavailable.")
 
 
-        if scenario_fields:
-
-            scenario_summary = []
-
-
-            for label, col in scenario_fields:
-
-                values = pd.to_numeric(
-                    stress[
-                        col
-                    ],
-                    errors="coerce"
-                )
-
-
-                scenario_summary.append({
-
-                    "Scenario":
-                        label,
-
-                    "Mean score":
-                        values.mean()
-                })
-
-
-            summary = pd.DataFrame(
-                scenario_summary
-            )
-
-
-            fig = px.line(
-
-                summary,
-
-                x=
-                    "Scenario",
-
-                y=
-                    "Mean score",
-
-                markers=True
-            )
-
-
-            show_chart(
-                fig, height = 390
-            )
-
-
-        else:
-
-            st.dataframe(
-                stress.head(30),
-                use_container_width=True,
-                hide_index=True
-            )
-
-
-    st.caption(
-        (
-            "Stress scores are constructed analytical "
-            "indices and are not observed defaults or losses."
-        )
+def committee(df: pd.DataFrame) -> None:
+    page_header(
+        "Credit committee workspace",
+        "A review-first register prioritizing warning signals, vulnerability, evidence quality, and proposed analyst posture.",
     )
+    ews_c = col(df, "ews")
+    work = df.copy()
+    if ews_c:
+        order = {"RED": 0, "AMBER": 1, "GREEN": 2}
+        work["_ews_order"] = work[ews_c].fillna("").astype(str).str.upper().map(order).fillna(3)
+    else:
+        work["_ews_order"] = 3
+    work["_stress"] = num(work, "stress")
+    work = work.sort_values(["_ews_order", "_stress"], ascending=[True, False])
 
+    ews = text(work, "ews").str.upper()
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Red cases", int((ews == "RED").sum()))
+    c2.metric("Amber cases", int((ews == "AMBER").sum()))
+    c3.metric("High monitoring priority", int(text(work, "monitoring").str.upper().eq("HIGH").sum()))
 
-# =============================================================================
-# MONTE CARLO
-# =============================================================================
-
-def render_monte_carlo():
-
-    hero(
-
-        "Monte Carlo Tail Risk",
-
-        (
-            "Distribution-based analytical stress "
-            "assessment under simulated adverse conditions."
-        )
-    )
-
-
-    mc, path = load_first(
-        MONTE_CARLO_CANDIDATES
-    )
-
-
-    if mc is None:
-
-        st.info(
-            "Monte Carlo summary could not be located."
+    with st.container(border=True):
+        section_header("Prioritized review register", "Click column headers to sort. Use the download button for a committee-ready extract.")
+        fields = [
+            ("project_id", "Project ID"),
+            ("company", "Company"),
+            ("state", "State"),
+            ("grade", "Grade"),
+            ("ews", "EWS"),
+            ("stress", "Stress"),
+            ("concentration", "Concentration"),
+            ("evidence", "Evidence %"),
+            ("monitoring", "Monitoring"),
+            ("credit_posture", "Credit posture"),
+        ]
+        out = pd.DataFrame()
+        for key, label in fields:
+            c = col(work, key)
+            if c:
+                out[label] = work[c]
+        for name in ["Stress", "Concentration", "Evidence %"]:
+            if name in out:
+                out[name] = pd.to_numeric(out[name], errors="coerce")
+        config = {}
+        if "Stress" in out:
+            config["Stress"] = st.column_config.ProgressColumn("Stress", min_value=0, max_value=100, format="%.1f")
+        if "Concentration" in out:
+            config["Concentration"] = st.column_config.ProgressColumn("Concentration", min_value=0, max_value=100, format="%.1f")
+        if "Evidence %" in out:
+            config["Evidence %"] = st.column_config.ProgressColumn("Evidence %", min_value=0, max_value=100, format="%.0f%%")
+        st.dataframe(out, width="stretch", height=480, hide_index=True, column_config=config)
+        st.download_button(
+            "Download committee extract",
+            data=out.to_csv(index=False).encode("utf-8"),
+            file_name="credit_committee_extract.csv",
+            mime="text/csv",
         )
 
+    left, right = st.columns(2)
+    with left:
+        with st.container(border=True):
+            section_header("Credit posture", "Distribution of model-generated analyst review posture.")
+            c = col(df, "credit_posture")
+            if c:
+                counts = df[c].fillna("Not available").astype(str).value_counts().reset_index()
+                counts.columns = ["Posture", "Projects"]
+                counts = counts.sort_values("Projects")
+                fig = px.bar(counts, x="Projects", y="Posture", orientation="h")
+                fig.update_traces(marker_color=BLUE)
+                show_plotly(fig, key="committee_posture", height=380)
+    with right:
+        with st.container(border=True):
+            section_header("Exposure posture", "Portfolio-limit posture produced by the banking layer.")
+            c = col(df, "exposure_posture")
+            if c:
+                counts = df[c].fillna("Not available").astype(str).value_counts().reset_index()
+                counts.columns = ["Posture", "Projects"]
+                counts = counts.sort_values("Projects")
+                fig = px.bar(counts, x="Projects", y="Posture", orientation="h")
+                fig.update_traces(marker_color=NAVY)
+                show_plotly(fig, key="committee_exposure", height=380)
+
+
+def project_analysis(df: pd.DataFrame, stress_df: pd.DataFrame | None, mc_df: pd.DataFrame | None) -> None:
+    page_header(
+        "Project analysis",
+        "Drill into one project and trace the evidence from vulnerability and concentration to stress migration and Monte Carlo tail risk.",
+    )
+    company_c = col(df, "company")
+    id_c = col(df, "project_id")
+    if not company_c:
+        st.error("Company field is unavailable.")
+        return
+    options = df[[company_c] + ([id_c] if id_c else [])].copy()
+    options["_label"] = options[company_c].astype(str)
+    if id_c:
+        options["_label"] += " · " + options[id_c].astype(str)
+    selected = st.selectbox("Project", options["_label"].tolist())
+    row = df.loc[options["_label"].eq(selected)].iloc[0]
+    pid = str(row[id_c]) if id_c else None
+
+    k1, k2, k3, k4, k5 = st.columns(5)
+    k1.metric("Indicative grade", str(row[col(df, "grade")]) if col(df, "grade") else "—")
+    k2.metric("Early warning", str(row[col(df, "ews")]) if col(df, "ews") else "—")
+    k3.metric("Stress score", fmt_score(row[col(df, "stress")]) if col(df, "stress") else "—")
+    k4.metric("Concentration", fmt_score(row[col(df, "concentration")]) if col(df, "concentration") else "—")
+    k5.metric("Evidence coverage", f"{fmt_score(row[col(df, 'evidence')])}%" if col(df, "evidence") else "—")
+
+    left, right = st.columns([1.05, 0.95])
+    with left:
+        with st.container(border=True):
+            section_header("Decision-support explanation", "The framework's consolidated rationale for this project.")
+            c = col(df, "explanation")
+            st.write(str(row[c]) if c and pd.notna(row[c]) else "No consolidated explanation available.")
+            section_header("Primary risk drivers")
+            c = col(df, "drivers")
+            st.write(str(row[c]) if c and pd.notna(row[c]) else "No dominant elevated signal identified.")
+            section_header("Primary mitigants")
+            c = col(df, "mitigants")
+            st.write(str(row[c]) if c and pd.notna(row[c]) else "No verified mitigant recorded.")
+    with right:
+        with st.container(border=True):
+            section_header("Project facts")
+            facts = []
+            for key, label in [("state", "State"), ("project_type", "Project type"), ("investment", "Investment"), ("borrower_class", "Borrower strength class"), ("concentration_class", "Concentration class"), ("evidence_quality", "Information quality"), ("monitoring", "Monitoring priority")]:
+                c = col(df, key)
+                if c:
+                    value = row[c]
+                    if key == "investment":
+                        value = fmt_cr(value)
+                    facts.append({"Field": label, "Value": value})
+            st.dataframe(pd.DataFrame(facts), hide_index=True, width="stretch")
+
+    if stress_df is not None and pid and "project_id" in stress_df.columns:
+        s = stress_df[stress_df["project_id"].astype(str).eq(pid)]
+        if not s.empty:
+            r = s.iloc[0]
+            scenarios = []
+            for label, c in [("Baseline", "baseline_score"), ("Mild", "mild_score"), ("Moderate", "moderate_score"), ("Severe", "severe_score")]:
+                if c in s.columns:
+                    scenarios.append({"Scenario": label, "Score": pd.to_numeric(pd.Series([r[c]]), errors="coerce").iloc[0]})
+            if scenarios:
+                with st.container(border=True):
+                    section_header("Stress migration", "Interactive scenario path for the selected project.")
+                    sc = pd.DataFrame(scenarios).dropna()
+                    fig = px.line(sc, x="Scenario", y="Score", markers=True)
+                    fig.update_traces(line=dict(color=RED, width=3), marker=dict(size=10))
+                    fig.update_layout(yaxis_range=[0, 100])
+                    show_plotly(fig, key="project_stress", height=340)
+
+    if mc_df is not None and pid and "project_id" in mc_df.columns:
+        m = mc_df[mc_df["project_id"].astype(str).eq(pid)]
+        if not m.empty:
+            r = m.iloc[0]
+            pcs = []
+            for label, c in [("Median", "median_simulated_score"), ("P75", "p75_score"), ("P90", "p90_score"), ("P95", "p95_score"), ("P99", "p99_score")]:
+                if c in m.columns:
+                    pcs.append({"Percentile": label, "Score": pd.to_numeric(pd.Series([r[c]]), errors="coerce").iloc[0]})
+            if pcs:
+                with st.container(border=True):
+                    section_header("Monte Carlo tail profile", "Selected percentiles from the simulated vulnerability distribution.")
+                    pc = pd.DataFrame(pcs).dropna()
+                    fig = px.line(pc, x="Percentile", y="Score", markers=True)
+                    fig.update_traces(line=dict(color=BLUE, width=3), marker=dict(size=9))
+                    fig.update_layout(yaxis_range=[0, 100])
+                    show_plotly(fig, key="project_mc", height=340)
+
+
+def stress_page(df: pd.DataFrame, stress_df: pd.DataFrame | None) -> None:
+    page_header(
+        "Stress testing",
+        "Scenario migration from baseline to severe conditions. Scores are relative analytical vulnerability indices, not observed losses or probabilities of default.",
+    )
+    if stress_df is None:
+        st.info("The Phase 3E stress-test output is not available in the deployed repository.")
         return
 
+    scenario_cols = [c for c in ["baseline_score", "mild_score", "moderate_score", "severe_score"] if c in stress_df.columns]
+    if not scenario_cols:
+        st.info("Scenario-score columns are unavailable.")
+        return
 
-    company = find_col(
-        mc,
-        [
-            "company",
-            "project_name",
-            "project_id"
-        ]
+    means = [{"Scenario": c.replace("_score", "").title(), "Mean": pd.to_numeric(stress_df[c], errors="coerce").mean()} for c in scenario_cols]
+    with st.container(border=True):
+        section_header("Portfolio scenario path", "Mean project vulnerability across progressively more adverse scenarios.")
+        fig = px.line(pd.DataFrame(means), x="Scenario", y="Mean", markers=True)
+        fig.update_traces(line=dict(color=RED, width=3), marker=dict(size=10))
+        fig.update_layout(yaxis_title="Mean vulnerability score", yaxis_range=[0, 100])
+        show_plotly(fig, key="stress_portfolio", height=350)
+
+    if "company" in stress_df.columns and "baseline_score" in stress_df.columns and "severe_score" in stress_df.columns:
+        with st.container(border=True):
+            section_header("Baseline vs severe stress", "Distance above the diagonal shows the magnitude of modelled stress migration.")
+            plot = stress_df[["company", "baseline_score", "severe_score"]].copy()
+            plot["baseline_score"] = pd.to_numeric(plot["baseline_score"], errors="coerce")
+            plot["severe_score"] = pd.to_numeric(plot["severe_score"], errors="coerce")
+            plot = plot.dropna()
+            fig = px.scatter(plot, x="baseline_score", y="severe_score", hover_name="company")
+            lo = float(min(plot["baseline_score"].min(), plot["severe_score"].min()))
+            hi = float(max(plot["baseline_score"].max(), plot["severe_score"].max()))
+            fig.add_trace(go.Scatter(x=[lo, hi], y=[lo, hi], mode="lines", name="No migration", line=dict(color="#CBD5E1", dash="dash")))
+            fig.update_traces(selector=dict(type="scatter", mode="markers"), marker=dict(size=11, color=BLUE))
+            fig.update_layout(xaxis_title="Baseline score", yaxis_title="Severe score")
+            show_plotly(fig, key="stress_scatter", height=430, selectable=True)
+
+    if "company" in stress_df.columns and "severe_score" in stress_df.columns:
+        with st.container(border=True):
+            section_header("Severe-scenario ranking")
+            plot = stress_df[["company", "severe_score"]].copy()
+            plot["severe_score"] = pd.to_numeric(plot["severe_score"], errors="coerce")
+            plot = plot.dropna().sort_values("severe_score")
+            plot["company"] = plot["company"].astype(str).map(clean_display_name)
+            fig = px.bar(plot, x="severe_score", y="company", orientation="h")
+            fig.update_traces(marker_color=NAVY)
+            fig.update_layout(xaxis_title="Severe vulnerability score", yaxis_title="")
+            show_plotly(fig, key="stress_rank", height=max(380, 34 * len(plot) + 80))
+
+
+def monte_carlo_page(mc_df: pd.DataFrame | None) -> None:
+    page_header(
+        "Monte Carlo tail risk",
+        "10,000-simulation analytical stress output. Shock distributions are modelling assumptions; these scores are not default probabilities.",
     )
+    if mc_df is None:
+        st.info("Monte Carlo project summary is not available.")
+        return
 
-
-    mean_col = find_col(
-        mc,
-        [
-            "mean_score",
-            "mc_mean",
-            "monte_carlo_mean"
-        ]
-    )
-
-
-    p95_col = find_col(
-        mc,
-        [
-            "p95",
-            "p95_score",
-            "mc_p95",
-            "tail_risk_p95"
-        ]
-    )
-
-
-    top3_col = find_col(
-        mc,
-        [
-            "top3_probability",
-            "top_3_probability",
-            "probability_top3"
-        ]
-    )
-
-
-    if (
-        company
-        and mean_col
-        and p95_col
-    ):
-
-        plot = mc[
-            [
-                company,
-                mean_col,
-                p95_col
-            ]
-        ].copy()
-
-
-        plot[
-            mean_col
-        ] = pd.to_numeric(
-            plot[
-                mean_col
-            ],
-            errors="coerce"
-        )
-
-
-        plot[
-            p95_col
-        ] = pd.to_numeric(
-            plot[
-                p95_col
-            ],
-            errors="coerce"
-        )
-
-
-        plot = plot.dropna()
-
-
-        section(
-            "Mean risk vs tail risk",
-            "Projects farther upward exhibit higher simulated tail vulnerability."
-        )
-
-
-        fig = px.scatter(
-
-            plot,
-
-            x=
-                mean_col,
-
-            y=
-                p95_col,
-
-            hover_name=
-                company
-        )
-
-
-        show_chart(
-            fig, height = 450
-        )
-
-
-    elif (
-        company
-        and p95_col
-    ):
-
-        ranking = mc[
-            [
-                company,
-                p95_col
-            ]
-        ].copy()
-
-
-        ranking[
-            p95_col
-        ] = pd.to_numeric(
-            ranking[
-                p95_col
-            ],
-            errors="coerce"
-        )
-
-
-        ranking = ranking.sort_values(
-            p95_col, ascending = False
-        )
-
-
-        fig = px.bar(
-
-            ranking,
-
-            x=
-                p95_col,
-
-            y=
-                company,
-
-            orientation="h"
-        )
-
-
-        fig.update_layout(
-            yaxis=dict(
-                autorange="reversed"
+    required = {"company", "mean_simulated_score", "p95_score"}
+    if required.issubset(mc_df.columns):
+        with st.container(border=True):
+            section_header("Mean vs P95 tail vulnerability", "Hover over a point for project detail; use box/lasso selection for comparison.")
+            plot = mc_df.copy()
+            plot["mean_simulated_score"] = pd.to_numeric(plot["mean_simulated_score"], errors="coerce")
+            plot["p95_score"] = pd.to_numeric(plot["p95_score"], errors="coerce")
+            plot["probability_top_3"] = pd.to_numeric(plot.get("probability_top_3"), errors="coerce").fillna(0)
+            plot["investment_crore"] = pd.to_numeric(plot.get("investment_crore"), errors="coerce").fillna(1).clip(lower=1)
+            fig = px.scatter(
+                plot,
+                x="mean_simulated_score",
+                y="p95_score",
+                hover_name="company",
+                color="probability_top_3",
+                size="investment_crore",
+                size_max=44,
+                color_continuous_scale=["#DBEAFE", BLUE, RED],
+                hover_data={"state": True if "state" in plot.columns else False, "probability_top_3": ":.3f", "investment_crore": ":,.0f"},
             )
-        )
+            fig.update_layout(xaxis_title="Mean simulated score", yaxis_title="P95 tail score", coloraxis_colorbar_title="Top-3 freq.")
+            show_plotly(fig, key="mc_scatter", height=440, selectable=True)
+
+    if "company" in mc_df.columns and "p95_score" in mc_df.columns:
+        with st.container(border=True):
+            section_header("P95 tail-risk ranking")
+            plot = mc_df[["company", "p95_score"]].copy()
+            plot["p95_score"] = pd.to_numeric(plot["p95_score"], errors="coerce")
+            plot = plot.dropna().sort_values("p95_score")
+            plot["company"] = plot["company"].astype(str).map(clean_display_name)
+            fig = px.bar(plot, x="p95_score", y="company", orientation="h")
+            fig.update_traces(marker_color=RED)
+            fig.update_layout(xaxis_title="P95 score", yaxis_title="")
+            show_plotly(fig, key="mc_rank", height=max(380, 34 * len(plot) + 80))
 
 
-        show_chart(
-            fig, height = 470
-        )
-
-
-    else:
-
-        st.dataframe(
-            mc, use_container_width = True,
-            hide_index=True
-        )
-
-
-    st.caption(
-        (
-            "Monte Carlo shock distributions are "
-            "analytical assumptions and are not estimated "
-            "default probabilities."
-        )
+def allocation_page(alloc_df: pd.DataFrame | None) -> None:
+    page_header(
+        "Portfolio allocation",
+        "Sensitivity-tested allocation shares under project and state concentration constraints. These are modelled portfolio shares, not sanctioned bank facilities.",
     )
+    if alloc_df is None:
+        st.info("Allocation robustness output is not available.")
+        return
+    needed = {"company", "mean_allocation_share"}
+    if needed.issubset(alloc_df.columns):
+        plot = alloc_df.copy()
+        for c in ["mean_allocation_share", "min_allocation_share", "max_allocation_share"]:
+            if c in plot:
+                plot[c] = pd.to_numeric(plot[c], errors="coerce") * 100
+        plot = plot.dropna(subset=["mean_allocation_share"]).sort_values("mean_allocation_share")
+        plot["company_short"] = plot["company"].astype(str).map(clean_display_name)
+        with st.container(border=True):
+            section_header("Mean allocation share", "Error bars show the observed min–max range across sensitivity scenarios.")
+            error_plus = plot["max_allocation_share"] - plot["mean_allocation_share"] if "max_allocation_share" in plot else None
+            error_minus = plot["mean_allocation_share"] - plot["min_allocation_share"] if "min_allocation_share" in plot else None
+            fig = go.Figure(go.Bar(
+                x=plot["mean_allocation_share"],
+                y=plot["company_short"],
+                orientation="h",
+                marker_color=BLUE,
+                error_x=dict(
+                    type="data",
+                    symmetric=False,
+                    array=error_plus if error_plus is not None else [],
+                    arrayminus=error_minus if error_minus is not None else [],
+                    color=SLATE,
+                    thickness=1.2,
+                ) if error_plus is not None else None,
+                customdata=np.stack([plot["company"]], axis=-1),
+                hovertemplate="%{customdata[0]}<br>Mean share %{x:.2f}%<extra></extra>",
+            ))
+            fig.update_layout(xaxis_title="Mean allocation share (%)", yaxis_title="")
+            show_plotly(fig, key="alloc_project", height=max(390, 34 * len(plot) + 80))
+
+        if "state" in plot.columns:
+            with st.container(border=True):
+                section_header("Allocation by state", "Aggregate mean modelled allocation share.")
+                state = plot.groupby("state", as_index=False)["mean_allocation_share"].sum().sort_values("mean_allocation_share")
+                fig = px.bar(state, x="mean_allocation_share", y="state", orientation="h", text_auto=".2f")
+                fig.update_traces(marker_color=NAVY, hovertemplate="%{y}<br>%{x:.2f}%<extra></extra>")
+                fig.update_layout(xaxis_title="Allocation share (%)", yaxis_title="")
+                show_plotly(fig, key="alloc_state", height=340)
+
+        if "allocation_stability" in plot.columns:
+            with st.container(border=True):
+                section_header("Allocation stability")
+                counts = plot["allocation_stability"].fillna("Not available").astype(str).value_counts().reset_index()
+                counts.columns = ["Stability", "Projects"]
+                fig = px.bar(counts, x="Stability", y="Projects", text="Projects")
+                fig.update_traces(marker_color=GREEN, textposition="outside")
+                show_plotly(fig, key="alloc_stability", height=320)
 
 
-# =============================================================================
-# ALLOCATION
-# =============================================================================
-
-def render_allocation(
-    bank,
-    cols
-):
-
-    hero(
-
-        "Portfolio Allocation",
-
-        (
-            "Concentration-aware credit allocation "
-            "and portfolio exposure analysis."
-        )
+def governance_page(df: pd.DataFrame, source_path: Path) -> None:
+    page_header(
+        "Model governance",
+        "Methodological boundaries, evidence coverage, and deployment status for responsible interpretation.",
     )
+    k1, k2, k3, k4 = st.columns(4)
+    k1.metric("Projects", len(df))
+    k2.metric("Observed default target", "No")
+    k3.metric("Automated lending", "Disabled")
+    k4.metric("Deployment", "Research pilot")
 
-
-    alloc, path = load_first(
-        ALLOCATION_CANDIDATES
-    )
-
-
-    if alloc is None:
-
-        # Fall back to bank layer if allocation variables carried through.
-
-        alloc = bank.copy()
-
-
-    company = find_col(
-        alloc,
-        [
-            "company",
-            "project_name",
-            "project_id"
-        ]
-    )
-
-
-    amount = find_col(
-        alloc,
-        [
-            "allocated_credit_crore",
-            "allocation_crore",
-            "recommended_allocation_crore",
-            "mean_allocation_crore"
-        ]
-    )
-
-
-    state = find_col(
-        alloc,
-        [
-            "state"
-        ]
-    )
-
-
-    if (
-        company
-        and amount
-    ):
-
-        plot = alloc[
-            [
-                company,
-                amount
-            ]
-        ].copy()
-
-
-        plot[
-            amount
-        ] = pd.to_numeric(
-            plot[
-                amount
-            ],
-            errors="coerce"
+    with st.container(border=True):
+        section_header("Framework architecture")
+        st.markdown(
+            "**Structural segmentation → macro-prudential stress testing → Monte Carlo tail analysis → "
+            "borrower/external evidence → concentration/allocation → bank decision-support layer**"
         )
-
-
-        plot = (
-
-            plot
-            .dropna(
-                subset=[
-                    amount
-                ]
-            )
-            .sort_values(
-                amount, ascending = False
-            )
+    with st.container(border=True):
+        section_header("Interpretation boundaries")
+        st.warning(
+            "The framework does not estimate regulatory PD, LGD, EAD or ECL. "
+            "A–E categories are research decision-support grades and not official bank or credit-rating-agency ratings."
         )
-
-
-        section(
-            "Relative project allocation",
-            (
-                "Model allocation output where available; "
-                "not an actual sanctioned bank facility."
-            )
+        st.info(
+            "Current Streamlit Community Cloud deployment is suitable for academic/pilot demonstration only. "
+            "Do not upload confidential bank or customer data."
         )
-
-
-        fig = px.bar(
-
-            plot,
-
-            x=
-                amount,
-
-            y=
-                company,
-
-            orientation=
-                "h"
-        )
-
-
-        fig.update_layout(
-            yaxis=dict(
-                autorange="reversed"
-            )
-        )
-
-
-        show_chart(
-            fig, height = 480
-        )
-
-
-    elif (
-        cols["amount"]
-        and cols["company"]
-    ):
-
-        section(
-            "Project financial scale",
-            (
-                "Allocation output unavailable; "
-                "showing project scale instead."
-            )
-        )
-
-
-        plot = bank[
-            [
-                cols["company"],
-                cols["amount"]
-            ]
-        ].copy()
-
-
-        plot[
-            cols["amount"]
-        ] = pd.to_numeric(
-            plot[
-                cols["amount"]
-            ],
-            errors="coerce"
-        )
-
-
-        plot = plot.sort_values(
-            cols["amount"],
-            ascending=False
-        )
-
-
-        fig = px.bar(
-
-            plot,
-
-            x=
-                cols["amount"],
-
-            y=
-                cols["company"],
-
-            orientation=
-                "h"
-        )
-
-
-        fig.update_layout(
-            yaxis=dict(
-                autorange="reversed"
-            )
-        )
-
-
-        show_chart(
-            fig, height = 480
-        )
-
-
-    st.info(
-        (
-            "Portfolio optimization supports exposure "
-            "analysis only. It does not constitute a "
-            "loan sanction recommendation."
-        )
-    )
-
-
-# =============================================================================
-# VALIDATION
-# =============================================================================
-
-def render_validation(
-    bank,
-    path
-):
-
-    hero(
-
-        "Model Validation & Governance",
-
-        (
-            "Evidence, methodological boundaries and "
-            "controls supporting responsible interpretation."
-        )
-    )
-
-
-    c1, c2, c3 = st.columns(3)
-
-
-    with c1:
-
-        kpi(
-            "Bank-model observations",
-            str(
-                len(
-                    bank
-                )
-            ),
-            "Loaded directly from final decision-support output"
-        )
-
-
-    with c2:
-
-        kpi(
-            "Default target",
-            "Not used",
-            "No fabricated default labels"
-        )
-
-
-    with c3:
-
-        kpi(
-            "Decision mode",
-            "Human-in-loop",
-            "No automated approval/rejection"
-        )
-
-
-    section(
-        "Model architecture"
-    )
-
-
-    st.markdown(
-        """
-        **Structural ML → stress testing → Monte Carlo →
-        borrower evidence → portfolio concentration →
-        bank decision-support**
-        """
-    )
-
-
-    section(
-        "Interpretation boundaries"
-    )
-
-
-    st.warning(
-        """
-        The framework does not estimate regulatory
-        Probability of Default (PD), LGD, EAD or ECL.
-        A–E categories are research decision-support
-        grades and are not official bank or CRA ratings.
-        """
-    )
-
-
-    section(
-        "Current deployment classification"
-    )
-
-
-    st.info(
-        """
-        Zero-cost research / controlled pilot deployment.
-        Do not upload confidential bank customer data to
-        the public Community Cloud application.
-        """
-    )
-
-
-    with st.expander(
-        "Technical source file"
-    ):
-
-        st.code(
-            str(
-                path.relative_to(
-                    PROJECT_ROOT
-                )
-            )
-        )
-
-
-# =============================================================================
-# APP
-# =============================================================================
-
-def render_app():
-
-    initialize_design()
-
-
-    page = sidebar()
-
-
-    bank, bank_path, cols = load_core()
-
+    with st.container(border=True):
+        section_header("Evidence coverage")
+        ev = num(df, "evidence")
+        if ev.notna().any():
+            k1, k2, k3 = st.columns(3)
+            k1.metric("Average evidence coverage", f"{ev.mean():.0f}%")
+            k2.metric("High-quality information", int(text(df, "evidence_quality").str.upper().eq("HIGH").sum()))
+            k3.metric("Projects with borrower strength", int(num(df, "borrower_strength").notna().sum()))
+        st.caption(f"Decision-support source: {source_path.relative_to(PROJECT_ROOT)}")
+
+
+def render_app() -> None:
+    apply_ui()
+    page = nav()
+
+    bank, bank_path = load_bank()
+    filtered = apply_filters(bank)
+
+    if filtered.empty:
+        st.warning("No projects match the current filters. Adjust the sidebar filters.")
+        return
+
+    stress_df = load_optional(STRESS_FILE)
+    mc_df = load_optional(MC_FILE)
+    alloc_df = load_optional(ALLOC_FILE)
 
     if page == "Overview":
-
-        render_overview(
-            bank,
-            cols
-        )
-
-
+        overview(filtered)
     elif page == "Credit Committee":
-
-        render_credit_committee(
-            bank,
-            cols
-        )
-
-
+        committee(filtered)
     elif page == "Project Analysis":
-
-        render_project_analysis(
-            bank,
-            cols
-        )
-
-
+        project_analysis(filtered, stress_df, mc_df)
     elif page == "Stress Testing":
-
-        render_stress()
-
-
+        stress_page(filtered, stress_df)
     elif page == "Monte Carlo":
-
-        render_monte_carlo()
-
-
+        monte_carlo_page(mc_df)
     elif page == "Portfolio Allocation":
-
-        render_allocation(
-            bank,
-            cols
-        )
-
-
-    elif page == "Model Validation":
-
-        render_validation(
-            bank,
-            bank_path
-        )
-
+        allocation_page(alloc_df)
+    else:
+        governance_page(filtered, bank_path)
 
     st.divider()
-
-
     st.caption(
-        (
-            "Semiconductor Credit Intelligence · "
-            "Research decision-support prototype · "
-            "Human credit judgement required"
-        )
+        "Semiconductor Credit Intelligence · Research decision-support prototype · "
+        "Human credit judgement required."
     )
