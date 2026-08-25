@@ -42,7 +42,7 @@ Implemented through `06_Frozen_Model/freeze_and_infer.py`.
 
 The current frozen structural model is `SCI_STRUCTURAL_CLUSTER_FROZEN_2026_V2`. Phase 13E uses the authoritative historical Phase-3 feature matrix, stored standardized features, seven-component PCA loadings, and validated cluster assignments to reproduce the original 36-project model before any new-project inference is allowed.
 
-The validated local run reproduced the historical model to floating-point precision and recovered the validated clusters with full agreement. New projects are transformed with frozen historical scaler/PCA parameters and assigned to the nearest validated seven-dimensional structural centroid. Cluster membership is a structural segment, not a credit-risk class or rating. Out-of-reference projects are flagged for review rather than converted into invented default-risk estimates.
+The validated runs reproduced the historical model to floating-point precision and recovered the validated clusters with full agreement. New projects are transformed with frozen historical scaler/PCA parameters and assigned to the nearest validated seven-dimensional structural centroid. Cluster membership is a structural segment, not a credit-risk class or rating. Out-of-reference projects are flagged for review rather than converted into invented default-risk estimates.
 
 ### 13F — Controlled automated stress and banking-evidence evaluation
 
@@ -68,7 +68,7 @@ Project-size and geographic risk for a new project are normalized against the fr
 
 #### Monte Carlo reproducibility gate
 
-The repository contains the historical Phase-6B Monte Carlo outputs, including the 10,000-simulation summary, systemic/idiosyncratic weights, and Beta shock-distribution parameters. However, the exact historical simulation/scoring implementation is not currently preserved as a reproducible source file in the tracked repository.
+The tracked repository preserves historical Phase-6B output summaries, including a 10,000-simulation system summary, a systemic weight of 0.35, project-level simulated-risk outputs, and channel-level shock-severity summary statistics. The exact historical simulation/scoring source implementation and the parameters/process that generated those shock draws are not currently preserved as reproducible tracked code.
 
 Phase 13F therefore deliberately returns `MC_METHOD_REPRODUCTION_REQUIRED` for a new project instead of inventing or silently replacing the Phase-6B method. A new versioned Monte Carlo implementation may be activated only after the historical method is recovered/reproduced or after a separately documented methodology change is approved.
 
@@ -82,33 +82,29 @@ If no exact project-specific banking evidence exists, the project is labelled `I
 
 Implemented in `app/banking_dashboard_v3_2.py` and exposed through the V3 preview entry point `app/community_main_v3_preview.py`.
 
-A new `Data Operations -> Continuous Pipeline` workspace shows:
-
-- pipeline state and active source count;
-- the current canonical project count;
-- discovered, verification, staging, structural-inference and evaluation counts;
-- Phase 13E frozen-model validation state;
-- Phase 13F deterministic-stress reproduction state;
-- the explicit Monte Carlo reproducibility gate;
-- latest available runtime audit status for Phases 13B–13F;
-- discovery candidates and source URLs;
-- verification/canonicalization queues and conflicts;
-- new-project structural/stress/banking evaluation registers;
-- the official/reference source registry.
-
-The Phase 13G page uses native Streamlit tables and metrics for the pipeline records so missing files or empty candidate states do not render raw HTML. Missing runtime artifacts are displayed as not yet published rather than being treated as zero-risk or successful execution.
+A `Data Operations -> Continuous Pipeline` workspace shows pipeline state, stage counts, model-control states, latest runtime activity, discovery candidates, verification/canonicalization queues, model-evaluation outputs, and the source registry. Native Streamlit tables and metrics are used for the Phase 13 operational views.
 
 ### 13H — Scheduled GitHub Actions orchestration
 
 Implemented in `.github/workflows/phase13_continuous_ingestion.yml`.
 
-The workflow is configured for manual dispatch and a daily scheduled run at `02:30 UTC` (`08:00 IST`, subject to normal GitHub Actions scheduling delay). It executes Phases 13B through 13F in order after compiling the scripts and installing the tracked Python requirements.
+The workflow supports manual dispatch and a daily scheduled run at `02:30 UTC` (`08:00 IST`, subject to normal GitHub Actions scheduling delay). It executes Phases 13B through 13F in order and publishes only safe Phase 13 runtime/review outputs.
 
 The scheduled canonicalization step is always stage-only. It never passes `--apply` or the canonical-apply confirmation token, and the publish step defensively excludes the canonical manufacturing master from the staged Git commit. Human review and an explicit manual apply remain required before any new project can enter the canonical research dataset.
 
-The workflow publishes only Phase 13 candidate, audit, review, frozen-model and automated-evaluation runtime outputs so the dashboard can reflect scheduled activity. It uses a serialized concurrency group and rebases its generated-output commit onto the latest `main` before pushing; conflicts fail rather than force-overwriting human work.
+The first manually dispatched workflow run (`32817450513`) completed successfully and published its safe runtime outputs. In that run, the PIB RSS request timed out, which was recorded as a non-fatal discovery-source error; therefore the orchestration path is operationally validated, while source availability for that individual scan was degraded rather than falsely reported as a successful source fetch.
 
-The workflow code is implemented, but the first GitHub Actions execution must still be run and inspected before Phase 13H can be marked operationally validated.
+The workflow now uses Node-24-compatible `actions/checkout@v5` and `actions/setup-python@v6`.
+
+### 13I — Model, version and artifact lineage governance
+
+Implemented in `08_Governance/build_lineage_manifest.py` and executed by the scheduled workflow after Phase 13F.
+
+Phase 13I records SHA-256 hashes for critical source configuration, canonical/reference data, model artifacts, pipeline code, workflow code and selected runtime outputs. It verifies that the frozen-model reference hashes still match the exact historical files named in `Frozen_Model_Manifest.json`, confirms the Phase 13E reproduction gates, confirms the Phase 13F deterministic reproduction gate, and re-checks the core governance restrictions that prevent investment from being treated as EAD, prevent PD/LGD/EAD/ECL generation, prevent automated credit approval/rejection and prevent silent imputation of missing banking data.
+
+The lineage audit also records the Git commit evaluated, GitHub Actions run identity when available, model/method versions, runtime row counts, artifact changes since the previous lineage run, and current discovery-source warnings. A Monte Carlo reproduction gap remains a governed warning rather than being hidden or converted into a fabricated method.
+
+Phase 13I returns a failing exit status if a required artifact is missing, a frozen reference hash no longer matches, a required Phase 13E/13F validation gate is not passing, or a core governance guardrail is no longer explicitly confirmed.
 
 ## Current outputs
 
@@ -145,14 +141,21 @@ The workflow code is implemented, but the first GitHub Actions execution must st
 
 ### Automated evaluation
 
-Created after a Phase 13F run:
-
 - `07_Automated_Evaluation/New_Project_Deterministic_Stress.csv`
 - `07_Automated_Evaluation/New_Project_Monte_Carlo_Status.csv`
 - `07_Automated_Evaluation/New_Project_Banking_Evidence_Status.csv`
 - `07_Automated_Evaluation/New_Project_Evaluation_Register.csv`
 - `07_Automated_Evaluation/Phase_13F_Method_Validation.json`
 - `07_Automated_Evaluation/Automated_Evaluation_Run_Log.jsonl`
+
+### Governance / lineage
+
+Created after a Phase 13I run:
+
+- `08_Governance/Phase_13I_Artifact_Hashes.csv`
+- `08_Governance/Phase_13I_Change_Register.csv`
+- `08_Governance/Phase_13I_Lineage_Manifest.json`
+- `08_Governance/Phase_13I_Run_Log.jsonl`
 
 ### Dashboard integration
 
@@ -165,9 +168,8 @@ Created after a Phase 13F run:
 
 If there are no new canonical manufacturing projects, Phases 13E and 13F still validate their historical method contracts and write empty schema-compatible new-project output files. No synthetic project is created simply to make the pipeline appear active.
 
-## Next stages
+## Next stage
 
-- 13I — model/version/audit tracking
-- 13J — end-to-end controlled simulation
+- 13J — controlled end-to-end simulation using explicitly synthetic/quarantined test fixtures only; synthetic test data must never enter the canonical master.
 
 The stages remain separated so unverified announcements cannot enter the canonical research dataset or banking decision-support outputs automatically.
