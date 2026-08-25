@@ -1,0 +1,43 @@
+{
+  "pipeline_version": "SCI_INGESTION_V1",
+  "canonical_master": "01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Master_Canonical.csv",
+  "candidate_register": "13_Continuous_Ingestion/02_Candidates/Project_Discovery_Candidates.csv",
+  "audit_log": "13_Continuous_Ingestion/03_Audit/Discovery_Run_Log.jsonl",
+  "request_timeout_seconds": 30,
+  "user_agent": "Semiconductor-Credit-Intelligence-Research-Monitor/1.0",
+  "minimum_candidate_score": 4,
+  "semiconductor_keywords": [
+    "semiconductor",
+    "semicon",
+    "chip",
+    "fab",
+    "fabrication",
+    "atmp",
+    "osat",
+    "assembly and test",
+    "advanced packaging",
+    "compound semiconductor",
+    "silicon carbide",
+    "gan",
+    "wafer"
+  ],
+  "approval_keywords": [
+    "cabinet approves",
+    "cabinet approved",
+    "approved project",
+    "approved proposal",
+    "approval of",
+    "has approved",
+    "approved semiconductor",
+    "semiconductor manufacturing unit",
+    "manufacturing facility"
+  ],
+  "negative_keywords": [
+    "event",
+    "conference",
+    "workshop",
+    "training programme",
+    "recruitment",
+    "tender"
+  ]
+}
