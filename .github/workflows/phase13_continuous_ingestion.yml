@@ -24,13 +24,13 @@ jobs:
 
     steps:
       - name: Check out main
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: main
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -47,7 +47,8 @@ jobs:
             "13_Continuous_Ingestion/04_Verification/verify_candidates.py" \
             "13_Continuous_Ingestion/05_Canonicalization/canonicalize_reviewed_candidates.py" \
             "13_Continuous_Ingestion/06_Frozen_Model/freeze_and_infer.py" \
-            "13_Continuous_Ingestion/07_Automated_Evaluation/evaluate_new_projects.py"
+            "13_Continuous_Ingestion/07_Automated_Evaluation/evaluate_new_projects.py" \
+            "13_Continuous_Ingestion/08_Governance/build_lineage_manifest.py"
 
       - name: Phase 13B - discover official-source candidates
         run: python "13_Continuous_Ingestion/01_Discovery/discover_new_projects.py"
@@ -67,21 +68,25 @@ jobs:
       - name: Phase 13F - deterministic and banking-evidence evaluation
         run: python "13_Continuous_Ingestion/07_Automated_Evaluation/evaluate_new_projects.py"
 
+      - name: Phase 13I - model, version and artifact lineage audit
+        run: python "13_Continuous_Ingestion/08_Governance/build_lineage_manifest.py"
+
       - name: Publish safe Phase 13 runtime outputs
         shell: bash
         run: |
           set -euo pipefail
 
-          # Only Phase 13 runtime/review outputs are staged. The canonical master is
-          # intentionally excluded because scheduled runs are never allowed to apply
-          # reviewed projects automatically.
+          # Only Phase 13 runtime/review/governance outputs are staged. The canonical
+          # master is intentionally excluded because scheduled runs are never allowed
+          # to apply reviewed projects automatically.
           git add -A -- \
             "13_Continuous_Ingestion/02_Candidates" \
             "13_Continuous_Ingestion/03_Audit" \
             "13_Continuous_Ingestion/04_Verification" \
             "13_Continuous_Ingestion/05_Canonicalization" \
             "13_Continuous_Ingestion/06_Frozen_Model" \
-            "13_Continuous_Ingestion/07_Automated_Evaluation"
+            "13_Continuous_Ingestion/07_Automated_Evaluation" \
+            "13_Continuous_Ingestion/08_Governance"
 
           # Defensive guard: a scheduled workflow must never stage the canonical
           # manufacturing master, even if a future script changes unexpectedly.
@@ -117,8 +122,9 @@ jobs:
             echo "- Ref evaluated: main"
             echo "- Canonicalization mode: stage-only"
             echo "- Automatic canonical apply: disabled"
+            echo "- Phase 13I lineage/integrity audit: enabled"
             echo "- Automatic lending decision: disabled"
             echo "- PD/LGD/EAD/ECL generation: disabled"
             echo
-            echo "The workflow discovers and verifies public-source candidates, refreshes the human review queue, validates frozen-model inference, and publishes safe runtime outputs for the dashboard."
+            echo "The workflow discovers and verifies public-source candidates, refreshes the human review queue, validates frozen-model inference and deterministic stress, records model/data/code lineage, and publishes safe runtime outputs for the dashboard."
           } >> "$GITHUB_STEP_SUMMARY"
