@@ -12,10 +12,13 @@ PHASE_DIR = ROOT / "14_Financial_Intelligence"
 CONTRACT_FILE = PHASE_DIR / "00_Config" / "financial_data_contract.json"
 ACQ_DIR = PHASE_DIR / "05_Acquisition"
 STAGING_FILE = PHASE_DIR / "02_Staging" / "Financial_Statement_Staging.csv"
+MASTER_FILE = PHASE_DIR / "03_Master" / "Company_Financials_Longitudinal.csv"
 AUDIT_DIR = PHASE_DIR / "04_Audit"
 RUN_LOG = AUDIT_DIR / "Phase_14B_Staging_Run_Log.jsonl"
 
 REVIEW_PATTERN = "Reviewed_Financial_Observations_*.csv"
+PROMOTED_VERIFICATION = "PRIMARY_SOURCE_VERIFIED_PROMOTED"
+PROMOTED_OBSERVATION = "PROMOTED_TO_LONGITUDINAL_MASTER"
 REQUIRED_FIELDS = [
     "observation_id",
     "project_company_id",
@@ -106,14 +109,32 @@ def main() -> int:
         ].tolist()
         raise RuntimeError(f"Duplicate reviewed observation IDs: {dupes}")
 
-    if STAGING_FILE.exists():
-        staging = read_csv(STAGING_FILE)
+    staging = read_csv(STAGING_FILE) if STAGING_FILE.exists() else pd.DataFrame()
+    master = read_csv(MASTER_FILE) if MASTER_FILE.exists() else pd.DataFrame()
+
+    # Never downgrade a previously promoted observation back to REVIEW_READY just
+    # because its immutable reviewed source batch is scanned again on a later run.
+    protected_ids: set[str] = set()
+    if not staging.empty and {"observation_id", "observation_status"}.issubset(staging.columns):
+        mask = staging["observation_status"].astype(str).eq(PROMOTED_OBSERVATION)
+        protected_ids.update(staging.loc[mask, "observation_id"].astype(str).tolist())
+    if not master.empty and "observation_id" in master.columns:
+        if "observation_status" in master.columns:
+            mask = master["observation_status"].astype(str).eq(PROMOTED_OBSERVATION)
+            protected_ids.update(master.loc[mask, "observation_id"].astype(str).tolist())
+        if "verification_status" in master.columns:
+            mask = master["verification_status"].astype(str).eq(PROMOTED_VERIFICATION)
+            protected_ids.update(master.loc[mask, "observation_id"].astype(str).tolist())
+
+    reviewed_new = reviewed[~reviewed["observation_id"].astype(str).isin(protected_ids)].copy()
+
+    if not staging.empty:
         all_columns = list(dict.fromkeys(list(staging.columns) + list(reviewed.columns)))
         staging = staging.reindex(columns=all_columns)
-        reviewed = reviewed.reindex(columns=all_columns)
-        combined = pd.concat([staging, reviewed], ignore_index=True)
+        reviewed_new = reviewed_new.reindex(columns=all_columns)
+        combined = pd.concat([staging, reviewed_new], ignore_index=True)
     else:
-        combined = reviewed.copy()
+        combined = reviewed_new.copy()
 
     combined = combined.drop_duplicates(subset=["observation_id"], keep="last")
     STAGING_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -126,10 +147,13 @@ def main() -> int:
         "run_at": utc_now(),
         "status": "SUCCESS_REVIEWED_OBSERVATIONS_STAGED_NOT_PROMOTED",
         "review_files": [p.name for p in files],
-        "reviewed_rows": int(len(reviewed)),
+        "reviewed_rows_seen": int(len(reviewed)),
+        "new_review_ready_rows_staged": int(len(reviewed_new)),
+        "protected_already_promoted_rows": int(len(reviewed) - len(reviewed_new)),
         "staging_rows_after": int(len(combined)),
         "master_modified": False,
         "guardrails": {
+            "previously_promoted_rows_downgraded": False,
             "reviewed_rows_promoted_to_master": False,
             "project_investment_used_as_bank_exposure_or_ead": False,
             "missing_financial_values_imputed": False,
@@ -142,12 +166,14 @@ def main() -> int:
     print("PHASE 14B - REVIEWED FINANCIAL OBSERVATIONS STAGING")
     print("=" * 72)
     print(f"Reviewed source files             : {len(files)}")
-    print(f"Reviewed rows staged              : {len(reviewed)}")
+    print(f"Reviewed rows seen                : {len(reviewed)}")
+    print(f"New review-ready rows staged      : {len(reviewed_new)}")
+    print(f"Already-promoted rows protected   : {len(reviewed) - len(reviewed_new)}")
     print(f"Staging rows after merge          : {len(combined)}")
     print("Master modified                   : False")
     print(f"Staging file                      : {STAGING_FILE.relative_to(ROOT)}")
     print()
-    print("Guardrail: source-reviewed observations are staged only. Promotion to the longitudinal master requires a separate validation gate.")
+    print("Guardrail: source-reviewed observations are staged only. Previously promoted observations are preserved and are never downgraded by a later source scan.")
     return 0
 
 
