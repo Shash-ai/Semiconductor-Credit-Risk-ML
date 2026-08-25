@@ -1,0 +1,124 @@
+name: Phase 13 Continuous Ingestion
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 02:30 UTC = 08:00 IST. GitHub scheduled jobs can start a little late.
+    - cron: "30 2 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase13-continuous-ingestion-main
+  cancel-in-progress: false
+
+jobs:
+  run-phase13-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    env:
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Compile Phase 13 scripts
+        run: |
+          python -m py_compile \
+            "13_Continuous_Ingestion/01_Discovery/discover_new_projects.py" \
+            "13_Continuous_Ingestion/04_Verification/verify_candidates.py" \
+            "13_Continuous_Ingestion/05_Canonicalization/canonicalize_reviewed_candidates.py" \
+            "13_Continuous_Ingestion/06_Frozen_Model/freeze_and_infer.py" \
+            "13_Continuous_Ingestion/07_Automated_Evaluation/evaluate_new_projects.py"
+
+      - name: Phase 13B - discover official-source candidates
+        run: python "13_Continuous_Ingestion/01_Discovery/discover_new_projects.py"
+
+      - name: Phase 13C - verify and structure candidates
+        run: python "13_Continuous_Ingestion/04_Verification/verify_candidates.py"
+
+      - name: Phase 13D - refresh human review gate
+        run: |
+          # Stage-only by design. Scheduled automation must never apply a candidate
+          # directly to the canonical master.
+          python "13_Continuous_Ingestion/05_Canonicalization/canonicalize_reviewed_candidates.py"
+
+      - name: Phase 13E - validate frozen model and infer eligible projects
+        run: python "13_Continuous_Ingestion/06_Frozen_Model/freeze_and_infer.py"
+
+      - name: Phase 13F - deterministic and banking-evidence evaluation
+        run: python "13_Continuous_Ingestion/07_Automated_Evaluation/evaluate_new_projects.py"
+
+      - name: Publish safe Phase 13 runtime outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Only Phase 13 runtime/review outputs are staged. The canonical master is
+          # intentionally excluded because scheduled runs are never allowed to apply
+          # reviewed projects automatically.
+          git add -A -- \
+            "13_Continuous_Ingestion/02_Candidates" \
+            "13_Continuous_Ingestion/03_Audit" \
+            "13_Continuous_Ingestion/04_Verification" \
+            "13_Continuous_Ingestion/05_Canonicalization" \
+            "13_Continuous_Ingestion/06_Frozen_Model" \
+            "13_Continuous_Ingestion/07_Automated_Evaluation"
+
+          # Defensive guard: a scheduled workflow must never stage the canonical
+          # manufacturing master, even if a future script changes unexpectedly.
+          git reset -- \
+            "01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Master_Canonical.csv" \
+            2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "No Phase 13 runtime changes to publish."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "chore: update Phase 13 scheduled pipeline outputs [skip ci]"
+
+          # If main changed while this job was running, rebase the generated-output
+          # commit onto the latest remote main. A conflict fails safe instead of
+          # forcing over human work.
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+
+      - name: Write run summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## Phase 13 scheduled pipeline"
+            echo
+            echo "- Trigger: ${GITHUB_EVENT_NAME}"
+            echo "- Ref evaluated: main"
+            echo "- Canonicalization mode: stage-only"
+            echo "- Automatic canonical apply: disabled"
+            echo "- Automatic lending decision: disabled"
+            echo "- PD/LGD/EAD/ECL generation: disabled"
+            echo
+            echo "The workflow discovers and verifies public-source candidates, refreshes the human review queue, validates frozen-model inference, and publishes safe runtime outputs for the dashboard."
+          } >> "$GITHUB_STEP_SUMMARY"
