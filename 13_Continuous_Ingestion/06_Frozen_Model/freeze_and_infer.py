@@ -1,4 +1,4 @@
-from freeze_and_infer_v2 import main
+from freeze_and_infer_v2_1 import main
 
 
 if __name__ == "__main__":
