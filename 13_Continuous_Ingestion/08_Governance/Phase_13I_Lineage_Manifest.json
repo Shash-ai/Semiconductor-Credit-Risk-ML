@@ -1,0 +1,95 @@
+{
+  "phase": "13I",
+  "audit_version": "SCI_PHASE13_LINEAGE_AUDIT_V1",
+  "generated_at": "2026-08-25T06:44:21+00:00",
+  "status": "PASS_WITH_WARNINGS",
+  "execution": {
+    "git_sha": "1a66f8ef595e9bec1cde77709d1ac75fe0df77b3",
+    "github_run_id": "32818228145",
+    "github_run_attempt": "1",
+    "github_event_name": "workflow_dispatch",
+    "github_ref_name": "main"
+  },
+  "model_versions": {
+    "structural_model_version": "SCI_STRUCTURAL_CLUSTER_FROZEN_2026_V2",
+    "structural_model_scope": "STRUCTURAL_PROJECT_SEGMENTATION_ONLY",
+    "deterministic_stress_method_version": "SCI_DETERMINISTIC_STRESS_2026_V1",
+    "monte_carlo_method_status": "MC_METHOD_REPRODUCTION_REQUIRED"
+  },
+  "integrity": {
+    "required_artifacts": 26,
+    "required_artifacts_present": 26,
+    "frozen_reference_hash_checks": [
+      {
+        "manifest_key": "baseline_ecosystem_sha256",
+        "path": "01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Ecosystem_Master.csv",
+        "expected_sha256": "1a33153a45b01f16446c883cf82603a877cbc58c31b81fcf7aface38446be0eb",
+        "actual_sha256": "1a33153a45b01f16446c883cf82603a877cbc58c31b81fcf7aface38446be0eb",
+        "pass": true
+      },
+      {
+        "manifest_key": "authoritative_feature_matrix_sha256",
+        "path": "01_Raw_Data/Semiconductor/Semiconductor_Master/Ecosystem_Clustering_Final.csv",
+        "expected_sha256": "323048fd1f5be366e03244c4be1b575e63ba388f796086ab92ecba68f3a0a8ff",
+        "actual_sha256": "323048fd1f5be366e03244c4be1b575e63ba388f796086ab92ecba68f3a0a8ff",
+        "pass": true
+      },
+      {
+        "manifest_key": "pca_loadings_sha256",
+        "path": "03_Modeling/Phase_3A_PCA_KMeans/PCA_Loadings.csv",
+        "expected_sha256": "6ec5dd0b862cbf4e8939ec88a553cf2918010ee0adf126619eec2f3633197e31",
+        "actual_sha256": "6ec5dd0b862cbf4e8939ec88a553cf2918010ee0adf126619eec2f3633197e31",
+        "pass": true
+      },
+      {
+        "manifest_key": "validated_assignments_sha256",
+        "path": "03_Modeling/Phase_3B_Cluster_Validation/Validated_Cluster_Assignments.csv",
+        "expected_sha256": "7a2fed8548aa67577b8b13bf7350e0794360901bb26f6b6103342ea597023f1d",
+        "actual_sha256": "7a2fed8548aa67577b8b13bf7350e0794360901bb26f6b6103342ea597023f1d",
+        "pass": true
+      },
+      {
+        "manifest_key": "pca_variance_sha256",
+        "path": "03_Modeling/Phase_3A_PCA_KMeans/PCA_Explained_Variance.csv",
+        "expected_sha256": "109174764948209884eecbfaa4be013d945f989900521d424633503758c657f1",
+        "actual_sha256": "109174764948209884eecbfaa4be013d945f989900521d424633503758c657f1",
+        "pass": true
+      }
+    ],
+    "phase_13e_reference_reproduction_pass": true,
+    "phase_13f_deterministic_reproduction_pass": true,
+    "governance_guardrails_confirmed": {
+      "project_investment_is_bank_exposure": true,
+      "pd_lgd_ead_ecl_generated": true,
+      "automatic_credit_approval_or_rejection": true,
+      "missing_banking_values_imputed": true
+    },
+    "hard_failures": [],
+    "warnings": [
+      "MONTE_CARLO_METHOD_REPRODUCTION_REQUIRED",
+      "DISCOVERY_SOURCE_ERRORS:1"
+    ]
+  },
+  "runtime_counts": {
+    "canonical_projects": 12,
+    "discovery_candidates": 0,
+    "verification_queue": 0,
+    "canonical_staging": 0,
+    "new_project_inference": 0,
+    "new_project_evaluation_register": 0
+  },
+  "source_monitoring": {
+    "latest_discovery_run_at": "2026-08-25T06:44:12+00:00",
+    "latest_rss_sources": 1,
+    "latest_rss_items_scanned": 0,
+    "latest_new_candidates": 0,
+    "latest_error_count": 1
+  },
+  "change_tracking": {
+    "tracked_artifacts": 31,
+    "new_or_modified_or_missing": 31,
+    "change_register": "13_Continuous_Ingestion/08_Governance/Phase_13I_Change_Register.csv",
+    "artifact_hash_register": "13_Continuous_Ingestion/08_Governance/Phase_13I_Artifact_Hashes.csv"
+  },
+  "governance_note": "Lineage/integrity evidence only. This audit does not convert structural or stress outputs into PD, LGD, EAD, ECL, bank/CRA ratings, or automated lending decisions."
+}
