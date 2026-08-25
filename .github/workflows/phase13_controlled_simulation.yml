@@ -38,10 +38,13 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Compile Phase 13J harness
-        run: python -m py_compile "13_Continuous_Ingestion/09_Controlled_Simulation/run_end_to_end_simulation.py"
+        run: |
+          python -m py_compile \
+            "13_Continuous_Ingestion/09_Controlled_Simulation/run_end_to_end_simulation.py" \
+            "13_Continuous_Ingestion/09_Controlled_Simulation/run_end_to_end_simulation_v2.py"
 
       - name: Run quarantined end-to-end simulation
-        run: python "13_Continuous_Ingestion/09_Controlled_Simulation/run_end_to_end_simulation.py"
+        run: python "13_Continuous_Ingestion/09_Controlled_Simulation/run_end_to_end_simulation_v2.py"
 
       - name: Write simulation summary
         if: always()
