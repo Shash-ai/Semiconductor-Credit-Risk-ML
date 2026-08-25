@@ -1,0 +1,33 @@
+{
+  "phase": "14E",
+  "engine_version": "SCI_PEER_BENCHMARK_ENGINE_V1",
+  "minimum_peer_count_for_percentiles": 3,
+  "latest_observation_policy": "Use the latest verified ratio observation for each registered financial entity. Benchmark ratios only; do not benchmark raw monetary amounts across currencies.",
+  "scope_class_mapping": {
+    "PARENT_LEVEL": "CORPORATE_GROUP",
+    "CONSOLIDATED_GROUP_LEVEL": "CORPORATE_GROUP",
+    "EXACT_PROJECT_COMPANY": "OPERATING_ENTITY",
+    "COMPANY_OR_ENTITY_LEVEL": "OPERATING_ENTITY",
+    "SUBSIDIARY_LEVEL": "OPERATING_ENTITY",
+    "UNRESOLVED": "UNRESOLVED"
+  },
+  "metrics": {
+    "net_profit_margin": {"category": "profitability", "direction": "HIGHER_IS_STRONGER"},
+    "ocf_margin": {"category": "cash_flow", "direction": "HIGHER_IS_STRONGER"},
+    "debt_to_equity": {"category": "leverage", "direction": "LOWER_IS_STRONGER"},
+    "debt_to_assets": {"category": "leverage", "direction": "LOWER_IS_STRONGER"},
+    "current_ratio": {"category": "liquidity", "direction": "HIGHER_IS_STRONGER"},
+    "ocf_to_debt": {"category": "cash_flow", "direction": "HIGHER_IS_STRONGER"},
+    "return_on_assets_ending": {"category": "returns", "direction": "HIGHER_IS_STRONGER"},
+    "return_on_equity_ending": {"category": "returns", "direction": "HIGHER_IS_STRONGER"},
+    "asset_turnover_ending": {"category": "efficiency", "direction": "HIGHER_IS_STRONGER"}
+  },
+  "guardrails": {
+    "structural_ml_clusters_used_as_financial_peer_groups": false,
+    "raw_monetary_amounts_compared_across_currencies": false,
+    "percentiles_generated_below_minimum_peer_count": false,
+    "peer_percentile_treated_as_credit_rating": false,
+    "pd_lgd_ead_ecl_generated": false,
+    "automatic_credit_decision_generated": false
+  }
+}
