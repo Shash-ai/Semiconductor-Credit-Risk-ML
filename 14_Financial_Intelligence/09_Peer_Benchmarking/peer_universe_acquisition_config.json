@@ -1,0 +1,32 @@
+{
+  "phase": "14E.1",
+  "version": "SCI_EXTERNAL_PEER_UNIVERSE_V1",
+  "objective": "Expand explicit finance peer groups using source-verified external candidates without activating any peer until audited financial observations and comparable ratios exist.",
+  "activation_requirements": {
+    "verified_financial_observation_required": true,
+    "ratio_output_required": true,
+    "target_scope_class_match_required": true,
+    "primary_source_required": true,
+    "manual_comparability_review_required": true,
+    "minimum_peer_count_for_percentiles": 3
+  },
+  "source_statuses_allowed": [
+    "PRIMARY_SOURCE_DOCUMENT_VERIFIED",
+    "PRIMARY_SOURCE_LANDING_PAGE_VERIFIED"
+  ],
+  "activation_statuses_allowed": [
+    "FINANCIAL_DATA_ACQUISITION_REQUIRED",
+    "RATIO_BUILD_REQUIRED",
+    "MANUAL_COMPARABILITY_REVIEW_REQUIRED",
+    "READY_FOR_PEER_ACTIVATION"
+  ],
+  "guardrails": {
+    "candidate_registration_equals_peer_activation": false,
+    "peer_membership_is_ml_cluster_assignment": false,
+    "secondary_finance_aggregator_is_primary_source": false,
+    "cross_currency_raw_amount_benchmarking_allowed": false,
+    "peer_percentile_is_credit_rating": false,
+    "pd_lgd_ead_ecl_generated": false,
+    "automatic_credit_decision_generated": false
+  }
+}
