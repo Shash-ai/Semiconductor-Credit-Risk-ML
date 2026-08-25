@@ -9,7 +9,8 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 PHASE_DIR = ROOT / "14_Financial_Intelligence"
-RATIO_FILE = PHASE_DIR / "07_Ratios" / "Company_Financial_Ratios_Wide.csv"
+PROJECT_RATIO_FILE = PHASE_DIR / "07_Ratios" / "Company_Financial_Ratios_Wide.csv"
+EXTERNAL_RATIO_FILE = PHASE_DIR / "09_Peer_Benchmarking" / "External_Peer_Financials" / "External_Peer_Financial_Ratios_Wide.csv"
 REGISTRY_FILE = PHASE_DIR / "09_Peer_Benchmarking" / "peer_group_registry.csv"
 CONFIG_FILE = PHASE_DIR / "09_Peer_Benchmarking" / "peer_benchmark_config.json"
 OUT_DIR = PHASE_DIR / "09_Peer_Benchmarking"
@@ -18,7 +19,7 @@ RESULT_OUT = OUT_DIR / "Peer_Benchmark_Results.csv"
 READINESS_OUT = OUT_DIR / "Peer_Benchmark_Readiness.csv"
 RUN_LOG = OUT_DIR / "Phase_14E_Peer_Benchmark_Run_Log.jsonl"
 
-ENGINE_VERSION = "SCI_PEER_BENCHMARK_ENGINE_V1"
+ENGINE_VERSION = "SCI_PEER_BENCHMARK_ENGINE_V2"
 
 
 def utc_now() -> str:
@@ -72,41 +73,78 @@ def scope_class(scope: str, mapping: dict) -> str:
     return clean(mapping.get(clean(scope), "UNMAPPED"))
 
 
-def latest_ratio_rows(ratios: pd.DataFrame) -> pd.DataFrame:
-    if ratios.empty:
-        return ratios.copy()
+def load_ratio_universe() -> pd.DataFrame:
+    frames = []
+    project = read_csv(PROJECT_RATIO_FILE)
+    if not project.empty:
+        project = project.copy()
+        project["peer_ratio_source_dataset"] = "PROJECT_FINANCIAL_RATIO_MASTER"
+        frames.append(project)
+
+    external = read_csv(EXTERNAL_RATIO_FILE)
+    if not external.empty:
+        external = external.copy()
+        external["peer_ratio_source_dataset"] = "EXTERNAL_AUDITED_PEER_RATIO_MASTER"
+        frames.append(external)
+
+    if not frames:
+        return pd.DataFrame()
+    all_columns = list(dict.fromkeys(col for frame in frames for col in frame.columns))
+    return pd.concat([frame.reindex(columns=all_columns) for frame in frames], ignore_index=True)
+
+
+def select_ratio_rows(ratios: pd.DataFrame, registry: pd.DataFrame) -> pd.DataFrame:
     rows = []
-    for _, group in ratios.groupby("financial_entity_id", dropna=False):
-        ordered = sorted(
-            (row for _, row in group.iterrows()),
-            key=year_sort_key,
-        )
-        rows.append(ordered[-1])
+    for _, reg in registry.iterrows():
+        peer_group_id = clean(reg.get("peer_group_id"))
+        entity_id = clean(reg.get("financial_entity_id"))
+        requested_year = clean(reg.get("benchmark_financial_year"))
+        candidates = ratios[ratios["financial_entity_id"].astype(str).eq(entity_id)].copy()
+
+        if requested_year:
+            candidates = candidates[candidates["financial_year"].astype(str).eq(requested_year)].copy()
+            selection_status = "EXACT_BENCHMARK_PERIOD_MATCH" if not candidates.empty else "REQUESTED_BENCHMARK_PERIOD_UNAVAILABLE"
+        else:
+            selection_status = "LATEST_OBSERVATION_FALLBACK" if not candidates.empty else "NO_RATIO_OBSERVATION_AVAILABLE"
+
+        if candidates.empty:
+            continue
+
+        ordered = sorted((row for _, row in candidates.iterrows()), key=year_sort_key)
+        chosen = ordered[-1].copy()
+        chosen["_selection_peer_group_id"] = peer_group_id
+        chosen["_requested_benchmark_financial_year"] = requested_year
+        chosen["_period_selection_status"] = selection_status
+        rows.append(chosen)
+
+    if not rows:
+        cols = list(ratios.columns) + [
+            "_selection_peer_group_id", "_requested_benchmark_financial_year", "_period_selection_status"
+        ]
+        return pd.DataFrame(columns=list(dict.fromkeys(cols)))
     return pd.DataFrame(rows).reset_index(drop=True)
 
 
 def main() -> int:
     config = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
     if config.get("engine_version") != ENGINE_VERSION:
-        raise RuntimeError(
-            f"Peer benchmark config mismatch: {config.get('engine_version')} != {ENGINE_VERSION}"
-        )
+        raise RuntimeError(f"Peer benchmark config mismatch: {config.get('engine_version')} != {ENGINE_VERSION}")
 
-    ratios = read_csv(RATIO_FILE)
+    ratios = load_ratio_universe()
     registry = read_csv(REGISTRY_FILE)
     if ratios.empty:
-        raise RuntimeError("Phase 14C ratio output is empty or missing. Run Phase 14C first.")
+        raise RuntimeError("No ratio universe is available. Run Phase 14C and the external-peer ratio builder first.")
     if registry.empty:
         raise RuntimeError("Peer-group registry is empty or missing.")
 
     required_ratio_cols = {"financial_entity_id", "financial_entity_name", "entity_scope", "financial_year"}
     missing = required_ratio_cols - set(ratios.columns)
     if missing:
-        raise RuntimeError(f"Ratio output missing required columns: {sorted(missing)}")
+        raise RuntimeError(f"Ratio universe missing required columns: {sorted(missing)}")
 
     required_registry_cols = {
         "peer_group_id", "peer_group_name", "financial_entity_id", "financial_entity_name",
-        "entity_scope_class", "benchmark_role", "peer_group_status",
+        "entity_scope_class", "benchmark_role", "benchmark_financial_year", "peer_group_status",
     }
     missing = required_registry_cols - set(registry.columns)
     if missing:
@@ -116,35 +154,40 @@ def main() -> int:
     metrics = config.get("metrics", {})
     min_peers = int(config.get("minimum_peer_count_for_percentiles", 3))
 
-    latest = latest_ratio_rows(ratios)
-    latest["derived_entity_scope_class"] = latest["entity_scope"].astype(str).map(
+    selected = select_ratio_rows(ratios, registry)
+    selected["derived_entity_scope_class"] = selected.get("entity_scope", pd.Series(dtype=str)).astype(str).map(
         lambda x: scope_class(x, scope_mapping)
     )
 
     merged = registry.merge(
-        latest,
-        on="financial_entity_id",
+        selected,
+        left_on=["peer_group_id", "financial_entity_id"],
+        right_on=["_selection_peer_group_id", "financial_entity_id"],
         how="left",
         suffixes=("_registry", "_ratio"),
     )
 
-    if "financial_entity_name_ratio" in merged.columns:
-        merged["entity_name_match"] = (
-            merged["financial_entity_name_registry"].astype(str).str.strip()
-            == merged["financial_entity_name_ratio"].astype(str).str.strip()
-        )
-    else:
-        merged["entity_name_match"] = False
-
+    ratio_name_col = "financial_entity_name_ratio" if "financial_entity_name_ratio" in merged.columns else "financial_entity_name"
+    registry_name_col = "financial_entity_name_registry" if "financial_entity_name_registry" in merged.columns else "financial_entity_name"
+    merged["entity_name_match"] = (
+        merged[registry_name_col].astype(str).str.strip() == merged[ratio_name_col].astype(str).str.strip()
+    )
     merged["scope_class_match"] = (
         merged["entity_scope_class"].astype(str).str.strip()
-        == merged["derived_entity_scope_class"].astype(str).str.strip()
+        == merged.get("derived_entity_scope_class", pd.Series(index=merged.index, dtype=object)).astype(str).str.strip()
     )
     merged["ratio_observation_available"] = merged.get("observation_id", pd.Series(index=merged.index, dtype=object)).notna()
+    merged["period_match"] = (
+        merged["benchmark_financial_year"].fillna("").astype(str).str.strip().eq("")
+        | merged.get("financial_year", pd.Series(index=merged.index, dtype=object)).astype(str).eq(
+            merged["benchmark_financial_year"].astype(str)
+        )
+    )
     merged["eligible_for_peer_benchmark"] = (
         merged["ratio_observation_available"]
         & merged["entity_name_match"]
         & merged["scope_class_match"]
+        & merged["period_match"]
     )
     merged["peer_engine_version"] = ENGINE_VERSION
     merged["evaluated_at"] = utc_now()
@@ -160,11 +203,10 @@ def main() -> int:
 
         metric_peer_counts = []
         percentile_ready_metrics = 0
-
         for metric_name, meta in metrics.items():
             category = clean(meta.get("category"))
             direction = clean(meta.get("direction"))
-            values = pd.to_numeric(eligible.get(metric_name, pd.Series(dtype=float)), errors="coerce")
+            values = pd.to_numeric(eligible.get(metric_name, pd.Series(index=eligible.index, dtype=float)), errors="coerce")
             valid_mask = values.notna()
             valid = eligible.loc[valid_mask].copy()
             valid_values = values.loc[valid_mask].astype(float)
@@ -187,10 +229,12 @@ def main() -> int:
                     result_rows.append({
                         "peer_group_id": peer_group_id,
                         "peer_group_name": group_name,
+                        "benchmark_financial_year": clean(row.get("benchmark_financial_year")),
                         "financial_entity_id": clean(row.get("financial_entity_id")),
-                        "financial_entity_name": clean(row.get("financial_entity_name_ratio")) or clean(row.get("financial_entity_name_registry")),
+                        "financial_entity_name": clean(row.get(ratio_name_col)) or clean(row.get(registry_name_col)),
                         "entity_scope": clean(row.get("entity_scope")),
                         "financial_year": clean(row.get("financial_year")),
+                        "peer_ratio_source_dataset": clean(row.get("peer_ratio_source_dataset")),
                         "metric_name": metric_name,
                         "metric_category": category,
                         "metric_direction": direction,
@@ -205,17 +249,19 @@ def main() -> int:
                         "engine_version": ENGINE_VERSION,
                     })
             else:
-                for _, row in eligible.iterrows():
+                for _, row in valid.iterrows():
                     value = pd.to_numeric(row.get(metric_name), errors="coerce")
                     if pd.isna(value):
                         continue
                     result_rows.append({
                         "peer_group_id": peer_group_id,
                         "peer_group_name": group_name,
+                        "benchmark_financial_year": clean(row.get("benchmark_financial_year")),
                         "financial_entity_id": clean(row.get("financial_entity_id")),
-                        "financial_entity_name": clean(row.get("financial_entity_name_ratio")) or clean(row.get("financial_entity_name_registry")),
+                        "financial_entity_name": clean(row.get(ratio_name_col)) or clean(row.get(registry_name_col)),
                         "entity_scope": clean(row.get("entity_scope")),
                         "financial_year": clean(row.get("financial_year")),
+                        "peer_ratio_source_dataset": clean(row.get("peer_ratio_source_dataset")),
                         "metric_name": metric_name,
                         "metric_category": category,
                         "metric_direction": direction,
@@ -232,16 +278,15 @@ def main() -> int:
 
         matched_members = int(group_latest["eligible_for_peer_benchmark"].sum())
         registered_members = int(len(group_latest))
-        readiness_status = (
-            "READY_FOR_PEER_PERCENTILES"
-            if percentile_ready_metrics > 0
-            else "EXPAND_PEER_UNIVERSE_REQUIRED"
-        )
+        period_mismatches = int((group_latest["ratio_observation_available"] & ~group_latest["period_match"]).sum())
+        readiness_status = "READY_FOR_PEER_PERCENTILES" if percentile_ready_metrics > 0 else "EXPAND_OR_ALIGN_PEER_UNIVERSE_REQUIRED"
         readiness_rows.append({
             "peer_group_id": peer_group_id,
             "peer_group_name": group_name,
+            "benchmark_financial_year": ";".join(sorted(set(group_registry["benchmark_financial_year"].astype(str)))),
             "registered_members": registered_members,
-            "matched_latest_ratio_members": matched_members,
+            "matched_period_aligned_ratio_members": matched_members,
+            "period_mismatches": period_mismatches,
             "minimum_peer_count": min_peers,
             "metrics_configured": len(metrics),
             "metrics_ready_for_percentiles": percentile_ready_metrics,
@@ -264,27 +309,26 @@ def main() -> int:
     summary = {
         "phase": "14E",
         "run_at": utc_now(),
-        "status": "SUCCESS_PEER_BENCHMARK_ENGINE" if ready_groups else "SUCCESS_PEER_ENGINE_WITH_INSUFFICIENT_PEER_UNIVERSE",
+        "status": "SUCCESS_PEER_BENCHMARK_ENGINE" if ready_groups else "SUCCESS_PEER_ENGINE_WITH_INSUFFICIENT_OR_UNALIGNED_PEER_UNIVERSE",
         "engine_version": ENGINE_VERSION,
         "registered_peer_groups": int(registry["peer_group_id"].nunique()),
         "registered_entities": int(registry["financial_entity_id"].nunique()),
+        "project_ratio_rows_available": int(len(read_csv(PROJECT_RATIO_FILE))),
+        "external_ratio_rows_available": int(len(read_csv(EXTERNAL_RATIO_FILE))),
         "ready_peer_groups": ready_groups,
         "percentile_result_rows": percentile_rows,
         "insufficient_peer_result_rows": insufficient_rows,
         "minimum_peer_count": min_peers,
         "guardrails": config.get("guardrails", {}),
-        "outputs": [
-            str(LATEST_OUT.relative_to(ROOT)),
-            str(RESULT_OUT.relative_to(ROOT)),
-            str(READINESS_OUT.relative_to(ROOT)),
-        ],
+        "outputs": [str(LATEST_OUT.relative_to(ROOT)), str(RESULT_OUT.relative_to(ROOT)), str(READINESS_OUT.relative_to(ROOT))],
     }
     append_jsonl(RUN_LOG, summary)
 
-    print("PHASE 14E - PEER BENCHMARKING & READINESS ENGINE")
+    print("PHASE 14E - PERIOD-ALIGNED PEER BENCHMARKING ENGINE")
     print("=" * 72)
     print(f"Registered peer groups           : {summary['registered_peer_groups']}")
     print(f"Registered entities              : {summary['registered_entities']}")
+    print(f"External ratio rows              : {summary['external_ratio_rows_available']}")
     print(f"Minimum peers for percentiles    : {min_peers}")
     print(f"Peer groups ready                : {ready_groups}")
     print(f"Percentile result rows           : {percentile_rows}")
@@ -293,7 +337,7 @@ def main() -> int:
     print(f"Readiness output                 : {READINESS_OUT.relative_to(ROOT)}")
     print(f"Benchmark output                 : {RESULT_OUT.relative_to(ROOT)}")
     print()
-    print("Guardrail: structural ML clusters are not financial peer groups. Percentiles are blocked below the configured minimum peer count and are not credit ratings.")
+    print("Guardrail: peer comparisons are ratio-only, period-aligned and separate from structural ML clusters, credit ratings and lending decisions.")
     return 0
 
 
