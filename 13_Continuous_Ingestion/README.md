@@ -42,6 +42,24 @@ The verification stage:
 
 Extracted fields are marked `EXTRACTED_NOT_VERIFIED` until reviewed. A primary-source page being accessible is not by itself treated as proof that every extracted field is correct.
 
+### 13D — Controlled canonicalization
+
+Implemented in `05_Canonicalization/canonicalize_reviewed_candidates.py`.
+
+The canonicalization stage is deliberately human-gated:
+
+1. structured candidates are copied into `Canonicalization_Review.csv` as `PENDING` review rows;
+2. extracted values are shown separately from reviewer-confirmed fields;
+3. a reviewer must explicitly set `review_decision=APPROVE_NEW_PROJECT` and fill the confirmed canonical fields;
+4. required fields, approval date, state verification, data-quality flag, project type and project group are validated;
+5. possible duplicate projects are blocked using company similarity, state, standardized type and investment proximity checks;
+6. approved non-conflicting rows are assigned the next available `SEM-xxxx` identifier and written to `Canonical_Staging.csv`;
+7. the default run is stage-only and does not change the canonical master;
+8. applying staged rows requires both `--apply` and the explicit confirmation token `APPLY_REVIEWED_CANONICAL_ROWS`;
+9. before an apply operation the previous canonical master is backed up locally.
+
+This prevents an internet discovery or imperfect extractor from silently becoming an official research observation.
+
 ## Current outputs
 
 ### Discovery
@@ -60,9 +78,18 @@ Created after the first Phase 13C run:
 
 If the candidate register is empty, Phase 13C exits successfully and creates empty schema-compatible output files. It does not fabricate a project for testing.
 
+### Canonicalization
+
+- `05_Canonicalization/Canonicalization_Review.csv`
+- `05_Canonicalization/Canonical_Staging.csv`
+- `05_Canonicalization/Canonicalization_Conflicts.csv`
+- `05_Canonicalization/Canonicalization_Run_Log.jsonl` after the first Phase 13D run
+- `05_Canonicalization/backups/` only when an approved staged row is explicitly applied
+
+The canonical master remains unchanged during a normal Phase 13D run.
+
 ## Next stages
 
-- 13D — reviewed canonicalization and safe master update
 - 13E — frozen-model inference for new canonical projects
 - 13F — automated stress / Monte Carlo / banking-layer rebuild
 - 13G — dashboard pipeline-status and new-project intake views
