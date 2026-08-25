@@ -1,8 +1,13 @@
 {
   "phase": "14E",
-  "engine_version": "SCI_PEER_BENCHMARK_ENGINE_V1",
+  "engine_version": "SCI_PEER_BENCHMARK_ENGINE_V2",
   "minimum_peer_count_for_percentiles": 3,
-  "latest_observation_policy": "Use the latest verified ratio observation for each registered financial entity. Benchmark ratios only; do not benchmark raw monetary amounts across currencies.",
+  "ratio_sources": [
+    "14_Financial_Intelligence/07_Ratios/Company_Financial_Ratios_Wide.csv",
+    "14_Financial_Intelligence/09_Peer_Benchmarking/External_Peer_Financials/External_Peer_Financial_Ratios_Wide.csv"
+  ],
+  "benchmark_period_policy": "Use benchmark_financial_year from the peer-group registry when populated. Do not silently substitute a newer or older observation when the requested benchmark period is unavailable. If benchmark_financial_year is blank, use the latest verified ratio observation for that entity.",
+  "latest_observation_policy": "Latest-observation fallback applies only when benchmark_financial_year is blank in the peer-group registry.",
   "scope_class_mapping": {
     "PARENT_LEVEL": "CORPORATE_GROUP",
     "CONSOLIDATED_GROUP_LEVEL": "CORPORATE_GROUP",
@@ -24,7 +29,9 @@
   },
   "guardrails": {
     "structural_ml_clusters_used_as_financial_peer_groups": false,
-    "raw_monetary_amounts_compared_across_currencies": false,
+    "raw_monetary_amounts_compared_across_currencies_or_units": false,
+    "benchmark_periods_silently_mixed": false,
+    "external_peers_added_to_project_company_master": false,
     "percentiles_generated_below_minimum_peer_count": false,
     "peer_percentile_treated_as_credit_rating": false,
     "pd_lgd_ead_ecl_generated": false,
