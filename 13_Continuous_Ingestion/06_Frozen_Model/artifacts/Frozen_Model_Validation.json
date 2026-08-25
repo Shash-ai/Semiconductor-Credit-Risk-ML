@@ -1,0 +1,31 @@
+{
+  "model_version": "SCI_STRUCTURAL_CLUSTER_FROZEN_2026_V2",
+  "validated_at": "2026-08-25T06:34:06+00:00",
+  "reference_rows": 36,
+  "retained_components": 7,
+  "authoritative_feature_matrix": "01_Raw_Data/Semiconductor/Semiconductor_Master/Ecosystem_Clustering_Final.csv",
+  "raw_feature_contract_max_abs_error": 9.020562075079397e-17,
+  "raw_feature_contract_error_by_feature": {
+    "financial_rank_within_scope": 6.245004513516506e-17,
+    "state_financial_share_within_scope": 9.020562075079397e-17,
+    "company_project_count": 0.0,
+    "is_manufacturing": 0.0,
+    "is_fab": 0.0,
+    "is_osat": 0.0,
+    "is_ai_related": 0.0,
+    "is_telecom_related": 0.0,
+    "is_automotive_related": 0.0,
+    "is_iot_related": 0.0,
+    "is_medical_related": 0.0,
+    "has_technology_partner": 0.0
+  },
+  "raw_feature_contract_pass": true,
+  "stored_z_reconstruction_max_abs_error": 4.440892098500626e-16,
+  "stored_z_reconstruction_pass": true,
+  "pc12_mae": 1.3627216639062251e-15,
+  "pc12_max_abs": 5.329070518200751e-15,
+  "pca_reconstruction_pass": true,
+  "nearest_centroid_training_agreement": 1.0,
+  "cluster_recovery_pass": true,
+  "status": "PASS_FROZEN_REFERENCE_REPRODUCED"
+}

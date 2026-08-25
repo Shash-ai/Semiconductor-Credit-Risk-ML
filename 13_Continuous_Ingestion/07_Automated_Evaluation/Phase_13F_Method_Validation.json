@@ -1,0 +1,96 @@
+{
+  "phase": "13F",
+  "validated_at": "2026-08-25T06:34:07+00:00",
+  "deterministic_stress": {
+    "stress_method_version": "SCI_DETERMINISTIC_STRESS_2026_V1",
+    "reference_projects": 12,
+    "weights": {
+      "risk_project_size": 0.25,
+      "risk_geographic_concentration": 0.15,
+      "risk_credit_growth": 0.15,
+      "risk_credit_volatility": 0.15,
+      "risk_npa_growth": 0.15,
+      "risk_npa_pressure": 0.15
+    },
+    "scenario_severities": {
+      "baseline": 0.0,
+      "mild": 0.1,
+      "moderate": 0.25,
+      "severe": 0.5
+    },
+    "scenario_score_max_abs_error": {
+      "baseline": 1.4210854715202004e-14,
+      "mild": 1.4210854715202004e-14,
+      "moderate": 1.4210854715202004e-14,
+      "severe": 1.4210854715202004e-14
+    },
+    "overall_score_max_abs_error": 1.4210854715202004e-14,
+    "project_size_normalization_max_abs_error": 5.898059818321144e-17,
+    "geographic_normalization_max_abs_error": 8.326672684688674e-17,
+    "reference_investment_min_crore": 117.0,
+    "reference_investment_max_crore": 91526.0,
+    "reference_state_share_min": 0.0007121076560702,
+    "reference_state_share_max": 0.7843470216249444,
+    "macro_risk_vectors_by_approval_year": {
+      "2023": {
+        "risk_credit_growth": 0.6869176268384147,
+        "risk_credit_volatility": 0.0304217968326846,
+        "risk_npa_growth": 0.0,
+        "risk_npa_pressure": 0.0
+      },
+      "2024": {
+        "risk_credit_growth": 1.0,
+        "risk_credit_volatility": 0.0,
+        "risk_npa_growth": 0.95632281623344,
+        "risk_npa_pressure": 0.7470331644108017
+      },
+      "2025": {
+        "risk_credit_growth": 0.0,
+        "risk_credit_volatility": 1.0,
+        "risk_npa_growth": 1.0,
+        "risk_npa_pressure": 1.0
+      },
+      "2026": {
+        "risk_credit_growth": 0.5462790361287271,
+        "risk_credit_volatility": 0.9591357460387392,
+        "risk_npa_growth": 0.97816140811672,
+        "risk_npa_pressure": 0.8735165822054
+      }
+    },
+    "macro_vector_consistency_max_spread": 0.0,
+    "deterministic_method_reproduction_pass": true
+  },
+  "monte_carlo": {
+    "status": "MC_METHOD_REPRODUCTION_REQUIRED",
+    "reason": "Historical Phase 6B output files expose shock distributions and system weights, but the repository does not currently expose a fully reproducible simulation/scoring implementation. Phase 13F therefore does not invent a Monte Carlo formula for new projects.",
+    "historical_systemic_weight": 0.35,
+    "known_shock_distributions": [
+      {
+        "shock": "",
+        "distribution": "",
+        "parameters": ""
+      },
+      {
+        "shock": "",
+        "distribution": "",
+        "parameters": ""
+      },
+      {
+        "shock": "",
+        "distribution": "",
+        "parameters": ""
+      },
+      {
+        "shock": "",
+        "distribution": "",
+        "parameters": ""
+      }
+    ]
+  },
+  "governance": {
+    "project_investment_is_bank_exposure": false,
+    "pd_lgd_ead_ecl_generated": false,
+    "automatic_credit_approval_or_rejection": false,
+    "missing_banking_values_imputed": false
+  }
+}

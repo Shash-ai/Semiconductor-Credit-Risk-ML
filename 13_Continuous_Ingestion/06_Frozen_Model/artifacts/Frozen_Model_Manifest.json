@@ -1,0 +1,41 @@
+{
+  "model_version": "SCI_STRUCTURAL_CLUSTER_FROZEN_2026_V2",
+  "model_scope": "STRUCTURAL_PROJECT_SEGMENTATION_ONLY",
+  "frozen_at": "2026-08-25T06:34:06+00:00",
+  "reference_universe_rows": 36,
+  "reference_manufacturing_rows": 12,
+  "validated_cluster_count": 6,
+  "retained_pca_components": 7,
+  "cumulative_variance_through_pc7": 0.8506257879063843,
+  "rank_definition": "ascending percentile rank within project_scope",
+  "raw_features": [
+    "financial_rank_within_scope",
+    "state_financial_share_within_scope",
+    "company_project_count",
+    "is_manufacturing",
+    "is_fab",
+    "is_osat",
+    "is_ai_related",
+    "is_telecom_related",
+    "is_automotive_related",
+    "is_iot_related",
+    "is_medical_related",
+    "has_technology_partner"
+  ],
+  "authoritative_reference_feature_file": "01_Raw_Data/Semiconductor/Semiconductor_Master/Ecosystem_Clustering_Final.csv",
+  "reference_hashes": {
+    "baseline_ecosystem_sha256": "1a33153a45b01f16446c883cf82603a877cbc58c31b81fcf7aface38446be0eb",
+    "authoritative_feature_matrix_sha256": "323048fd1f5be366e03244c4be1b575e63ba388f796086ab92ecba68f3a0a8ff",
+    "pca_loadings_sha256": "6ec5dd0b862cbf4e8939ec88a553cf2918010ee0adf126619eec2f3633197e31",
+    "validated_assignments_sha256": "7a2fed8548aa67577b8b13bf7350e0794360901bb26f6b6103342ea597023f1d",
+    "pca_variance_sha256": "109174764948209884eecbfaa4be013d945f989900521d424633503758c657f1"
+  },
+  "inference_rule": "Frozen historical ddof=0 scaler + stored PCA loadings + nearest validated 7D centroid",
+  "cohort_relative_feature_rule": "For a newly canonicalized project, rank/state-share/company-count are calculated on the current ecosystem universe. Scaler, PCA loadings and validated-cluster centroids stay frozen to the 36-row reference.",
+  "governance": [
+    "Structural cluster assignment only; not a risk class, bank rating, PD, LGD, EAD or ECL.",
+    "No automatic credit approval or rejection.",
+    "Out-of-distribution distance triggers review rather than an invented risk score.",
+    "Historical feature matrix is treated as the authoritative model input contract."
+  ]
+}
