@@ -98,7 +98,17 @@ A new `Data Operations -> Continuous Pipeline` workspace shows:
 
 The Phase 13G page uses native Streamlit tables and metrics for the pipeline records so missing files or empty candidate states do not render raw HTML. Missing runtime artifacts are displayed as not yet published rather than being treated as zero-risk or successful execution.
 
-Phase 13G does not schedule or execute the ingestion pipeline itself. Scheduling remains a separate Phase 13H control.
+### 13H — Scheduled GitHub Actions orchestration
+
+Implemented in `.github/workflows/phase13_continuous_ingestion.yml`.
+
+The workflow is configured for manual dispatch and a daily scheduled run at `02:30 UTC` (`08:00 IST`, subject to normal GitHub Actions scheduling delay). It executes Phases 13B through 13F in order after compiling the scripts and installing the tracked Python requirements.
+
+The scheduled canonicalization step is always stage-only. It never passes `--apply` or the canonical-apply confirmation token, and the publish step defensively excludes the canonical manufacturing master from the staged Git commit. Human review and an explicit manual apply remain required before any new project can enter the canonical research dataset.
+
+The workflow publishes only Phase 13 candidate, audit, review, frozen-model and automated-evaluation runtime outputs so the dashboard can reflect scheduled activity. It uses a serialized concurrency group and rebases its generated-output commit onto the latest `main` before pushing; conflicts fail rather than force-overwriting human work.
+
+The workflow code is implemented, but the first GitHub Actions execution must still be run and inspected before Phase 13H can be marked operationally validated.
 
 ## Current outputs
 
@@ -149,11 +159,14 @@ Created after a Phase 13F run:
 - `app/banking_dashboard_v3_2.py`
 - `app/community_main_v3_preview.py`
 
+### Scheduled orchestration
+
+- `.github/workflows/phase13_continuous_ingestion.yml`
+
 If there are no new canonical manufacturing projects, Phases 13E and 13F still validate their historical method contracts and write empty schema-compatible new-project output files. No synthetic project is created simply to make the pipeline appear active.
 
 ## Next stages
 
-- 13H — scheduled GitHub Actions execution
 - 13I — model/version/audit tracking
 - 13J — end-to-end controlled simulation
 
