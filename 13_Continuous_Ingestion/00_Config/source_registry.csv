@@ -1,0 +1,4 @@
+source_id,source_name,source_type,url,authority,active,notes
+SRC-PIB-RSS,Press Information Bureau - Press Releases,RSS,https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=1,Government of India,True,Primary discovery feed for new press releases
+SRC-ISM-INVEST,India Semiconductor Mission - Investors Support,REFERENCE,https://www.ism.gov.in/investment,India Semiconductor Mission / MeitY,True,Reference source for approved projects and investor information
+SRC-PIB-FACTS,PIB Semiconductor Factsheets,REFERENCE,https://www.pib.gov.in/FactsheetDetails.aspx?Id=150860&lang=2&reg=3,Government of India,True,Reference source for semiconductor ecosystem status and approved-project counts
