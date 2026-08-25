@@ -1,0 +1,110 @@
+{
+  "phase": "14A",
+  "contract_version": "SCI_FINANCIAL_MASTER_CONTRACT_V1",
+  "objective": "Longitudinal, evidence-backed corporate financial statement master for semiconductor project companies and verified sponsor/parent entities.",
+  "entity_rules": {
+    "project_company_is_distinct_from_financial_reporting_entity": true,
+    "parent_financials_are_project_financials": false,
+    "project_investment_is_bank_exposure_or_ead": false,
+    "total_liabilities_are_financial_debt": false,
+    "missing_values_may_be_peer_imputed": false
+  },
+  "source_hierarchy": [
+    "AUDITED_ANNUAL_REPORT_OR_FINANCIAL_STATEMENTS",
+    "STOCK_EXCHANGE_OR_STATUTORY_REGULATORY_FILING",
+    "SEC_OR_EQUIVALENT_FOREIGN_REGULATOR_FILING",
+    "COMPANY_INVESTOR_RELATIONS_FILING",
+    "CREDIT_RATING_AGENCY_FINANCIAL_DISCLOSURE",
+    "SECONDARY_SOURCE_CROSS_CHECK_ONLY"
+  ],
+  "required_provenance_fields": [
+    "financial_entity_id",
+    "financial_entity_name",
+    "project_company_name",
+    "entity_scope",
+    "financial_year",
+    "currency",
+    "unit",
+    "source_type",
+    "source_url",
+    "verification_status"
+  ],
+  "statement_fields": {
+    "income_statement": [
+      "revenue",
+      "other_income",
+      "ebitda",
+      "ebit",
+      "depreciation_amortization",
+      "finance_cost",
+      "pbt",
+      "tax_expense",
+      "pat"
+    ],
+    "balance_sheet": [
+      "total_assets",
+      "noncurrent_assets",
+      "ppe",
+      "intangible_assets",
+      "current_assets",
+      "inventory",
+      "receivables",
+      "cash_and_equivalents",
+      "total_equity",
+      "net_worth",
+      "total_debt",
+      "short_term_debt",
+      "long_term_debt",
+      "current_liabilities",
+      "total_liabilities"
+    ],
+    "cash_flow": [
+      "operating_cash_flow",
+      "capex",
+      "investing_cash_flow",
+      "financing_cash_flow",
+      "dividends_paid",
+      "free_cash_flow"
+    ]
+  },
+  "phase14a_core_coverage_fields": [
+    "revenue",
+    "ebitda",
+    "ebit",
+    "pat",
+    "total_debt",
+    "total_equity",
+    "current_assets",
+    "current_liabilities",
+    "interest_expense",
+    "operating_cash_flow"
+  ],
+  "allowed_entity_scopes": [
+    "EXACT_PROJECT_COMPANY",
+    "COMPANY_OR_ENTITY_LEVEL",
+    "SUBSIDIARY_LEVEL",
+    "PARENT_LEVEL",
+    "CONSOLIDATED_GROUP_LEVEL",
+    "UNRESOLVED"
+  ],
+  "normalization_policy": {
+    "phase14a": "Preserve source currency and source unit. Do not silently convert historical observations.",
+    "future": "Create explicit normalized INR-crore fields only with a documented FX date/rule and original-value retention."
+  },
+  "analytical_separation": {
+    "raw_statement_master_contains_risk_scores": false,
+    "ratio_engine_phase": "14C",
+    "trend_engine_phase": "14D",
+    "peer_engine_phase": "14E",
+    "project_affordability_phase": "14F"
+  },
+  "credit_guardrails": {
+    "generate_pd": false,
+    "generate_lgd": false,
+    "generate_ead": false,
+    "generate_ecl": false,
+    "infer_loan_dscr_without_financing_terms": false,
+    "infer_collateral_without_evidence": false,
+    "automatic_credit_approval_or_rejection": false
+  }
+}
