@@ -78,6 +78,28 @@ For borrower financials, project finance, security/recovery, execution risk, EWS
 
 If no exact project-specific banking evidence exists, the project is labelled `INSUFFICIENT_VERIFIED_BANKING_EVIDENCE` and is held for human/evidence review.
 
+### 13G — Dashboard live-pipeline integration
+
+Implemented in `app/banking_dashboard_v3_2.py` and exposed through the V3 preview entry point `app/community_main_v3_preview.py`.
+
+A new `Data Operations -> Continuous Pipeline` workspace shows:
+
+- pipeline state and active source count;
+- the current canonical project count;
+- discovered, verification, staging, structural-inference and evaluation counts;
+- Phase 13E frozen-model validation state;
+- Phase 13F deterministic-stress reproduction state;
+- the explicit Monte Carlo reproducibility gate;
+- latest available runtime audit status for Phases 13B–13F;
+- discovery candidates and source URLs;
+- verification/canonicalization queues and conflicts;
+- new-project structural/stress/banking evaluation registers;
+- the official/reference source registry.
+
+The Phase 13G page uses native Streamlit tables and metrics for the pipeline records so missing files or empty candidate states do not render raw HTML. Missing runtime artifacts are displayed as not yet published rather than being treated as zero-risk or successful execution.
+
+Phase 13G does not schedule or execute the ingestion pipeline itself. Scheduling remains a separate Phase 13H control.
+
 ## Current outputs
 
 ### Discovery
@@ -122,11 +144,15 @@ Created after a Phase 13F run:
 - `07_Automated_Evaluation/Phase_13F_Method_Validation.json`
 - `07_Automated_Evaluation/Automated_Evaluation_Run_Log.jsonl`
 
+### Dashboard integration
+
+- `app/banking_dashboard_v3_2.py`
+- `app/community_main_v3_preview.py`
+
 If there are no new canonical manufacturing projects, Phases 13E and 13F still validate their historical method contracts and write empty schema-compatible new-project output files. No synthetic project is created simply to make the pipeline appear active.
 
 ## Next stages
 
-- 13G — dashboard pipeline-status and new-project intake views
 - 13H — scheduled GitHub Actions execution
 - 13I — model/version/audit tracking
 - 13J — end-to-end controlled simulation
