@@ -1,0 +1,45 @@
+{
+  "engine_version": "SCI_FINANCIAL_TREND_ENGINE_V1",
+  "phase": "14D",
+  "objective": "Longitudinal corporate-finance trend, cycle and early-warning analytics using only comparable verified entity-scope-currency-unit observations.",
+  "comparability_key": [
+    "financial_entity_id",
+    "entity_scope",
+    "currency",
+    "unit"
+  ],
+  "minimum_periods": {
+    "yoy_change": 2,
+    "three_year_cagr": 3,
+    "volatility": 3
+  },
+  "research_signal_thresholds": {
+    "revenue_yoy_deterioration": -0.10,
+    "revenue_yoy_strengthening": 0.10,
+    "net_profit_margin_change_deterioration": -0.03,
+    "net_profit_margin_change_strengthening": 0.03,
+    "ocf_margin_change_deterioration": -0.05,
+    "ocf_margin_change_strengthening": 0.05,
+    "debt_to_equity_change_deterioration": 0.25,
+    "debt_to_equity_change_strengthening": -0.25,
+    "current_ratio_change_deterioration": -0.20,
+    "current_ratio_change_strengthening": 0.20,
+    "roa_change_deterioration": -0.03,
+    "roa_change_strengthening": 0.03
+  },
+  "signal_policy": {
+    "deterioration_signal_count": 3,
+    "strengthening_signal_count": 3,
+    "mixed_signal_when_both_present": true,
+    "threshold_status": "RESEARCH_HEURISTICS_NOT_REGULATORY_OR_BANK_CUTOFFS"
+  },
+  "guardrails": {
+    "cross_currency_or_cross_unit_trends_allowed": false,
+    "different_entity_scopes_may_be_blended": false,
+    "missing_values_may_be_imputed": false,
+    "parent_or_group_financials_are_project_financials": false,
+    "output_is_credit_rating": false,
+    "generate_pd_lgd_ead_ecl": false,
+    "automatic_credit_decision": false
+  }
+}
