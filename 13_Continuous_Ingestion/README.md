@@ -2,11 +2,11 @@
 
 ## Objective
 
-Build a reproducible, source-backed monitoring pipeline that detects newly announced semiconductor manufacturing approvals, routes them through verification and canonicalization, and later evaluates eligible projects through the frozen research risk framework.
+Build a reproducible, source-backed monitoring pipeline that detects newly announced semiconductor manufacturing approvals, routes them through verification and canonicalization, and evaluates eligible projects through frozen research-risk methods without converting missing public information into invented banking data.
 
 ## Safety states
 
-`DISCOVERED -> SOURCE_VERIFIED -> CANONICALIZED -> MODEL_EVALUATED -> DASHBOARD_ACTIVE`
+`DISCOVERED -> SOURCE_VERIFIED -> CANONICALIZED -> MODEL_EVALUATED -> STRESS_EVALUATED -> DASHBOARD_ACTIVE`
 
 Ambiguous or conflicting records are routed to `MANUAL_REVIEW_REQUIRED`.
 
@@ -28,88 +28,79 @@ The discovery engine monitors active RSS sources, filters for semiconductor + ap
 
 Implemented in `04_Verification/verify_candidates.py`.
 
-The verification stage:
-
-- re-fetches the candidate source;
-- checks whether the source is an official PIB / MeitY / ISM domain;
-- detects approval language;
-- extracts candidate company, state, project type and investment values conservatively;
-- compares article text with the canonical semiconductor project master;
-- flags possible existing projects and multi-project announcements;
-- stores field-level evidence snippets;
-- routes every candidate to a human review queue;
-- never writes directly to the canonical master.
-
-Extracted fields are marked `EXTRACTED_NOT_VERIFIED` until reviewed. A primary-source page being accessible is not by itself treated as proof that every extracted field is correct.
+The verification stage re-fetches the source, checks official-source provenance, extracts candidate fields conservatively, compares the announcement with the canonical master, stores field-level evidence, and routes every candidate through human review. Extracted fields remain `EXTRACTED_NOT_VERIFIED` until reviewed.
 
 ### 13D — Controlled canonicalization
 
 Implemented in `05_Canonicalization/canonicalize_reviewed_candidates.py`.
 
-The canonicalization stage is deliberately human-gated:
-
-1. structured candidates are copied into `Canonicalization_Review.csv` as `PENDING` review rows;
-2. extracted values are shown separately from reviewer-confirmed fields;
-3. a reviewer must explicitly set `review_decision=APPROVE_NEW_PROJECT` and fill the confirmed canonical fields;
-4. required fields, approval date, state verification, data-quality flag, project type and project group are validated;
-5. possible duplicate projects are blocked using company similarity, state, standardized type and investment proximity checks;
-6. approved non-conflicting rows are assigned the next available `SEM-xxxx` identifier and written to `Canonical_Staging.csv`;
-7. the default run is stage-only and does not change the canonical master;
-8. applying staged rows requires both `--apply` and the explicit confirmation token `APPLY_REVIEWED_CANONICAL_ROWS`;
-9. before an apply operation the previous canonical master is backed up locally.
-
-This prevents an internet discovery or imperfect extractor from silently becoming an official research observation.
+Canonicalization is human-gated. A reviewer must explicitly approve a new project and confirm the required canonical fields. Duplicate/conflict checks run before staging. The default execution is stage-only; applying rows requires both `--apply` and the explicit confirmation token `APPLY_REVIEWED_CANONICAL_ROWS`.
 
 ### 13E — Frozen structural-model inference
 
-Implemented in `06_Frozen_Model/freeze_and_infer.py`.
+Implemented through `06_Frozen_Model/freeze_and_infer.py`.
 
-The Phase 13E stage does not retrain the historical model when a new project appears. It first attempts to reproduce the validated 36-project structural model from the existing reference artifacts:
+The current frozen structural model is `SCI_STRUCTURAL_CLUSTER_FROZEN_2026_V2`. Phase 13E uses the authoritative historical Phase-3 feature matrix, stored standardized features, seven-component PCA loadings, and validated cluster assignments to reproduce the original 36-project model before any new-project inference is allowed.
 
-- the 36-row semiconductor ecosystem master;
-- the stored seven-component PCA loadings;
-- the stored validated cluster assignments;
-- the original 12-feature structural feature contract.
+The validated local run reproduced the historical model to floating-point precision and recovered the validated clusters with full agreement. New projects are transformed with frozen historical scaler/PCA parameters and assigned to the nearest validated seven-dimensional structural centroid. Cluster membership is a structural segment, not a credit-risk class or rating. Out-of-reference projects are flagged for review rather than converted into invented default-risk estimates.
 
-Before creating frozen artifacts, the script checks that reconstructed PC1/PC2 scores reproduce the stored model scores within a strict tolerance and that nearest frozen seven-dimensional cluster centroids recover the validated reference cluster assignments. If either check fails, Phase 13E fails safe and performs no new-project inference.
+### 13F — Controlled automated stress and banking-evidence evaluation
 
-When the reproduction checks pass, the frozen artifacts contain the reference scaler parameters, PCA components, validated cluster centroids, reference PCA scores, hashes of the reference inputs and a versioned model manifest. A newly canonicalized manufacturing project is then transformed with the frozen scaler/PCA parameters and assigned to the nearest validated structural cluster centroid.
+Implemented in `07_Automated_Evaluation/evaluate_new_projects.py`.
 
-The output is explicitly a structural segment, not a credit-risk grade. Distance outside the reference cluster's 95th-percentile radius is surfaced as `STRUCTURAL_EXTRAPOLATION_REVIEW_REQUIRED` instead of being converted into an invented default-risk measure.
+Phase 13F reads only projects that have already passed Phase 13E structural inference. Before scoring a new project, it reproduces the historical Phase-3E deterministic stress method from `Robust_Stress_Test_Full.csv`.
 
-Phase 13E does not produce PD, LGD, EAD, ECL, an official bank rating, or an automated approve/reject decision.
+The deterministic contract is:
+
+- project-size risk weight: 25%;
+- geographic-concentration risk weight: 15%;
+- credit-growth risk weight: 15%;
+- credit-volatility risk weight: 15%;
+- NPA-growth risk weight: 15%;
+- NPA-pressure risk weight: 15%;
+- mild macro severity: 10%;
+- moderate macro severity: 25%;
+- severe macro severity: 50%;
+- a stressed macro-risk component is `baseline_risk + severity * (1 - baseline_risk)`;
+- structural project-size and geographic-concentration risk are not shocked.
+
+Project-size and geographic risk for a new project are normalized against the frozen original manufacturing reference bounds and clipped with an explicit out-of-reference signal when required. Macro risk is used only when an exact historical/verified approval-year risk vector is available. A project with an approval year for which no verified macro vector exists is returned as `MACRO_CONTEXT_REVIEW_REQUIRED` and receives no deterministic stress score until the macro context is updated and verified.
+
+#### Monte Carlo reproducibility gate
+
+The repository contains the historical Phase-6B Monte Carlo outputs, including the 10,000-simulation summary, systemic/idiosyncratic weights, and Beta shock-distribution parameters. However, the exact historical simulation/scoring implementation is not currently preserved as a reproducible source file in the tracked repository.
+
+Phase 13F therefore deliberately returns `MC_METHOD_REPRODUCTION_REQUIRED` for a new project instead of inventing or silently replacing the Phase-6B method. A new versioned Monte Carlo implementation may be activated only after the historical method is recovered/reproduced or after a separately documented methodology change is approved.
+
+#### Banking evidence gate
+
+For borrower financials, project finance, security/recovery, execution risk, EWS, and integrated banking-risk outputs, Phase 13F checks only for an exact `project_id` match in the relevant banking output files. It does not transfer values from analogous borrowers/projects and does not infer DSCR, collateral, debt, bank exposure, repayment history, or recovery values from project investment.
+
+If no exact project-specific banking evidence exists, the project is labelled `INSUFFICIENT_VERIFIED_BANKING_EVIDENCE` and is held for human/evidence review.
 
 ## Current outputs
 
 ### Discovery
 
 - `02_Candidates/Project_Discovery_Candidates.csv`
-- `03_Audit/Discovery_Run_Log.jsonl` after the first discovery run
+- `03_Audit/Discovery_Run_Log.jsonl`
 
 ### Verification
-
-Created after the first Phase 13C run:
 
 - `04_Verification/Structured_Project_Candidates.csv`
 - `04_Verification/Candidate_Field_Evidence.csv`
 - `04_Verification/Verification_Queue.csv`
 - `04_Verification/Verification_Run_Log.jsonl`
 
-If the candidate register is empty, Phase 13C exits successfully and creates empty schema-compatible output files. It does not fabricate a project for testing.
-
 ### Canonicalization
 
 - `05_Canonicalization/Canonicalization_Review.csv`
 - `05_Canonicalization/Canonical_Staging.csv`
 - `05_Canonicalization/Canonicalization_Conflicts.csv`
-- `05_Canonicalization/Canonicalization_Run_Log.jsonl` after the first Phase 13D run
+- `05_Canonicalization/Canonicalization_Run_Log.jsonl`
 - `05_Canonicalization/backups/` only when an approved staged row is explicitly applied
 
-The canonical master remains unchanged during a normal Phase 13D run.
-
 ### Frozen model / inference
-
-Created when Phase 13E passes its reference-reproduction checks:
 
 - `06_Frozen_Model/artifacts/Frozen_Model_Manifest.json`
 - `06_Frozen_Model/artifacts/Frozen_Scaler_Parameters.csv`
@@ -120,11 +111,21 @@ Created when Phase 13E passes its reference-reproduction checks:
 - `06_Frozen_Model/Frozen_Model_New_Project_Inference.csv`
 - `06_Frozen_Model/Frozen_Model_Run_Log.jsonl`
 
-If no new canonical manufacturing project exists, Phase 13E can still validate/freeze the reference model and will write an empty schema-compatible inference file.
+### Automated evaluation
+
+Created after a Phase 13F run:
+
+- `07_Automated_Evaluation/New_Project_Deterministic_Stress.csv`
+- `07_Automated_Evaluation/New_Project_Monte_Carlo_Status.csv`
+- `07_Automated_Evaluation/New_Project_Banking_Evidence_Status.csv`
+- `07_Automated_Evaluation/New_Project_Evaluation_Register.csv`
+- `07_Automated_Evaluation/Phase_13F_Method_Validation.json`
+- `07_Automated_Evaluation/Automated_Evaluation_Run_Log.jsonl`
+
+If there are no new canonical manufacturing projects, Phases 13E and 13F still validate their historical method contracts and write empty schema-compatible new-project output files. No synthetic project is created simply to make the pipeline appear active.
 
 ## Next stages
 
-- 13F — automated stress / Monte Carlo / banking-layer evaluation for eligible new projects
 - 13G — dashboard pipeline-status and new-project intake views
 - 13H — scheduled GitHub Actions execution
 - 13I — model/version/audit tracking
