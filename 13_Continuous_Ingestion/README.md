@@ -22,21 +22,52 @@ Implemented in `00_Config/source_registry.csv`.
 
 Implemented in `01_Discovery/discover_new_projects.py`.
 
-The discovery engine currently monitors active RSS sources, filters for semiconductor + approval language, fetches matching articles, hashes content for deduplication, stores candidate records, and writes an append-only JSONL run audit.
+The discovery engine monitors active RSS sources, filters for semiconductor + approval language, fetches matching articles, hashes content for deduplication, stores candidate records, and writes an append-only JSONL run audit.
+
+### 13C — Source verification & structured extraction
+
+Implemented in `04_Verification/verify_candidates.py`.
+
+The verification stage:
+
+- re-fetches the candidate source;
+- checks whether the source is an official PIB / MeitY / ISM domain;
+- detects approval language;
+- extracts candidate company, state, project type and investment values conservatively;
+- compares article text with the canonical semiconductor project master;
+- flags possible existing projects and multi-project announcements;
+- stores field-level evidence snippets;
+- routes every candidate to a human review queue;
+- never writes directly to the canonical master.
+
+Extracted fields are marked `EXTRACTED_NOT_VERIFIED` until reviewed. A primary-source page being accessible is not by itself treated as proof that every extracted field is correct.
 
 ## Current outputs
 
+### Discovery
+
 - `02_Candidates/Project_Discovery_Candidates.csv`
-- `03_Audit/Discovery_Run_Log.jsonl` after the first run
+- `03_Audit/Discovery_Run_Log.jsonl` after the first discovery run
 
-## Not implemented yet
+### Verification
 
-- source verification and structured field extraction
-- entity/project duplicate reconciliation
-- automatic canonical master update
-- frozen-model inference for new projects
-- automated stress / Monte Carlo / banking-layer rebuild
-- dashboard pipeline-status page
-- scheduled GitHub Actions execution
+Created after the first Phase 13C run:
 
-These are intentionally separated so unverified announcements cannot enter the canonical research dataset automatically.
+- `04_Verification/Structured_Project_Candidates.csv`
+- `04_Verification/Candidate_Field_Evidence.csv`
+- `04_Verification/Verification_Queue.csv`
+- `04_Verification/Verification_Run_Log.jsonl`
+
+If the candidate register is empty, Phase 13C exits successfully and creates empty schema-compatible output files. It does not fabricate a project for testing.
+
+## Next stages
+
+- 13D — reviewed canonicalization and safe master update
+- 13E — frozen-model inference for new canonical projects
+- 13F — automated stress / Monte Carlo / banking-layer rebuild
+- 13G — dashboard pipeline-status and new-project intake views
+- 13H — scheduled GitHub Actions execution
+- 13I — model/version/audit tracking
+- 13J — end-to-end controlled simulation
+
+The stages remain separated so unverified announcements cannot enter the canonical research dataset or banking decision-support outputs automatically.
