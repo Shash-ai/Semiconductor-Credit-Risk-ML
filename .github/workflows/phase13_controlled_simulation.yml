@@ -1,0 +1,60 @@
+name: Phase 13J Controlled Simulation
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: phase13j-controlled-simulation
+  cancel-in-progress: false
+
+jobs:
+  run-quarantined-simulation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    env:
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Compile Phase 13J harness
+        run: python -m py_compile "13_Continuous_Ingestion/09_Controlled_Simulation/run_end_to_end_simulation.py"
+
+      - name: Run quarantined end-to-end simulation
+        run: python "13_Continuous_Ingestion/09_Controlled_Simulation/run_end_to_end_simulation.py"
+
+      - name: Write simulation summary
+        if: always()
+        shell: bash
+        run: |
+          echo "## Phase 13J controlled simulation" >> "$GITHUB_STEP_SUMMARY"
+          echo >> "$GITHUB_STEP_SUMMARY"
+          if [ -f "13_Continuous_Ingestion/09_Controlled_Simulation/Phase_13J_Simulation_Result.json" ]; then
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat "13_Continuous_Ingestion/09_Controlled_Simulation/Phase_13J_Simulation_Result.json" >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Simulation result file was not created." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo >> "$GITHUB_STEP_SUMMARY"
+          echo "This workflow has read-only repository permission. The synthetic fixture exists only inside a temporary sandbox and must never be treated as a real project or banking record." >> "$GITHUB_STEP_SUMMARY"
