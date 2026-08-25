@@ -1,0 +1,56 @@
+{
+  "phase": "14C",
+  "engine_version": "SCI_FINANCIAL_RATIO_ENGINE_V1",
+  "objective": "Transparent corporate-finance ratio calculations from verified longitudinal financial observations without generating bank PD/LGD/EAD/ECL or automated credit decisions.",
+  "calculation_principles": {
+    "source_accounting_facts_are_not_overwritten": true,
+    "missing_values_are_not_imputed": true,
+    "ratios_are_computed_only_when_required_inputs_are_present": true,
+    "cross_currency_arithmetic_is_prohibited": true,
+    "cross_scope_arithmetic_is_prohibited": true,
+    "ending_balance_sheet_basis_is_explicit": true,
+    "capex_outflow_magnitude_uses_absolute_value": true,
+    "parent_level_ratios_remain_parent_level_context": true
+  },
+  "ratios": {
+    "ebitda_margin": {"formula": "ebitda / revenue", "category": "profitability", "unit": "ratio"},
+    "ebit_margin": {"formula": "ebit / revenue", "category": "profitability", "unit": "ratio"},
+    "pre_tax_margin": {"formula": "pbt / revenue", "category": "profitability", "unit": "ratio"},
+    "net_profit_margin": {"formula": "pat / revenue", "category": "profitability", "unit": "ratio"},
+    "ocf_margin": {"formula": "operating_cash_flow / revenue", "category": "cash_flow", "unit": "ratio"},
+    "debt_to_equity": {"formula": "total_debt / total_equity", "category": "leverage", "unit": "x"},
+    "debt_to_assets": {"formula": "total_debt / total_assets", "category": "leverage", "unit": "ratio"},
+    "debt_to_revenue": {"formula": "total_debt / revenue", "category": "leverage", "unit": "x"},
+    "net_debt_to_equity": {"formula": "(total_debt - cash_and_equivalents) / total_equity", "category": "leverage", "unit": "x"},
+    "debt_to_ebitda": {"formula": "total_debt / ebitda", "category": "leverage", "unit": "x"},
+    "current_ratio": {"formula": "current_assets / current_liabilities", "category": "liquidity", "unit": "x"},
+    "cash_ratio": {"formula": "cash_and_equivalents / current_liabilities", "category": "liquidity", "unit": "x"},
+    "working_capital_to_revenue": {"formula": "(current_assets - current_liabilities) / revenue", "category": "liquidity", "unit": "ratio"},
+    "ocf_to_debt": {"formula": "operating_cash_flow / total_debt", "category": "cash_flow", "unit": "x"},
+    "ocf_to_pat": {"formula": "operating_cash_flow / pat", "category": "cash_flow_quality", "unit": "x"},
+    "ocf_to_assets": {"formula": "operating_cash_flow / total_assets", "category": "cash_flow", "unit": "ratio"},
+    "capex_intensity": {"formula": "abs(capex) / revenue", "category": "capital_intensity", "unit": "ratio"},
+    "derived_fcf_margin": {"formula": "(operating_cash_flow - abs(capex)) / revenue", "category": "cash_flow", "unit": "ratio"},
+    "ebit_interest_coverage": {"formula": "ebit / interest_expense", "category": "coverage", "unit": "x"},
+    "ebitda_interest_coverage": {"formula": "ebitda / interest_expense", "category": "coverage", "unit": "x"},
+    "return_on_assets_ending": {"formula": "pat / total_assets", "category": "returns", "unit": "ratio"},
+    "return_on_equity_ending": {"formula": "pat / total_equity", "category": "returns", "unit": "ratio"},
+    "asset_turnover_ending": {"formula": "revenue / total_assets", "category": "efficiency", "unit": "x"},
+    "equity_multiplier_ending": {"formula": "total_assets / total_equity", "category": "dupont", "unit": "x"},
+    "dupont_roe_ending": {"formula": "net_profit_margin * asset_turnover_ending * equity_multiplier_ending", "category": "dupont", "unit": "ratio"}
+  },
+  "derived_amounts": {
+    "net_debt": "total_debt - cash_and_equivalents",
+    "working_capital": "current_assets - current_liabilities",
+    "derived_free_cash_flow": "operating_cash_flow - abs(capex)"
+  },
+  "guardrails": {
+    "credit_rating_generated": false,
+    "pd_generated": false,
+    "lgd_generated": false,
+    "ead_generated": false,
+    "ecl_generated": false,
+    "loan_dscr_inferred_without_financing_terms": false,
+    "automatic_credit_approval_or_rejection": false
+  }
+}
