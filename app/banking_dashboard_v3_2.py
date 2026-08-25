@@ -130,7 +130,7 @@ def _native_record_table(df: pd.DataFrame, columns: list[str], height: int = 320
     if display.empty:
         st.caption("The current file does not contain displayable fields for this view.")
         return
-    st.dataframe(display, use_container_width=True, hide_index=True, height=height)
+    st.dataframe(display, width="stretch", hide_index=True, height=height)
 
 
 def _model_validation_status(frozen_validation: dict[str, Any]) -> tuple[str, str]:
@@ -276,7 +276,7 @@ def page_continuous_pipeline(master: pd.DataFrame) -> None:
         ],
         columns=["Stage", "Latest status", "Latest runtime timestamp", "Rows / new items"],
     )
-    st.dataframe(activity, use_container_width=True, hide_index=True)
+    st.dataframe(activity, width="stretch", hide_index=True)
     st.caption(f"Latest discovery scan visible to this runtime: {last_scan}")
 
     tab1, tab2, tab3, tab4 = st.tabs([
