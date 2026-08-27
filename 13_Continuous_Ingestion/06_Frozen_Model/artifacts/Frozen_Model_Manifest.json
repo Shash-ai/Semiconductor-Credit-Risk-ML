@@ -1,7 +1,7 @@
 {
   "model_version": "SCI_STRUCTURAL_CLUSTER_FROZEN_2026_V2",
   "model_scope": "STRUCTURAL_PROJECT_SEGMENTATION_ONLY",
-  "frozen_at": "2026-08-26T03:34:01+00:00",
+  "frozen_at": "2026-08-27T13:00:23+00:00",
   "reference_universe_rows": 36,
   "reference_manufacturing_rows": 12,
   "validated_cluster_count": 6,
