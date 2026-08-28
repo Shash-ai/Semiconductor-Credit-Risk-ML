@@ -1,0 +1,67 @@
+{
+  "phase": "15E",
+  "engine_version": "SCI_STRESS_MC_VALIDATION_V1",
+  "objective": "Exactly reproduce the deterministic stress framework and forensically validate archived Monte Carlo evidence without claiming Monte Carlo method reproducibility until the original sampling metadata is recovered.",
+  "deterministic_stress": {
+    "score_scale": 100.0,
+    "formula_status": "RECONSTRUCTED_FROM_STORED_PHASE_3E_ARTIFACTS_AND_SUBJECT_TO_EXACT_REPRODUCTION_TEST",
+    "weights": {
+      "risk_project_size": 0.25,
+      "risk_geographic_concentration": 0.15,
+      "risk_credit_growth": 0.15,
+      "risk_credit_volatility": 0.15,
+      "risk_npa_growth": 0.15,
+      "risk_npa_pressure": 0.15
+    },
+    "stressed_risk_channels": [
+      "risk_credit_growth",
+      "risk_credit_volatility",
+      "risk_npa_growth",
+      "risk_npa_pressure"
+    ],
+    "stress_transform": "stressed_risk = baseline_risk + severity * (1 - baseline_risk)",
+    "severity_levels": {
+      "baseline": 0.0,
+      "mild": 0.10,
+      "moderate": 0.25,
+      "severe": 0.50
+    },
+    "severity_sensitivity_grid": [0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.35, 0.50, 0.65, 0.75],
+    "score_tolerance": 1e-10,
+    "rank_tolerance": 0
+  },
+  "monte_carlo": {
+    "archived_outputs_are_evidence_not_method_metadata": true,
+    "required_method_metadata": [
+      "random_seed_or_seed_policy",
+      "shock_distribution_family_and_exact_parameters",
+      "systemic_idiosyncratic_mixing_equation",
+      "cross_channel_dependence_or_correlation_rule",
+      "project_specific_idiosyncratic_shock_generation",
+      "exact_monte_carlo_score_transformation",
+      "portfolio_aggregation_formula"
+    ],
+    "source_scan_extensions": [".py", ".ipynb", ".json", ".md", ".txt"],
+    "source_scan_max_bytes": 12000000,
+    "source_scan_roots": ["03_Modeling", "03_Notebooks", "08_Code"],
+    "source_scan_keywords": [
+      "Monte Carlo",
+      "monte_carlo",
+      "systemic_weight",
+      "np.random.beta",
+      "random.beta",
+      "default_rng",
+      "random_state",
+      "seed"
+    ]
+  },
+  "guardrails": {
+    "deterministic_stress_score_is_default_probability": false,
+    "monte_carlo_archived_output_equals_reproducible_method": false,
+    "candidate_method_source_hit_equals_verified_original_method": false,
+    "clusters_are_credit_ratings": false,
+    "project_investment_is_bank_exposure_or_ead": false,
+    "pd_lgd_ead_ecl_generated": false,
+    "automatic_credit_decision_generated": false
+  }
+}
