@@ -1,0 +1,173 @@
+{
+  "phase": "15A",
+  "protocol_version": "SCI_VALIDATION_EVIDENCE_PROTOCOL_V1",
+  "objective": "Create a traceable evidence inventory and methodological gap register without treating artifact existence as proof of validity.",
+  "status_levels": [
+    "EVIDENCE_PRESENT_METHOD_REVIEW_REQUIRED",
+    "PARTIAL_EVIDENCE",
+    "MISSING_EVIDENCE",
+    "OPEN_METHOD_REPRODUCTION_GATE",
+    "OPEN_EXTERNAL_VALIDATION_GATE"
+  ],
+  "workstreams": [
+    {
+      "workstream_id": "V01",
+      "name": "Canonical data provenance",
+      "priority": "CRITICAL",
+      "evidence_globs": [
+        "01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Master_Canonical.csv"
+      ],
+      "minimum_matches": 1,
+      "method_gate": "REQUIRES_CONTENT_LEVEL_PROVENANCE_AUDIT",
+      "next_validation_phase": "15B"
+    },
+    {
+      "workstream_id": "V02",
+      "name": "Structural cluster validation",
+      "priority": "CRITICAL",
+      "evidence_globs": [
+        "03_Modeling/Phase_3B_Cluster_Validation/*.csv"
+      ],
+      "minimum_matches": 1,
+      "method_gate": "REQUIRES_CONTROLLED_REPRODUCTION_AND_PERTURBATION_TESTS",
+      "next_validation_phase": "15C"
+    },
+    {
+      "workstream_id": "V03",
+      "name": "Benchmark and ablation validation",
+      "priority": "HIGH",
+      "evidence_globs": [
+        "03_Modeling/Phase_6A_Benchmark_Ablation/Ablation_Rank_Stability.csv",
+        "03_Modeling/Phase_6A_Benchmark_Ablation/Benchmark_Model_Rankings.csv",
+        "03_Modeling/Phase_6A_Benchmark_Ablation/Benchmark_Rank_Correlations.csv",
+        "03_Modeling/Phase_6A_Benchmark_Ablation/Feature_Family_Importance.csv"
+      ],
+      "minimum_matches": 4,
+      "method_gate": "REQUIRES_REPRODUCTION_AND_EXPANDED_SENSITIVITY",
+      "next_validation_phase": "15D"
+    },
+    {
+      "workstream_id": "V04",
+      "name": "Deterministic stress validation",
+      "priority": "CRITICAL",
+      "evidence_globs": [
+        "03_Modeling/Phase_3E_Robust_Stress_Test/Robust_Stress_Test_Full.csv",
+        "03_Modeling/Phase_3E_Robust_Stress_Test/Final_Robust_Vulnerability_Ranking.csv"
+      ],
+      "minimum_matches": 2,
+      "method_gate": "REQUIRES_EXACT_REPRODUCTION_AND_PARAMETER_SENSITIVITY",
+      "next_validation_phase": "15E"
+    },
+    {
+      "workstream_id": "V05",
+      "name": "Monte Carlo reproducibility",
+      "priority": "CRITICAL",
+      "evidence_globs": [
+        "03_Modeling/Phase_6B_Monte_Carlo_Stress/Monte_Carlo_Project_Risk_Summary.csv",
+        "03_Modeling/Phase_6B_Monte_Carlo_Stress/Monte_Carlo_Project_Scores.csv",
+        "03_Modeling/Phase_6B_Monte_Carlo_Stress/Monte_Carlo_Shock_Distributions.csv",
+        "03_Modeling/Phase_6B_Monte_Carlo_Stress/Monte_Carlo_System_Summary.csv"
+      ],
+      "minimum_matches": 4,
+      "method_gate": "OPEN_METHOD_REPRODUCTION_GATE",
+      "next_validation_phase": "15E"
+    },
+    {
+      "workstream_id": "V06",
+      "name": "Cross-method validation",
+      "priority": "HIGH",
+      "evidence_globs": [
+        "03_Modeling/Phase_6C_Cross_Method_Validation/Cross_Method_Project_Comparison.csv",
+        "03_Modeling/Phase_6C_Cross_Method_Validation/Cross_Method_Validation_Metrics.csv",
+        "03_Modeling/Phase_6C_Cross_Method_Validation/Enhanced_Final_Vulnerability_Ranking.csv"
+      ],
+      "minimum_matches": 3,
+      "method_gate": "REQUIRES_REPRODUCTION_AFTER_MONTE_CARLO_METHOD_IS_RECONSTRUCTED",
+      "next_validation_phase": "15E"
+    },
+    {
+      "workstream_id": "V07",
+      "name": "External credit evidence",
+      "priority": "HIGH",
+      "evidence_globs": [
+        "03_Modeling/Phase_6D_External_Credit_Validation/Verified_External_Credit_Evidence.csv",
+        "03_Modeling/Phase_6D_External_Credit_Validation/External_Credit_Validation_Results.csv",
+        "03_Modeling/Phase_6D_External_Credit_Validation/External_Validation_Coverage_Report.csv",
+        "03_Modeling/Phase_6D_External_Credit_Validation/Companies_Still_Needing_External_Credit_Evidence.csv"
+      ],
+      "minimum_matches": 4,
+      "method_gate": "REQUIRES_COVERAGE_EXPANSION_AND_SCOPE_REVIEW",
+      "next_validation_phase": "15G"
+    },
+    {
+      "workstream_id": "V08",
+      "name": "Corporate financial evidence",
+      "priority": "HIGH",
+      "evidence_globs": [
+        "14_Financial_Intelligence/05_Acquisition/Reviewed_Financial_Observations_*.csv",
+        "14_Financial_Intelligence/07_Ratios/Company_Financial_Ratios_Wide.csv",
+        "14_Financial_Intelligence/08_Trends/Company_Financial_Trend_Summary.csv"
+      ],
+      "minimum_matches": 2,
+      "method_gate": "REQUIRES_ENTITY_SCOPE_PERIOD_AND_SOURCE_RECONCILIATION",
+      "next_validation_phase": "15G"
+    },
+    {
+      "workstream_id": "V09",
+      "name": "Financial peer benchmarking",
+      "priority": "MEDIUM",
+      "evidence_globs": [
+        "14_Financial_Intelligence/09_Peer_Benchmarking/Peer_Benchmark_Readiness.csv",
+        "14_Financial_Intelligence/09_Peer_Benchmarking/Peer_Benchmark_Results.csv",
+        "14_Financial_Intelligence/09_Peer_Benchmarking/External_Peer_Financials/External_Peer_Financial_Validation_Report.csv"
+      ],
+      "minimum_matches": 2,
+      "method_gate": "REQUIRES_MINIMUM_PEER_COUNTS_AND_PERIOD_ALIGNMENT",
+      "next_validation_phase": "15G"
+    },
+    {
+      "workstream_id": "V10",
+      "name": "New-project frozen inference and generalization",
+      "priority": "CRITICAL",
+      "evidence_globs": [
+        "13_Continuous_Ingestion/**/*Frozen*",
+        "13_Continuous_Ingestion/**/*Evaluation*",
+        "13_Continuous_Ingestion/**/*Simulation*"
+      ],
+      "minimum_matches": 2,
+      "method_gate": "REQUIRES_HOLDOUT_PSEUDO_NEW_PROJECT_AND_OOD_VALIDATION",
+      "next_validation_phase": "15H"
+    },
+    {
+      "workstream_id": "V11",
+      "name": "Portfolio optimization stability",
+      "priority": "HIGH",
+      "evidence_globs": [
+        "04_Optimization/**/*.csv"
+      ],
+      "minimum_matches": 1,
+      "method_gate": "REQUIRES_CONSTRAINT_AND_WEIGHT_SENSITIVITY_REPRODUCTION",
+      "next_validation_phase": "15F"
+    },
+    {
+      "workstream_id": "V12",
+      "name": "Independent external model validation",
+      "priority": "CRITICAL",
+      "evidence_globs": [
+        "15_Validation_and_Evidence/09_Independent_Review/*"
+      ],
+      "minimum_matches": 1,
+      "method_gate": "OPEN_EXTERNAL_VALIDATION_GATE",
+      "next_validation_phase": "15I"
+    }
+  ],
+  "guardrails": {
+    "artifact_presence_equals_method_validation": false,
+    "historical_monte_carlo_outputs_are_fully_reproducible_without_method_metadata": false,
+    "project_investment_is_bank_exposure_or_ead": false,
+    "clusters_are_default_risk_classes": false,
+    "pd_lgd_ead_ecl_generated": false,
+    "missing_bank_variables_imputed": false,
+    "automatic_credit_decision_generated": false
+  }
+}
