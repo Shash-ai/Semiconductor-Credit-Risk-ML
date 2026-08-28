@@ -1,0 +1,85 @@
+{
+  "phase": "15D",
+  "engine_version": "SCI_BENCHMARK_ABLATION_VALIDATION_V1",
+  "objective": "Reproduce the stored hybrid benchmark integration exactly and quantify ranking sensitivity to feature-family weights, family removal and score perturbations without interpreting the result as default-prediction accuracy.",
+  "family_score_columns": {
+    "size": "size_only_score",
+    "geography": "geography_only_score",
+    "macro_credit": "macro_only_score",
+    "banking_npa": "banking_only_score",
+    "structural": "structural_only_score"
+  },
+  "baseline_weights": {
+    "size": 0.1111111111111111,
+    "geography": 0.1111111111111111,
+    "macro_credit": 0.3333333333333333,
+    "banking_npa": 0.3333333333333333,
+    "structural": 0.1111111111111111
+  },
+  "named_weight_scenarios": {
+    "EQUAL_WEIGHT": {
+      "size": 0.2,
+      "geography": 0.2,
+      "macro_credit": 0.2,
+      "banking_npa": 0.2,
+      "structural": 0.2
+    },
+    "STRUCTURAL_HEAVY": {
+      "size": 0.1,
+      "geography": 0.1,
+      "macro_credit": 0.2,
+      "banking_npa": 0.2,
+      "structural": 0.4
+    },
+    "MACRO_BANKING_HEAVY": {
+      "size": 0.05,
+      "geography": 0.05,
+      "macro_credit": 0.4,
+      "banking_npa": 0.4,
+      "structural": 0.1
+    },
+    "PROJECT_STRUCTURE_FOCUS": {
+      "size": 0.25,
+      "geography": 0.2,
+      "macro_credit": 0.1,
+      "banking_npa": 0.1,
+      "structural": 0.35
+    },
+    "FINANCIAL_CONTEXT_FOCUS": {
+      "size": 0.05,
+      "geography": 0.05,
+      "macro_credit": 0.45,
+      "banking_npa": 0.35,
+      "structural": 0.1
+    }
+  },
+  "one_at_a_time_weight_multipliers": [0.5, 0.75, 1.25, 1.5, 2.0],
+  "random_weight_tests": {
+    "seed": 20260828,
+    "centered_draws": 3000,
+    "centered_concentration": 30.0,
+    "broad_draws": 3000,
+    "broad_concentration": 8.0
+  },
+  "score_noise_tests": {
+    "seed": 20260829,
+    "replicates_per_level": 1000,
+    "noise_std_fraction_of_score_range": [0.02, 0.05, 0.1]
+  },
+  "review_thresholds": {
+    "baseline_reconstruction_max_abs_error": 1e-10,
+    "random_weight_mean_spearman_warning_below": 0.75,
+    "random_weight_mean_top3_retention_warning_below": 0.67,
+    "project_mean_rank_range_warning_above": 4.0,
+    "noise_5pct_mean_spearman_warning_below": 0.9
+  },
+  "guardrails": {
+    "benchmark_scores_are_default_probabilities": false,
+    "ablation_importance_is_causal_importance": false,
+    "score_level_sensitivity_replaces_raw_data_validation": false,
+    "project_investment_is_bank_exposure_or_ead": false,
+    "clusters_are_credit_ratings": false,
+    "pd_lgd_ead_ecl_generated": false,
+    "automatic_credit_decision_generated": false
+  }
+}
