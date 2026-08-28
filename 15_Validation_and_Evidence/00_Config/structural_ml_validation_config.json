@@ -1,0 +1,39 @@
+{
+  "phase": "15C",
+  "engine_version": "SCI_STRUCTURAL_ML_VALIDATION_V1",
+  "reference_k": 6,
+  "k_candidates": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "seed_runs": 100,
+  "seed_test_n_init": 1,
+  "k_selection_runs_per_k": 50,
+  "k_selection_n_init": 10,
+  "subsample_runs_per_fraction": 250,
+  "subsample_fractions": [0.70, 0.80, 0.90],
+  "subsample_n_init": 20,
+  "perturbation_runs_per_level": 250,
+  "perturbation_standardized_noise_sd": [0.01, 0.025, 0.05, 0.10],
+  "continuous_features_for_perturbation": [
+    "financial_rank_within_scope",
+    "state_financial_share_within_scope",
+    "company_project_count"
+  ],
+  "pca_component_sensitivity": [5, 6, 7, 8, 9, 10, 11, 12],
+  "pca_sensitivity_seed_runs": 50,
+  "leave_one_out_n_init": 30,
+  "random_seed": 20260828,
+  "research_interpretation_thresholds": {
+    "ari_strong": 0.90,
+    "ari_good": 0.75,
+    "ari_moderate": 0.60,
+    "assignment_stability_strong": 0.90,
+    "reference_reproduction_tolerance": 1e-10
+  },
+  "guardrails": {
+    "clusters_are_structural_segments_not_risk_classes": true,
+    "validation_metrics_are_not_default_prediction_accuracy": true,
+    "no_pd_lgd_ead_ecl_generated": true,
+    "no_automatic_credit_decision_generated": true,
+    "historical_k_selection_metrics_treated_as_exactly_reproducible_without_original_training_code": false,
+    "perturbation_noise_interpreted_as_real_world_probability_distribution": false
+  }
+}
