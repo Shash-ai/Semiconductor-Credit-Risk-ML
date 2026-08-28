@@ -1,0 +1,57 @@
+{
+  "phase": "15B",
+  "audit_version": "SCI_DATA_PROVENANCE_LEAKAGE_AUDIT_V1",
+  "objective": "Validate canonical-to-ecosystem lineage, frozen feature reproducibility, artifact integrity, and leakage boundaries for the structural semiconductor research model.",
+  "files": {
+    "manufacturing_canonical": "01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Master_Canonical.csv",
+    "design_canonical": "01_Raw_Data/Semiconductor/Semiconductor_Master/DLI_Design_Projects/DLI_Design_Projects_Canonical.csv",
+    "ecosystem_master": "01_Raw_Data/Semiconductor/Semiconductor_Master/Semiconductor_Ecosystem_Master.csv",
+    "feature_matrix": "01_Raw_Data/Semiconductor/Semiconductor_Master/Ecosystem_Clustering_Final.csv",
+    "feature_selection_audit": "01_Raw_Data/Semiconductor/Semiconductor_Master/Ecosystem_Feature_Selection_Audit.csv",
+    "frozen_manifest": "13_Continuous_Ingestion/06_Frozen_Model/artifacts/Frozen_Model_Manifest.json",
+    "pca_loadings": "03_Modeling/Phase_3A_PCA_KMeans/PCA_Loadings.csv",
+    "pca_variance": "03_Modeling/Phase_3A_PCA_KMeans/PCA_Explained_Variance.csv",
+    "validated_assignments": "03_Modeling/Phase_3B_Cluster_Validation/Validated_Cluster_Assignments.csv"
+  },
+  "raw_feature_tolerance": 1e-12,
+  "z_feature_tolerance": 1e-10,
+  "amount_tolerance": 1e-8,
+  "prohibited_outcome_tokens": [
+    "default",
+    "npa",
+    "pd",
+    "lgd",
+    "ead",
+    "ecl",
+    "risk_score",
+    "vulnerability",
+    "stress_score",
+    "credit_grade",
+    "rating",
+    "approve",
+    "reject",
+    "cluster"
+  ],
+  "cohort_relative_features": [
+    "financial_rank_within_scope",
+    "state_financial_share_within_scope",
+    "company_project_count"
+  ],
+  "research_scope": {
+    "model_type": "UNSUPERVISED_STRUCTURAL_SEGMENTATION",
+    "target_variable_used": false,
+    "historical_point_in_time_backtest_claimed": false,
+    "current_snapshot_interpretation": true,
+    "clusters_are_default_risk_classes": false,
+    "project_investment_is_bank_exposure_or_ead": false,
+    "automatic_credit_decision_generated": false
+  },
+  "guardrails": {
+    "missing_provenance_is_not_imputed": true,
+    "hash_mismatch_against_frozen_manifest_is_hard_failure": true,
+    "canonical_to_ecosystem_value_mismatch_is_hard_failure": true,
+    "cohort_relative_features_are_declared_transductive_context": true,
+    "dli_missing_exact_approval_dates_are_reported_not_invented": true,
+    "absence_of_default_target_blocks_accuracy_auc_default_claims": true
+  }
+}
