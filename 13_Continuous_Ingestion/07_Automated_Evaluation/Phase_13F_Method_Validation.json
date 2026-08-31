@@ -1,6 +1,6 @@
 {
   "phase": "13F",
-  "validated_at": "2026-08-30T08:29:24+00:00",
+  "validated_at": "2026-08-31T08:50:31+00:00",
   "deterministic_stress": {
     "stress_method_version": "SCI_DETERMINISTIC_STRESS_2026_V1",
     "reference_projects": 12,
