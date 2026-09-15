@@ -1,6 +1,6 @@
 {
   "model_version": "SCI_STRUCTURAL_CLUSTER_FROZEN_2026_V2",
-  "validated_at": "2026-09-14T08:03:27+00:00",
+  "validated_at": "2026-09-15T07:58:10+00:00",
   "reference_rows": 36,
   "retained_components": 7,
   "authoritative_feature_matrix": "01_Raw_Data/Semiconductor/Semiconductor_Master/Ecosystem_Clustering_Final.csv",
