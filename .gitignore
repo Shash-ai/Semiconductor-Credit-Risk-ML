@@ -128,3 +128,11 @@ deployment/gcp/
 
 # Notebook scratch files
 *.ipynb~
+
+# Semiconductor Risk Intelligence UI
+ui/semicon-risk-intelligence/node_modules/
+ui/semicon-risk-intelligence/dist/
+ui/semicon-risk-intelligence/.env
+ui/semicon-risk-intelligence/.env.local
+ui/semicon-risk-intelligence/.DS_Store
+.DS_Store
