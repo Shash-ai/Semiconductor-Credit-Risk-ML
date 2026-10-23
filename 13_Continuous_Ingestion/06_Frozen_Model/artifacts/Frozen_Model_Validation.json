@@ -1,6 +1,6 @@
 {
   "model_version": "SCI_STRUCTURAL_CLUSTER_FROZEN_2026_V2",
-  "validated_at": "2026-10-22T07:51:55+00:00",
+  "validated_at": "2026-10-23T07:50:54+00:00",
   "reference_rows": 36,
   "retained_components": 7,
   "authoritative_feature_matrix": "01_Raw_Data/Semiconductor/Semiconductor_Master/Ecosystem_Clustering_Final.csv",
@@ -20,10 +20,10 @@
     "has_technology_partner": 0.0
   },
   "raw_feature_contract_pass": true,
-  "stored_z_reconstruction_max_abs_error": 4.440892098500626e-16,
+  "stored_z_reconstruction_max_abs_error": 0.0,
   "stored_z_reconstruction_pass": true,
-  "pc12_mae": 1.3627216639062251e-15,
-  "pc12_max_abs": 5.329070518200751e-15,
+  "pc12_mae": 1.423822479671186e-15,
+  "pc12_max_abs": 6.217248937900877e-15,
   "pca_reconstruction_pass": true,
   "nearest_centroid_training_agreement": 1.0,
   "cluster_recovery_pass": true,

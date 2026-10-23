@@ -1,6 +1,6 @@
 {
   "phase": "13F",
-  "validated_at": "2026-10-22T07:51:56+00:00",
+  "validated_at": "2026-10-23T07:50:55+00:00",
   "deterministic_stress": {
     "stress_method_version": "SCI_DETERMINISTIC_STRESS_2026_V1",
     "reference_projects": 12,
@@ -25,8 +25,8 @@
       "severe": 1.4210854715202004e-14
     },
     "overall_score_max_abs_error": 1.4210854715202004e-14,
-    "project_size_normalization_max_abs_error": 5.898059818321144e-17,
-    "geographic_normalization_max_abs_error": 8.326672684688674e-17,
+    "project_size_normalization_max_abs_error": 6.245004513516506e-17,
+    "geographic_normalization_max_abs_error": 0.0,
     "reference_investment_min_crore": 117.0,
     "reference_investment_max_crore": 91526.0,
     "reference_state_share_min": 0.0007121076560702,
@@ -34,7 +34,7 @@
     "macro_risk_vectors_by_approval_year": {
       "2023": {
         "risk_credit_growth": 0.6869176268384147,
-        "risk_credit_volatility": 0.0304217968326846,
+        "risk_credit_volatility": 0.030421796832684676,
         "risk_npa_growth": 0.0,
         "risk_npa_pressure": 0.0
       },
@@ -52,7 +52,7 @@
       },
       "2026": {
         "risk_credit_growth": 0.5462790361287271,
-        "risk_credit_volatility": 0.9591357460387392,
+        "risk_credit_volatility": 0.9591357460387391,
         "risk_npa_growth": 0.97816140811672,
         "risk_npa_pressure": 0.8735165822054
       }
