@@ -1,11 +1,11 @@
 {
   "phase": "13I",
   "audit_version": "SCI_PHASE13_LINEAGE_AUDIT_V1",
-  "generated_at": "2026-11-01T09:32:22+00:00",
+  "generated_at": "2026-11-02T09:49:26+00:00",
   "status": "PASS_WITH_WARNINGS",
   "execution": {
-    "git_sha": "282f7d2ee526518c59dfef2ca8fe3cee30ccb545",
-    "github_run_id": "41293510227",
+    "git_sha": "4441c029d3c19c50f034c8752f2ee7b590ee1627",
+    "github_run_id": "41423673314",
     "github_run_attempt": "1",
     "github_event_name": "schedule",
     "github_ref_name": "main"
@@ -79,7 +79,7 @@
     "new_project_evaluation_register": 0
   },
   "source_monitoring": {
-    "latest_discovery_run_at": "2026-11-01T09:32:18+00:00",
+    "latest_discovery_run_at": "2026-11-02T09:49:21+00:00",
     "latest_rss_sources": 1,
     "latest_rss_items_scanned": 0,
     "latest_new_candidates": 0,
