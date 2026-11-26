@@ -91,3 +91,4 @@
 {"run_at": "2026-11-23T11:03:34+00:00", "phase": "13C", "status": "SUCCESS_NO_CANDIDATES", "candidates_seen": 0, "candidates_processed": 0, "manual_review_required": 0}
 {"run_at": "2026-11-24T12:49:27+00:00", "phase": "13C", "status": "SUCCESS_NO_CANDIDATES", "candidates_seen": 0, "candidates_processed": 0, "manual_review_required": 0}
 {"run_at": "2026-11-25T11:35:39+00:00", "phase": "13C", "status": "SUCCESS_NO_CANDIDATES", "candidates_seen": 0, "candidates_processed": 0, "manual_review_required": 0}
+{"run_at": "2026-11-26T11:20:50+00:00", "phase": "13C", "status": "SUCCESS_NO_CANDIDATES", "candidates_seen": 0, "candidates_processed": 0, "manual_review_required": 0}
